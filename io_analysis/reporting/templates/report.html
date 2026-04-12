@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }}</title>
+  <style>
+    :root {
+      --primary: #1a3a6b;
+      --accent:  #0078d4;
+      --pass:    #107c10;
+      --fail:    #a4262c;
+      --warn:    #d83b01;
+      --bg:      #f4f6fb;
+      --card:    #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: var(--bg);
+           color: #222; font-size: 14px; line-height: 1.5; }
+    header { background: var(--primary); color: white; padding: 24px 40px; }
+    header h1 { font-size: 22px; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 4px; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+    h2 { color: var(--primary); font-size: 18px; margin: 32px 0 12px;
+         border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+    h3 { color: var(--accent); font-size: 15px; margin: 20px 0 8px; }
+
+    /* KPI cards */
+    .kpi-row { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+    .kpi-card { background: var(--card); border-radius: 8px; padding: 16px 24px;
+                box-shadow: 0 2px 6px rgba(0,0,0,.08); flex: 1; min-width: 180px; }
+    .kpi-card .value { font-size: 28px; font-weight: 700; color: var(--primary); }
+    .kpi-card .label { font-size: 12px; color: #666; margin-top: 4px; }
+    .kpi-card.pass   .value { color: var(--pass); }
+    .kpi-card.fail   .value { color: var(--fail); }
+    .kpi-card.warn   .value { color: var(--warn); }
+
+    /* Tables */
+    .table-wrap { overflow-x: auto; margin-bottom: 24px; }
+    table { border-collapse: collapse; width: 100%; background: var(--card);
+            border-radius: 8px; overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,.06); }
+    th { background: var(--primary); color: white; padding: 9px 12px;
+         text-align: left; font-size: 12px; white-space: nowrap; }
+    td { padding: 7px 12px; border-bottom: 1px solid #e8ecf0; font-size: 12px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #edf2fc; }
+    td.pass { color: var(--pass); font-weight: 600; }
+    td.fail { color: var(--fail); font-weight: 600; }
+    td.warn { color: var(--warn); font-weight: 600; }
+
+    /* Plots */
+    .plot-grid { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 24px; }
+    .plot-card { background: var(--card); border-radius: 8px;
+                 box-shadow: 0 2px 6px rgba(0,0,0,.08); padding: 16px;
+                 flex: 1; min-width: 320px; }
+    .plot-card h3 { margin-top: 0; }
+    .plot-card img { width: 100%; height: auto; border-radius: 4px; margin-top: 8px; }
+
+    footer { text-align: center; padding: 20px; color: #888; font-size: 12px;
+             border-top: 1px solid #dde3ed; margin-top: 40px; }
+    .badge { display: inline-block; border-radius: 12px; padding: 2px 10px;
+             font-size: 11px; font-weight: 600; }
+    .badge-pass { background: #dff6dd; color: var(--pass); }
+    .badge-fail { background: #fde7e9; color: var(--fail); }
+    .badge-warn { background: #fff4ce; color: var(--warn); }
+    .section { background: var(--card); border-radius: 8px; padding: 20px 24px;
+               margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,.06); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>{{ title }}</h1>
+  <p>Generated: {{ generated_at }} &nbsp;|&nbsp; Results root: {{ results_root }}</p>
+</header>
+
+<div class="container">
+
+  <!-- ===================== KPI SUMMARY ===================== -->
+  <h2>Executive Summary</h2>
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="value">{{ kpi.total_records }}</div>
+      <div class="label">Total Measurements</div>
+    </div>
+    <div class="kpi-card">
+      <div class="value">{{ kpi.parameters }}</div>
+      <div class="label">Unique Parameters</div>
+    </div>
+    <div class="kpi-card">
+      <div class="value">{{ kpi.flows }}</div>
+      <div class="label">Flows Analysed</div>
+    </div>
+    <div class="kpi-card pass">
+      <div class="value">{{ kpi.overall_yield }}%</div>
+      <div class="label">Overall Yield</div>
+    </div>
+    <div class="kpi-card {% if kpi.fail_count > 0 %}fail{% else %}pass{% endif %}">
+      <div class="value">{{ kpi.fail_count }}</div>
+      <div class="label">Total Failures</div>
+    </div>
+    <div class="kpi-card {% if kpi.low_cpk_count > 0 %}warn{% else %}pass{% endif %}">
+      <div class="value">{{ kpi.low_cpk_count }}</div>
+      <div class="label">Parameters Below Cpk Target ({{ cpk_target }})</div>
+    </div>
+  </div>
+
+  <!-- ===================== PLOTS ===================== -->
+  <h2>Visualisations</h2>
+  <div class="plot-grid">
+    {% if plot_paths.get("yield_bar") %}
+    <div class="plot-card">
+      <h3>Yield by Parameter &amp; Flow</h3>
+      <img src="{{ plot_paths['yield_bar'] | relpath }}" alt="Yield Bar Chart" />
+    </div>
+    {% endif %}
+    {% if plot_paths.get("passfail_heatmap") %}
+    <div class="plot-card">
+      <h3>Pass/Fail Heatmap</h3>
+      <img src="{{ plot_paths['passfail_heatmap'] | relpath }}" alt="Heatmap" />
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="plot-grid">
+    {% if plot_paths.get("distributions") %}
+    <div class="plot-card" style="flex:2; min-width:480px;">
+      <h3>Parameter Distributions</h3>
+      <img src="{{ plot_paths['distributions'] | relpath }}" alt="Distributions" />
+    </div>
+    {% endif %}
+    {% if plot_paths.get("boxplot_comparison") %}
+    <div class="plot-card" style="flex:2; min-width:480px;">
+      <h3>Box Plot Comparison</h3>
+      <img src="{{ plot_paths['boxplot_comparison'] | relpath }}" alt="Box Plots" />
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="plot-grid">
+    {% if plot_paths.get("cpk_bar") %}
+    <div class="plot-card">
+      <h3>Process Capability (Cpk)</h3>
+      <img src="{{ plot_paths['cpk_bar'] | relpath }}" alt="Cpk Bar Chart" />
+    </div>
+    {% endif %}
+    {% if plot_paths.get("skew_plot") %}
+    <div class="plot-card">
+      <h3>Distribution Skewness</h3>
+      <img src="{{ plot_paths['skew_plot'] | relpath }}" alt="Skew Plot" />
+    </div>
+    {% endif %}
+    {% if plot_paths.get("cross_flow_scatter") %}
+    <div class="plot-card">
+      <h3>Cross-Flow Mean Comparison</h3>
+      <img src="{{ plot_paths['cross_flow_scatter'] | relpath }}" alt="Cross-Flow Scatter" />
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ===================== YIELD SUMMARY TABLE ===================== -->
+  <h2>Yield Summary</h2>
+  <div class="section table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>Flow</th>
+          <th>Total</th>
+          <th>Pass</th>
+          <th>Fail</th>
+          <th>Yield %</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in yield_table %}
+        <tr>
+          <td>{{ row.parameter }}</td>
+          <td>{{ row.flow }}</td>
+          <td>{{ row.total }}</td>
+          <td class="pass">{{ row.pass }}</td>
+          <td class="{% if row.fail > 0 %}fail{% endif %}">{{ row.fail }}</td>
+          <td class="{% if row['yield_%'] < 100 %}{% if row['yield_%'] < 90 %}fail{% else %}warn{% endif %}{% else %}pass{% endif %}">
+            {{ row['yield_%'] }}%
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===================== STATISTICS TABLE ===================== -->
+  <h2>Detailed Statistics</h2>
+  <div class="section table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Flow</th><th>Unit</th>
+          <th>Low Limit</th><th>High Limit</th>
+          <th>Count</th><th>Mean</th><th>Std Dev</th>
+          <th>Min</th><th>Max</th><th>Median</th>
+          <th>P5</th><th>P95</th>
+          <th>Cpk</th><th>Skewness</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in summary_table %}
+        <tr>
+          <td>{{ row.parameter }}</td>
+          <td>{{ row.flow }}</td>
+          <td>{{ row.unit }}</td>
+          <td>{{ row.low_limit }}</td>
+          <td>{{ row.high_limit }}</td>
+          <td>{{ row.count }}</td>
+          <td>{{ row.mean }}</td>
+          <td>{{ row.std }}</td>
+          <td>{{ row['min'] }}</td>
+          <td>{{ row['max'] }}</td>
+          <td>{{ row.median }}</td>
+          <td>{{ row.p5 }}</td>
+          <td>{{ row.p95 }}</td>
+          <td class="{% if row.cpk != 'N/A' and row.cpk | float < cpk_target %}warn{% endif %}">
+            {{ row.cpk }}
+          </td>
+          <td>{{ row.skewness }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===================== CROSS-FLOW TABLE ===================== -->
+  {% if cross_flow_table %}
+  <h2>Cross-Flow Comparison (Flow1 vs Flow2)</h2>
+  <div class="section table-wrap">
+    <table>
+      <thead>
+        <tr>
+          {% for col in cross_flow_columns %}
+          <th>{{ col }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in cross_flow_table %}
+        <tr>
+          {% for col in cross_flow_columns %}
+          <td class="{% if col == 'significant_diff' and row[col] %}warn{% endif %}">
+            {% if row[col] is sameas true %}✓ Yes
+            {% elif row[col] is sameas false %}No
+            {% elif row[col] is none %}N/A
+            {% else %}{{ row[col] }}{% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  <!-- ===================== OUTLIERS ===================== -->
+  {% if outlier_table %}
+  <h2>Statistical Outliers (IQR Method)</h2>
+  <div class="section table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th><th>Flow</th><th>DUT ID</th>
+          <th>Pin</th><th>Condition</th><th>Value</th><th>Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in outlier_table %}
+        <tr>
+          <td>{{ row.parameter }}</td>
+          <td>{{ row.flow }}</td>
+          <td>{{ row.dut_id }}</td>
+          <td>{{ row.pin }}</td>
+          <td>{{ row.condition }}</td>
+          <td class="warn">{{ row.value }}</td>
+          <td>{{ row.unit }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+</div>
+
+<footer>
+  <p>IO Electrical Validation Analysis Framework &nbsp;|&nbsp; {{ generated_at }}</p>
+</footer>
+
+</body>
+</html>

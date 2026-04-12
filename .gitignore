@@ -1,0 +1,23 @@
+# Build / runtime output
+output/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
