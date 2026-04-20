@@ -1,6 +1,6 @@
-# IO Testing Results Analysis - Python Standard Library Only
-# No external packages required.
-# All dependencies use Python's built-in modules:
+# IO Testing Results Analysis
+# This project uses Python standard library modules and the external packages listed below.
+# Built-in modules may include:
 #   csv, zipfile, xml.etree.ElementTree, statistics, pathlib, math, logging
 #
 # Optional (only if you want to run the unit tests):
