@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IO Electrical Validation Results</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f6fa;color:#333}
+.hdr{background:#2c3e50;color:#fff;padding:18px 36px}
+.hdr h1{margin:0 0 4px;font-size:24px}
+.hdr p{margin:0;color:#bdc3c7;font-size:13px}
+.wrap{max-width:1500px;margin:0 auto;padding:18px 36px}
+.cards{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}
+.card{background:#fff;border-radius:8px;padding:14px 18px;box-shadow:0 2px 6px rgba(0,0,0,.08);min-width:140px;flex:1}
+.card .val{font-size:28px;font-weight:bold;margin:4px 0}
+.card .lbl{font-size:11px;color:#7f8c8d;text-transform:uppercase;letter-spacing:.5px}
+.sec{background:#fff;border-radius:8px;padding:18px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.sec h2{margin:0 0 4px;font-size:20px;color:#2c3e50;border-bottom:2px solid #ecf0f1;padding-bottom:6px}
+.sec h3{margin:12px 0 6px;font-size:14px;color:#34495e;text-transform:uppercase;letter-spacing:.4px}
+.sec-desc{font-size:12px;color:#7f8c8d;margin:0 0 12px}
+table{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:4px}
+th{background:#2c3e50;color:#fff;padding:7px 9px;text-align:center;white-space:nowrap}
+td{padding:5px 9px;border:1px solid #ecf0f1;text-align:center}
+tr:nth-child(even) td{background:#f8f9fa}
+.io-hdr td{background:#ecf0f1;font-weight:bold;text-align:left;color:#2c3e50;font-size:12px}
+.pass{background:#d5f5e3!important;color:#1a7a3d;font-weight:bold}
+.fail{background:#fadbd8!important;color:#a93226;font-weight:bold}
+.marginal{background:#fdeacd!important;color:#b7460e;font-weight:bold}
+.plots-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px}
+.plot-box{flex:1;min-width:420px;border:1px solid #ecf0f1;border-radius:6px;overflow:hidden;background:#fff}
+.plot-box h4{margin:0;padding:6px 10px;font-size:12px;background:#f8f9fa;border-bottom:1px solid #ecf0f1;color:#555}
+.plot-box svg,.plot-box object{width:100%;height:auto}
+.tabs{display:flex;gap:4px;margin-bottom:0;flex-wrap:wrap;border-bottom:2px solid #2c3e50;padding-bottom:0}
+.tabs button{padding:8px 16px;border:1px solid #ddd;border-bottom:none;border-radius:6px 6px 0 0;
+  cursor:pointer;background:#ecf0f1;font-size:13px;transition:all .15s}
+.tabs button.active{background:#2c3e50;color:#fff;border-color:#2c3e50}
+.tab-content{display:none;padding-top:0}
+.tab-content.active{display:block}
+.badge{padding:2px 8px;border-radius:10px;font-size:10px;font-weight:bold;margin-right:5px}
+.bp{background:#2ecc71;color:#fff}.bf{background:#e74c3c;color:#fff}.bw{background:#e67e22;color:#fff}
+.filter-bar{background:#fff;border-radius:8px;padding:12px 18px;margin:10px 0 4px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  position:sticky;top:0;z-index:100;border:1px solid #dce1e7}
+.filter-bar .fg{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.filter-bar label{font-size:11px;font-weight:bold;color:#7f8c8d;text-transform:uppercase;
+  letter-spacing:.5px;margin-right:2px;white-space:nowrap}
+.ftog{padding:3px 10px;border:1.5px solid #bdc3c7;border-radius:14px;cursor:pointer;
+  font-size:11px;background:#f8f9fa;color:#555;transition:all .12s;user-select:none}
+.ftog.active{border-color:#2c3e50;background:#2c3e50;color:#fff}
+.ftog:hover{border-color:#2980b9;background:#eaf4fb}
+.filter-divider{width:1px;height:24px;background:#dce1e7}
+@media print{.tab-content{display:block!important}.filter-bar{display:none}}
+</style>
+<script>
+function showSec(secId,btn){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(secId).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ---- Filter logic ----
+const _active = {viocore:new Set(), skews:new Set()};
+
+function _initSets(){
+  document.querySelectorAll('.ftog[data-viocore]').forEach(b=>_active.viocore.add(b.dataset.viocore));
+  document.querySelectorAll('.ftog[data-skew]').forEach(b=>_active.skews.add(b.dataset.skew));
+}
+
+function toggleFilter(btn, kind){
+  const val = btn.dataset[kind];
+  const set = kind==='viocore' ? _active.viocore : _active.skews;
+  if(set.has(val)){ set.delete(val); btn.classList.remove('active'); }
+  else{ set.add(val); btn.classList.add('active'); }
+  applyFilters();
+}
+
+function resetFilters(){
+  document.querySelectorAll('.ftog').forEach(b=>b.classList.add('active'));
+  _initSets();
+  applyFilters();
+}
+
+function applyFilters(){
+  document.querySelectorAll('g.series, g.legend-item').forEach(g=>{
+    const vcAttr = g.dataset.viocore;
+    const s = g.dataset.skew;
+    // viocore: if the element has data-viocore, check it's active; otherwise pass through
+    const vcOk = !vcAttr || _active.viocore.has(vcAttr);
+    const sOk = !s || _active.skews.has(s);
+    g.style.display = (vcOk && sOk) ? '' : 'none';
+  });
+  // Stats table rows
+  document.querySelectorAll('.stats-row').forEach(r=>{
+    const rowSkew = r.dataset.skew;
+    const sOk = !rowSkew || _active.skews.has(rowSkew);
+    r.style.display = sOk ? '' : 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{ _initSets(); });
+</script>
+</head>
+<body>
+<div class="hdr">
+  <h1>IO Electrical Validation Results</h1>
+  <p>Pass/Fail Analysis vs Specification &nbsp;|&nbsp; Generated: 2026-04-19 14:45
+     &nbsp;|&nbsp; IO Validation Team
+     &nbsp;|&nbsp; IOs shown: GPIO_0, RF_KILLN</p>
+</div>
+<div class="wrap">
+
+<div class="filter-bar">
+  <div class="fg"><label>Vin Core / GPIO (VCORE/VIO)</label></div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Skew</label></div>
+  <div class="filter-divider"></div>
+  <button class="ftog" onclick="resetFilters()" style="border-color:#27ae60;color:#27ae60">&#8635; Reset</button>
+</div>
+<div class="cards">
+<div class="card"><div class="lbl">Overall Pass Rate</div><div class="val" style="color:#27ae60">99.5%</div></div>
+<div class="card"><div class="lbl">Total Measurements</div><div class="val" style="color:#2c3e50">600</div></div>
+<div class="card"><div class="lbl">Pass</div><div class="val" style="color:#27ae60">597</div></div>
+<div class="card"><div class="lbl">Fail</div><div class="val" style="color:#c0392b">3</div></div>
+<div class="card"><div class="lbl">Parameters</div><div class="val" style="color:#2c3e50">12</div></div>
+<div class="card"><div class="lbl">DUTs</div><div class="val" style="color:#2c3e50">25</div></div>
+</div>
+<div class="tabs">
+<button class="active" onclick="showSec('sec_0',this)">IOH/IOL Max</button>
+<button class="" onclick="showSec('sec_1',this)">IO State After POR</button>
+<button class="" onclick="showSec('sec_2',this)">Pull-up/Pull-down Resistance</button>
+<button class="" onclick="showSec('sec_3',this)">VIH/VIL</button>
+<button class="" onclick="showSec('sec_4',this)">VOH/VOL</button>
+<button class="" onclick="showSec('sec_5',this)">Rise/Fall Time</button>
+</div>
+<div id="sec_0" class="tab-content active">
+<div class="sec">
+<h2>IOH/IOL Max</h2>
+<p class="sec-desc">Maximum output current test: measures output voltage under load current. VOL = output low voltage (must be ≤ spec max); VOH = output high voltage (must be ≥ spec min).</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+<div id="sec_1" class="tab-content ">
+<div class="sec">
+<h2>IO State After POR</h2>
+<p class="sec-desc">Verifies IO pin state and direction after the chip initialisation process. Shows Pull Mode, IO State (High/Low), and IO Direction (Output/Input) for each temperature and skew condition.</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+<div id="sec_2" class="tab-content ">
+<div class="sec">
+<h2>Pull-up/Pull-down Resistance</h2>
+<p class="sec-desc">Measures internal pull-up and pull-down resistance values across all IO pins.</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+<div id="sec_3" class="tab-content ">
+<div class="sec">
+<h2>VIH/VIL</h2>
+<p class="sec-desc">Input threshold test: VIH = minimum input high voltage; VIL = maximum input low voltage.</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+<div id="sec_4" class="tab-content ">
+<div class="sec">
+<h2>VOH/VOL</h2>
+<p class="sec-desc">Output voltage under load: VOH = output high (must be ≥ spec min); VOL = output low (must be ≤ spec max).</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+<div id="sec_5" class="tab-content ">
+<div class="sec">
+<h2>Rise/Fall Time</h2>
+<p class="sec-desc">Signal transition timing: measures edge rise/fall time in picoseconds.</p>
+<p style="color:#999">No data for this test section.</p>
+</div></div>
+</div></body></html>

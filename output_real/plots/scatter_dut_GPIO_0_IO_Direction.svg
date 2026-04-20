@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+<rect width="700" height="400" fill="#ffffff"/>
+<text x="350.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">GPIO_0_IO_Direction - Per-DUT Results</text>
+<line x1="70.0" y1="320.0" x2="670.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="320.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="320.0" x2="670.0" y2="320.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="324.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.1</text>
+<line x1="65.0" y1="267.0" x2="70.0" y2="267.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="267.0" x2="670.0" y2="267.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="271.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.06</text>
+<line x1="65.0" y1="214.0" x2="70.0" y2="214.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="214.0" x2="670.0" y2="214.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="218.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.02</text>
+<line x1="65.0" y1="161.0" x2="70.0" y2="161.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="161.0" x2="670.0" y2="161.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="165.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.02</text>
+<line x1="65.0" y1="108.0" x2="70.0" y2="108.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="108.0" x2="670.0" y2="108.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="112.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.06</text>
+<line x1="65.0" y1="55.0" x2="70.0" y2="55.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="670.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.1</text>
+<text x="14.0" y="200.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,200.0)">Value</text>
+<circle cx="653.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="86.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="353.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="220.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="186.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="120.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="153.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="253.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="420.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="453.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="553.3" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="486.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="286.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="520.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="386.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="320.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="620.0" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="586.7" cy="187.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<text x="86.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,86.7,336)">12566</text>
+<text x="120.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,120.0,336)">13316</text>
+<text x="153.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,153.3,336)">13967</text>
+<text x="186.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,186.7,336)">15382</text>
+<text x="220.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,220.0,336)">25679</text>
+<text x="253.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,253.3,336)">29674</text>
+<text x="286.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,286.7,336)">43407</text>
+<text x="320.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,320.0,336)">44565</text>
+<text x="353.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,353.3,336)">56508</text>
+<text x="386.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,386.7,336)">57571</text>
+<text x="420.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,420.0,336)">58046</text>
+<text x="453.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,453.3,336)">62919</text>
+<text x="486.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,486.7,336)">69627</text>
+<text x="520.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,520.0,336)">76687</text>
+<text x="553.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,553.3,336)">78814</text>
+<text x="586.7" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,586.7,336)">79093</text>
+<text x="620.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,620.0,336)">96040</text>
+<text x="653.3" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,653.3,336)">9808</text>
+<circle cx="76.0" cy="33.0" r="5" fill="#3498db" stroke="none" opacity="0.78"/>
+<text x="84.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<circle cx="176.0" cy="33.0" r="5" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<text x="184.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Pass</text>
+<circle cx="276.0" cy="33.0" r="5" fill="#e74c3c" stroke="none" opacity="0.78"/>
+<text x="284.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Fail</text>
+</svg>

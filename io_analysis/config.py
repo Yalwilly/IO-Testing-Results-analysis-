@@ -64,7 +64,7 @@ class PlotConfig:
     spec_line_color: str = "#e67e22"
     bar_alpha: float = 0.85
     style: str = "seaborn-v0_8-whitegrid"
-    save_format: str = "png"
+    save_format: str = "svg"
 
 
 @dataclass

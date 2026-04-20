@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<rect width="900" height="450" fill="#ffffff"/>
+<text x="450.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Cross-Flow Comparison - Mean +/- Std Dev</text>
+<line x1="70.0" y1="320.0" x2="870.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="320.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="320.0" x2="870.0" y2="320.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="324.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-7.02</text>
+<line x1="65.0" y1="267.0" x2="70.0" y2="267.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="267.0" x2="870.0" y2="267.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="271.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-4.08</text>
+<line x1="65.0" y1="214.0" x2="70.0" y2="214.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="214.0" x2="870.0" y2="214.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="218.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-1.13</text>
+<line x1="65.0" y1="161.0" x2="70.0" y2="161.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="161.0" x2="870.0" y2="161.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="165.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">1.82</text>
+<line x1="65.0" y1="108.0" x2="70.0" y2="108.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="108.0" x2="870.0" y2="108.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="112.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">4.77</text>
+<line x1="65.0" y1="55.0" x2="70.0" y2="55.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="870.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">7.71</text>
+<text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Mean Value (+/-Std Dev)</text>
+<rect x="78.3" y="116.9" width="25.0" height="76.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="90.8" y1="101.2" x2="90.8" y2="132.7" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="87.8" y1="101.2" x2="93.8" y2="101.2" stroke="#2c3e50" stroke-width="1"/>
+<line x1="87.8" y1="132.7" x2="93.8" y2="132.7" stroke="#2c3e50" stroke-width="1"/>
+<rect x="103.3" y="105.2" width="25.0" height="88.5" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="115.8" y1="80.6" x2="115.8" y2="129.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="112.8" y1="80.6" x2="118.8" y2="80.6" stroke="#2c3e50" stroke-width="1"/>
+<line x1="112.8" y1="129.8" x2="118.8" y2="129.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="103.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,103.3,332)">Capacitance</text>
+<rect x="145.0" y="157.6" width="25.0" height="36.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="157.5" y1="152.0" x2="157.5" y2="163.2" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="154.5" y1="152.0" x2="160.5" y2="152.0" stroke="#2c3e50" stroke-width="1"/>
+<line x1="154.5" y1="163.2" x2="160.5" y2="163.2" stroke="#2c3e50" stroke-width="1"/>
+<rect x="170.0" y="154.2" width="25.0" height="39.5" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="182.5" y1="140.5" x2="182.5" y2="168.0" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="179.5" y1="140.5" x2="185.5" y2="140.5" stroke="#2c3e50" stroke-width="1"/>
+<line x1="179.5" y1="168.0" x2="185.5" y2="168.0" stroke="#2c3e50" stroke-width="1"/>
+<text x="170.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,170.0,332)">Fall_Time</text>
+<rect x="211.7" y="174.0" width="25.0" height="19.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="224.2" y1="170.0" x2="224.2" y2="177.9" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="221.2" y1="170.0" x2="227.2" y2="170.0" stroke="#2c3e50" stroke-width="1"/>
+<line x1="221.2" y1="177.9" x2="227.2" y2="177.9" stroke="#2c3e50" stroke-width="1"/>
+<rect x="236.7" y="176.7" width="25.0" height="17.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="249.2" y1="172.5" x2="249.2" y2="180.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="246.2" y1="172.5" x2="252.2" y2="172.5" stroke="#2c3e50" stroke-width="1"/>
+<line x1="246.2" y1="180.8" x2="252.2" y2="180.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="236.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,236.7,332)">Hold_Time</text>
+<rect x="278.3" y="193.7" width="25.0" height="75.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="290.8" y1="251.0" x2="290.8" y2="287.1" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="287.8" y1="251.0" x2="293.8" y2="251.0" stroke="#2c3e50" stroke-width="1"/>
+<line x1="287.8" y1="287.1" x2="293.8" y2="287.1" stroke="#2c3e50" stroke-width="1"/>
+<rect x="303.3" y="193.7" width="25.0" height="82.2" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="315.8" y1="257.4" x2="315.8" y2="294.4" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="312.8" y1="257.4" x2="318.8" y2="257.4" stroke="#2c3e50" stroke-width="1"/>
+<line x1="312.8" y1="294.4" x2="318.8" y2="294.4" stroke="#2c3e50" stroke-width="1"/>
+<text x="303.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,303.3,332)">IOH</text>
+<rect x="345.0" y="123.3" width="25.0" height="70.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="357.5" y1="106.7" x2="357.5" y2="139.9" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="354.5" y1="106.7" x2="360.5" y2="106.7" stroke="#2c3e50" stroke-width="1"/>
+<line x1="354.5" y1="139.9" x2="360.5" y2="139.9" stroke="#2c3e50" stroke-width="1"/>
+<rect x="370.0" y="116.3" width="25.0" height="77.4" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="382.5" y1="99.4" x2="382.5" y2="133.2" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="379.5" y1="99.4" x2="385.5" y2="99.4" stroke="#2c3e50" stroke-width="1"/>
+<line x1="379.5" y1="133.2" x2="385.5" y2="133.2" stroke="#2c3e50" stroke-width="1"/>
+<text x="370.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,370.0,332)">IOL</text>
+<rect x="411.7" y="152.6" width="25.0" height="41.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="424.2" y1="129.0" x2="424.2" y2="176.2" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="421.2" y1="129.0" x2="427.2" y2="129.0" stroke="#2c3e50" stroke-width="1"/>
+<line x1="421.2" y1="176.2" x2="427.2" y2="176.2" stroke="#2c3e50" stroke-width="1"/>
+<rect x="436.7" y="135.0" width="25.0" height="58.7" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="449.2" y1="95.8" x2="449.2" y2="174.2" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="446.2" y1="95.8" x2="452.2" y2="95.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="446.2" y1="174.2" x2="452.2" y2="174.2" stroke="#2c3e50" stroke-width="1"/>
+<text x="436.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,436.7,332)">Leakage_Current</text>
+<rect x="478.3" y="157.7" width="25.0" height="36.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="490.8" y1="148.1" x2="490.8" y2="167.3" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="487.8" y1="148.1" x2="493.8" y2="148.1" stroke="#2c3e50" stroke-width="1"/>
+<line x1="487.8" y1="167.3" x2="493.8" y2="167.3" stroke="#2c3e50" stroke-width="1"/>
+<rect x="503.3" y="148.5" width="25.0" height="45.2" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="515.8" y1="137.2" x2="515.8" y2="159.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="512.8" y1="137.2" x2="518.8" y2="137.2" stroke="#2c3e50" stroke-width="1"/>
+<line x1="512.8" y1="159.8" x2="518.8" y2="159.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="503.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,503.3,332)">Rise_Time</text>
+<rect x="545.0" y="158.0" width="25.0" height="35.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="557.5" y1="152.1" x2="557.5" y2="163.9" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="554.5" y1="152.1" x2="560.5" y2="152.1" stroke="#2c3e50" stroke-width="1"/>
+<line x1="554.5" y1="163.9" x2="560.5" y2="163.9" stroke="#2c3e50" stroke-width="1"/>
+<rect x="570.0" y="161.1" width="25.0" height="32.6" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="582.5" y1="154.6" x2="582.5" y2="167.5" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="579.5" y1="154.6" x2="585.5" y2="154.6" stroke="#2c3e50" stroke-width="1"/>
+<line x1="579.5" y1="167.5" x2="585.5" y2="167.5" stroke="#2c3e50" stroke-width="1"/>
+<text x="570.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,570.0,332)">Setup_Time</text>
+<rect x="611.7" y="152.4" width="25.0" height="41.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="624.2" y1="150.7" x2="624.2" y2="154.1" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="621.2" y1="150.7" x2="627.2" y2="150.7" stroke="#2c3e50" stroke-width="1"/>
+<line x1="621.2" y1="154.1" x2="627.2" y2="154.1" stroke="#2c3e50" stroke-width="1"/>
+<rect x="636.7" y="153.5" width="25.0" height="40.2" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="649.2" y1="150.9" x2="649.2" y2="156.0" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="646.2" y1="150.9" x2="652.2" y2="150.9" stroke="#2c3e50" stroke-width="1"/>
+<line x1="646.2" y1="156.0" x2="652.2" y2="156.0" stroke="#2c3e50" stroke-width="1"/>
+<text x="636.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,636.7,332)">VIH</text>
+<rect x="678.3" y="183.9" width="25.0" height="9.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="690.8" y1="182.2" x2="690.8" y2="185.5" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="687.8" y1="182.2" x2="693.8" y2="182.2" stroke="#2c3e50" stroke-width="1"/>
+<line x1="687.8" y1="185.5" x2="693.8" y2="185.5" stroke="#2c3e50" stroke-width="1"/>
+<rect x="703.3" y="182.9" width="25.0" height="10.8" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="715.8" y1="180.7" x2="715.8" y2="185.0" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="712.8" y1="180.7" x2="718.8" y2="180.7" stroke="#2c3e50" stroke-width="1"/>
+<line x1="712.8" y1="185.0" x2="718.8" y2="185.0" stroke="#2c3e50" stroke-width="1"/>
+<text x="703.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,703.3,332)">VIL</text>
+<rect x="745.0" y="137.5" width="25.0" height="56.2" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="757.5" y1="134.9" x2="757.5" y2="140.2" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="754.5" y1="134.9" x2="760.5" y2="134.9" stroke="#2c3e50" stroke-width="1"/>
+<line x1="754.5" y1="140.2" x2="760.5" y2="140.2" stroke="#2c3e50" stroke-width="1"/>
+<rect x="770.0" y="139.5" width="25.0" height="54.2" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="782.5" y1="136.5" x2="782.5" y2="142.6" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="779.5" y1="136.5" x2="785.5" y2="136.5" stroke="#2c3e50" stroke-width="1"/>
+<line x1="779.5" y1="142.6" x2="785.5" y2="142.6" stroke="#2c3e50" stroke-width="1"/>
+<text x="770.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,770.0,332)">VOH</text>
+<rect x="811.7" y="190.8" width="25.0" height="3.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="824.2" y1="189.7" x2="824.2" y2="191.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="821.2" y1="189.7" x2="827.2" y2="189.7" stroke="#2c3e50" stroke-width="1"/>
+<line x1="821.2" y1="191.8" x2="827.2" y2="191.8" stroke="#2c3e50" stroke-width="1"/>
+<rect x="836.7" y="190.2" width="25.0" height="3.5" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="849.2" y1="189.0" x2="849.2" y2="191.5" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="846.2" y1="189.0" x2="852.2" y2="189.0" stroke="#2c3e50" stroke-width="1"/>
+<line x1="846.2" y1="191.5" x2="852.2" y2="191.5" stroke="#2c3e50" stroke-width="1"/>
+<text x="836.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,836.7,332)">VOL</text>
+<rect x="70.0" y="27.0" width="12.0" height="12.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="85.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<rect x="180.0" y="27.0" width="12.0" height="12.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="195.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow2</text>
+</svg>

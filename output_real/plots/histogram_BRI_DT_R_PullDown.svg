@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<rect width="800" height="400" fill="#ffffff"/>
+<text x="400.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">BRI_DT_R_PullDown - Distribution (kOhm)</text>
+<line x1="65.0" y1="325.0" x2="770.0" y2="325.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="55.0" x2="65.0" y2="325.0" stroke="#999" stroke-width="1"/>
+<line x1="60.0" y1="325.0" x2="65.0" y2="325.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="325.0" x2="770.0" y2="325.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="329.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0</text>
+<line x1="60.0" y1="271.0" x2="65.0" y2="271.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="271.0" x2="770.0" y2="271.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="275.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">1520</text>
+<line x1="60.0" y1="217.0" x2="65.0" y2="217.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="217.0" x2="770.0" y2="217.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="221.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">3040</text>
+<line x1="60.0" y1="163.0" x2="65.0" y2="163.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="163.0" x2="770.0" y2="163.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="167.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">4561</text>
+<line x1="60.0" y1="109.0" x2="65.0" y2="109.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="109.0" x2="770.0" y2="109.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="113.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">6081</text>
+<line x1="60.0" y1="55.0" x2="65.0" y2="55.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="55.0" x2="770.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">7602</text>
+<line x1="65.0" y1="325.0" x2="65.0" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="65.0" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0263</text>
+<line x1="165.7" y1="325.0" x2="165.7" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="165.7" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0272</text>
+<line x1="266.4" y1="325.0" x2="266.4" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="266.4" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.028</text>
+<line x1="367.1" y1="325.0" x2="367.1" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="367.1" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0288</text>
+<line x1="467.9" y1="325.0" x2="467.9" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="467.9" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0296</text>
+<line x1="568.6" y1="325.0" x2="568.6" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="568.6" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0305</text>
+<line x1="669.3" y1="325.0" x2="669.3" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="669.3" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0313</text>
+<line x1="770.0" y1="325.0" x2="770.0" y2="330.0" stroke="#999" stroke-width="1"/>
+<text x="770.0" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.0321</text>
+<text x="400.0" y="395.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">Value (kOhm)</text>
+<text x="14.0" y="200.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,200.0)">Count</text>
+<rect x="93.2" y="286.4" width="24.0" height="38.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="121.4" y="209.3" width="24.0" height="115.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="149.6" y="55.0" width="24.0" height="270.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="177.8" y="184.9" width="24.0" height="140.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="206.0" y="195.1" width="24.0" height="129.9" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="234.2" y="170.7" width="24.0" height="154.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="262.4" y="196.4" width="24.0" height="128.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="290.6" y="183.6" width="24.0" height="141.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="318.8" y="93.6" width="24.0" height="231.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="347.0" y="286.4" width="24.0" height="38.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="600.8" y="247.9" width="24.0" height="77.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="629.0" y="209.3" width="24.0" height="115.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="657.2" y="132.1" width="24.0" height="192.9" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="685.4" y="170.7" width="24.0" height="154.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="713.6" y="209.3" width="24.0" height="115.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="65.0" y="27.0" width="12.0" height="12.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<text x="80.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+</svg>

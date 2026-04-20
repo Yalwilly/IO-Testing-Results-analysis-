@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<rect width="900" height="450" fill="#ffffff"/>
+<text x="450.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Cross-Flow Comparison - Mean +/- Std Dev</text>
+<line x1="70.0" y1="320.0" x2="870.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="320.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="320.0" x2="870.0" y2="320.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="324.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-5.85e+42</text>
+<line x1="65.0" y1="267.0" x2="70.0" y2="267.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="267.0" x2="870.0" y2="267.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="271.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-3.41e+42</text>
+<line x1="65.0" y1="214.0" x2="70.0" y2="214.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="214.0" x2="870.0" y2="214.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="218.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-9.75e+41</text>
+<line x1="65.0" y1="161.0" x2="70.0" y2="161.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="161.0" x2="870.0" y2="161.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="165.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">1.46e+42</text>
+<line x1="65.0" y1="108.0" x2="70.0" y2="108.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="108.0" x2="870.0" y2="108.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="112.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">3.9e+42</text>
+<line x1="65.0" y1="55.0" x2="70.0" y2="55.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="870.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">6.34e+42</text>
+<text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Mean Value (+/-Std Dev)</text>
+<rect x="72.6" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="76.4" y1="192.8" x2="76.4" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="73.4" y1="192.8" x2="79.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="73.4" y1="192.8" x2="79.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="80.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,80.3,332)">BRI_DT_IOH_A</text>
+<rect x="93.1" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="96.9" y1="192.8" x2="96.9" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="93.9" y1="192.8" x2="99.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="93.9" y1="192.8" x2="99.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="100.8" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,100.8,332)">BRI_DT_IOL_A</text>
+<rect x="113.6" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="121.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,121.3,332)">BRI_DT_IO_Direction</text>
+<rect x="134.1" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="141.8" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,141.8,332)">BRI_DT_IO_State</text>
+<rect x="154.6" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="158.5" y1="192.8" x2="158.5" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="155.5" y1="192.8" x2="161.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="155.5" y1="192.8" x2="161.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="162.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,162.3,332)">BRI_DT_R_High</text>
+<rect x="175.1" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="179.0" y1="192.8" x2="179.0" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="176.0" y1="192.8" x2="182.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="176.0" y1="192.8" x2="182.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="182.8" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,182.8,332)">BRI_DT_R_PullDown</text>
+<rect x="195.6" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="199.5" y1="192.8" x2="199.5" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="196.5" y1="192.8" x2="202.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="196.5" y1="192.8" x2="202.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="203.3" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,203.3,332)">BRI_DT_R_PullUp</text>
+<rect x="216.2" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="220.0" y1="192.8" x2="220.0" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="217.0" y1="192.8" x2="223.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="217.0" y1="192.8" x2="223.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="223.8" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,223.8,332)">BRI_DT_VIH_Min</text>
+<rect x="236.7" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="240.5" y1="192.8" x2="240.5" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="237.5" y1="192.8" x2="243.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="237.5" y1="192.8" x2="243.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="244.4" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,244.4,332)">BRI_DT_VIL_Max</text>
+<rect x="257.2" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="261.0" y1="192.8" x2="261.0" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="258.0" y1="192.8" x2="264.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="258.0" y1="192.8" x2="264.0" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="264.9" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,264.9,332)">BRI_DT_VOH</text>
+<rect x="277.7" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="281.5" y1="192.8" x2="281.5" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="278.5" y1="192.8" x2="284.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="278.5" y1="192.8" x2="284.5" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="285.4" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,285.4,332)">BRI_DT_VOL</text>
+<rect x="305.9" y="192.8" width="7.7" height="0.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="309.7" y1="192.8" x2="309.7" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="306.7" y1="192.8" x2="312.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="306.7" y1="192.8" x2="312.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="305.9" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,305.9,332)">GPIO_0_Fall_Time_ps</text>
+<rect x="318.7" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="322.6" y1="192.8" x2="322.6" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="319.6" y1="192.8" x2="325.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="319.6" y1="192.8" x2="325.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="326.4" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,326.4,332)">GPIO_0_IOH_A</text>
+<rect x="339.2" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="343.1" y1="192.8" x2="343.1" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="340.1" y1="192.8" x2="346.1" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="340.1" y1="192.8" x2="346.1" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="346.9" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,346.9,332)">GPIO_0_IOL_A</text>
+<rect x="359.7" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="367.4" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,367.4,332)">GPIO_0_IO_Direction</text>
+<rect x="380.3" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="387.9" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,387.9,332)">GPIO_0_IO_State</text>
+<rect x="400.8" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="404.6" y1="192.8" x2="404.6" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="401.6" y1="192.8" x2="407.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="401.6" y1="192.8" x2="407.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="408.5" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,408.5,332)">GPIO_0_R_High</text>
+<rect x="421.3" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="425.1" y1="192.8" x2="425.1" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="422.1" y1="192.8" x2="428.1" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="422.1" y1="192.8" x2="428.1" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="429.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,429.0,332)">GPIO_0_R_Low</text>
+<rect x="441.8" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="445.6" y1="192.8" x2="445.6" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="442.6" y1="192.8" x2="448.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="442.6" y1="192.8" x2="448.6" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="449.5" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,449.5,332)">GPIO_0_R_PullDown</text>
+<rect x="462.3" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="466.2" y1="192.8" x2="466.2" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="463.2" y1="192.8" x2="469.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="463.2" y1="192.8" x2="469.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="470.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,470.0,332)">GPIO_0_R_PullUp</text>
+<rect x="490.5" y="192.8" width="7.7" height="0.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="494.4" y1="192.8" x2="494.4" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="491.4" y1="192.8" x2="497.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="491.4" y1="192.8" x2="497.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="490.5" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,490.5,332)">GPIO_0_Rise_Time_ps</text>
+<rect x="503.3" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="507.2" y1="192.8" x2="507.2" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="504.2" y1="192.8" x2="510.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="504.2" y1="192.8" x2="510.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="511.0" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,511.0,332)">GPIO_0_VIH_Min</text>
+<rect x="523.8" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="527.7" y1="192.8" x2="527.7" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="524.7" y1="192.8" x2="530.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="524.7" y1="192.8" x2="530.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="531.5" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,531.5,332)">GPIO_0_VIL_Max</text>
+<rect x="544.4" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="548.2" y1="192.8" x2="548.2" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="545.2" y1="192.8" x2="551.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="545.2" y1="192.8" x2="551.2" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="552.1" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,552.1,332)">GPIO_0_VOH</text>
+<rect x="564.9" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="568.7" y1="192.8" x2="568.7" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="565.7" y1="192.8" x2="571.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="565.7" y1="192.8" x2="571.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="572.6" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,572.6,332)">GPIO_0_VOL</text>
+<rect x="593.1" y="192.8" width="7.7" height="0.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="596.9" y1="192.8" x2="596.9" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="593.9" y1="192.8" x2="599.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="593.9" y1="192.8" x2="599.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="593.1" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,593.1,332)">RF_KILLN_Fall_Time_ps</text>
+<rect x="605.9" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="609.7" y1="192.8" x2="609.7" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="606.7" y1="192.8" x2="612.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="606.7" y1="192.8" x2="612.7" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="613.6" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,613.6,332)">RF_KILLN_IOH_A</text>
+<rect x="626.4" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="630.3" y1="192.8" x2="630.3" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="627.3" y1="192.8" x2="633.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="627.3" y1="192.8" x2="633.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="634.1" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,634.1,332)">RF_KILLN_IOL_A</text>
+<rect x="646.9" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="654.6" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,654.6,332)">RF_KILLN_IO_Direction</text>
+<rect x="667.4" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="675.1" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,675.1,332)">RF_KILLN_IO_State</text>
+<rect x="687.9" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="691.8" y1="192.8" x2="691.8" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="688.8" y1="192.8" x2="694.8" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="688.8" y1="192.8" x2="694.8" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="695.6" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,695.6,332)">RF_KILLN_R_High</text>
+<rect x="708.5" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="712.3" y1="192.8" x2="712.3" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="709.3" y1="192.8" x2="715.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="709.3" y1="192.8" x2="715.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="716.2" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,716.2,332)">RF_KILLN_R_Low</text>
+<rect x="729.0" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="732.8" y1="192.8" x2="732.8" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="729.8" y1="192.8" x2="735.8" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="729.8" y1="192.8" x2="735.8" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="736.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,736.7,332)">RF_KILLN_R_PullDown</text>
+<rect x="749.5" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="753.3" y1="192.8" x2="753.3" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="750.3" y1="192.8" x2="756.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="750.3" y1="192.8" x2="756.3" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="757.2" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,757.2,332)">RF_KILLN_R_PullUp</text>
+<rect x="777.7" y="187.5" width="7.7" height="5.3" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="781.5" y1="80.6" x2="781.5" y2="294.4" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="778.5" y1="80.6" x2="784.5" y2="80.6" stroke="#2c3e50" stroke-width="1"/>
+<line x1="778.5" y1="294.4" x2="784.5" y2="294.4" stroke="#2c3e50" stroke-width="1"/>
+<text x="777.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,777.7,332)">RF_KILLN_Rise_Time_ps</text>
+<rect x="790.5" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="794.4" y1="192.8" x2="794.4" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="791.4" y1="192.8" x2="797.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="791.4" y1="192.8" x2="797.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="798.2" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,798.2,332)">RF_KILLN_VIH_Min</text>
+<rect x="811.0" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="814.9" y1="192.8" x2="814.9" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="811.9" y1="192.8" x2="817.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="811.9" y1="192.8" x2="817.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="818.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,818.7,332)">RF_KILLN_VIL_Max</text>
+<rect x="831.5" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="835.4" y1="192.8" x2="835.4" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="832.4" y1="192.8" x2="838.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="832.4" y1="192.8" x2="838.4" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="839.2" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,839.2,332)">RF_KILLN_VOH</text>
+<rect x="852.1" y="192.8" width="7.7" height="0.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<line x1="855.9" y1="192.8" x2="855.9" y2="192.8" stroke="#2c3e50" stroke-width="1.5"/>
+<line x1="852.9" y1="192.8" x2="858.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<line x1="852.9" y1="192.8" x2="858.9" y2="192.8" stroke="#2c3e50" stroke-width="1"/>
+<text x="859.7" y="332.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,859.7,332)">RF_KILLN_VOL</text>
+<rect x="70.0" y="27.0" width="12.0" height="12.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="85.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<rect x="180.0" y="27.0" width="12.0" height="12.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="0.82" rx="2"/>
+<text x="195.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow2</text>
+</svg>

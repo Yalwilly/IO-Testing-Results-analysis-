@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="400" viewBox="0 0 850 400">
+<rect width="850" height="400" fill="#ffffff"/>
+<text x="425.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Fall_Time - Per-DUT Results (ns)</text>
+<line x1="70.0" y1="320.0" x2="820.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="320.0" x2="70.0" y2="320.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="320.0" x2="820.0" y2="320.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="324.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.146</text>
+<line x1="65.0" y1="267.0" x2="70.0" y2="267.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="267.0" x2="820.0" y2="267.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="271.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">1.22</text>
+<line x1="65.0" y1="214.0" x2="70.0" y2="214.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="214.0" x2="820.0" y2="214.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="218.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">2.3</text>
+<line x1="65.0" y1="161.0" x2="70.0" y2="161.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="161.0" x2="820.0" y2="161.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="165.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">3.37</text>
+<line x1="65.0" y1="108.0" x2="70.0" y2="108.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="108.0" x2="820.0" y2="108.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="112.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">4.45</text>
+<line x1="65.0" y1="55.0" x2="70.0" y2="55.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="820.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">5.52</text>
+<text x="14.0" y="200.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,200.0)">Value (ns)</text>
+<circle cx="85.0" cy="230.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="115.0" cy="231.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="145.0" cy="247.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="175.0" cy="211.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="205.0" cy="233.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="235.0" cy="222.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="265.0" cy="267.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="295.0" cy="222.1" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="325.0" cy="238.1" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="355.0" cy="208.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="385.0" cy="204.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="415.0" cy="248.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="445.0" cy="217.3" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="475.0" cy="252.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="505.0" cy="213.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="535.0" cy="226.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="565.0" cy="233.1" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="595.0" cy="234.2" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="625.0" cy="229.1" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="655.0" cy="235.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="685.0" cy="227.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="715.0" cy="223.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="745.0" cy="228.2" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="775.0" cy="210.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="805.0" cy="208.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="88.0" cy="232.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="118.0" cy="253.2" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="148.0" cy="193.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="178.0" cy="179.5" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="208.0" cy="188.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="238.0" cy="187.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="268.0" cy="185.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="298.0" cy="208.9" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="328.0" cy="250.9" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="358.0" cy="229.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="388.0" cy="263.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="418.0" cy="275.9" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="448.0" cy="271.2" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="478.0" cy="199.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="508.0" cy="266.3" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="538.0" cy="164.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="568.0" cy="238.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="598.0" cy="167.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="628.0" cy="229.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="658.0" cy="198.7" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="688.0" cy="202.8" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="718.0" cy="233.2" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="748.0" cy="171.0" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="778.0" cy="189.6" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<circle cx="808.0" cy="294.4" r="4" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<text x="85.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,85.0,336)">DUT_001</text>
+<text x="115.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,115.0,336)">DUT_002</text>
+<text x="145.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,145.0,336)">DUT_003</text>
+<text x="175.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,175.0,336)">DUT_004</text>
+<text x="205.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,205.0,336)">DUT_005</text>
+<text x="235.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,235.0,336)">DUT_006</text>
+<text x="265.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,265.0,336)">DUT_007</text>
+<text x="295.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,295.0,336)">DUT_008</text>
+<text x="325.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,325.0,336)">DUT_009</text>
+<text x="355.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,355.0,336)">DUT_010</text>
+<text x="385.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,385.0,336)">DUT_011</text>
+<text x="415.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,415.0,336)">DUT_012</text>
+<text x="445.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,445.0,336)">DUT_013</text>
+<text x="475.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,475.0,336)">DUT_014</text>
+<text x="505.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,505.0,336)">DUT_015</text>
+<text x="535.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,535.0,336)">DUT_016</text>
+<text x="565.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,565.0,336)">DUT_017</text>
+<text x="595.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,595.0,336)">DUT_018</text>
+<text x="625.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,625.0,336)">DUT_019</text>
+<text x="655.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,655.0,336)">DUT_020</text>
+<text x="685.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,685.0,336)">DUT_021</text>
+<text x="715.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,715.0,336)">DUT_022</text>
+<text x="745.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,745.0,336)">DUT_023</text>
+<text x="775.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,775.0,336)">DUT_024</text>
+<text x="805.0" y="336.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,805.0,336)">DUT_025</text>
+<line x1="70.0" y1="80.6" x2="820.0" y2="80.6" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="4,4"/>
+<circle cx="76.0" cy="33.0" r="5" fill="#3498db" stroke="none" opacity="0.78"/>
+<text x="84.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<circle cx="176.0" cy="33.0" r="5" fill="#e67e22" stroke="none" opacity="0.78"/>
+<text x="184.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow2</text>
+<circle cx="276.0" cy="33.0" r="5" fill="#2ecc71" stroke="none" opacity="0.78"/>
+<text x="284.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Pass</text>
+<circle cx="376.0" cy="33.0" r="5" fill="#e74c3c" stroke="none" opacity="0.78"/>
+<text x="384.0" y="37.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Fail</text>
+</svg>

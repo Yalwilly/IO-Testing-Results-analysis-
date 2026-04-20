@@ -1,504 +1,682 @@
-"""Report generator for IO Testing Results Analysis.
+﻿"""Report generator for IO Testing Results Analysis.
 
-Generates PowerPoint-compatible reports with plots, summary tables,
-and analysis comments.
+Generates a self-contained HTML report and a CSV summary.
+Uses Python standard library only (no pptx/pandas).
 """
 
+import csv
 import logging
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
-
-from pptx import Presentation
-from pptx.util import Inches, Pt, Emu
-from pptx.dml.color import RGBColor
-from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
-from pptx.enum.chart import XL_CHART_TYPE
-import pandas as pd
 
 from io_analysis.config import Config
 from io_analysis.data.models import AnalysisResult
 
 logger = logging.getLogger(__name__)
 
-# Color palette
-COLOR_PASS = RGBColor(0x2E, 0xCC, 0x71)
-COLOR_FAIL = RGBColor(0xE7, 0x4C, 0x3C)
-COLOR_WARN = RGBColor(0xE6, 0x7E, 0x22)
-COLOR_TITLE = RGBColor(0x2C, 0x3E, 0x50)
-COLOR_SUBTITLE = RGBColor(0x7F, 0x8C, 0x8D)
-COLOR_WHITE = RGBColor(0xFF, 0xFF, 0xFF)
-COLOR_LIGHT_GRAY = RGBColor(0xEC, 0xF0, 0xF1)
-COLOR_DARK = RGBColor(0x34, 0x49, 0x5E)
 
-
-def _add_title_slide(prs: Presentation, config: Config):
-    """Add a title slide to the presentation."""
-    slide_layout = prs.slide_layouts[0]  # Title Slide
-    slide = prs.slides.add_slide(slide_layout)
-
-    title = slide.shapes.title
-    title.text = config.report.title
-    title.text_frame.paragraphs[0].font.size = Pt(36)
-    title.text_frame.paragraphs[0].font.color.rgb = COLOR_TITLE
-    title.text_frame.paragraphs[0].font.bold = True
-
-    subtitle = slide.placeholders[1]
-    subtitle.text = (
-        f"{config.report.subtitle}\n"
-        f"{config.report.author}\n"
-        f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-    )
-    for para in subtitle.text_frame.paragraphs:
-        para.font.size = Pt(18)
-        para.font.color.rgb = COLOR_SUBTITLE
-
-
-def _add_summary_slide(prs: Presentation, result: AnalysisResult, config: Config):
-    """Add an executive summary slide."""
-    slide_layout = prs.slide_layouts[5]  # Blank
-    slide = prs.slides.add_slide(slide_layout)
-
-    # Title
-    txBox = slide.shapes.add_textbox(Inches(0.5), Inches(0.3),
-                                     Inches(12), Inches(0.8))
-    tf = txBox.text_frame
-    p = tf.paragraphs[0]
-    p.text = "Executive Summary"
-    p.font.size = Pt(28)
-    p.font.bold = True
-    p.font.color.rgb = COLOR_TITLE
-
-    summary = result.overall_summary
-    pass_rate = summary.get("overall_pass_rate", 0)
-
-    # Pass rate indicator (large)
-    status_color = COLOR_PASS if pass_rate == 100 else (
-        COLOR_WARN if pass_rate >= 95 else COLOR_FAIL
-    )
-
-    txBox2 = slide.shapes.add_textbox(Inches(0.5), Inches(1.3),
-                                      Inches(4), Inches(2))
-    tf2 = txBox2.text_frame
-    tf2.word_wrap = True
-
-    p = tf2.add_paragraph()
-    p.text = f"Overall Pass Rate"
-    p.font.size = Pt(16)
-    p.font.color.rgb = COLOR_SUBTITLE
-
-    p = tf2.add_paragraph()
-    p.text = f"{pass_rate:.1f}%"
-    p.font.size = Pt(48)
-    p.font.bold = True
-    p.font.color.rgb = status_color
-
-    # Summary table content
-    summary_items = [
-        ("Total Measurements", str(summary.get("total_measurements", 0))),
-        ("Total Parameters", str(summary.get("total_parameters", 0))),
-        ("Flows Tested", str(summary.get("total_flows", 0))),
-        ("Total Pass", str(summary.get("total_pass", 0))),
-        ("Total Fail", str(summary.get("total_fail", 0))),
-        ("Parameters All Pass",
-         str(summary.get("parameters_all_pass", 0))),
-        ("Parameters With Failures",
-         str(summary.get("parameters_with_fails", 0))),
-    ]
-
-    # Summary table
-    rows = len(summary_items) + 1
-    cols = 2
-    table_shape = slide.shapes.add_table(rows, cols, Inches(5), Inches(1.3),
-                                         Inches(7), Inches(3.5))
-    table = table_shape.table
-
-    # Header
-    for j, header in enumerate(["Metric", "Value"]):
-        cell = table.cell(0, j)
-        cell.text = header
-        for paragraph in cell.text_frame.paragraphs:
-            paragraph.font.bold = True
-            paragraph.font.size = Pt(12)
-            paragraph.font.color.rgb = COLOR_WHITE
-        cell.fill.solid()
-        cell.fill.fore_color.rgb = COLOR_DARK
-
-    # Data rows
-    for i, (metric, value) in enumerate(summary_items, 1):
-        table.cell(i, 0).text = metric
-        table.cell(i, 1).text = value
-        for j in range(cols):
-            cell = table.cell(i, j)
-            for paragraph in cell.text_frame.paragraphs:
-                paragraph.font.size = Pt(11)
-            if i % 2 == 0:
-                cell.fill.solid()
-                cell.fill.fore_color.rgb = COLOR_LIGHT_GRAY
-
-    # Key findings
-    txBox3 = slide.shapes.add_textbox(Inches(0.5), Inches(4.0),
-                                      Inches(12), Inches(3))
-    tf3 = txBox3.text_frame
-    tf3.word_wrap = True
-
-    p = tf3.add_paragraph()
-    p.text = "Key Findings:"
-    p.font.size = Pt(14)
-    p.font.bold = True
-    p.font.color.rgb = COLOR_TITLE
-    p.space_after = Pt(6)
-
-    # Add top comments (max 5)
-    for comment in result.comments[:5]:
-        p = tf3.add_paragraph()
-        p.text = f"• {comment}"
-        p.font.size = Pt(10)
-        p.space_after = Pt(3)
-
-
-def _add_plot_slide(prs: Presentation, plot_path: Path, title: str,
-                    comment: str = "", config: Optional[Config] = None):
-    """Add a slide with a plot image and optional comment."""
-    slide_layout = prs.slide_layouts[5]  # Blank
-    slide = prs.slides.add_slide(slide_layout)
-
-    # Title
-    txBox = slide.shapes.add_textbox(Inches(0.3), Inches(0.1),
-                                     Inches(12.5), Inches(0.6))
-    tf = txBox.text_frame
-    p = tf.paragraphs[0]
-    p.text = title
-    p.font.size = Pt(22)
-    p.font.bold = True
-    p.font.color.rgb = COLOR_TITLE
-
-    # Plot image - sized to fit slide
-    if plot_path.exists():
-        img_left = Inches(0.5)
-        img_top = Inches(0.8)
-        img_width = Inches(12)
-        img_height = Inches(5.5)
-        slide.shapes.add_picture(str(plot_path), img_left, img_top,
-                                 img_width, img_height)
-
-    # Comment at bottom
-    if comment:
-        txBox2 = slide.shapes.add_textbox(Inches(0.3), Inches(6.5),
-                                          Inches(12.5), Inches(0.8))
-        tf2 = txBox2.text_frame
-        tf2.word_wrap = True
-        p = tf2.add_paragraph()
-        p.text = comment
-        p.font.size = Pt(10)
-        p.font.color.rgb = COLOR_SUBTITLE
-
-
-def _add_results_table_slide(prs: Presentation, result: AnalysisResult,
-                             flow_name: str, config: Config):
-    """Add a detailed results table slide for a flow."""
-    slide_layout = prs.slide_layouts[5]  # Blank
-    slide = prs.slides.add_slide(slide_layout)
-
-    # Title
-    txBox = slide.shapes.add_textbox(Inches(0.3), Inches(0.1),
-                                     Inches(12.5), Inches(0.6))
-    tf = txBox.text_frame
-    p = tf.paragraphs[0]
-    p.text = f"Detailed Results – {flow_name}"
-    p.font.size = Pt(22)
-    p.font.bold = True
-    p.font.color.rgb = COLOR_TITLE
-
-    # Collect data
-    headers = ["Parameter", "Unit", "Spec Min", "Spec Max", "Mean", "Std",
-               "Min", "Max", "Pass", "Fail", "Pass%", "Cpk", "Status"]
-
-    params_in_flow = [
-        p for p in result.all_parameters
-        if (flow_name, p) in result.parameter_stats
-    ]
-
-    if not params_in_flow:
-        return
-
-    rows_count = min(len(params_in_flow), config.report.max_params_per_slide * 2)
-    rows = rows_count + 1  # +1 for header
-
-    table_shape = slide.shapes.add_table(
-        rows, len(headers),
-        Inches(0.2), Inches(0.8),
-        Inches(12.9), Inches(6.2)
-    )
-    table = table_shape.table
-
-    # Set column widths
-    col_widths = [1.2, 0.6, 0.8, 0.8, 0.9, 0.9, 0.9, 0.9, 0.6, 0.6,
-                  0.7, 0.7, 1.0]
-    for j, w in enumerate(col_widths):
-        table.columns[j].width = Inches(w)
-
-    # Header row
-    for j, header in enumerate(headers):
-        cell = table.cell(0, j)
-        cell.text = header
-        for paragraph in cell.text_frame.paragraphs:
-            paragraph.font.bold = True
-            paragraph.font.size = Pt(9)
-            paragraph.font.color.rgb = COLOR_WHITE
-            paragraph.alignment = PP_ALIGN.CENTER
-        cell.fill.solid()
-        cell.fill.fore_color.rgb = COLOR_DARK
-
-    # Data rows
-    for i, param in enumerate(params_in_flow[:rows_count]):
-        key = (flow_name, param)
-        stats = result.parameter_stats[key]
-
-        row_data = [
-            stats.parameter,
-            stats.unit,
-            f"{stats.spec_min:.3f}" if stats.spec_min is not None else "–",
-            f"{stats.spec_max:.3f}" if stats.spec_max is not None else "–",
-            f"{stats.mean:.4f}",
-            f"{stats.std:.4f}",
-            f"{stats.minimum:.4f}",
-            f"{stats.maximum:.4f}",
-            str(stats.pass_count),
-            str(stats.fail_count),
-            f"{stats.pass_rate:.1f}",
-            f"{stats.cpk:.2f}" if stats.cpk is not None else "–",
-            stats.status,
-        ]
-
-        for j, val in enumerate(row_data):
-            cell = table.cell(i + 1, j)
-            cell.text = val
-            for paragraph in cell.text_frame.paragraphs:
-                paragraph.font.size = Pt(8)
-                paragraph.alignment = PP_ALIGN.CENTER
-
-            # Color-code status and fail columns
-            if j == len(headers) - 1:  # Status column
-                if "PASS" in val and "FAIL" not in val:
-                    cell.fill.solid()
-                    cell.fill.fore_color.rgb = RGBColor(0xD5, 0xF5, 0xE3)
-                elif "FAIL" in val:
-                    cell.fill.solid()
-                    cell.fill.fore_color.rgb = RGBColor(0xFA, 0xDB, 0xD8)
-                elif "MARGINAL" in val:
-                    cell.fill.solid()
-                    cell.fill.fore_color.rgb = RGBColor(0xFD, 0xEA, 0xCD)
-
-        # Alternating row colors
-        if i % 2 == 0:
-            for j in range(len(headers) - 1):
-                cell = table.cell(i + 1, j)
-                if not cell.fill.type:
-                    cell.fill.solid()
-                    cell.fill.fore_color.rgb = COLOR_LIGHT_GRAY
-
-
-def _add_comments_slide(prs: Presentation, result: AnalysisResult,
-                        config: Config):
-    """Add an analysis comments slide."""
-    slide_layout = prs.slide_layouts[5]  # Blank
-    slide = prs.slides.add_slide(slide_layout)
-
-    # Title
-    txBox = slide.shapes.add_textbox(Inches(0.3), Inches(0.1),
-                                     Inches(12.5), Inches(0.6))
-    tf = txBox.text_frame
-    p = tf.paragraphs[0]
-    p.text = "Analysis Comments & Recommendations"
-    p.font.size = Pt(22)
-    p.font.bold = True
-    p.font.color.rgb = COLOR_TITLE
-
-    # Comments
-    txBox2 = slide.shapes.add_textbox(Inches(0.5), Inches(0.9),
-                                      Inches(12), Inches(6))
-    tf2 = txBox2.text_frame
-    tf2.word_wrap = True
-
-    for i, comment in enumerate(result.comments):
-        p = tf2.add_paragraph()
-
-        # Different styling for different comment types
-        if comment.startswith("OVERALL:"):
-            p.text = comment
-            p.font.size = Pt(12)
-            p.font.bold = True
-            p.font.color.rgb = COLOR_TITLE
-            p.space_after = Pt(12)
-        elif comment.startswith("[Cross-Flow]"):
-            p.text = f"⟷ {comment}"
-            p.font.size = Pt(10)
-            p.font.color.rgb = COLOR_DARK
-            p.space_after = Pt(6)
-        else:
-            # Determine icon based on content
-            if "ALL PASS" in comment or "Capable" in comment:
-                icon = "✓"
-                color = COLOR_PASS
-            elif "FAIL" in comment or "Not Capable" in comment:
-                icon = "✗"
-                color = COLOR_FAIL
-            else:
-                icon = "•"
-                color = COLOR_DARK
-
-            p.text = f"{icon} {comment}"
-            p.font.size = Pt(9)
-            p.font.color.rgb = color
-            p.space_after = Pt(4)
+def _h(text: str) -> str:
+    """Escape HTML special characters."""
+    return (str(text).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
 
 
 def generate_csv_report(result: AnalysisResult, config: Config) -> Path:
-    """Generate a CSV summary report.
-
-    Returns path to the saved CSV file.
-    """
+    """Generate a CSV summary report."""
     rows = []
     for (flow_name, param), stats in sorted(result.parameter_stats.items()):
         rows.append({
             "Flow": flow_name,
             "Parameter": param,
             "Unit": stats.unit,
-            "Spec_Min": stats.spec_min,
-            "Spec_Max": stats.spec_max,
-            "Mean": stats.mean,
-            "Std": stats.std,
-            "Min": stats.minimum,
-            "Max": stats.maximum,
-            "Median": stats.median,
+            "Spec_Min": stats.spec_min if stats.spec_min is not None else "",
+            "Spec_Max": stats.spec_max if stats.spec_max is not None else "",
+            "Mean": f"{stats.mean:.6f}",
+            "Std": f"{stats.std:.6f}",
+            "Min": f"{stats.minimum:.6f}",
+            "Max": f"{stats.maximum:.6f}",
+            "Median": f"{stats.median:.6f}",
             "Sample_Count": stats.count,
             "Pass_Count": stats.pass_count,
             "Fail_Count": stats.fail_count,
-            "Pass_Rate_%": stats.pass_rate,
-            "Cpk": stats.cpk,
+            "Pass_Rate_%": f"{stats.pass_rate:.2f}",
+            "Cpk": f"{stats.cpk:.4f}" if stats.cpk is not None else "",
             "Status": stats.status,
             "Comment": stats.generate_comment(config.cpk_threshold),
         })
 
-    df = pd.DataFrame(rows)
     csv_path = config.output_path / "analysis_results.csv"
-    df.to_csv(csv_path, index=False)
+    if rows:
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(rows)
+
     logger.info(f"CSV report saved: {csv_path}")
     return csv_path
 
 
-def generate_pptx_report(result: AnalysisResult, plot_paths: dict,
-                         config: Config) -> Path:
-    """Generate a PowerPoint report with plots and analysis.
+def _svg_embed(path: Path) -> str:
+    """Return inline SVG content from a file."""
+    if path.exists():
+        txt = path.read_text(encoding="utf-8")
+        if "<?xml" in txt:
+            txt = txt[txt.index("<svg"):]
+        return txt
+    return f'<p style="color:red">Plot not found: {_h(path.name)}</p>'
 
-    Args:
-        result: Complete AnalysisResult.
-        plot_paths: Dict of category -> list of plot file paths.
-        config: Configuration.
 
-    Returns:
-        Path to the saved PPTX file.
+def generate_html_report(result: AnalysisResult, plot_paths: dict,
+                         config: Config, selected_tests=None) -> Path:
+    """Generate a self-contained HTML report organised into 6 test sections.
+    selected_tests: set of test_name strings to include, or None for all.
     """
-    prs = Presentation()
+    from io_analysis.plotting.plotter import (
+        REPORT_IOS, TEST_SECTION_ORDER, SECTION_MEASUREMENTS
+    )
+    active_tests = selected_tests if selected_tests is not None else set(TEST_SECTION_ORDER)
 
-    # Set slide dimensions (widescreen 16:9)
-    prs.slide_width = Inches(config.report.slide_width_inches)
-    prs.slide_height = Inches(config.report.slide_height_inches)
+    # ---- build helper maps ----
+    # map parameter_name → test_name
+    param_test_map: dict = {}
+    for fd in result.flow_data.values():
+        for row in fd.rows:
+            p, t = row.get("Parameter"), row.get("Test_Name")
+            if p and t and p not in param_test_map:
+                param_test_map[p] = t
 
-    # 1. Title slide
-    _add_title_slide(prs, config)
+    # Collect all unique filter values from raw rows
+    all_rows_flat = [r for fd in result.flow_data.values() for r in fd.rows]
 
-    # 2. Executive summary
-    _add_summary_slide(prs, result, config)
+    def _parse_cond(s):
+        out = {}
+        for tok in s.split():
+            if "=" in tok:
+                k, v = tok.split("=", 1)
+                out[k] = v.rstrip("VC").rstrip("c")
+        return out
 
-    # 3. Pass/Fail summary plots
-    for plot_path in plot_paths.get("pass_fail_summary", []):
-        flow = plot_path.stem.replace("pass_fail_summary_", "")
-        _add_plot_slide(
-            prs, plot_path,
-            f"Pass/Fail Summary – {flow}",
-            f"Stacked bar chart showing pass/fail rates for each IO parameter in {flow}.",
-            config,
+    _viocores = sorted(
+        {
+            f"{c.get('VCORE','?')}/{c.get('VIO','?')}"
+            for r in all_rows_flat
+            for c in [_parse_cond(r.get("Test_Condition", ""))]
+            if c.get("VIO") and c.get("VCORE")
+        },
+        key=lambda s: float(s.split("/")[0]) if s.split("/")[0].replace(".","").isdigit() else 0
+    )
+    _skews = sorted({str(r.get("Skew", "")) for r in all_rows_flat if r.get("Skew", "")})
+    _ios   = list(REPORT_IOS)
+
+    # group parameters (filtered to REPORT_IOS) per test section
+    section_params: dict = {t: [] for t in TEST_SECTION_ORDER}
+    for param in sorted(result.all_parameters):
+        t = param_test_map.get(param)
+        if t in section_params:
+            if any(param.startswith(io + "_") for io in REPORT_IOS):
+                if param not in section_params[t]:
+                    section_params[t].append(param)
+
+    section_plots = plot_paths.get("section_plots", {})
+
+    # ---- overall summary metrics (all data, not filtered) ----
+    summary = result.overall_summary
+    pass_rate = summary.get("overall_pass_rate", 0)
+    rate_color = ("#27ae60" if pass_rate >= 99
+                  else ("#e67e22" if pass_rate >= 95 else "#e74c3c"))
+
+    # ---- HTML head ----
+    html = []
+    html.append(f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{_h(config.report.title)}</title>
+<style>
+*{{box-sizing:border-box}}
+body{{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f6fa;color:#333}}
+.hdr{{background:#2c3e50;color:#fff;padding:18px 36px}}
+.hdr h1{{margin:0 0 4px;font-size:24px}}
+.hdr p{{margin:0;color:#bdc3c7;font-size:13px}}
+.wrap{{max-width:1500px;margin:0 auto;padding:18px 36px}}
+.cards{{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}}
+.card{{background:#fff;border-radius:8px;padding:14px 18px;box-shadow:0 2px 6px rgba(0,0,0,.08);min-width:140px;flex:1}}
+.card .val{{font-size:28px;font-weight:bold;margin:4px 0}}
+.card .lbl{{font-size:11px;color:#7f8c8d;text-transform:uppercase;letter-spacing:.5px}}
+.sec{{background:#fff;border-radius:8px;padding:18px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.08)}}
+.sec h2{{margin:0 0 4px;font-size:20px;color:#2c3e50;border-bottom:2px solid #ecf0f1;padding-bottom:6px}}
+.sec h3{{margin:12px 0 6px;font-size:14px;color:#34495e;text-transform:uppercase;letter-spacing:.4px}}
+.sec-desc{{font-size:12px;color:#7f8c8d;margin:0 0 12px}}
+table{{border-collapse:collapse;width:100%;font-size:12px;margin-bottom:4px}}
+th{{background:#2c3e50;color:#fff;padding:7px 9px;text-align:center;white-space:nowrap}}
+td{{padding:5px 9px;border:1px solid #ecf0f1;text-align:center}}
+tr:nth-child(even) td{{background:#f8f9fa}}
+.io-hdr td{{background:#ecf0f1;font-weight:bold;text-align:left;color:#2c3e50;font-size:12px}}
+.pass{{background:#d5f5e3!important;color:#1a7a3d;font-weight:bold}}
+.fail{{background:#fadbd8!important;color:#a93226;font-weight:bold}}
+.marginal{{background:#fdeacd!important;color:#b7460e;font-weight:bold}}
+.plots-row{{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px}}
+.plot-box{{flex:1;min-width:420px;border:1px solid #ecf0f1;border-radius:6px;overflow:hidden;background:#fff}}
+.plot-box h4{{margin:0;padding:6px 10px;font-size:12px;background:#f8f9fa;border-bottom:1px solid #ecf0f1;color:#555}}
+.plot-box svg,.plot-box object{{width:100%;height:auto}}
+.tabs{{display:flex;gap:4px;margin-bottom:0;flex-wrap:wrap;border-bottom:2px solid #2c3e50;padding-bottom:0}}
+.tabs button{{padding:8px 16px;border:1px solid #ddd;border-bottom:none;border-radius:6px 6px 0 0;
+  cursor:pointer;background:#ecf0f1;font-size:13px;transition:all .15s}}
+.tabs button.active{{background:#2c3e50;color:#fff;border-color:#2c3e50}}
+.tab-content{{display:none;padding-top:0}}
+.tab-content.active{{display:block}}
+.badge{{padding:2px 8px;border-radius:10px;font-size:10px;font-weight:bold;margin-right:5px}}
+.bp{{background:#2ecc71;color:#fff}}.bf{{background:#e74c3c;color:#fff}}.bw{{background:#e67e22;color:#fff}}
+.filter-bar{{background:#fff;border-radius:8px;padding:12px 18px;margin:10px 0 4px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  position:sticky;top:0;z-index:100;border:1px solid #dce1e7}}
+.filter-bar .fg{{display:flex;flex-wrap:wrap;gap:6px;align-items:center}}
+.filter-bar label{{font-size:11px;font-weight:bold;color:#7f8c8d;text-transform:uppercase;
+  letter-spacing:.5px;margin-right:2px;white-space:nowrap}}
+.ftog{{padding:3px 10px;border:1.5px solid #bdc3c7;border-radius:14px;cursor:pointer;
+  font-size:11px;background:#f8f9fa;color:#555;transition:all .12s;user-select:none}}
+.ftog.active{{border-color:#2c3e50;background:#2c3e50;color:#fff}}
+.ftog:hover{{border-color:#2980b9;background:#eaf4fb}}
+.filter-divider{{width:1px;height:24px;background:#dce1e7}}
+@media print{{.tab-content{{display:block!important}}.filter-bar{{display:none}}}}
+</style>
+<script>
+function showSec(secId,btn){{
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(secId).classList.add('active');
+  btn.classList.add('active');
+}}
+
+// ---- Filter logic ----
+const _active = {{viocore:new Set(), skews:new Set()}};
+
+function _initSets(){{
+  document.querySelectorAll('.ftog[data-viocore]').forEach(b=>_active.viocore.add(b.dataset.viocore));
+  document.querySelectorAll('.ftog[data-skew]').forEach(b=>_active.skews.add(b.dataset.skew));
+}}
+
+function toggleFilter(btn, kind){{
+  const val = btn.dataset[kind];
+  const set = kind==='viocore' ? _active.viocore : _active.skews;
+  if(set.has(val)){{ set.delete(val); btn.classList.remove('active'); }}
+  else{{ set.add(val); btn.classList.add('active'); }}
+  applyFilters();
+}}
+
+function resetFilters(){{
+  document.querySelectorAll('.ftog').forEach(b=>b.classList.add('active'));
+  _initSets();
+  applyFilters();
+}}
+
+function applyFilters(){{
+  document.querySelectorAll('g.series, g.legend-item').forEach(g=>{{
+    const vcAttr = g.dataset.viocore;
+    const s = g.dataset.skew;
+    // viocore: if the element has data-viocore, check it's active; otherwise pass through
+    const vcOk = !vcAttr || _active.viocore.has(vcAttr);
+    const sOk = !s || _active.skews.has(s);
+    g.style.display = (vcOk && sOk) ? '' : 'none';
+  }});
+  // Stats table rows
+  document.querySelectorAll('.stats-row').forEach(r=>{{
+    const rowSkew = r.dataset.skew;
+    const sOk = !rowSkew || _active.skews.has(rowSkew);
+    r.style.display = sOk ? '' : 'none';
+  }});
+}}
+
+document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
+</script>
+</head>
+<body>
+<div class="hdr">
+  <h1>{_h(config.report.title)}</h1>
+  <p>{_h(config.report.subtitle)} &nbsp;|&nbsp; Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
+     &nbsp;|&nbsp; {_h(config.report.author)}
+     &nbsp;|&nbsp; IOs shown: {', '.join(REPORT_IOS)}</p>
+</div>
+<div class="wrap">
+""")
+
+    # ---- Filter bar ----
+    viocore_btns = " ".join(
+        f'<span class="ftog active" data-viocore="{_h(vc)}" '
+        f'onclick="toggleFilter(this,\'viocore\')">{_h(vc)}</span>'
+        for vc in _viocores
+    )
+    skew_btns = " ".join(
+        f'<span class="ftog active" data-skew="{_h(s)}" '
+        f'onclick="toggleFilter(this,\'skew\')">{_h(s)}</span>'
+        for s in _skews
+    )
+    html.append(f'''<div class="filter-bar">
+  <div class="fg"><label>Vin Core / GPIO (VCORE/VIO)</label>{viocore_btns}</div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Skew</label>{skew_btns}</div>
+  <div class="filter-divider"></div>
+  <button class="ftog" onclick="resetFilters()" style="border-color:#27ae60;color:#27ae60">&#8635; Reset</button>
+</div>''')
+
+    # ---- Summary cards ----
+    html.append('<div class="cards">')
+    for lbl, val, color in [
+        ("Overall Pass Rate", f"{pass_rate:.1f}%", rate_color),
+        ("Total Measurements", str(summary.get("total_measurements", 0)), "#2c3e50"),
+        ("Pass", str(summary.get("total_pass", 0)), "#27ae60"),
+        ("Fail", str(summary.get("total_fail", 0)), "#c0392b"),
+        ("Parameters", str(summary.get("total_parameters", 0)), "#2c3e50"),
+        ("DUTs", str(max(len(fd.dut_ids) for fd in result.flow_data.values()) if result.flow_data else 0), "#2c3e50"),
+    ]:
+        html.append(
+            f'<div class="card"><div class="lbl">{_h(lbl)}</div>'
+            f'<div class="val" style="color:{color}">{_h(val)}</div></div>'
         )
+    html.append("</div>")
 
-    # 4. Detailed results tables
-    for flow_name in result.all_flows:
-        _add_results_table_slide(prs, result, flow_name, config)
-
-    # 5. Parameter vs Spec plots
-    for plot_path in plot_paths.get("parameter_vs_spec", []):
-        param = plot_path.stem.replace("param_vs_spec_", "")
-        # Find relevant comment
-        comment = ""
-        for c in result.comments:
-            if param in c and "Cross-Flow" not in c:
-                comment = c
-                break
-        _add_plot_slide(prs, plot_path,
-                        f"{param} – Measured vs Spec Limits",
-                        comment, config)
-
-    # 6. Distribution histograms
-    for plot_path in plot_paths.get("distributions", []):
-        param = plot_path.stem.replace("histogram_", "")
-        _add_plot_slide(prs, plot_path,
-                        f"{param} – Distribution",
-                        f"Distribution of measured values with spec limit overlays.",
-                        config)
-
-    # 7. Cross-flow comparison
-    for plot_path in plot_paths.get("cross_flow", []):
-        cross_flow_comments = [
-            c for c in result.comments if "[Cross-Flow]" in c
-        ]
-        _add_plot_slide(
-            prs, plot_path,
-            "Cross-Flow Comparison",
-            " | ".join(cross_flow_comments[:3]) if cross_flow_comments else "",
-            config,
+    # ---- Section tabs ----
+    active_section_order = [t for t in TEST_SECTION_ORDER if t in active_tests]
+    html.append('<div class="tabs">')
+    for i, test_name in enumerate(active_section_order):
+        cls = "active" if i == 0 else ""
+        sec_id = f"sec_{i}"
+        html.append(
+            f'<button class="{cls}" onclick="showSec(\'{sec_id}\',this)">'
+            f'{_h(test_name)}</button>'
         )
+    html.append("</div>")
 
-    # 8. Cpk summary
-    for plot_path in plot_paths.get("cpk_summary", []):
-        flow = plot_path.stem.replace("cpk_summary_", "")
-        _add_plot_slide(prs, plot_path,
-                        f"Process Capability (Cpk) – {flow}",
-                        f"Cpk values for all parameters. Target: {config.cpk_threshold}.",
-                        config)
+    # ---- Section descriptions ----
+    SECTION_DESC = {
+        "IOH/IOL Max":
+            "Maximum output current test: measures output voltage under load current. "
+            "VOL = output low voltage (must be ≤ spec max); "
+            "VOH = output high voltage (must be ≥ spec min).",
+        "IO State After POR":
+            "Verifies IO pin state and direction after the chip initialisation process. "
+            "Shows Pull Mode, IO State (High/Low), and IO Direction (Output/Input) "
+            "for each temperature and skew condition.",
+        "Pull-up/Pull-down Resistance":
+            "Measures internal pull-up and pull-down resistance values across all IO pins.",
+        "VIH/VIL":
+            "Input threshold test: VIH = minimum input high voltage; VIL = maximum input low voltage.",
+        "VOH/VOL":
+            "Output voltage under load: VOH = output high (must be ≥ spec min); "
+            "VOL = output low (must be ≤ spec max).",
+        "Rise/Fall Time":
+            "Signal transition timing: measures edge rise/fall time in picoseconds.",
+    }
 
-    # 9. Per-DUT scatter plots
-    for plot_path in plot_paths.get("scatter_dut", []):
-        param = plot_path.stem.replace("scatter_dut_", "")
-        _add_plot_slide(prs, plot_path,
-                        f"{param} – Per-DUT Results",
-                        f"Individual DUT measurements with pass/fail indicators.",
-                        config)
+    # ---- Render each section tab ----
+    for i, test_name in enumerate(active_section_order):
+        sec_id = f"sec_{i}"
+        cls = "active" if i == 0 else ""
+        params = section_params.get(test_name, [])
+        html.append(f'<div id="{sec_id}" class="tab-content {cls}">')
+        html.append(f'<div class="sec">')
+        html.append(f'<h2>{_h(test_name)}</h2>')
+        html.append(f'<p class="sec-desc">{_h(SECTION_DESC.get(test_name, ""))}</p>')
 
-    # 10. Analysis comments
-    _add_comments_slide(prs, result, config)
+        if params:
+            if test_name == "IO State After POR":
+                # ---- POR state summary table ----
+                html.append('<h3>IO State Summary</h3>')
+                por_rows = [
+                    r for r in all_rows_flat
+                    if r.get("Test_Name") == "IO State After POR"
+                    and r.get("IO_Name") in REPORT_IOS
+                ]
+                if por_rows:
+                    html.append(
+                        '<table><tr>'
+                        '<th>IO Signal</th><th>Pull Mode</th>'
+                        '<th>Temperature (°C)</th><th>Skew</th>'
+                        '<th>IO State</th><th>IO Direction</th><th>DUT Count</th>'
+                        '</tr>'
+                    )
+                    por_groups: dict = {}
+                    for r in por_rows:
+                        key = (
+                            r.get("IO_Name", ""),
+                            r.get("Pull_Mode", ""),
+                            r.get("Temperature", ""),
+                            r.get("Skew", ""),
+                        )
+                        if key not in por_groups:
+                            por_groups[key] = {"states": [], "dirs": [], "duts": set()}
+                        param_r = r.get("Parameter", "")
+                        val = r.get("Value")
+                        dut = r.get("DUT_ID", "")
+                        if dut:
+                            por_groups[key]["duts"].add(dut)
+                        if param_r.endswith("_IO_State") and val is not None:
+                            por_groups[key]["states"].append(val)
+                        elif param_r.endswith("_IO_Direction") and val is not None:
+                            por_groups[key]["dirs"].append(val)
 
-    # Save
-    pptx_path = config.output_path / "IO_Validation_Report.pptx"
-    prs.save(str(pptx_path))
-    logger.info(f"PowerPoint report saved: {pptx_path}")
+                    def _val_summary(vals, map_fn):
+                        if not vals:
+                            return "—"
+                        labels = [map_fn(v) for v in vals]
+                        unique = sorted(set(labels))
+                        if len(unique) == 1:
+                            return unique[0]
+                        return ", ".join(
+                            f"{lbl}×{labels.count(lbl)}" for lbl in unique
+                        )
 
-    return pptx_path
+                    io_order = {io: i for i, io in enumerate(REPORT_IOS)}
+                    sorted_keys = sorted(
+                        por_groups.keys(),
+                        key=lambda k: (
+                            io_order.get(k[0], 99),
+                            k[1],
+                            float(k[2]) if str(k[2]).replace(".", "").lstrip("-").isdigit() else 0,
+                            k[3],
+                        )
+                    )
+                    prev_io = None
+                    for key in sorted_keys:
+                        io, pull_mode, temp, skew = key
+                        g = por_groups[key]
+                        if io != prev_io:
+                            html.append(
+                                f'<tr class="io-hdr"><td colspan="7">{_h(io)}</td></tr>'
+                            )
+                            prev_io = io
+                        state_txt = _val_summary(
+                            g["states"], lambda v: "High" if v == 1.0 else "Low"
+                        )
+                        dir_txt = _val_summary(
+                            g["dirs"], lambda v: "Output" if v == 1.0 else "Input"
+                        )
+                        n_duts = len(g["duts"])
+                        temp_disp = f"{_h(temp)}°C" if temp else "—"
+                        state_cls = "pass" if state_txt not in ("—",) else ""
+                        html.append(
+                            f'<tr>'
+                            f'<td>{_h(io)}</td>'
+                            f'<td>{_h(pull_mode) if pull_mode else "—"}</td>'
+                            f'<td>{temp_disp}</td>'
+                            f'<td>{_h(skew) if skew else "—"}</td>'
+                            f'<td class="{state_cls}"><b>{_h(state_txt)}</b></td>'
+                            f'<td><b>{_h(dir_txt)}</b></td>'
+                            f'<td>{n_duts}</td>'
+                            f'</tr>'
+                        )
+                    html.append("</table>")
+                else:
+                    html.append('<p style="color:#999">No IO State data available.</p>')
+            else:
+                # Stats table — one sub-header per IO
+                html.append('<h3>Statistics</h3>')
+                html.append(
+                    '<table><tr>'
+                    '<th>IO Signal</th><th>Measurement</th><th>Unit</th>'
+                    '<th>Spec Min</th><th>Spec Max</th>'
+                    '<th>Flow</th><th>Count</th><th>Pass%</th><th>Cpk</th>'
+                    '<th>Mean</th><th>Std Dev</th><th>Min</th><th>Max</th>'
+                    '<th>Status</th></tr>'
+                )
+                for io in REPORT_IOS:
+                    io_params = [p for p in params if p.startswith(io + "_")]
+                    if not io_params:
+                        continue
+                    html.append(
+                        f'<tr class="io-hdr"><td colspan="14">{_h(io)}</td></tr>'
+                    )
+                    for param in sorted(io_params):
+                        meas = param[len(io) + 1:] if param.startswith(io + "_") else param
+                        any_row = False
+                        for flow_name in result.all_flows:
+                            key = (flow_name, param)
+                            if key not in result.parameter_stats:
+                                continue
+                            s = result.parameter_stats[key]
+                            any_row = True
+                            status_cls = ("pass" if s.fail_count == 0
+                                          else ("fail" if s.pass_count == 0 else "marginal"))
+                            smin = f"{s.spec_min:.4g}" if s.spec_min is not None else "—"
+                            smax_s = f"{s.spec_max:.4g}" if s.spec_max is not None else "—"
+                            cpk_s = f"{s.cpk:.2f}" if s.cpk is not None else "—"
+                            html.append(
+                                f"<tr>"
+                                f"<td>{_h(io)}</td>"
+                                f"<td><b>{_h(meas)}</b></td>"
+                                f"<td>{_h(s.unit)}</td>"
+                                f"<td>{smin}</td><td>{smax_s}</td>"
+                                f"<td>{_h(flow_name)}</td>"
+                                f"<td>{s.count}</td>"
+                                f"<td>{s.pass_rate:.1f}%</td>"
+                                f"<td>{cpk_s}</td>"
+                                f"<td>{s.mean:.4g}</td><td>{s.std:.3g}</td>"
+                                f"<td>{s.minimum:.4g}</td><td>{s.maximum:.4g}</td>"
+                                f'<td class="{status_cls}">{_h(s.status)}</td>'
+                                f"</tr>"
+                            )
+                html.append("</table>")
+        else:
+            html.append('<p style="color:#999">No data for this test section.</p>')
+
+        # Section charts
+        sec_chart_map = section_plots.get(test_name, {})
+        chart_paths = [(m, p) for m, p in sec_chart_map.items() if p is not None]
+        if chart_paths:
+            html.append('<h3>Measurement Charts</h3>')
+            html.append('<p style="font-size:11px;color:#7f8c8d">'
+                        'For tests with Drive Strength (DS): X-axis = DS setting, '
+                        'lines = Vin Core/GPIO (VCORE/VIO) × Skew combinations (worst-case chip shown in legend). '
+                        'For other tests: X-axis = voltage corner conditions. '
+                        'Dashed red lines = spec limits.</p>')
+            html.append('<div class="plots-row">')
+            for meas, path in chart_paths:
+                html.append(f'<div class="plot-box"><h4>{_h(meas.replace("_", " "))} Chart</h4>')
+                html.append(_svg_embed(path))
+                html.append("</div>")
+            html.append("</div>")
+
+        html.append("</div></div>")  # close .sec and .tab-content
+
+    html.append("</div></body></html>")
+
+    html_path = config.output_path / "IO_Validation_Report.html"
+    html_path.write_text("\n".join(html), encoding="utf-8")
+    logger.info(f"HTML report saved: {html_path}")
+    return html_path
+    summary = result.overall_summary
+    pass_rate = summary.get("overall_pass_rate", 0)
+    rate_color = "#27ae60" if pass_rate >= 99 else ("#e67e22" if pass_rate >= 95 else "#e74c3c")
+
+    html = []
+    html.append(f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{_h(config.report.title)}</title>
+<style>
+body{{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f6fa;color:#333}}
+.hdr{{background:#2c3e50;color:#fff;padding:18px 36px}}
+.hdr h1{{margin:0 0 4px;font-size:24px}}
+.hdr p{{margin:0;color:#bdc3c7;font-size:13px}}
+.wrap{{max-width:1400px;margin:0 auto;padding:18px 36px}}
+.cards{{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}}
+.card{{background:#fff;border-radius:8px;padding:14px 18px;box-shadow:0 2px 6px rgba(0,0,0,.08);min-width:140px;flex:1}}
+.card .val{{font-size:30px;font-weight:bold;margin:4px 0}}
+.card .lbl{{font-size:11px;color:#7f8c8d;text-transform:uppercase;letter-spacing:.5px}}
+.sec{{background:#fff;border-radius:8px;padding:18px;margin:16px 0;box-shadow:0 2px 6px rgba(0,0,0,.08)}}
+.sec h2{{margin:0 0 12px;font-size:19px;color:#2c3e50;border-bottom:2px solid #ecf0f1;padding-bottom:6px}}
+.sec h3{{margin:12px 0 8px;font-size:15px;color:#34495e}}
+table{{border-collapse:collapse;width:100%;font-size:12px}}
+th{{background:#2c3e50;color:#fff;padding:7px 9px;text-align:center}}
+td{{padding:5px 9px;border:1px solid #ecf0f1;text-align:center}}
+tr:nth-child(even) td{{background:#f8f9fa}}
+.pass{{background:#d5f5e3!important;color:#1a7a3d;font-weight:bold}}
+.fail{{background:#fadbd8!important;color:#a93226;font-weight:bold}}
+.marginal{{background:#fdeacd!important;color:#b7460e;font-weight:bold}}
+.plots{{display:flex;flex-wrap:wrap;gap:16px}}
+.plot{{flex:1;min-width:380px;border:1px solid #ecf0f1;border-radius:4px;overflow:hidden}}
+.plot svg{{width:100%;height:auto}}
+ul.findings{{list-style:none;padding:0;margin:0}}
+ul.findings li{{padding:5px 0;border-bottom:1px solid #ecf0f1;font-size:13px}}
+ul.findings li:last-child{{border-bottom:none}}
+.badge{{padding:1px 7px;border-radius:10px;font-size:10px;font-weight:bold;margin-right:5px}}
+.bp{{background:#2ecc71;color:#fff}}
+.bf{{background:#e74c3c;color:#fff}}
+.bw{{background:#e67e22;color:#fff}}
+.tabs{{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}}
+.tabs button{{padding:6px 14px;border:1px solid #ddd;border-radius:4px;cursor:pointer;background:#ecf0f1;font-size:12px}}
+.tabs button.active{{background:#2c3e50;color:#fff;border-color:#2c3e50}}
+.tab{{display:none}}
+.tab.active{{display:block}}
+@media print{{.tab{{display:block!important}}}}
+</style>
+<script>
+function showTab(id,btn){{
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}}
+</script>
+</head>
+<body>
+<div class="hdr">
+  <h1>{_h(config.report.title)}</h1>
+  <p>{_h(config.report.subtitle)} &nbsp;|&nbsp; Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')} &nbsp;|&nbsp; {_h(config.report.author)}</p>
+</div>
+<div class="wrap">
+""")
+
+    # Summary cards
+    html.append('<div class="cards">')
+    cards = [
+        ("Overall Pass Rate", f"{pass_rate:.1f}%", rate_color),
+        ("Total Measurements", str(summary.get("total_measurements", 0)), "#2c3e50"),
+        ("Pass", str(summary.get("total_pass", 0)), "#27ae60"),
+        ("Fail", str(summary.get("total_fail", 0)), "#c0392b"),
+        ("Parameters", str(summary.get("total_parameters", 0)), "#2c3e50"),
+        ("Flows", str(summary.get("total_flows", 0)), "#2c3e50"),
+        ("All-Pass Params", str(summary.get("parameters_all_pass", 0)), "#27ae60"),
+        ("Params w/ Fails", str(summary.get("parameters_with_fails", 0)), "#c0392b"),
+    ]
+    for lbl, val, color in cards:
+        html.append(
+            f'<div class="card"><div class="lbl">{_h(lbl)}</div>'
+            f'<div class="val" style="color:{color}">{_h(val)}</div></div>'
+        )
+    html.append("</div>")
+
+    # Key findings
+    html.append('<div class="sec"><h2>Key Findings</h2><ul class="findings">')
+    for comment in result.comments[:15]:
+        if "ALL PASS" in comment or "Both flows PASS" in comment:
+            badge = '<span class="badge bp">PASS</span>'
+        elif "FAIL" in comment and "Cross-Flow" not in comment:
+            badge = '<span class="badge bf">FAIL</span>'
+        elif "[Cross-Flow]" in comment:
+            badge = '<span class="badge bw">CROSS-FLOW</span>'
+        else:
+            badge = ""
+        html.append(f"<li>{badge}{_h(comment)}</li>")
+    html.append("</ul></div>")
+
+    # Results tables per flow
+    html.append('<div class="sec"><h2>Detailed Results</h2>')
+    if len(result.all_flows) > 1:
+        html.append('<div class="tabs">')
+        for i, fn in enumerate(result.all_flows):
+            cls = "active" if i == 0 else ""
+            html.append(
+                f'<button class="{cls}" onclick="showTab(\'tab_{_h(fn)}\',this)">'
+                f'{_h(fn)}</button>'
+            )
+        html.append("</div>")
+
+    for i, fn in enumerate(result.all_flows):
+        cls = "active" if i == 0 else ""
+        html.append(f'<div id="tab_{_h(fn)}" class="tab {cls}">')
+        html.append(f"<h3>{_h(fn)}</h3>")
+        html.append(
+            "<table><tr>"
+            "<th>Parameter</th><th>Unit</th><th>Spec Min</th><th>Spec Max</th>"
+            "<th>Mean</th><th>Std</th><th>Min</th><th>Max</th>"
+            "<th>Pass</th><th>Fail</th><th>Pass%</th><th>Cpk</th><th>Status</th>"
+            "</tr>"
+        )
+        for param in result.all_parameters:
+            key = (fn, param)
+            if key not in result.parameter_stats:
+                continue
+            s = result.parameter_stats[key]
+            cls2 = "pass" if s.fail_count == 0 else ("fail" if s.pass_count == 0 else "marginal")
+            smin = f"{s.spec_min:.4g}" if s.spec_min is not None else "â€“"
+            smax_s = f"{s.spec_max:.4g}" if s.spec_max is not None else "â€“"
+            cpk_s = f"{s.cpk:.3f}" if s.cpk is not None else "â€“"
+            html.append(
+                f"<tr>"
+                f"<td><b>{_h(s.parameter)}</b></td><td>{_h(s.unit)}</td>"
+                f"<td>{smin}</td><td>{smax_s}</td>"
+                f"<td>{s.mean:.5g}</td><td>{s.std:.4g}</td>"
+                f"<td>{s.minimum:.5g}</td><td>{s.maximum:.5g}</td>"
+                f'<td style="color:#1a7a3d">{s.pass_count}</td>'
+                f'<td style="color:#a93226">{s.fail_count}</td>'
+                f"<td>{s.pass_rate:.1f}%</td><td>{cpk_s}</td>"
+                f'<td class="{cls2}">{_h(s.status)}</td>'
+                f"</tr>"
+            )
+        html.append("</table></div>")
+    html.append("</div>")
+
+    # Plot sections
+    def _plots_section(title, paths):
+        if not paths:
+            return
+        html.append(f'<div class="sec"><h2>{_h(title)}</h2><div class="plots">')
+        for p in paths:
+            html.append(f'<div class="plot">{_svg_embed(p)}</div>')
+        html.append("</div></div>")
+
+    _plots_section("Pass/Fail Summary", plot_paths.get("pass_fail_summary", []))
+    _plots_section("Parameter vs Spec Limits", plot_paths.get("parameter_vs_spec", []))
+    _plots_section("Value Distributions", plot_paths.get("distributions", []))
+    _plots_section("Cross-Flow Comparison", plot_paths.get("cross_flow", []))
+    _plots_section("Process Capability (Cpk)", plot_paths.get("cpk_summary", []))
+    _plots_section("Per-DUT Results", plot_paths.get("scatter_dut", []))
+
+    html.append("</div></body></html>")
+
+    html_path = config.output_path / "IO_Validation_Report.html"
+    html_path.write_text("\n".join(html), encoding="utf-8")
+    logger.info(f"HTML report saved: {html_path}")
+    return html_path
 
 
 def generate_report(result: AnalysisResult, plot_paths: dict,
-                    config: Config) -> dict:
-    """Generate all report outputs.
-
-    Returns dict of report type -> file path.
+                    config: Config, selected_tests=None,
+                    generate_pptx: bool = True) -> dict:
+    """Generate all report outputs (CSV + HTML + optional PPTX).
+    selected_tests: set of test_name strings to include, or None for all.
     """
     reports = {}
-
-    # CSV report
-    reports["csv"] = generate_csv_report(result, config)
-
-    # PowerPoint report
-    reports["pptx"] = generate_pptx_report(result, plot_paths, config)
-
+    reports["csv"]  = generate_csv_report(result, config)
+    reports["html"] = generate_html_report(
+        result, plot_paths, config, selected_tests=selected_tests
+    )
+    if generate_pptx:
+        try:
+            from io_analysis.reporting.pptx_generator import generate_pptx_report
+            reports["pptx"] = generate_pptx_report(
+                result, plot_paths, config, selected_tests=selected_tests
+            )
+        except Exception as exc:
+            logger.warning(f"PPTX generation skipped: {exc}")
+            reports["pptx"] = None
+    else:
+        reports["pptx"] = None
     logger.info(f"Reports generated in {config.output_path}")
     return reports
+

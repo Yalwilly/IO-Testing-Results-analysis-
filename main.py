@@ -2,7 +2,7 @@
 
 Usage:
     python main.py --data-path ./sample_data --output ./output
-    python main.py --data-path "\\\\server\\share\\Results" --output ./report
+    python main.py --data-path "\\\\serve    python main.py --data-path "C:\Your\Actual\Data\Path" --output ./outputr\\share\\Results" --output ./report
 """
 
 import argparse
@@ -109,9 +109,9 @@ def main():
 
     for name, fd in flows.items():
         logger.info(
-            f"  {name}: {len(fd.raw_data)} measurements, "
-            f"{fd.raw_data['Parameter'].nunique()} parameters, "
-            f"{fd.raw_data['DUT_ID'].nunique()} DUTs"
+            f"  {name}: {fd.record_count} measurements, "
+            f"{len(fd.parameters)} parameters, "
+            f"{len(fd.dut_ids)} DUTs"
         )
 
     # Step 2: Analyze
@@ -141,7 +141,7 @@ def main():
     logger.info("=" * 60)
     logger.info("Analysis Complete!")
     logger.info(f"  CSV Report: {reports.get('csv', 'N/A')}")
-    logger.info(f"  PPTX Report: {reports.get('pptx', 'N/A')}")
+    logger.info(f"  HTML Report: {reports.get('html', 'N/A')}")
     logger.info(f"  Plots: {config.output_path / 'plots'}")
     logger.info("=" * 60)
 
@@ -158,7 +158,7 @@ def main():
         print(f"  {comment}")
     print("=" * 60)
     print(f"\nReports saved to: {config.output_path}")
-
+    print(f"Open in browser: {reports.get('html', '')}")
 
 if __name__ == "__main__":
     main()
