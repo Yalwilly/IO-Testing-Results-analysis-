@@ -1,52 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-<rect width="800" height="400" fill="#ffffff"/>
-<text x="400.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">BRI_DT_VIL_Max - Distribution (V)</text>
-<line x1="65.0" y1="325.0" x2="770.0" y2="325.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="55.0" x2="65.0" y2="325.0" stroke="#999" stroke-width="1"/>
-<line x1="60.0" y1="325.0" x2="65.0" y2="325.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="325.0" x2="770.0" y2="325.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="329.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0</text>
-<line x1="60.0" y1="271.0" x2="65.0" y2="271.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="271.0" x2="770.0" y2="271.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="275.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">5</text>
-<line x1="60.0" y1="217.0" x2="65.0" y2="217.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="217.0" x2="770.0" y2="217.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="221.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">10</text>
-<line x1="60.0" y1="163.0" x2="65.0" y2="163.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="163.0" x2="770.0" y2="163.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="167.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">15</text>
-<line x1="60.0" y1="109.0" x2="65.0" y2="109.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="109.0" x2="770.0" y2="109.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="113.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">20</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<rect width="900" height="450" fill="#ffffff"/>
+<text x="450.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">BRI_DT_VIL_Max - Distribution (V)</text>
+<line x1="65.0" y1="375.0" x2="870.0" y2="375.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="55.0" x2="65.0" y2="375.0" stroke="#999" stroke-width="1"/>
+<line x1="60.0" y1="375.0" x2="65.0" y2="375.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="375.0" x2="870.0" y2="375.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="379.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0</text>
+<line x1="60.0" y1="311.0" x2="65.0" y2="311.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="311.0" x2="870.0" y2="311.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="315.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">5</text>
+<line x1="60.0" y1="247.0" x2="65.0" y2="247.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="247.0" x2="870.0" y2="247.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="251.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">10</text>
+<line x1="60.0" y1="183.0" x2="65.0" y2="183.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="183.0" x2="870.0" y2="183.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="187.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">15</text>
+<line x1="60.0" y1="119.0" x2="65.0" y2="119.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="119.0" x2="870.0" y2="119.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<text x="57.0" y="123.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">20</text>
 <line x1="60.0" y1="55.0" x2="65.0" y2="55.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="55.0" x2="770.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
+<line x1="65.0" y1="55.0" x2="870.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
 <text x="57.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">26</text>
-<line x1="65.0" y1="325.0" x2="65.0" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="65.0" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.733</text>
-<line x1="165.7" y1="325.0" x2="165.7" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="165.7" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.788</text>
-<line x1="266.4" y1="325.0" x2="266.4" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="266.4" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.843</text>
-<line x1="367.1" y1="325.0" x2="367.1" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="367.1" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.898</text>
-<line x1="467.9" y1="325.0" x2="467.9" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="467.9" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.953</text>
-<line x1="568.6" y1="325.0" x2="568.6" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="568.6" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">1.01</text>
-<line x1="669.3" y1="325.0" x2="669.3" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="669.3" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">1.06</text>
-<line x1="770.0" y1="325.0" x2="770.0" y2="330.0" stroke="#999" stroke-width="1"/>
-<text x="770.0" y="342.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">1.12</text>
-<text x="400.0" y="395.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">Value (V)</text>
-<text x="14.0" y="200.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,200.0)">Count</text>
-<rect x="93.2" y="138.1" width="24.0" height="186.9" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="177.8" y="55.0" width="24.0" height="270.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="262.4" y="106.9" width="24.0" height="218.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="347.0" y="55.0" width="24.0" height="270.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="459.8" y="75.8" width="24.0" height="249.2" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="544.4" y="86.2" width="24.0" height="238.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="629.0" y="127.7" width="24.0" height="197.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="713.6" y="304.2" width="24.0" height="20.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<line x1="65.0" y1="375.0" x2="65.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="65.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.567</text>
+<line x1="180.0" y1="375.0" x2="180.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="180.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.645</text>
+<line x1="295.0" y1="375.0" x2="295.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="295.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.723</text>
+<line x1="410.0" y1="375.0" x2="410.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="410.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.801</text>
+<line x1="525.0" y1="375.0" x2="525.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="525.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.879</text>
+<line x1="640.0" y1="375.0" x2="640.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="640.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">0.957</text>
+<line x1="755.0" y1="375.0" x2="755.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="755.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">1.03</text>
+<line x1="870.0" y1="375.0" x2="870.0" y2="380.0" stroke="#999" stroke-width="1"/>
+<text x="870.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">1.11</text>
+<text x="450.0" y="445.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">Value (V)</text>
+<text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Count</text>
+<rect x="322.6" y="153.5" width="27.4" height="221.5" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="387.0" y="55.0" width="27.4" height="320.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="451.4" y="116.5" width="27.4" height="258.5" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="548.0" y="55.0" width="27.4" height="320.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="612.4" y="79.6" width="27.4" height="295.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="676.8" y="91.9" width="27.4" height="283.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="773.4" y="141.2" width="27.4" height="233.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="837.8" y="350.4" width="27.4" height="24.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="65.0" y="27.0" width="12.0" height="12.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <text x="80.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<line x1="157.9" y1="55.0" x2="157.9" y2="375.0" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="160.9" y="67.0" font-size="9" font-weight="normal" text-anchor="start" fill="#e74c3c" font-family="Arial,sans-serif">Min:0.63</text>
 </svg>

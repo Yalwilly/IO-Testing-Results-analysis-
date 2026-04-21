@@ -2,7 +2,9 @@
 
 Usage:
     python main.py --data-path ./sample_data --output ./output
-    python main.py --data-path "\\\\serve    python main.py --data-path "C:\Your\Actual\Data\Path" --output ./outputr\\share\\Results" --output ./report
+    python main.py --data-path "\\\\server\\share\\Results" --output ./report
+    python main.py --data-path C:\\Data\\Results --output ./report --no-pptx
+    python main.py --data-path ./data --tests "IOH/IOL Max" "VIH/VIL"
 """
 
 import argparse
@@ -69,6 +71,58 @@ Examples:
         default="IO Electrical Validation Results",
         help="Report title",
     )
+    parser.add_argument(
+        "--spec-color",
+        type=str,
+        default=None,
+        help="Colour for spec lines, e.g. '#ff6d00' (default: bright orange)",
+    )
+    parser.add_argument(
+        "--no-spec-lines",
+        action="store_true",
+        help="Hide all spec/limit lines from every chart",
+    )
+    parser.add_argument(
+        "--no-pptx",
+        action="store_true",
+        help="Skip PPTX report generation",
+    )
+    parser.add_argument(
+        "--tests",
+        nargs="+",
+        default=None,
+        metavar="SECTION",
+        help=(
+            "Restrict report to specific test sections. "
+            "Valid values: 'IOH/IOL Max', 'IO State After POR', "
+            "'Pull-up/Pull-down Resistance', 'VIH/VIL', 'VOH/VOL', 'Rise/Fall Time'"
+        ),
+    )
+    parser.add_argument(
+        "--exclude-ios",
+        nargs="+",
+        default=None,
+        metavar="IO_NAME",
+        help="IO names to exclude from analysis (default: BRI_DT)",
+    )
+    parser.add_argument(
+        "--cpk-threshold",
+        type=float,
+        default=None,
+        help="Cpk threshold for pass/fail colouring (default: 1.33)",
+    )
+    parser.add_argument(
+        "--author",
+        type=str,
+        default=None,
+        help="Report author name",
+    )
+    parser.add_argument(
+        "--subtitle",
+        type=str,
+        default=None,
+        help="Report subtitle",
+    )
     return parser.parse_args()
 
 
@@ -89,8 +143,19 @@ def main():
         flow_dirs=args.flows,
     )
     config.report.title = args.title
-
-    logger.info(f"Data path: {config.data_path}")
+    if args.spec_color:
+        config.plot.spec_line_color = args.spec_color
+    if args.no_spec_lines:
+        config.plot.show_spec_lines = False
+    if args.exclude_ios is not None:
+        config.excluded_ios = args.exclude_ios
+    if args.cpk_threshold is not None:
+        config.cpk_threshold = args.cpk_threshold
+    if args.author is not None:
+        config.report.author = args.author
+    if args.subtitle is not None:
+        config.report.subtitle = args.subtitle
+    selected_tests = set(args.tests) if args.tests else None
     logger.info(f"Output path: {config.output_path}")
     logger.info(f"Flows: {config.flow_dirs}")
 
@@ -128,7 +193,7 @@ def main():
     # Step 3: Generate plots
     logger.info("-" * 40)
     logger.info("Step 3: Generating plots...")
-    plot_paths = generate_all_plots(result, config)
+    plot_paths = generate_all_plots(result, config, selected_tests=selected_tests)
 
     total_plots = sum(len(v) for v in plot_paths.values())
     logger.info(f"  Generated {total_plots} plots")
@@ -136,7 +201,11 @@ def main():
     # Step 4: Generate reports
     logger.info("-" * 40)
     logger.info("Step 4: Generating reports...")
-    reports = generate_report(result, plot_paths, config)
+    reports = generate_report(
+        result, plot_paths, config,
+        selected_tests=selected_tests,
+        generate_pptx=not args.no_pptx,
+    )
 
     logger.info("=" * 60)
     logger.info("Analysis Complete!")

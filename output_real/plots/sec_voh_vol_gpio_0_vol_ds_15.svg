@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="526" viewBox="0 0 860 526">
+<rect width="860" height="526" fill="#ffffff"/>
+<text x="430.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">GPIO_0  [PB16DSFS_18_18_H] — VOL (V)  DS=DS_15  [VOH/VOL]</text>
+<line x1="82.0" y1="426.0" x2="680.0" y2="426.0" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="72.0" x2="82.0" y2="426.0" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="72.0" x2="82.0" y2="426.0" stroke="#999" stroke-width="1"/>
+<line x1="77.0" y1="426.0" x2="82.0" y2="426.0" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="426.0" x2="680.0" y2="426.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="430.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.401</text>
+<line x1="77.0" y1="355.2" x2="82.0" y2="355.2" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="355.2" x2="680.0" y2="355.2" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="359.2" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.42</text>
+<line x1="77.0" y1="284.4" x2="82.0" y2="284.4" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="284.4" x2="680.0" y2="284.4" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="288.4" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.44</text>
+<line x1="77.0" y1="213.6" x2="82.0" y2="213.6" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="213.6" x2="680.0" y2="213.6" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="217.6" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.46</text>
+<line x1="77.0" y1="142.8" x2="82.0" y2="142.8" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="142.8" x2="680.0" y2="142.8" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="146.8" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.479</text>
+<line x1="77.0" y1="72.0" x2="82.0" y2="72.0" stroke="#999" stroke-width="1"/>
+<line x1="82.0" y1="72.0" x2="680.0" y2="72.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="74.0" y="76.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.499</text>
+<text x="14.0" y="249.0" font-size="10" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,249.0)">VOL (V)</text>
+<text x="115.2" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,115.2,440)">VIO=1.62
+VC=0.64</text>
+<text x="181.7" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,181.7,440)">VIO=1.8
+VC=0.8</text>
+<text x="248.1" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,248.1,440)">VIO=1.98
+VC=0.96</text>
+<line x1="281.3" y1="72.0" x2="281.3" y2="426.0" stroke="#cccccc" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="314.6" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,314.6,440)">VIO=1.62
+VC=0.64</text>
+<text x="381.0" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,381.0,440)">VIO=1.8
+VC=0.8</text>
+<text x="447.4" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,447.4,440)">VIO=1.98
+VC=0.96</text>
+<line x1="480.7" y1="72.0" x2="480.7" y2="426.0" stroke="#cccccc" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="513.9" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,513.9,440)">VIO=1.62
+VC=0.64</text>
+<text x="580.3" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,580.3,440)">VIO=1.8
+VC=0.8</text>
+<text x="646.8" y="440.0" font-size="8" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-45,646.8,440)">VIO=1.98
+VC=0.96</text>
+<text x="181.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=0°C</text>
+<text x="381.0" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=20°C</text>
+<text x="580.3" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=80°C</text>
+<g class="series" data-skew="ffss" data-chip="25679">
+<path d="M115.2,260.4 L181.7,286.8 L248.1,307.4 L314.6,224.6 L381.0,251.3 L447.4,273.0 L513.9,110.8 L580.3,141.8 L646.8,166.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="115.2" cy="260.4" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="181.7" cy="286.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="248.1" cy="307.4" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="314.6" cy="224.6" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="381.0" cy="251.3" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="447.4" cy="273.0" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="513.9" cy="110.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="580.3" cy="141.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+<circle cx="646.8" cy="166.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 25679</title></circle>
+</g>
+<g class="series" data-skew="ffss" data-chip="43407">
+<path d="M115.2,251.0 L181.7,277.4 L248.1,299.1 L314.6,214.5 L381.0,242.7 L447.4,264.4 L513.9,98.1 L580.3,131.0 L646.8,155.9" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="115.2" cy="251.0" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="181.7" cy="277.4" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="248.1" cy="299.1" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="314.6" cy="214.5" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="381.0" cy="242.7" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="447.4" cy="264.4" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="513.9" cy="98.1" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="580.3" cy="131.0" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+<circle cx="646.8" cy="155.9" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 43407</title></circle>
+</g>
+<g class="series" data-skew="ffss" data-chip="79093">
+<path d="M115.2,260.0 L181.7,286.8 L248.1,307.4 L314.6,223.9 L381.0,251.0 L447.4,273.0 L513.9,109.7 L580.3,141.5 L646.8,166.4" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="115.2" cy="260.0" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="181.7" cy="286.8" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="248.1" cy="307.4" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="314.6" cy="223.9" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="381.0" cy="251.0" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="447.4" cy="273.0" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="513.9" cy="109.7" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="580.3" cy="141.5" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+<circle cx="646.8" cy="166.4" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ffss | Chip: 79093</title></circle>
+</g>
+<g class="series" data-skew="fftt" data-chip="13967">
+<path d="M115.2,295.1 L181.7,322.5 L248.1,343.9 L314.6,259.7 L381.0,287.5 L447.4,310.3 L513.9,136.8 L580.3,169.3 L646.8,197.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="115.2" cy="295.1" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="181.7" cy="322.5" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="248.1" cy="343.9" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="314.6" cy="259.7" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="381.0" cy="287.5" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="447.4" cy="310.3" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="513.9" cy="136.8" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="580.3" cy="169.3" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+<circle cx="646.8" cy="197.1" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 13967</title></circle>
+</g>
+<g class="series" data-skew="fftt" data-chip="15382">
+<path d="M115.2,303.8 L181.7,331.6 L248.1,354.0 L314.6,270.5 L381.0,299.1 L447.4,321.5 L513.9,156.3 L580.3,189.5 L646.8,215.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="115.2" cy="303.8" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="181.7" cy="331.6" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="248.1" cy="354.0" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="314.6" cy="270.5" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="381.0" cy="299.1" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="447.4" cy="321.5" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="513.9" cy="156.3" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="580.3" cy="189.5" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+<circle cx="646.8" cy="215.2" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 15382</title></circle>
+</g>
+<g class="series" data-skew="fftt" data-chip="78814">
+<path d="M115.2,295.4 L181.7,322.2 L248.1,343.9 L314.6,258.6 L381.0,286.4 L447.4,309.2 L513.9,142.9 L580.3,175.5 L646.8,199.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="115.2" cy="295.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="181.7" cy="322.2" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="248.1" cy="343.9" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="314.6" cy="258.6" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="381.0" cy="286.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="447.4" cy="309.2" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="513.9" cy="142.9" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="580.3" cy="175.5" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+<circle cx="646.8" cy="199.7" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | fftt | Chip: 78814</title></circle>
+</g>
+<g class="series" data-skew="fstt" data-chip="12566">
+<path d="M115.2,287.9 L181.7,314.2 L248.1,334.5 L314.6,251.0 L381.0,278.1 L447.4,300.1 L513.9,136.4 L580.3,167.5 L646.8,191.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="115.2" cy="287.9" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="181.7" cy="314.2" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="248.1" cy="334.5" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="314.6" cy="251.0" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="381.0" cy="278.1" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="447.4" cy="300.1" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="513.9" cy="136.4" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="580.3" cy="167.5" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+<circle cx="646.8" cy="191.7" r="5" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 12566</title></circle>
+</g>
+<g class="series" data-skew="fstt" data-chip="13316">
+<path d="M115.2,297.2 L181.7,323.6 L248.1,343.9 L314.6,260.7 L381.0,288.2 L447.4,309.5 L513.9,146.2 L580.3,176.9 L646.8,200.4" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="115.2" cy="297.2" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="181.7" cy="323.6" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="248.1" cy="343.9" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="314.6" cy="260.7" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="381.0" cy="288.2" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="447.4" cy="309.5" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="513.9" cy="146.2" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="580.3" cy="176.9" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+<circle cx="646.8" cy="200.4" r="5" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 13316</title></circle>
+</g>
+<g class="series" data-skew="fstt" data-chip="62919">
+<path d="M115.2,295.4 L181.7,321.8 L248.1,342.8 L314.6,257.9 L381.0,285.7 L447.4,307.4 L513.9,141.8 L580.3,173.3 L646.8,198.2" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="115.2" cy="295.4" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="181.7" cy="321.8" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="248.1" cy="342.8" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="314.6" cy="257.9" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="381.0" cy="285.7" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="447.4" cy="307.4" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="513.9" cy="141.8" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="580.3" cy="173.3" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+<circle cx="646.8" cy="198.2" r="5" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOL | fstt | Chip: 62919</title></circle>
+</g>
+<g class="series" data-skew="sftt" data-chip="44565">
+<path d="M115.2,292.2 L181.7,321.5 L248.1,344.6 L314.6,255.3 L381.0,286.4 L447.4,309.9 L513.9,139.7 L580.3,174.0 L646.8,200.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="115.2" cy="292.2" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="181.7" cy="321.5" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="248.1" cy="344.6" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="314.6" cy="255.3" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="381.0" cy="286.4" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="447.4" cy="309.9" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="513.9" cy="139.7" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="580.3" cy="174.0" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+<circle cx="646.8" cy="200.0" r="5" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 44565</title></circle>
+</g>
+<g class="series" data-skew="sftt" data-chip="69627">
+<path d="M115.2,286.4 L181.7,317.8 L248.1,341.3 L314.6,249.2 L381.0,281.3 L447.4,306.3 L513.9,131.0 L580.3,167.5 L646.8,195.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="115.2" cy="286.4" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="181.7" cy="317.8" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="248.1" cy="341.3" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="314.6" cy="249.2" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="381.0" cy="281.3" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="447.4" cy="306.3" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="513.9" cy="131.0" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="580.3" cy="167.5" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+<circle cx="646.8" cy="195.3" r="5" fill="#d35400" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 69627</title></circle>
+</g>
+<g class="series" data-skew="sftt" data-chip="76687">
+<path d="M115.2,300.1 L181.7,329.4 L248.1,352.2 L314.6,262.9 L381.0,294.0 L447.4,318.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="115.2" cy="300.1" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+<circle cx="181.7" cy="329.4" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+<circle cx="248.1" cy="352.2" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+<circle cx="314.6" cy="262.9" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+<circle cx="381.0" cy="294.0" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+<circle cx="447.4" cy="318.2" r="5" fill="#16a085" opacity="0.9"><title>GPIO_0 VOL | sftt | Chip: 76687</title></circle>
+</g>
+<g class="series" data-skew="ssff" data-chip="56508">
+<path d="M115.2,337.0 L181.7,365.9 L248.1,388.0 L314.6,299.8 L381.0,329.8 L447.4,353.3 L513.9,184.5 L580.3,218.5 L646.8,244.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="115.2" cy="337.0" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="181.7" cy="365.9" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="248.1" cy="388.0" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="314.6" cy="299.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="381.0" cy="329.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="447.4" cy="353.3" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="513.9" cy="184.5" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="580.3" cy="218.5" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+<circle cx="646.8" cy="244.8" r="5" fill="#3498db" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 56508</title></circle>
+</g>
+<g class="series" data-skew="ssff" data-chip="57571">
+<path d="M115.2,337.4 L181.7,367.0 L248.1,389.8 L314.6,300.9 L381.0,330.9 L447.4,354.7 L513.9,183.8 L580.3,218.5 L646.8,244.8" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="115.2" cy="337.4" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="181.7" cy="367.0" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="248.1" cy="389.8" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="314.6" cy="300.9" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="381.0" cy="330.9" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="447.4" cy="354.7" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="513.9" cy="183.8" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="580.3" cy="218.5" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+<circle cx="646.8" cy="244.8" r="5" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 57571</title></circle>
+</g>
+<g class="series" data-skew="ssff" data-chip="96040">
+<path d="M115.2,333.4 L181.7,362.7 L248.1,385.4 L314.6,296.5 L381.0,326.2 L447.4,350.0 L513.9,180.2 L580.3,214.8 L646.8,240.1" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="115.2" cy="333.4" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="181.7" cy="362.7" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="248.1" cy="385.4" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="314.6" cy="296.5" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="381.0" cy="326.2" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="447.4" cy="350.0" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="513.9" cy="180.2" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="580.3" cy="214.8" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+<circle cx="646.8" cy="240.1" r="5" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOL | ssff | Chip: 96040</title></circle>
+</g>
+<g class="series" data-skew="sstt" data-chip="29674">
+<path d="M115.2,292.5 L181.7,322.2 L248.1,345.3 L314.6,256.0 L381.0,287.1 L447.4,311.3 L513.9,141.1 L580.3,176.5 L646.8,202.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="115.2" cy="292.5" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="181.7" cy="322.2" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="248.1" cy="345.3" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="314.6" cy="256.0" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="381.0" cy="287.1" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="447.4" cy="311.3" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="513.9" cy="141.1" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="580.3" cy="176.5" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+<circle cx="646.8" cy="202.9" r="5" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 29674</title></circle>
+</g>
+<g class="series" data-skew="sstt" data-chip="58046">
+<path d="M115.2,303.4 L181.7,333.4 L248.1,357.2 L314.6,265.8 L381.0,298.7 L447.4,322.2 L513.9,150.2 L580.3,185.6 L646.8,213.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="115.2" cy="303.4" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="181.7" cy="333.4" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="248.1" cy="357.2" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="314.6" cy="265.8" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="381.0" cy="298.7" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="447.4" cy="322.2" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="513.9" cy="150.2" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="580.3" cy="185.6" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+<circle cx="646.8" cy="213.8" r="5" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 58046</title></circle>
+</g>
+<g class="series" data-skew="sstt" data-chip="9808">
+<path d="M115.2,295.4 L181.7,324.4 L248.1,347.5 L314.6,258.2 L381.0,288.6 L447.4,312.4 L513.9,143.3 L580.3,177.6 L646.8,204.4" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="115.2" cy="295.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="181.7" cy="324.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="248.1" cy="347.5" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="314.6" cy="258.2" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="381.0" cy="288.6" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="447.4" cy="312.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="513.9" cy="143.3" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="580.3" cy="177.6" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+<circle cx="646.8" cy="204.4" r="5" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOL | sstt | Chip: 9808</title></circle>
+</g>
+<line x1="82.0" y1="248.1" x2="680.0" y2="248.1" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="4,4"/>
+<text x="685.0" y="252.1" font-size="9" font-weight="normal" text-anchor="start" fill="#e74c3c" font-family="Arial,sans-serif">Max spec: 0.45</text>
+<g class="legend-item" data-skew="ffss" data-chip="25679">
+<line x1="688" y1="77" x2="716" y2="77" stroke="#3498db" stroke-width="2.0" />
+<circle cx="702" cy="77" r="5" fill="#3498db"/>
+<text x="720" y="81" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">25679 | ffss</text>
+</g>
+<g class="legend-item" data-skew="ffss" data-chip="43407">
+<line x1="688" y1="99" x2="716" y2="99" stroke="#e74c3c" stroke-width="2.0" stroke-dasharray="8,3" />
+<circle cx="702" cy="99" r="5" fill="#e74c3c"/>
+<text x="720" y="103" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">43407 | ffss</text>
+</g>
+<g class="legend-item" data-skew="ffss" data-chip="79093">
+<line x1="688" y1="121" x2="716" y2="121" stroke="#2ecc71" stroke-width="2.0" stroke-dasharray="4,3" />
+<circle cx="702" cy="121" r="5" fill="#2ecc71"/>
+<text x="720" y="125" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">79093 | ffss</text>
+</g>
+<g class="legend-item" data-skew="fftt" data-chip="13967">
+<line x1="688" y1="143" x2="716" y2="143" stroke="#9b59b6" stroke-width="2.0" stroke-dasharray="10,3,3,3" />
+<circle cx="702" cy="143" r="5" fill="#9b59b6"/>
+<text x="720" y="147" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">13967 | fftt</text>
+</g>
+<g class="legend-item" data-skew="fftt" data-chip="15382">
+<line x1="688" y1="165" x2="716" y2="165" stroke="#e67e22" stroke-width="2.0" />
+<circle cx="702" cy="165" r="5" fill="#e67e22"/>
+<text x="720" y="169" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">15382 | fftt</text>
+</g>
+<g class="legend-item" data-skew="fftt" data-chip="78814">
+<line x1="688" y1="187" x2="716" y2="187" stroke="#1abc9c" stroke-width="2.0" stroke-dasharray="8,3" />
+<circle cx="702" cy="187" r="5" fill="#1abc9c"/>
+<text x="720" y="191" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">78814 | fftt</text>
+</g>
+<g class="legend-item" data-skew="fstt" data-chip="12566">
+<line x1="688" y1="209" x2="716" y2="209" stroke="#c0392b" stroke-width="2.0" stroke-dasharray="4,3" />
+<circle cx="702" cy="209" r="5" fill="#c0392b"/>
+<text x="720" y="213" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">12566 | fstt</text>
+</g>
+<g class="legend-item" data-skew="fstt" data-chip="13316">
+<line x1="688" y1="231" x2="716" y2="231" stroke="#2980b9" stroke-width="2.0" stroke-dasharray="10,3,3,3" />
+<circle cx="702" cy="231" r="5" fill="#2980b9"/>
+<text x="720" y="235" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">13316 | fstt</text>
+</g>
+<g class="legend-item" data-skew="fstt" data-chip="62919">
+<line x1="688" y1="253" x2="716" y2="253" stroke="#27ae60" stroke-width="2.0" />
+<circle cx="702" cy="253" r="5" fill="#27ae60"/>
+<text x="720" y="257" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">62919 | fstt</text>
+</g>
+<g class="legend-item" data-skew="sftt" data-chip="44565">
+<line x1="688" y1="275" x2="716" y2="275" stroke="#8e44ad" stroke-width="2.0" stroke-dasharray="8,3" />
+<circle cx="702" cy="275" r="5" fill="#8e44ad"/>
+<text x="720" y="279" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">44565 | sftt</text>
+</g>
+<g class="legend-item" data-skew="sftt" data-chip="69627">
+<line x1="688" y1="297" x2="716" y2="297" stroke="#d35400" stroke-width="2.0" stroke-dasharray="4,3" />
+<circle cx="702" cy="297" r="5" fill="#d35400"/>
+<text x="720" y="301" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">69627 | sftt</text>
+</g>
+<g class="legend-item" data-skew="sftt" data-chip="76687">
+<line x1="688" y1="319" x2="716" y2="319" stroke="#16a085" stroke-width="2.0" stroke-dasharray="10,3,3,3" />
+<circle cx="702" cy="319" r="5" fill="#16a085"/>
+<text x="720" y="323" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">76687 | sftt</text>
+</g>
+<g class="legend-item" data-skew="ssff" data-chip="56508">
+<line x1="688" y1="341" x2="716" y2="341" stroke="#3498db" stroke-width="2.0" />
+<circle cx="702" cy="341" r="5" fill="#3498db"/>
+<text x="720" y="345" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">56508 | ssff</text>
+</g>
+<g class="legend-item" data-skew="ssff" data-chip="57571">
+<line x1="688" y1="363" x2="716" y2="363" stroke="#e74c3c" stroke-width="2.0" stroke-dasharray="8,3" />
+<circle cx="702" cy="363" r="5" fill="#e74c3c"/>
+<text x="720" y="367" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">57571 | ssff</text>
+</g>
+<g class="legend-item" data-skew="ssff" data-chip="96040">
+<line x1="688" y1="385" x2="716" y2="385" stroke="#2ecc71" stroke-width="2.0" stroke-dasharray="4,3" />
+<circle cx="702" cy="385" r="5" fill="#2ecc71"/>
+<text x="720" y="389" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">96040 | ssff</text>
+</g>
+<g class="legend-item" data-skew="sstt" data-chip="29674">
+<line x1="688" y1="407" x2="716" y2="407" stroke="#9b59b6" stroke-width="2.0" stroke-dasharray="10,3,3,3" />
+<circle cx="702" cy="407" r="5" fill="#9b59b6"/>
+<text x="720" y="411" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">29674 | sstt</text>
+</g>
+<g class="legend-item" data-skew="sstt" data-chip="58046">
+<line x1="688" y1="429" x2="716" y2="429" stroke="#e67e22" stroke-width="2.0" />
+<circle cx="702" cy="429" r="5" fill="#e67e22"/>
+<text x="720" y="433" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">58046 | sstt</text>
+</g>
+<g class="legend-item" data-skew="sstt" data-chip="9808">
+<line x1="688" y1="451" x2="716" y2="451" stroke="#1abc9c" stroke-width="2.0" stroke-dasharray="8,3" />
+<circle cx="702" cy="451" r="5" fill="#1abc9c"/>
+<text x="720" y="455" font-size="10" font-family="Arial,sans-serif" fill="#2c3e50">9808 | sstt</text>
+</g>
+</svg>

@@ -46,9 +46,9 @@ _INTEL_TEST_CONFIGS = [
              "unit": "V", "spec_min_col": "vohmin spec",
              "pf_col": "pass/fail high"},
             {"col": "measured_iol(+)", "name": "IOL_A",
-             "unit": "A"},
+             "unit": "mA", "scale": 1000},
             {"col": "measured_iohmax(-)", "name": "IOH_A",
-             "unit": "A"},
+             "unit": "mA", "scale": 1000, "abs_value": True},
             {"col": "resistancelow", "name": "R_Low",
              "unit": "Ohm", "abs_value": True},
             {"col": "resistancehigh", "name": "R_High",
@@ -65,8 +65,8 @@ _INTEL_TEST_CONFIGS = [
             {"col": "measured high voltage + load", "name": "VOH",
              "unit": "V", "spec_min_col": "vohmin spec",
              "pf_col": "pass/fail high"},
-            {"col": "measured_iol(+)", "name": "IOL_A", "unit": "A"},
-            {"col": "measured_iohmax(-)", "name": "IOH_A", "unit": "A"},
+            {"col": "measured_iol(+)", "name": "IOL_A", "unit": "mA", "scale": 1000},
+            {"col": "measured_iohmax(-)", "name": "IOH_A", "unit": "mA", "scale": 1000, "abs_value": True},
         ],
     },
     {
@@ -96,11 +96,11 @@ _INTEL_TEST_CONFIGS = [
         "test_name": "IO State After POR",
         "measurements": [
             {"col": "iostatehighlow", "name": "IO_State",
-             "unit": "",
+             "unit": "H=1/L=0",
              "value_map": {"h": 1.0, "high": 1.0, "l": 0.0, "low": 0.0},
              "pf_col": "exec status"},
             {"col": "iodirection", "name": "IO_Direction",
-             "unit": "",
+             "unit": "Out=1/In=0",
              "value_map": {"output": 1.0, "out": 1.0, "input": 0.0, "in": 0.0},
              "pf_col": "exec status"},
         ],
@@ -328,6 +328,63 @@ def _read_intel_xlsx(file_path: Path, test_cfg: dict) -> list:
                                 spec_max = v
                         except (ValueError, TypeError):
                             pass
+
+                    # --- PDF-spec fallback: compute limits when file has 0.0 or missing ---
+                    # PB12 = RF_KILLN; everything else (GPIO_0, BRI_DT) = PB16
+                    _meas_name = m["name"]
+                    _is_pb12   = io_name.upper().strip() == "RF_KILLN"
+
+                    if _meas_name == "VIH_Min" and spec_max is None and vin_gpio:
+                        # PB16: VIH_min = 0.65 × DVDD  |  PB12: VIH_min = 0.70 × DVDD
+                        # Measured threshold must be ≤ spec (not exceed it) → spec_max
+                        try:
+                            spec_max = round((0.70 if _is_pb12 else 0.65) * float(vin_gpio), 4)
+                        except (ValueError, TypeError):
+                            pass
+
+                    elif _meas_name == "VIL_Max" and spec_min is None and vin_gpio:
+                        # PB16: VIL_max = 0.35 × DVDD  |  PB12: VIL_max = 0.30 × DVDD
+                        # Measured threshold must be ≥ spec (not fall below) → spec_min
+                        try:
+                            spec_min = round((0.30 if _is_pb12 else 0.35) * float(vin_gpio), 4)
+                        except (ValueError, TypeError):
+                            pass
+
+                    elif _meas_name in ("R_PullUp", "R_PullDown"):
+                        if spec_min is None and spec_max is None:
+                            # PB16: 30–70 kΩ  |  PB12: 100–200 kΩ  (Table 18/20 in IO_SPEC)
+                            if _is_pb12:
+                                spec_min, spec_max = 100.0, 200.0
+                            else:
+                                spec_min, spec_max = 30.0, 70.0
+
+                    elif _meas_name == "R_Low" and spec_max is None:
+                        # R_Low spec_max = VOL_spec_max / IOL_test  (Ω = V / A)
+                        # Higher resistance at the test current → higher VOL → fail
+                        vol_spec_c = col_of("volmax spec")
+                        iol_col_c  = col_of("measured_iol(+)")
+                        if vol_spec_c and iol_col_c:
+                            try:
+                                vol_spv = float(rv.get(vol_spec_c, "") or "")
+                                iol_v   = float(rv.get(iol_col_c,  "") or "")
+                                if iol_v > 0 and 0 < vol_spv < 10:
+                                    spec_max = round(vol_spv / iol_v, 2)
+                            except (ValueError, TypeError):
+                                pass
+
+                    elif _meas_name == "R_High" and spec_max is None:
+                        # R_High spec_max = (VIO − VOH_spec_min) / |IOH_test|
+                        voh_spec_c = col_of("vohmin spec")
+                        ioh_col_c  = col_of("measured_iohmax(-)")
+                        if voh_spec_c and ioh_col_c and vin_gpio:
+                            try:
+                                voh_spv = float(rv.get(voh_spec_c, "") or "")
+                                ioh_v   = abs(float(rv.get(ioh_col_c, "") or ""))
+                                vio_v   = float(vin_gpio)
+                                if ioh_v > 0 and voh_spv > 0 and vio_v > voh_spv:
+                                    spec_max = round((vio_v - voh_spv) / ioh_v, 2)
+                            except (ValueError, TypeError):
+                                pass
 
                     # Raw pass/fail from test infrastructure
                     pf = ""

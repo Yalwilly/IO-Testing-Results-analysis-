@@ -204,55 +204,35 @@ def _card(sp_id: int, x, y, w, h,
     )
 
 
-def _svg_pic_sp(sp_id: int, name: str, rel_id: str,
-                x, y, w, h) -> ET.Element:
-    """Embed an SVG image via pic:pic (Office 2016+ renders SVG natively)."""
-    nvPicPr = _x("pic:nvPicPr", children=[
-        _x("pic:cNvPr", {"id": str(sp_id), "name": name}),
-        _x("pic:cNvPicPr"),
-        _x("pic:nvPr"),
-    ])
-    blipFill = _x("pic:blipFill", children=[
+def _pic_sp(sp_id: int, name: str, rel_id: str,
+            x, y, w, h) -> ET.Element:
+    """Correct OOXML p:pic shape — placed directly in spTree.
+
+    Using p: namespace for nvPicPr/blipFill/spPr (presentationml, not pic:).
+    A p:graphicFrame is NOT used for pictures; that is only for tables/charts.
+    """
+    _P = _NSMAP["p"]
+    el = ET.Element(f"{{{_P}}}pic")
+    el.append(_x("p:nvPicPr", children=[
+        _x("p:cNvPr", {"id": str(sp_id), "name": name}),
+        _x("p:cNvPicPr"),
+        _x("p:nvPr"),
+    ]))
+    el.append(_x("p:blipFill", children=[
         _x("a:blip", {
-            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed": rel_id
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed": rel_id,
         }),
         _x("a:stretch", children=[_x("a:fillRect")]),
-    ])
-    spPr = _x("pic:spPr", children=[
+    ]))
+    el.append(_x("p:spPr", children=[
         _x("a:xfrm", children=[
             _x("a:off", {"x": str(x), "y": str(y)}),
             _x("a:ext", {"cx": str(w), "cy": str(h)}),
         ]),
         _x("a:prstGeom", {"prst": "rect"}, children=[_x("a:avLst")]),
-    ])
-    for _pfx in ("pic",):
-        pass  # namespace already registered
-    el = ET.Element(
-        "{http://schemas.openxmlformats.org/drawingml/2006/picture}pic"
-    )
-    el.append(nvPicPr)
-    el.append(blipFill)
-    el.append(spPr)
+        _x("a:ln", children=[_x("a:noFill")]),
+    ]))
     return el
-
-
-def _pic_wrap(pic_el: ET.Element, sp_id: int) -> ET.Element:
-    """Wrap a pic:pic inside a p:sp graphicFrame."""
-    nvGFPr = _x("p:nvGraphicFramePr", children=[
-        _x("p:cNvPr", {"id": str(sp_id), "name": f"Chart{sp_id}"}),
-        _x("p:cNvGraphicFramePr"),
-        _x("p:nvPr"),
-    ])
-    xfrm = _x("p:xfrm")  # empty, already set in pic spPr
-    graphic = ET.Element("{http://schemas.openxmlformats.org/drawingml/2006/main}graphic")
-    gd = ET.SubElement(
-        graphic,
-        "{http://schemas.openxmlformats.org/drawingml/2006/main}graphicData",
-        {"uri": "http://schemas.openxmlformats.org/drawingml/2006/picture"},
-    )
-    gd.append(pic_el)
-    frame = _x("p:graphicFrame", children=[nvGFPr, xfrm, graphic])
-    return frame
 
 
 # ---------------------------------------------------------------------------
@@ -412,11 +392,11 @@ class _SlideBuilder:
         ))
 
     def add_svg(self, svg_path: Path, x, y, w, h):
-        """Embed an SVG file. Office 2016+ renders SVG natively in PPTX."""
+        """Embed an SVG file as a p:pic shape (Office 2016+ renders SVG natively)."""
         target = f"../media/{svg_path.name}"
         rid = self.add_image_rel(target)
-        pic = _svg_pic_sp(self._new_id(), svg_path.stem, rid, x, y, w, h)
-        self.add_shape(_pic_wrap(pic, self._new_id()))
+        pic = _pic_sp(self._new_id(), svg_path.stem, rid, x, y, w, h)
+        self.add_shape(pic)
 
     def build_xml(self) -> bytes:
         spTree = _x("p:spTree", children=[

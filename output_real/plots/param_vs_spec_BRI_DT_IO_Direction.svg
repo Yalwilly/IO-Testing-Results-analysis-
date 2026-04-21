@@ -1,34 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="430" viewBox="0 0 600 430">
-<rect width="600" height="430" fill="#ffffff"/>
-<text x="300.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">BRI_DT_IO_Direction - Measured vs Spec</text>
-<line x1="70.0" y1="370.0" x2="510.0" y2="370.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="55.0" x2="70.0" y2="370.0" stroke="#999" stroke-width="1"/>
-<line x1="65.0" y1="370.0" x2="70.0" y2="370.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="370.0" x2="510.0" y2="370.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="374.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.1</text>
-<line x1="65.0" y1="307.0" x2="70.0" y2="307.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="307.0" x2="510.0" y2="307.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="311.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.06</text>
-<line x1="65.0" y1="244.0" x2="70.0" y2="244.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="244.0" x2="510.0" y2="244.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="248.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.02</text>
-<line x1="65.0" y1="181.0" x2="70.0" y2="181.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="181.0" x2="510.0" y2="181.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="185.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.02</text>
-<line x1="65.0" y1="118.0" x2="70.0" y2="118.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="118.0" x2="510.0" y2="118.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="122.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.06</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
+<rect width="900" height="450" fill="#ffffff"/>
+<text x="450.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">BRI_DT_IO_Direction - Measured vs Spec (Out=1/In=0)</text>
+<line x1="70.0" y1="390.0" x2="810.0" y2="390.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="55.0" x2="70.0" y2="390.0" stroke="#999" stroke-width="1"/>
+<line x1="65.0" y1="390.0" x2="70.0" y2="390.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="390.0" x2="810.0" y2="390.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="394.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.75</text>
+<line x1="65.0" y1="323.0" x2="70.0" y2="323.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="323.0" x2="810.0" y2="323.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="327.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.45</text>
+<line x1="65.0" y1="256.0" x2="70.0" y2="256.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="256.0" x2="810.0" y2="256.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="260.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">-0.15</text>
+<line x1="65.0" y1="189.0" x2="70.0" y2="189.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="189.0" x2="810.0" y2="189.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="193.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.15</text>
+<line x1="65.0" y1="122.0" x2="70.0" y2="122.0" stroke="#999" stroke-width="1"/>
+<line x1="70.0" y1="122.0" x2="810.0" y2="122.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="126.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.45</text>
 <line x1="65.0" y1="55.0" x2="70.0" y2="55.0" stroke="#999" stroke-width="1"/>
-<line x1="70.0" y1="55.0" x2="510.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
-<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.1</text>
-<text x="14.0" y="215.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,215.0)">Value</text>
-<rect x="255.0" y="212.5" width="70.0" height="0.0" fill="#3498db" stroke="#3498db" stroke-width="1.5" opacity="0.25" rx="2"/>
-<line x1="255.0" y1="212.5" x2="325.0" y2="212.5" stroke="#3498db" stroke-width="2.5"/>
-<line x1="290.0" y1="212.5" x2="290.0" y2="212.5" stroke="#3498db" stroke-width="1"/>
-<line x1="290.0" y1="212.5" x2="290.0" y2="212.5" stroke="#3498db" stroke-width="1"/>
-<line x1="272.5" y1="212.5" x2="307.5" y2="212.5" stroke="#3498db" stroke-width="1"/>
-<line x1="272.5" y1="212.5" x2="307.5" y2="212.5" stroke="#3498db" stroke-width="1"/>
-<text x="290.0" y="388.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#333" font-family="Arial,sans-serif">Flow1</text>
-<rect x="515.0" y="55.0" width="10.0" height="10.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.7" rx="2"/>
-<text x="528.0" y="64.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<line x1="70.0" y1="55.0" x2="810.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0.75</text>
+<text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Value (Out=1/In=0)</text>
+<rect x="405.0" y="222.5" width="70.0" height="0.0" fill="#3498db" stroke="#3498db" stroke-width="1.5" opacity="0.25" rx="2"/>
+<line x1="405.0" y1="222.5" x2="475.0" y2="222.5" stroke="#3498db" stroke-width="2.5"/>
+<line x1="440.0" y1="222.5" x2="440.0" y2="222.5" stroke="#3498db" stroke-width="1"/>
+<line x1="440.0" y1="222.5" x2="440.0" y2="222.5" stroke="#3498db" stroke-width="1"/>
+<line x1="422.5" y1="222.5" x2="457.5" y2="222.5" stroke="#3498db" stroke-width="1"/>
+<line x1="422.5" y1="222.5" x2="457.5" y2="222.5" stroke="#3498db" stroke-width="1"/>
+<text x="440.0" y="408.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#333" font-family="Arial,sans-serif">Flow1</text>
+<rect x="815.0" y="55.0" width="10.0" height="10.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.7" rx="2"/>
+<text x="828.0" y="64.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
 </svg>

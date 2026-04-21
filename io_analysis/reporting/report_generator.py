@@ -22,6 +22,29 @@ def _h(text: str) -> str:
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+# Per-parameter spec limit descriptions (keyed by full param name)
+_SPEC_LABELS = {
+    # GPIO_0 = PB16DSFS (16 DS steps, 1 mA each)
+    "GPIO_0_IOL_A":  ("\u2014", "PB16 per DS 1\u201316 mA"),
+    "GPIO_0_IOH_A":  ("\u2014", "PB16 per DS 1\u201316 mA"),
+    "GPIO_0_R_Low":  ("\u2014", "Per DS 22.5\u2013320 \u03a9"),
+    "GPIO_0_R_High": ("\u2014", "Per DS 22.5\u2013320 \u03a9"),
+    # RF_KILLN = PB12DSFS (4 DS steps: 2, 4, 8, 12 mA)
+    "RF_KILLN_IOL_A":  ("\u2014", "PB12 per DS 2,4,8,12 mA"),
+    "RF_KILLN_IOH_A":  ("\u2014", "PB12 per DS 2,4,8,12 mA"),
+    "RF_KILLN_R_Low":  ("\u2014", "Per DS 25\u2013110 \u03a9"),
+    "RF_KILLN_R_High": ("\u2014", "Per DS 25\u2013110 \u03a9"),
+}
+
+def _spec_strs(param: str, s) -> tuple:
+    """Return (smin, smax) display strings for a ParameterStats object."""
+    if param in _SPEC_LABELS:
+        return _SPEC_LABELS[param]
+    smin  = f"{s.spec_min:.4g}"  if s.spec_min  is not None else "\u2014"
+    smax_s = f"{s.spec_max:.4g}" if s.spec_max  is not None else "\u2014"
+    return smin, smax_s
+
+
 def generate_csv_report(result: AnalysisResult, config: Config) -> Path:
     """Generate a CSV summary report."""
     rows = []
@@ -110,13 +133,31 @@ def generate_html_report(result: AnalysisResult, plot_paths: dict,
     _ios   = list(REPORT_IOS)
 
     # group parameters (filtered to REPORT_IOS) per test section
+    # Route parameters to sections using SECTION_MEASUREMENTS as the authority.
+    # param_test_map (from raw Test_Name) is unreliable — VOH/VOL appear in the
+    # IOH/IOL Max file, causing them to land in the wrong section.
+    _suffix_to_section = {
+        meas: test_name
+        for test_name, meas_list in SECTION_MEASUREMENTS.items()
+        for meas in meas_list
+    }
     section_params: dict = {t: [] for t in TEST_SECTION_ORDER}
     for param in sorted(result.all_parameters):
-        t = param_test_map.get(param)
-        if t in section_params:
-            if any(param.startswith(io + "_") for io in REPORT_IOS):
-                if param not in section_params[t]:
+        placed = False
+        # Prefixed param (e.g. 'GPIO_0_VOH') — route by measurement suffix
+        for io in REPORT_IOS:
+            if param.startswith(io + "_"):
+                suffix = param[len(io) + 1:]
+                t = _suffix_to_section.get(suffix)
+                if t and t in section_params and param not in section_params[t]:
                     section_params[t].append(param)
+                    placed = True
+                break
+        if not placed:
+            # Bare param (e.g. 'VOH') — match by name directly
+            t = _suffix_to_section.get(param)
+            if t and t in section_params and param not in section_params[t]:
+                section_params[t].append(param)
 
     section_plots = plot_paths.get("section_plots", {})
 
@@ -157,10 +198,15 @@ tr:nth-child(even) td{{background:#f8f9fa}}
 .pass{{background:#d5f5e3!important;color:#1a7a3d;font-weight:bold}}
 .fail{{background:#fadbd8!important;color:#a93226;font-weight:bold}}
 .marginal{{background:#fdeacd!important;color:#b7460e;font-weight:bold}}
-.plots-row{{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px}}
-.plot-box{{flex:1;min-width:420px;border:1px solid #ecf0f1;border-radius:6px;overflow:hidden;background:#fff}}
+.plots-row{{display:grid;grid-template-columns:repeat(var(--plot-cols,3),1fr);gap:16px;margin-top:12px}}
+.plot-box{{border:1px solid #ecf0f1;border-radius:6px;overflow-x:auto;background:#fff}}
 .plot-box h4{{margin:0;padding:6px 10px;font-size:12px;background:#f8f9fa;border-bottom:1px solid #ecf0f1;color:#555}}
-.plot-box svg,.plot-box object{{width:100%;height:auto}}
+.plot-box svg,.plot-box object{{width:100%;height:auto;display:block}}
+.size-btn{{padding:3px 9px;border:1.5px solid #bdc3c7;border-radius:6px;cursor:pointer;
+  font-size:11px;font-weight:bold;background:#f8f9fa;color:#555;transition:all .12s;user-select:none;min-width:26px;text-align:center}}
+.size-btn.active{{border-color:#2c3e50;background:#2c3e50;color:#fff}}
+.size-btn:hover{{border-color:#2980b9;background:#eaf4fb}}
+#legend-fs-val,#axis-fs-val{{font-size:11px;color:#555;min-width:30px;text-align:center}}
 .tabs{{display:flex;gap:4px;margin-bottom:0;flex-wrap:wrap;border-bottom:2px solid #2c3e50;padding-bottom:0}}
 .tabs button{{padding:8px 16px;border:1px solid #ddd;border-bottom:none;border-radius:6px 6px 0 0;
   cursor:pointer;background:#ecf0f1;font-size:13px;transition:all .15s}}
@@ -230,6 +276,97 @@ function applyFilters(){{
 }}
 
 document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
+
+// ---- Plot size controls ----
+function setCols(n, btn){{
+  document.documentElement.style.setProperty('--plot-cols', n);
+  document.querySelectorAll('.size-btn[data-cols]').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  localStorage.setItem('plotCols', n);
+}}
+function _scaleSvgText(els, scale){{
+  els.forEach(el=>{{
+    if(!el.dataset.origFs) el.dataset.origFs = el.getAttribute('font-size') || '11';
+    el.setAttribute('font-size', Math.round(parseFloat(el.dataset.origFs) * scale));
+  }});
+}}
+function setLegendFs(v){{
+  _scaleSvgText(document.querySelectorAll('.plot-box g.legend-item text'), parseFloat(v));
+  document.getElementById('legend-fs-val').textContent = Math.round(v*100)+'%';
+  localStorage.setItem('legendFs', v);
+}}
+function setAxisFs(v){{
+  const els = [];
+  document.querySelectorAll('.plot-box svg text').forEach(el=>{{
+    if(!el.closest('g.legend-item')) els.push(el);
+  }});
+  _scaleSvgText(els, parseFloat(v));
+  document.getElementById('axis-fs-val').textContent = Math.round(v*100)+'%';
+  localStorage.setItem('axisFs', v);
+}}
+function setPlotH(v){{
+  v = parseInt(v);
+  const svgs = document.querySelectorAll('.plot-box svg');
+  if(v <= 0){{
+    svgs.forEach(s=>{{ s.style.width='100%'; s.style.height='auto'; }});
+    document.getElementById('plot-h-val').textContent = 'Auto';
+    localStorage.removeItem('plotH');
+  }} else {{
+    svgs.forEach(s=>{{ s.style.width=v+'px'; s.style.height='auto'; }});
+    document.getElementById('plot-h-val').textContent = v+'px';
+    localStorage.setItem('plotH', v);
+  }}
+}}
+function restorePlotPrefs(){{
+  const c = localStorage.getItem('plotCols');
+  if(c){{
+    document.documentElement.style.setProperty('--plot-cols', c);
+    const btn = document.querySelector(`.size-btn[data-cols='${{c}}']`);
+    if(btn){{ document.querySelectorAll('.size-btn[data-cols]').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); }}
+  }}
+  const lfs = localStorage.getItem('legendFs');
+  if(lfs){{ document.getElementById('legend-fs-slider').value = lfs; setLegendFs(parseFloat(lfs)); }}
+  const afs = localStorage.getItem('axisFs');
+  if(afs){{ document.getElementById('axis-fs-slider').value = afs; setAxisFs(parseFloat(afs)); }}
+  const ph = localStorage.getItem('plotH');
+  if(ph){{ document.getElementById('plot-h-slider').value = ph; setPlotH(parseInt(ph)); }}
+  const sc = localStorage.getItem('specColor');
+  if(sc){{ document.getElementById('spec-color-pick').value = sc; }}
+  const sw = localStorage.getItem('specWidth');
+  if(sw){{ document.getElementById('spec-w-slider').value = sw; document.getElementById('spec-w-val').textContent = sw+'px'; }}
+  const sv = localStorage.getItem('specVisible');
+  if(sv === '0'){{ const btn = document.getElementById('spec-toggle'); if(btn) toggleSpecLines(btn); }}
+  applySpecStyle();
+}}
+
+// ---- Spec line controls ----
+function applySpecStyle(){{
+  const color = document.getElementById('spec-color-pick').value;
+  const width = parseFloat(document.getElementById('spec-w-slider').value);
+  document.querySelectorAll('g.spec-el line, g.spec-el path').forEach(el=>{{
+    el.setAttribute('stroke', color);
+    el.setAttribute('stroke-width', width);
+  }});
+  document.querySelectorAll('g.spec-el text').forEach(el=>{{
+    el.setAttribute('fill', color);
+  }});
+  localStorage.setItem('specColor', color);
+  localStorage.setItem('specWidth', width);
+}}
+function toggleSpecLines(btn){{
+  const visible = btn.classList.contains('active');
+  if(visible){{
+    btn.classList.remove('active'); btn.textContent = '\u25cb Off';
+    document.querySelectorAll('g.spec-el').forEach(g=>g.style.display='none');
+    localStorage.setItem('specVisible','0');
+  }} else {{
+    btn.classList.add('active'); btn.textContent = '\u25cf On';
+    document.querySelectorAll('g.spec-el').forEach(g=>g.style.display='');
+    localStorage.setItem('specVisible','1');
+    applySpecStyle();
+  }}
+}}
+document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); restorePlotPrefs(); }});
 </script>
 </head>
 <body>
@@ -259,7 +396,45 @@ document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
   <div class="fg"><label>Skew</label>{skew_btns}</div>
   <div class="filter-divider"></div>
   <button class="ftog" onclick="resetFilters()" style="border-color:#27ae60;color:#27ae60">&#8635; Reset</button>
-</div>''')
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Columns</label>
+    <span class="size-btn" data-cols="1" onclick="setCols(1,this)">1</span>
+    <span class="size-btn" data-cols="2" onclick="setCols(2,this)">2</span>
+    <span class="size-btn active" data-cols="3" onclick="setCols(3,this)">3</span>
+    <span class="size-btn" data-cols="4" onclick="setCols(4,this)">4</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Legend Font</label>
+    <input id="legend-fs-slider" type="range" min="0.6" max="2.0" step="0.05" value="1"
+      oninput="setLegendFs(this.value)" style="width:90px;cursor:pointer">
+    <span id="legend-fs-val">100%</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Axis Font</label>
+    <input id="axis-fs-slider" type="range" min="0.6" max="2.0" step="0.05" value="1"
+      oninput="setAxisFs(this.value)" style="width:90px;cursor:pointer">
+    <span id="axis-fs-val">100%</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Plot Size</label>
+    <input id="plot-h-slider" type="range" min="0" max="3000" step="50" value="0"
+      oninput="setPlotH(this.value)" style="width:100px;cursor:pointer">
+    <span id="plot-h-val">Auto</span>
+    <span class="size-btn" onclick="document.getElementById('plot-h-slider').value=0;setPlotH(0)" style="margin-left:4px">&#8634;</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg" style="align-items:center;gap:6px">
+    <label>Spec Lines</label>
+    <input type="color" id="spec-color-pick" value="#ff6d00" title="Spec line colour"
+      oninput="applySpecStyle()" style="width:34px;height:26px;padding:1px;border:1.5px solid #bdc3c7;border-radius:5px;cursor:pointer">
+    <input id="spec-w-slider" type="range" min="1" max="10" step="0.5" value="4"
+      oninput="applySpecStyle();document.getElementById('spec-w-val').textContent=this.value+'px'"
+      style="width:70px;cursor:pointer" title="Spec line width">
+    <span id="spec-w-val" style="font-size:11px;color:#555;min-width:28px">4px</span>
+    <span class="size-btn active" id="spec-toggle" onclick="toggleSpecLines(this)" title="Show/hide spec lines">&#x25cf; On</span>
+  </div>
+</div>'''
+)
 
     # ---- Summary cards ----
     html.append('<div class="cards">')
@@ -292,9 +467,9 @@ document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
     # ---- Section descriptions ----
     SECTION_DESC = {
         "IOH/IOL Max":
-            "Maximum output current test: measures output voltage under load current. "
-            "VOL = output low voltage (must be ≤ spec max); "
-            "VOH = output high voltage (must be ≥ spec min).",
+            "Measures IO output current drive capability and resistance vs. DS setting. "
+            "IOL = sink current (output low); IOH = source current (output high). "
+            "R_Low / R_High = output resistance derived from VOL / VOH under load.",
         "IO State After POR":
             "Verifies IO pin state and direction after the chip initialisation process. "
             "Shows Pull Mode, IO State (High/Low), and IO Direction (Output/Input) "
@@ -439,8 +614,7 @@ document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
                             any_row = True
                             status_cls = ("pass" if s.fail_count == 0
                                           else ("fail" if s.pass_count == 0 else "marginal"))
-                            smin = f"{s.spec_min:.4g}" if s.spec_min is not None else "—"
-                            smax_s = f"{s.spec_max:.4g}" if s.spec_max is not None else "—"
+                            smin, smax_s = _spec_strs(param, s)
                             cpk_s = f"{s.cpk:.2f}" if s.cpk is not None else "—"
                             html.append(
                                 f"<tr>"
@@ -457,6 +631,41 @@ document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); }});
                                 f'<td class="{status_cls}">{_h(s.status)}</td>'
                                 f"</tr>"
                             )
+                # Bare params (no IO prefix, e.g. 'VOH', 'VOL')
+                bare_params = [
+                    p for p in params
+                    if not any(p.startswith(io + "_") for io in REPORT_IOS)
+                ]
+                if bare_params:
+                    html.append(
+                        '<tr class="io-hdr"><td colspan="14">All IOs (aggregated)</td></tr>'
+                    )
+                for param in sorted(bare_params):
+                    meas = param
+                    for flow_name in result.all_flows:
+                        key = (flow_name, param)
+                        if key not in result.parameter_stats:
+                            continue
+                        s = result.parameter_stats[key]
+                        status_cls = ("pass" if s.fail_count == 0
+                                      else ("fail" if s.pass_count == 0 else "marginal"))
+                        smin, smax_s = _spec_strs(param, s)
+                        cpk_s = f"{s.cpk:.2f}" if s.cpk is not None else "—"
+                        html.append(
+                            f"<tr>"
+                            f"<td>—</td>"
+                            f"<td><b>{_h(meas)}</b></td>"
+                            f"<td>{_h(s.unit)}</td>"
+                            f"<td>{smin}</td><td>{smax_s}</td>"
+                            f"<td>{_h(flow_name)}</td>"
+                            f"<td>{s.count}</td>"
+                            f"<td>{s.pass_rate:.1f}%</td>"
+                            f"<td>{cpk_s}</td>"
+                            f"<td>{s.mean:.4g}</td><td>{s.std:.3g}</td>"
+                            f"<td>{s.minimum:.4g}</td><td>{s.maximum:.4g}</td>"
+                            f'<td class="{status_cls}">{_h(s.status)}</td>'
+                            f"</tr>"
+                        )
                 html.append("</table>")
         else:
             html.append('<p style="color:#999">No data for this test section.</p>')
@@ -613,9 +822,8 @@ function showTab(id,btn){{
                 continue
             s = result.parameter_stats[key]
             cls2 = "pass" if s.fail_count == 0 else ("fail" if s.pass_count == 0 else "marginal")
-            smin = f"{s.spec_min:.4g}" if s.spec_min is not None else "â€“"
-            smax_s = f"{s.spec_max:.4g}" if s.spec_max is not None else "â€“"
-            cpk_s = f"{s.cpk:.3f}" if s.cpk is not None else "â€“"
+            smin, smax_s = _spec_strs(s.parameter, s)
+            cpk_s = f"{s.cpk:.3f}" if s.cpk is not None else "\u2014"
             html.append(
                 f"<tr>"
                 f"<td><b>{_h(s.parameter)}</b></td><td>{_h(s.unit)}</td>"

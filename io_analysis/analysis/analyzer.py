@@ -146,8 +146,12 @@ def analyze_flow(flow_data: FlowData, config: Config) -> dict:
     """Analyze all parameters in a single flow."""
     results = {}
     params = {row.get("Parameter", "") for row in flow_data.rows}
+    excluded = tuple(ex + "_" for ex in (config.excluded_ios or []))
     for param in params:
         if not param:
+            continue
+        if excluded and param.startswith(excluded):
+            logger.debug(f"Skipping excluded parameter: {param}")
             continue
         param_rows = flow_data.get_parameter_rows(param)
         results[param] = analyze_parameter(param_rows, param, flow_data.flow_name, config)

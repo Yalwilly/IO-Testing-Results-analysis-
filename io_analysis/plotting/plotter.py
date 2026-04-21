@@ -21,8 +21,17 @@ C_PURPLE = "#9b59b6"
 C_TEAL = "#1abc9c"
 C_DARK = "#2c3e50"
 C_GRAY = "#7f8c8d"
-C_SPEC = "#e74c3c"
+C_SPEC = "#ff6d00"  # overridden per-call from config.plot.spec_line_color
+_SHOW_SPEC_LINES = True  # overridden per-call from config.plot.show_spec_lines
 FLOW_COLORS = [C_BLUE, C_WARN, C_PURPLE, C_TEAL, C_FAIL]
+
+# ---- Fixed chart dimensions — uniform size/font across all section plots ----
+_CHART_W   = 1400
+_CHART_H   = 560
+_CHART_ML  = 82    # left margin
+_CHART_MT  = 72    # top margin
+_CHART_MB  = 100   # bottom margin
+_CHART_LEG = 260   # legend / right margin
 
 # ---- Report filtering / section config ----
 REPORT_IOS = ["GPIO_0", "RF_KILLN"]
@@ -58,7 +67,7 @@ TEST_SECTION_ORDER = [
 ]
 
 SECTION_MEASUREMENTS = {
-    "IOH/IOL Max":                  ["IOL_A", "IOH_A"],
+    "IOH/IOL Max":                  ["IOL_A", "IOH_A", "R_Low", "R_High"],
     "IO State After POR":           ["IO_State", "IO_Direction"],
     "Pull-up/Pull-down Resistance": ["R_PullUp", "R_PullDown"],
     "VIH/VIL":                      ["VIH_Min", "VIL_Max"],
@@ -95,6 +104,23 @@ def _ys(v, y_min, y_max, pt, pb):
     if y_max == y_min:
         return (pt + pb) / 2.0
     return pb - (v - y_min) / (y_max - y_min) * (pb - pt)
+
+
+def _pct_range(vals, pct_lo=2, pct_hi=98):
+    """Percentile-based y-range that excludes sentinel/outlier values from plot axes.
+    Always call before including spec limits with min/max."""
+    if not vals:
+        return 0.0, 1.0
+    s = sorted(v for v in vals if v is not None and v == v and abs(v) != float("inf"))
+    if not s:
+        return 0.0, 1.0
+    n = len(s)
+    lo = s[max(0, int(n * pct_lo / 100))]
+    hi = s[min(n - 1, int(n * pct_hi / 100))]
+    if lo == hi:
+        lo -= 0.5
+        hi += 0.5
+    return lo, hi
 
 
 class SVG:
@@ -232,17 +258,18 @@ def plot_parameter_vs_spec(result, config, output_dir):
         if not flow_boxes:
             continue
         all_vals = [v for _, vs in flow_boxes for v in vs]
-        y_min = min(all_vals)
-        y_max = max(all_vals)
+        y_min, y_max = _pct_range(all_vals)
         if spec_min is not None:
             y_min = min(y_min, spec_min)
+            y_max = max(y_max, spec_min)
         if spec_max is not None:
             y_max = max(y_max, spec_max)
-        pad = (y_max - y_min) * 0.12 or 0.1
+            y_min = min(y_min, spec_max)
+        pad = (y_max - y_min) * 0.25 or 0.1
         y_min -= pad
         y_max += pad
         n = len(flow_boxes)
-        W, H = 600, 430
+        W, H = 900, 450
         ml, mr, mt, mb = 70, 90, 55, 60
         pl, pr_w, pt, pb = ml, W - mr, mt, H - mb
         pw = pr_w - pl
@@ -283,14 +310,17 @@ def plot_parameter_vs_spec(result, config, output_dir):
             svg.text(xc, pb + 18, flow_name, fs=11, anchor="middle")
             svg.rect(W - mr + 5, mt + idx * 18, 10, 10, fill=color, opacity=0.7)
             svg.text(W - mr + 18, mt + idx * 18 + 9, flow_name, fs=9)
-        if spec_min is not None:
-            ys2 = _ys(spec_min, y_min, y_max, pt, pb)
-            svg.line(pl, ys2, pr_w, ys2, stroke=C_SPEC, sw=1.8, dash="6,4")
-            svg.text(pr_w + 3, ys2 + 4, f"Min:{spec_min:.3g}", fs=9, fill=C_SPEC)
-        if spec_max is not None:
-            ys2 = _ys(spec_max, y_min, y_max, pt, pb)
-            svg.line(pl, ys2, pr_w, ys2, stroke=C_SPEC, sw=1.8, dash="4,4")
-            svg.text(pr_w + 3, ys2 + 4, f"Max:{spec_max:.3g}", fs=9, fill=C_SPEC)
+        if _SHOW_SPEC_LINES:
+            svg.parts.append('<g class="spec-el">')
+            if spec_min is not None:
+                ys2 = _ys(spec_min, y_min, y_max, pt, pb)
+                svg.line(pl, ys2, pr_w, ys2, stroke=C_SPEC, sw=4)
+                svg.text(pr_w + 3, ys2 + 4, f"Min:{spec_min:.3g}", fs=9, fill=C_SPEC)
+            if spec_max is not None:
+                ys2 = _ys(spec_max, y_min, y_max, pt, pb)
+                svg.line(pl, ys2, pr_w, ys2, stroke=C_SPEC, sw=4)
+                svg.text(pr_w + 3, ys2 + 4, f"Max:{spec_max:.3g}", fs=9, fill=C_SPEC)
+            svg.parts.append('</g>')
         saved.append(_save(svg, output_dir / f"param_vs_spec_{param}.svg"))
     return saved
 
@@ -318,13 +348,14 @@ def plot_distribution_histograms(result, config, output_dir):
         combined = [v for _, vs in fdlist for v in vs
                     if v is not None and v == v
                     and abs(v) != float("inf")]  # exclude None, NaN, inf
-        x_min = min(combined)
-        x_max = max(combined)
+        x_min, x_max = _pct_range(combined)
         if spec_min is not None and spec_min == spec_min:  # not NaN
             x_min = min(x_min, spec_min)
+            x_max = max(x_max, spec_min)
         if spec_max is not None and spec_max == spec_max:  # not NaN
             x_max = max(x_max, spec_max)
-        pad = (x_max - x_min) * 0.05 or 0.01
+            x_min = min(x_min, spec_max)
+        pad = (x_max - x_min) * 0.15 or 0.01
         x_min -= pad
         x_max += pad
         n_bins = min(25, max(8, len(combined) // 3))
@@ -342,7 +373,7 @@ def plot_distribution_histograms(result, config, output_dir):
             hists.append((fn, counts, FLOW_COLORS[idx % len(FLOW_COLORS)]))
         if max_count == 0:
             continue
-        W, H = 800, 400
+        W, H = 900, 450
         ml, mr, mt, mb = 65, 30, 55, 75
         pl, pr_w, pt, pb = ml, W - mr, mt, H - mb
         pw, ph = pr_w - pl, pb - pt
@@ -374,14 +405,17 @@ def plot_distribution_histograms(result, config, output_dir):
                 svg.rect(x, pb - bar_h, sub_w, bar_h, fill=color, opacity=0.72)
             svg.rect(pl + idx * 110, pt - 28, 12, 12, fill=color, opacity=0.72)
             svg.text(pl + idx * 110 + 15, pt - 19, fn, fs=10)
-        if spec_min is not None:
-            xs = pl + (spec_min - x_min) / (x_max - x_min) * pw
-            svg.line(xs, pt, xs, pb, stroke=C_SPEC, sw=2, dash="6,4")
-            svg.text(xs + 3, pt + 12, f"Min:{spec_min:.3g}", fs=9, fill=C_SPEC)
-        if spec_max is not None:
-            xs = pl + (spec_max - x_min) / (x_max - x_min) * pw
-            svg.line(xs, pt, xs, pb, stroke=C_SPEC, sw=2, dash="4,4")
-            svg.text(xs - 70, pt + 12, f"Max:{spec_max:.3g}", fs=9, fill=C_SPEC)
+        if _SHOW_SPEC_LINES:
+            svg.parts.append('<g class="spec-el">')
+            if spec_min is not None:
+                xs = pl + (spec_min - x_min) / (x_max - x_min) * pw
+                svg.line(xs, pt, xs, pb, stroke=C_SPEC, sw=4)
+                svg.text(xs + 3, pt + 12, f"Min:{spec_min:.3g}", fs=9, fill=C_SPEC)
+            if spec_max is not None:
+                xs = pl + (spec_max - x_min) / (x_max - x_min) * pw
+                svg.line(xs, pt, xs, pb, stroke=C_SPEC, sw=4)
+                svg.text(xs - 70, pt + 12, f"Max:{spec_max:.3g}", fs=9, fill=C_SPEC)
+            svg.parts.append('</g>')
         saved.append(_save(svg, output_dir / f"histogram_{param}.svg"))
     return saved
 
@@ -406,7 +440,7 @@ def plot_cross_flow_comparison(result, config, output_dir):
         return []
     y_min = min(m - s for m, s in zip(all_m, all_s))
     y_max = max(m + s for m, s in zip(all_m, all_s))
-    pad = (y_max - y_min) * 0.12 or 0.1
+    pad = (y_max - y_min) * 0.25 or 0.1
     y_min -= pad
     y_max += pad
     n_p = len(params)
@@ -538,21 +572,22 @@ def plot_scatter_by_dut(result, config, output_dir):
         if not fpdata:
             continue
         all_vals = [v for _, dv in fpdata for v in dv.values()]
-        y_min = min(all_vals)
-        y_max = max(all_vals)
+        y_min, y_max = _pct_range(all_vals)
         if spec_min is not None:
             y_min = min(y_min, spec_min)
+            y_max = max(y_max, spec_min)
         if spec_max is not None:
             y_max = max(y_max, spec_max)
-        pad = (y_max - y_min) * 0.12 or 0.1
+            y_min = min(y_min, spec_max)
+        pad = (y_max - y_min) * 0.25 or 0.1
         y_min -= pad
         y_max += pad
         all_duts = sorted({d for _, dv in fpdata for d in dv})
         dut2x = {d: i for i, d in enumerate(all_duts)}
         n_duts = len(all_duts)
-        W = max(700, 28 * n_duts + 150)
-        H = 400
-        ml, mr, mt, mb = 70, 30, 55, 80
+        W = max(900, 28 * n_duts + 150)
+        H = 450
+        ml, mr, mt, mb = 70, 30, 55, 90
         pl, pr_w, pt, pb = ml, W - mr, mt, H - mb
         pw, ph = pr_w - pl, pb - pt
         svg = SVG(W, H)
@@ -576,14 +611,17 @@ def plot_scatter_by_dut(result, config, output_dir):
             x = pl + (xi + 0.5) * pw / max(n_duts, 1)
             svg.text(x, pb + 16, str(dut), fs=8, anchor="end",
                      transform=f"rotate(-45,{x:.1f},{pb + 16})")
-        if spec_min is not None:
-            svg.line(pl, _ys(spec_min, y_min, y_max, pt, pb),
-                     pr_w, _ys(spec_min, y_min, y_max, pt, pb),
-                     stroke=C_SPEC, sw=1.8, dash="6,4")
-        if spec_max is not None:
-            svg.line(pl, _ys(spec_max, y_min, y_max, pt, pb),
-                     pr_w, _ys(spec_max, y_min, y_max, pt, pb),
-                     stroke=C_SPEC, sw=1.8, dash="4,4")
+        if _SHOW_SPEC_LINES:
+            svg.parts.append('<g class="spec-el">')
+            if spec_min is not None:
+                svg.line(pl, _ys(spec_min, y_min, y_max, pt, pb),
+                         pr_w, _ys(spec_min, y_min, y_max, pt, pb),
+                         stroke=C_SPEC, sw=4)
+            if spec_max is not None:
+                svg.line(pl, _ys(spec_max, y_min, y_max, pt, pb),
+                         pr_w, _ys(spec_max, y_min, y_max, pt, pb),
+                         stroke=C_SPEC, sw=4)
+            svg.parts.append('</g>')
         for fi, (fn, _) in enumerate(fpdata):
             svg.circle(pl + fi * 100 + 6, pt - 22, 5,
                        fill=FLOW_COLORS[fi % len(FLOW_COLORS)], opacity=0.78)
@@ -616,9 +654,18 @@ def _try_float_val(s):
         return 0.0
 
 
+IO_TYPE_LABEL = {
+    "GPIO_0":   "PB16DSFS_18_18_H",
+    "BRI_DT":   "PB16DSFS_18_18_H",
+    "RF_KILLN": "PB12DSFS_18_T33_H",
+}
+
+
 def plot_section_line_chart(all_rows, measurement_suffix, test_name,
                              io_name, spec_min, spec_max, unit,
-                             worst_agg, output_path):
+                             worst_agg, output_path,
+                             io_type_label="", ds_label="", force_corner=False,
+                             chart_type="line"):
     """
     Line chart matching the Excel pivot chart style.
 
@@ -677,7 +724,7 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
     has_ds = any(r.get("DS", "") for r in relevant)
 
     # ── DS-based chart ─────────────────────────────────────────────────────────
-    if has_ds:
+    if has_ds and not force_corner:
         def ds_sort_key(s):
             try:
                 return int(s.replace("DS_", "").replace("ds_", ""))
@@ -708,55 +755,105 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             key=lambda s: _try_float_val(s.split("/")[0])
         )
 
-        # Group: {(viocore, temp, ds, skew): [rows]}
+        # Group: {(viocore, temp, ds, skew, chip_id): [values]}
+        # Also capture per-(temp,ds) spec (e.g. resistance spec varies per DS)
         grp: dict = {}
+        ds_spec_max_map: dict = {}  # (temp, ds) -> spec_max
+        ds_spec_min_map: dict = {}  # (temp, ds) -> spec_min
         for r in relevant:
             fv = safe_float(r.get("Value"))
             if fv is None or not r.get("DS"):
                 continue
-            vc = _viocore_key(r)
-            grp.setdefault(
-                (vc, r.get("Temperature", "?"), r.get("DS", ""), r.get("Skew", "?")), []
-            ).append(r)
+            vc   = _viocore_key(r)
+            temp = r.get("Temperature", "?")
+            ds   = r.get("DS", "")
+            skew = r.get("Skew", "?")
+            chip = str(r.get("DUT_ID", "?"))
+            grp.setdefault((vc, temp, ds, skew, chip), []).append(fv)
+            pair = (temp, ds)
+            for attr, target in [("Spec_Max", ds_spec_max_map),
+                                  ("Spec_Min", ds_spec_min_map)]:
+                if pair not in target:
+                    sv = r.get(attr)
+                    if sv is not None:
+                        try:
+                            v = float(sv)
+                            if v and v == v and abs(v) != float("inf"):
+                                target[pair] = v
+                        except (ValueError, TypeError):
+                            pass
+
+        # One series per (viocore, skew, chip_id) — all chips shown individually
+        all_series_keys = sorted(
+            {(vc, sk, ch) for vc, _t, _d, sk, ch in grp},
+            key=lambda x: (x[1], x[2], x[0])  # skew, chip, viocore
+        )
+        if not all_series_keys:
+            return None
+
+        def _pick(vals):
+            if not vals: return None
+            if worst_agg == "max": return max(vals)
+            if worst_agg == "min": return min(vals)
+            return sum(vals) / len(vals)
 
         # X-axis: (temp, ds) pairs grouped by temperature
         x_pairs = [(t, d) for t in all_temps for d in all_ds]
         n = len(x_pairs)
 
-        # Build per-(viocore, skew) series: list of (value, chip_id) per x_pair
+        # Per-(vc, sk, chip) series: one value per x_pair
         series = {
-            (vc, sk): [wcase_with_id(grp.get((vc, t, d, sk), [])) for t, d in x_pairs]
-            for vc in all_viocore for sk in all_skews
+            key: [_pick(grp.get((key[0], t, d, key[1], key[2]), [])) for t, d in x_pairs]
+            for key in all_series_keys
         }
 
-        all_vals = [v for pts in series.values() for v, _ in pts if v is not None]
+        all_vals = [v for pts in series.values() for v in pts if v is not None]
         if not all_vals:
             return None
 
-        ns = len(all_viocore) * len(all_skews)
-        max_lbl = max(
-            (len(f"{vc} — {sk}") for vc in all_viocore for sk in all_skews),
-            default=16
-        )
-        leg_w = max(200, max_lbl * 7 + 50)
-        W = max(1000, n * 36 + 90 + leg_w)
-        H = max(480, ns * 22 + 130)
-        ml, mr, mt, mb = 82, leg_w, 72, 70
+        W, H = _CHART_W, _CHART_H
+        ml, mr, mt, mb = _CHART_ML, _CHART_LEG, _CHART_MT, _CHART_MB
         pl, pr, pt_y, pb = ml, W - mr, mt, H - mb
         pw = pr - pl
 
-        y_min, y_max = min(all_vals), max(all_vals)
+        y_min, y_max = _pct_range(all_vals)
         if spec_min is not None and spec_min == spec_min:
             y_min = min(y_min, spec_min)
+            y_max = max(y_max, spec_min)
         if spec_max is not None and spec_max == spec_max:
             y_max = max(y_max, spec_max)
+            y_min = min(y_min, spec_max)
+        # Always include per-DS spec values so they stay within the visible y-range
+        for _v in ds_spec_max_map.values():
+            if _v == _v and abs(_v) != float("inf"):
+                y_max = max(y_max, _v)
+        for _v in ds_spec_min_map.values():
+            if _v == _v and abs(_v) != float("inf"):
+                y_min = min(y_min, _v)
+        # Current reference levels for IOL_A/IOH_A (IO_SPEC.pdf Table 18/20)
+        # PB16 (GPIO_0): DS_0=1mA, DS_1=2mA, ..., DS_15=16mA
+        # PB12 (RF_KILLN): DS_0=2mA, DS_1=4mA, DS_2=8mA, DS_3=12mA
+        _ds_current_ref: dict = {}
+        if measurement_suffix in ("IOL_A", "IOH_A"):
+            _is_pb12_ref = io_name.upper().strip() == "RF_KILLN"
+            _curr_table = [2, 4, 8, 12] if _is_pb12_ref else list(range(1, 17))
+            for _t, _d in x_pairs:
+                try:
+                    _ds_idx = int(str(_d).replace("DS_", "").replace("ds_", ""))
+                    if 0 <= _ds_idx < len(_curr_table):
+                        _ds_current_ref[(_t, _d)] = float(_curr_table[_ds_idx])
+                except (ValueError, TypeError):
+                    pass
+            for _cv in _ds_current_ref.values():
+                y_max = max(y_max, _cv)
         span = y_max - y_min
-        y_min -= (span * 0.12 or 0.05)
-        y_max += (span * 0.12 or 0.05)
+        y_min -= (span * 0.25 or 0.05)
+        y_max += (span * 0.25 or 0.05)
 
         unit_str = f" ({unit})" if unit else ""
+        io_type_str = f"  [{io_type_label}]" if io_type_label else ""
         svg = SVG(W, H)
-        svg.title(f"{io_name} — {measurement_suffix}{unit_str} [{test_name}]")
+        svg.title(f"{io_name}{io_type_str} — {measurement_suffix}{unit_str} [{test_name}]")
         svg.line(pl, pb, pr, pb)
         svg.line(pl, pt_y, pl, pb)
         _y_axis(svg, y_min, y_max, pl, pr, pt_y, pb)
@@ -786,94 +883,168 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
         svg.text(pl + pw / 2, pb + 34, "Temperature  /  Drive Strength (DS)",
                  fs=11, anchor="middle", fill=C_DARK)
 
-        # Lines per (viocore, skew)
-        si = 0
-        for vc in all_viocore:
-            for skew in all_skews:
-                color = _PALETTE[si % len(_PALETTE)]
-                dash  = _DASHES[si % len(_DASHES)]
-                vc_safe = str(vc).replace('"', '')
-                s_safe  = str(skew).replace('"', '')
-                svg.parts.append(
-                    f'<g class="series" data-viocore="{vc_safe}" data-skew="{s_safe}">'
+        # Lines — one per (viocore, skew, chip_id)
+        for si, (vc, skew, chip) in enumerate(all_series_keys):
+            color     = _PALETTE[si % len(_PALETTE)]
+            dash      = _DASHES[si % len(_DASHES)]
+            vc_safe   = str(vc).replace('"', '')
+            s_safe    = str(skew).replace('"', '')
+            chip_safe = str(chip).replace('"', '')
+            svg.parts.append(
+                f'<g class="series" data-viocore="{vc_safe}" '
+                f'data-skew="{s_safe}" data-chip="{chip_safe}">'
+            )
+            pts_xy = [
+                (pl + (i + 0.5) * x_step, _ys(v, y_min, y_max, pt_y, pb))
+                for i, v in enumerate(series[(vc, skew, chip)])
+                if v is not None
+            ]
+            if len(pts_xy) >= 2:
+                d_path = " ".join(
+                    f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                    for j, (x, y) in enumerate(pts_xy)
                 )
-                pts_xy = [
-                    (pl + (i + 0.5) * x_step, _ys(v, y_min, y_max, pt_y, pb), cid)
-                    for i, (v, cid) in enumerate(series[(vc, skew)])
-                    if v is not None
-                ]
-                if len(pts_xy) >= 2:
-                    d = " ".join(
-                        f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                        for j, (x, y, _) in enumerate(pts_xy)
-                    )
-                    dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-                    svg.parts.append(
-                        f'<path d="{d}" fill="none" stroke="{color}" '
-                        f'stroke-width="2.2" stroke-linejoin="round" '
-                        f'{dash_attr}opacity="0.9"/>'
-                    )
-                for x, y, cid in pts_xy:
-                    tip = f"{io_name} {measurement_suffix} | {vc} | {skew} | Chip: {cid}"
-                    svg.parts.append(
-                        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" '
-                        f'fill="{color}" opacity="0.9">'
-                        f'<title>{tip}</title></circle>'
-                    )
-                svg.parts.append('</g>')
-                si += 1
-
-        # Spec lines
-        for spec_val, lbl, sdash in [(spec_min, "Min spec", "8,4"),
-                                     (spec_max, "Max spec", "4,4")]:
-            if spec_val is not None and spec_val == spec_val and y_min <= spec_val <= y_max:
-                ys = _ys(spec_val, y_min, y_max, pt_y, pb)
-                svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=1.8, dash=sdash)
-                svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}", fs=9, fill=C_SPEC)
-
-        # Legend — one entry per (viocore, skew) with worst-case chip ID
-        si = 0
-        for vc in all_viocore:
-            for skew in all_skews:
-                ly = mt + si * 22
-                color = _PALETTE[si % len(_PALETTE)]
-                dash  = _DASHES[si % len(_DASHES)]
-                lx = W - mr + 8
-                vc_safe = str(vc).replace('"', '')
-                s_safe  = str(skew).replace('"', '')
                 dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-                pts_for_legend = [(v, cid) for v, cid in series[(vc, skew)] if v is not None]
-                if pts_for_legend:
-                    if worst_agg == "max":
-                        _, worst_cid = max(pts_for_legend, key=lambda x: x[0])
-                    elif worst_agg == "min":
-                        _, worst_cid = min(pts_for_legend, key=lambda x: x[0])
-                    else:
-                        worst_cid = pts_for_legend[0][1]
-                else:
-                    worst_cid = ""
-                lbl_text = f"{vc} — {skew}"
-                if worst_cid:
-                    lbl_text += f" ({worst_cid})"
-                svg.parts.append(f'<g class="legend-item" data-viocore="{vc_safe}" data-skew="{s_safe}">')
                 svg.parts.append(
-                    f'<line x1="{lx}" y1="{ly+5}" x2="{lx+28}" y2="{ly+5}" '
-                    f'stroke="{color}" stroke-width="2.2" {dash_attr}/>'
+                    f'<path d="{d_path}" fill="none" stroke="{color}" '
+                    f'stroke-width="2.0" stroke-linejoin="round" '
+                    f'{dash_attr}opacity="0.85"/>'
                 )
-                svg.parts.append(f'<circle cx="{lx+14}" cy="{ly+5}" r="4" fill="{color}"/>')
+            for x, y in pts_xy:
+                tip = f"{io_name} {measurement_suffix} | {vc} | {skew} | Chip: {chip}"
                 svg.parts.append(
-                    f'<text x="{lx+32}" y="{ly+9}" font-size="10" '
-                    f'font-family="Arial,sans-serif" fill="{C_DARK}">{_esc(lbl_text)}</text>'
+                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" '
+                    f'fill="{color}" opacity="0.9">'
+                    f'<title>{tip}</title></circle>'
                 )
-                svg.parts.append('</g>')
-                si += 1
+            svg.parts.append('</g>')
+
+        # Spec lines: per-DS variable (e.g. resistance) — always drawn if available
+        _spec_leg = []  # entries for corner legend: (color, dash, label)
+        _drawn_spec_dirs = set()  # track which directions (min/max) got a variable spec line
+        if not _SHOW_SPEC_LINES:
+            ds_spec_max_map = {}
+            ds_spec_min_map = {}
+            _ds_current_ref = {}
+            spec_min = None
+            spec_max = None
+        svg.parts.append('<g class="spec-el">')
+        for smap, lbl, sdash, direction in [(ds_spec_max_map, "Max spec", "4,4", "max"),
+                                             (ds_spec_min_map, "Min spec", "8,4", "min")]:
+            if not smap:
+                continue
+            valid_pts = [
+                (pl + (i + 0.5) * x_step, smap[pair])
+                for i, pair in enumerate(x_pairs)
+                if pair in smap and y_min <= smap[pair] <= y_max
+            ]
+            if len(valid_pts) >= 2:
+                d_path = " ".join(
+                    f"{'M' if j == 0 else 'L'}{x:.1f},{_ys(v, y_min, y_max, pt_y, pb):.1f}"
+                    for j, (x, v) in enumerate(valid_pts)
+                )
+                svg.parts.append(
+                    f'<path d="{d_path}" fill="none" stroke="{C_SPEC}" '
+                    f'stroke-width="4" opacity="1.0"/>'
+                )
+                _spec_leg.append((C_SPEC, None, lbl))
+                _drawn_spec_dirs.add(direction)
+        # Fixed horizontal spec lines — always drawn when spec is defined and not
+        # already covered by a per-DS variable line in the same direction
+        for spec_val, lbl, sdash, direction in [
+            (spec_min, "Min spec", "8,4", "min"),
+            (spec_max, "Max spec", "4,4", "max"),
+        ]:
+            if spec_val is None or spec_val != spec_val:
+                continue
+            if direction in _drawn_spec_dirs:
+                continue
+            if not (y_min <= spec_val <= y_max):
+                continue
+            ys = _ys(spec_val, y_min, y_max, pt_y, pb)
+            svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+            _spec_leg.append((C_SPEC, None, f"{lbl}: {spec_val:.3g}"))
+
+        # Nominal test-current reference line (IO_SPEC.pdf Table 18/20)
+        # Use same C_SPEC colour so it appears as an orange spec line on IOH/IOL
+        _C_IREF = C_SPEC
+        _pb12_lbl = io_name.upper().strip() == "RF_KILLN"
+        if _ds_current_ref:
+            _curr_pts = [
+                (pl + (i + 0.5) * x_step, _ds_current_ref[(t, d)])
+                for i, (t, d) in enumerate(x_pairs)
+                if (t, d) in _ds_current_ref and y_min <= _ds_current_ref[(t, d)] <= y_max
+            ]
+            if len(_curr_pts) >= 2:
+                _iref_path = " ".join(
+                    f"{'M' if j == 0 else 'L'}{x:.1f},{_ys(v, y_min, y_max, pt_y, pb):.1f}"
+                    for j, (x, v) in enumerate(_curr_pts)
+                )
+                svg.parts.append(
+                    f'<path d="{_iref_path}" fill="none" stroke="{_C_IREF}" '
+                    f'stroke-width="4" opacity="1.0"/>'
+                )
+                _spec_leg.append((_C_IREF, None,
+                                   f"{'PB12' if _pb12_lbl else 'PB16'} Test I (mA)"))
+
+        # ── Corner legend box for spec / reference lines (top-left of plot area) ──
+        if _spec_leg:
+            _blx = pl + 8
+            _bly = pt_y + 8
+            _bw  = 192
+            _bh  = 10 + len(_spec_leg) * 20
+            svg.parts.append(
+                f'<rect x="{_blx}" y="{_bly}" width="{_bw}" height="{_bh}" '
+                f'fill="white" fill-opacity="0.88" stroke="#cccccc" '
+                f'stroke-width="0.8" rx="4"/>'
+            )
+            for _ei, (_ec, _ed, _et) in enumerate(_spec_leg):
+                _ley = _bly + 16 + _ei * 20
+                _da  = f'stroke-dasharray="{_ed}" ' if _ed else ""
+                svg.parts.append(
+                    f'<line x1="{_blx+6}" y1="{_ley-5}" x2="{_blx+30}" y2="{_ley-5}" '
+                    f'stroke="{_ec}" stroke-width="4" {_da}/>'
+                )
+                svg.parts.append(
+                    f'<text x="{_blx+34}" y="{_ley}" font-size="10" '
+                    f'font-weight="bold" font-family="Arial,sans-serif" '
+                    f'fill="{_ec}">{_esc(_et)}</text>'
+                )
+
+        svg.parts.append('</g>')  # close spec-el group
+
+        # Legend — one entry per (viocore, skew, chip)
+        for si, (vc, skew, chip) in enumerate(all_series_keys):
+            ly        = mt + si * 22
+            color     = _PALETTE[si % len(_PALETTE)]
+            dash      = _DASHES[si % len(_DASHES)]
+            lx        = W - mr + 8
+            vc_safe   = str(vc).replace('"', '')
+            s_safe    = str(skew).replace('"', '')
+            chip_safe = str(chip).replace('"', '')
+            dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+            lbl_text  = f"{chip} | {skew}"
+            svg.parts.append(
+                f'<g class="legend-item" data-viocore="{vc_safe}" '
+                f'data-skew="{s_safe}" data-chip="{chip_safe}">'
+            )
+            svg.parts.append(
+                f'<line x1="{lx}" y1="{ly+5}" x2="{lx+28}" y2="{ly+5}" '
+                f'stroke="{color}" stroke-width="2.0" {dash_attr}/>'
+            )
+            svg.parts.append(f'<circle cx="{lx+14}" cy="{ly+5}" r="4" fill="{color}"/>')
+            svg.parts.append(
+                f'<text x="{lx+32}" y="{ly+9}" font-size="10" '
+                f'font-family="Arial,sans-serif" fill="{C_DARK}">{_esc(lbl_text)}</text>'
+            )
+            svg.parts.append('</g>')
 
         return _save(svg, output_path)
 
     # ── Corner-based chart (no DS) ──────────────────────────────────────────────
     parse = _parse_condition
 
-    # Group: {(temp, vio, vcore): {skew: [rows]}}
+    # Group: {(temp, vio, vcore, skew, chip_id): [values]}
     corner_grp: dict = {}
     for r in relevant:
         fv = safe_float(r.get("Value"))
@@ -884,48 +1055,72 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
         vio  = c.get("VIO", "?")
         vcor = c.get("VCORE", "?")
         skew = r.get("Skew", "") or c.get("SKW", "?")
-        corner_grp.setdefault((temp, vio, vcor), {}).setdefault(skew, []).append(r)
+        chip = str(r.get("DUT_ID", "?"))
+        corner_grp.setdefault((temp, vio, vcor, skew, chip), []).append(fv)
 
     all_conds = sorted(
-        corner_grp.keys(),
+        {(t, v, vc) for t, v, vc, _sk, _ch in corner_grp},
         key=lambda x: (_try_float_val(x[0]), _try_float_val(x[1]), _try_float_val(x[2]))
     )
     if not all_conds:
         return None
 
-    all_skews = sorted({s for cd in corner_grp.values() for s in cd})
-    ns = len(all_skews)
+    # Dynamic spec: for VOH, spec_min = 0.75 × VIO at each corner condition
+    dynamic_spec_min: dict = {}  # {(t, vio, vcor): float}
+    if measurement_suffix == "VOH":
+        for (t, vio, vcor) in all_conds:
+            try:
+                dynamic_spec_min[(t, vio, vcor)] = 0.75 * float(vio)
+            except (ValueError, TypeError):
+                pass
 
-    all_vals = [
-        safe_float(r.get("Value"))
-        for cd in corner_grp.values()
-        for rows in cd.values()
-        for r in rows
-        if safe_float(r.get("Value")) is not None
-    ]
+    all_series_corner = sorted(
+        {(sk, ch) for _t, _v, _vc, sk, ch in corner_grp},
+        key=lambda x: (x[0], x[1])
+    )
+    ns = len(all_series_corner)
+
+    def _pick_c(vals):
+        if not vals: return None
+        if worst_agg == "max": return max(vals)
+        if worst_agg == "min": return min(vals)
+        return sum(vals) / len(vals)
+
+    series_corner = {
+        (sk, ch): [_pick_c(corner_grp.get((t, v, vc, sk, ch), [])) for t, v, vc in all_conds]
+        for sk, ch in all_series_corner
+    }
+
+    all_vals = [v for pts in series_corner.values() for v in pts if v is not None]
     if not all_vals:
         return None
 
     n = len(all_conds)
-    leg_w = max(155, max(len(s) for s in all_skews) * 8 + 50)
-    W = max(860, n * 34 + 90 + leg_w)
-    H = max(480, ns * 22 + 130)
-    ml, mr, mt, mb = 82, leg_w, 72, 100
+    W, H = _CHART_W, _CHART_H
+    ml, mr, mt, mb = _CHART_ML, _CHART_LEG, _CHART_MT, _CHART_MB
     pl, pr, pt_y, pb = ml, W - mr, mt, H - mb
     pw = pr - pl
 
-    y_min, y_max = min(all_vals), max(all_vals)
-    if spec_min is not None and spec_min == spec_min:
+    y_min, y_max = _pct_range(all_vals)
+    if dynamic_spec_min:
+        dyn_vals = list(dynamic_spec_min.values())
+        y_min = min(y_min, min(dyn_vals))
+        y_max = max(y_max, max(dyn_vals))
+    elif spec_min is not None and spec_min == spec_min:
         y_min = min(y_min, spec_min)
+        y_max = max(y_max, spec_min)
     if spec_max is not None and spec_max == spec_max:
         y_max = max(y_max, spec_max)
+        y_min = min(y_min, spec_max)
     span = y_max - y_min
-    y_min -= (span * 0.13 or 0.05)
-    y_max += (span * 0.13 or 0.05)
+    y_min -= (span * 0.25 or 0.05)
+    y_max += (span * 0.25 or 0.05)
 
     unit_str = f" ({unit})" if unit else ""
+    io_type_str = f"  [{io_type_label}]" if io_type_label else ""
+    ds_str = f"  DS={ds_label}" if ds_label else ""
     svg = SVG(W, H)
-    svg.title(f"{io_name} — {measurement_suffix}{unit_str}  [{test_name}]")
+    svg.title(f"{io_name}{io_type_str} — {measurement_suffix}{unit_str}{ds_str}  [{test_name}]")
     svg.line(pl, pb, pr, pb)
     svg.line(pl, pt_y, pl, pb)
     _y_axis(svg, y_min, y_max, pl, pr, pt_y, pb)
@@ -953,77 +1148,108 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             svg.text(xc, pt_y - 10, f"T={temp}°C", fs=10, fw="bold",
                      anchor="middle", fill=C_DARK)
 
-    # Lines per skew
-    for si, skew in enumerate(all_skews):
-        color = _PALETTE[si % len(_PALETTE)]
-        dash  = _DASHES[si % len(_DASHES)]
-        s_safe = str(skew).replace('"', '')
-        svg.parts.append(f'<g class="series" data-skew="{s_safe}">')
+    # Series — lines (default) or columns per (skew, chip_id)
+    _bar_group_w = x_step * 0.82
+    _bar_w = _bar_group_w / ns if ns > 0 else x_step
+    for si, (skew, chip) in enumerate(all_series_corner):
+        color     = _PALETTE[si % len(_PALETTE)]
+        dash      = _DASHES[si % len(_DASHES)]
+        s_safe    = str(skew).replace('"', '')
+        chip_safe = str(chip).replace('"', '')
+        svg.parts.append(
+            f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
+        )
         pts_xy = []
-        for i, cond_key in enumerate(all_conds):
-            v, cid = wcase_with_id(corner_grp[cond_key].get(skew, []))
-            if v is None:
+        for i, (t, v, vc) in enumerate(all_conds):
+            val = _pick_c(corner_grp.get((t, v, vc, skew, chip), []))
+            if val is None:
                 continue
             xp = pl + (i + 0.5) * x_step
-            yp = _ys(v, y_min, y_max, pt_y, pb)
-            pts_xy.append((xp, yp, cid))
-        if len(pts_xy) >= 2:
-            d = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                         for j, (x, y, _) in enumerate(pts_xy))
-            dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-            svg.parts.append(
-                f'<path d="{d}" fill="none" stroke="{color}" '
-                f'stroke-width="2.5" stroke-linejoin="round" '
-                f'{dash_attr}opacity="0.9"/>'
-            )
-        for x, y, cid in pts_xy:
-            tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {cid}"
-            svg.parts.append(
-                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" '
-                f'fill="{color}" opacity="0.95">'
-                f'<title>{tip}</title></circle>'
-            )
+            yp = _ys(val, y_min, y_max, pt_y, pb)
+            pts_xy.append((i, xp, yp, val))
+        if chart_type == "column":
+            for i, xp, yp, val in pts_xy:
+                bx = pl + i * x_step + (x_step - _bar_group_w) / 2 + si * _bar_w
+                bar_h = max(pb - yp, 0)
+                svg.rect(bx, yp, _bar_w - 1, bar_h, fill=color, opacity=0.82)
+                tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip} | {val:.3g}"
+                svg.parts.append(
+                    f'<rect x="{bx:.1f}" y="{yp:.1f}" width="{max(_bar_w-1,0):.1f}" '
+                    f'height="{max(bar_h,0):.1f}" fill="none" stroke="none">'
+                    f'<title>{tip}</title></rect>'
+                )
+        else:
+            line_pts = [(xp, yp) for _, xp, yp, _ in pts_xy]
+            if len(line_pts) >= 2:
+                d_path = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                                  for j, (x, y) in enumerate(line_pts))
+                dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+                svg.parts.append(
+                    f'<path d="{d_path}" fill="none" stroke="{color}" '
+                    f'stroke-width="2.0" stroke-linejoin="round" '
+                    f'{dash_attr}opacity="0.85"/>'
+                )
+            for _, xp, yp, val in pts_xy:
+                tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
+                svg.parts.append(
+                    f'<circle cx="{xp:.1f}" cy="{yp:.1f}" r="5" '
+                    f'fill="{color}" opacity="0.9">'
+                    f'<title>{tip}</title></circle>'
+                )
         svg.parts.append('</g>')
 
-    # Spec lines
-    for spec_val, lbl, sdash in [(spec_min, "Min spec", "8,4"),
-                                 (spec_max, "Max spec", "4,4")]:
-        if spec_val is not None and spec_val == spec_val and y_min <= spec_val <= y_max:
-            ys = _ys(spec_val, y_min, y_max, pt_y, pb)
-            svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=1.8, dash=sdash)
-            svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}", fs=9, fill=C_SPEC)
-
-    # Legend — one entry per skew with overall worst-case chip ID
-    for si, skew in enumerate(all_skews):
-        ly = mt + si * 22
-        color = _PALETTE[si % len(_PALETTE)]
-        dash  = _DASHES[si % len(_DASHES)]
-        lx = W - mr + 8
-        s_safe = str(skew).replace('"', '')
-        dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-        # Collect all (value, cid) pairs for this skew across all corners
-        all_pts_for_skew = [
-            (v, cid)
-            for cond_key in all_conds
-            for v, cid in [wcase_with_id(corner_grp[cond_key].get(skew, []))]
-            if v is not None
+    # Spec lines: dynamic stepped for VOH, fixed horizontal otherwise
+    svg.parts.append('<g class="spec-el">')
+    if _SHOW_SPEC_LINES and dynamic_spec_min:
+        valid_pts_dyn = [
+            (pl + (i + 0.5) * x_step, dynamic_spec_min[cond])
+            for i, cond in enumerate(all_conds)
+            if cond in dynamic_spec_min and y_min <= dynamic_spec_min[cond] <= y_max
         ]
-        if all_pts_for_skew:
-            if worst_agg == "max":
-                _, worst_cid = max(all_pts_for_skew, key=lambda x: x[0])
-            elif worst_agg == "min":
-                _, worst_cid = min(all_pts_for_skew, key=lambda x: x[0])
-            else:
-                worst_cid = all_pts_for_skew[0][1]
-        else:
-            worst_cid = ""
-        lbl_text = skew
-        if worst_cid:
-            lbl_text += f" ({worst_cid})"
-        svg.parts.append(f'<g class="legend-item" data-skew="{s_safe}">')
+        if len(valid_pts_dyn) >= 2:
+            d_path = " ".join(
+                f"{'M' if j == 0 else 'L'}{x:.1f},{_ys(v, y_min, y_max, pt_y, pb):.1f}"
+                for j, (x, v) in enumerate(valid_pts_dyn)
+            )
+            svg.parts.append(
+                f'<path d="{d_path}" fill="none" stroke="{C_SPEC}" '
+                f'stroke-width="4" opacity="1.0"/>'
+            )
+            last_x, last_v = valid_pts_dyn[-1]
+            svg.text(
+                pr + 5, _ys(last_v, y_min, y_max, pt_y, pb) + 4,
+                "VOH Min (0.75×VIO)", fs=9, fill=C_SPEC
+            )
+        if spec_max is not None and spec_max == spec_max and y_min <= spec_max <= y_max:
+            ys = _ys(spec_max, y_min, y_max, pt_y, pb)
+            svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+            svg.text(pr + 5, ys + 4, f"Max spec: {spec_max:.3g}", fs=9, fill=C_SPEC)
+    else:
+        if _SHOW_SPEC_LINES:
+            for spec_val, lbl, _sdash in [(spec_min, "Min spec", "8,4"),
+                                          (spec_max, "Max spec", "4,4")]:
+                if spec_val is not None and spec_val == spec_val and y_min <= spec_val <= y_max:
+                    ys = _ys(spec_val, y_min, y_max, pt_y, pb)
+                    svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+                    svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}", fs=9, fill=C_SPEC)
+    svg.parts.append('</g>')  # close spec-el
+
+    # Legend — one entry per (skew, chip)
+    for si, (skew, chip) in enumerate(all_series_corner):
+        ly        = mt + si * 22
+        color     = _PALETTE[si % len(_PALETTE)]
+        dash      = _DASHES[si % len(_DASHES)]
+        lx        = W - mr + 8
+        s_safe    = str(skew).replace('"', '')
+        chip_safe = str(chip).replace('"', '')
+        dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+        lbl_text  = f"{chip} | {skew}"
+        svg.parts.append(
+            f'<g class="legend-item" data-skew="{s_safe}" data-chip="{chip_safe}">'
+        )
         svg.parts.append(
             f'<line x1="{lx}" y1="{ly+5}" x2="{lx+28}" y2="{ly+5}" '
-            f'stroke="{color}" stroke-width="2.5" {dash_attr}/>'
+            f'stroke="{color}" stroke-width="2.0" {dash_attr}/>'
         )
         svg.parts.append(f'<circle cx="{lx+14}" cy="{ly+5}" r="5" fill="{color}"/>')
         svg.parts.append(
@@ -1088,11 +1314,13 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
         y_min, y_max = min(all_vals), max(all_vals)
         if spec_min is not None and spec_min == spec_min:
             y_min = min(y_min, spec_min)
+            y_max = max(y_max, spec_min)
         if spec_max is not None and spec_max == spec_max:
             y_max = max(y_max, spec_max)
+            y_min = min(y_min, spec_max)
         span = y_max - y_min
-        y_min -= (span * 0.12 or 0.05)
-        y_max += (span * 0.12 or 0.05)
+        y_min -= (span * 0.25 or 0.05)
+        y_max += (span * 0.25 or 0.05)
 
         unit_str = f" ({unit})" if unit else ""
         svg = SVG(W, H)
@@ -1144,14 +1372,17 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             svg.parts.append('</g>')
 
         # Spec lines
-        for spec_val, lbl, sdash in [(spec_min, "Min spec", "8,4"),
-                                     (spec_max, "Max spec", "4,4")]:
-            if spec_val is not None and spec_val == spec_val:
-                if y_min <= spec_val <= y_max:
-                    ys = _ys(spec_val, y_min, y_max, pt_y, pb)
-                    svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=1.8, dash=sdash)
-                    svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}",
-                             fs=9, fill=C_SPEC)
+        svg.parts.append('<g class="spec-el">')
+        if _SHOW_SPEC_LINES:
+            for spec_val, lbl, _sdash in [(spec_min, "Min spec", "8,4"),
+                                          (spec_max, "Max spec", "4,4")]:
+                if spec_val is not None and spec_val == spec_val:
+                    if y_min <= spec_val <= y_max:
+                        ys = _ys(spec_val, y_min, y_max, pt_y, pb)
+                        svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+                        svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}",
+                                 fs=9, fill=C_SPEC)
+        svg.parts.append('</g>')  # close spec-el
 
         # Legend — (temp, skew) series, also wrapped for filtering
         for si, (temp, skew) in enumerate(all_series):
@@ -1230,11 +1461,13 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
     y_min, y_max = min(all_vals), max(all_vals)
     if spec_min is not None and spec_min == spec_min:
         y_min = min(y_min, spec_min)
+        y_max = max(y_max, spec_min)
     if spec_max is not None and spec_max == spec_max:
         y_max = max(y_max, spec_max)
+        y_min = min(y_min, spec_max)
     span = y_max - y_min
-    y_min -= (span * 0.13 or 0.05)
-    y_max += (span * 0.13 or 0.05)
+    y_min -= (span * 0.25 or 0.05)
+    y_max += (span * 0.25 or 0.05)
 
     unit_str = f" ({unit})" if unit else ""
     svg = SVG(W, H)
@@ -1299,14 +1532,16 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             svg.parts.append('</g>')
 
     # Spec lines
-        for spec_val, lbl, sdash in [(spec_min, "Min spec", "8,4"),
-                                 (spec_max, "Max spec", "4,4")]:
+        svg.parts.append('<g class="spec-el">')
+        for spec_val, lbl, _sdash in [(spec_min, "Min spec", "8,4"),
+                                      (spec_max, "Max spec", "4,4")]:
             if spec_val is not None and spec_val == spec_val:
                 if y_min <= spec_val <= y_max:
                     ys = _ys(spec_val, y_min, y_max, pt_y, pb)
-                    svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=1.8, dash=sdash)
+                    svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
                     svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}",
                              fs=9, fill=C_SPEC)
+        svg.parts.append('</g>')  # close spec-el
 
     # Legend — skew series, also wrapped for filtering
         for si, skew in enumerate(all_skews):
@@ -1329,6 +1564,263 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
                 f'font-family="Arial,sans-serif" fill="{C_DARK}">{skew}</text>'
             )
             svg.parts.append('</g>')
+
+    return _save(svg, output_path)
+
+
+def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
+                      spec_min, spec_max, unit, worst_agg, output_path,
+                      io_type_label=""):
+    """
+    VOH/VOL combined chart:
+    - X-axis primary groups = DS settings
+    - X-axis sub-ticks = VIO/VCORE corners (worst-case across temperatures)
+    - Lines = one per (skew, chip)
+    - Dynamic VOH spec line = 0.75 × VIO at each X-point
+    """
+    _PALETTE = [
+        "#3498db", "#e74c3c", "#2ecc71", "#9b59b6",
+        "#e67e22", "#1abc9c", "#c0392b", "#2980b9",
+        "#27ae60", "#8e44ad", "#d35400", "#16a085",
+    ]
+    _DASHES = ["", "8,3", "4,3", "10,3,3,3"]
+
+    param_name = f"{io_name}_{measurement_suffix}"
+    relevant = [
+        r for r in all_rows
+        if r.get("Parameter") == param_name
+        and r.get("Test_Name") == test_name
+        and r.get("IO_Name") == io_name
+    ]
+    if not relevant:
+        return None
+
+    unit = unit or next((r.get("Unit", "") for r in relevant if r.get("Unit")), "")
+
+    def safe_float(v):
+        if v is None:
+            return None
+        try:
+            f = float(v)
+            return None if f != f or abs(f) == float("inf") else f
+        except (ValueError, TypeError):
+            return None
+
+    def ds_sort_key(s):
+        try:
+            return int(s.replace("DS_", "").replace("ds_", ""))
+        except ValueError:
+            return 999
+
+    parse = _parse_condition
+
+    # Group: {(ds, vio, vcor, skew, chip): [values]} — aggregates across temperatures
+    grp: dict = {}
+    for r in relevant:
+        fv = safe_float(r.get("Value"))
+        if fv is None:
+            continue
+        ds = r.get("DS", "")
+        if not ds:
+            continue
+        c = parse(r.get("Test_Condition", ""))
+        vio  = c.get("VIO", "?")
+        vcor = c.get("VCORE", "?")
+        skew = r.get("Skew", "") or c.get("SKW", "?")
+        chip = str(r.get("DUT_ID", "?"))
+        grp.setdefault((ds, vio, vcor, skew, chip), []).append(fv)
+
+    if not grp:
+        return None
+
+    all_ds = sorted({ds for ds, *_ in grp}, key=ds_sort_key)
+    all_vio_vcor = sorted(
+        {(vio, vcor) for _d, vio, vcor, _s, _c in grp},
+        key=lambda x: (_try_float_val(x[0]), _try_float_val(x[1]))
+    )
+    all_series = sorted(
+        {(sk, ch) for _d, _v, _vc, sk, ch in grp},
+        key=lambda x: (x[0], x[1])
+    )
+    if not all_ds or not all_vio_vcor or not all_series:
+        return None
+
+    # X-axis: (vio, vcor, ds) — primary groups = VIO/VCORE corner, sub-ticks = DS
+    x_triples = [(vio, vcor, ds) for vio, vcor in all_vio_vcor for ds in all_ds]
+    n = len(x_triples)
+
+    def _pick(vals):
+        if not vals: return None
+        if worst_agg == "max": return max(vals)
+        if worst_agg == "min": return min(vals)
+        return sum(vals) / len(vals)
+
+    series = {
+        (sk, ch): [_pick(grp.get((ds, vio, vcor, sk, ch), [])) for vio, vcor, ds in x_triples]
+        for sk, ch in all_series
+    }
+
+    # Dynamic spec for VOH: spec_min = 0.75 × VIO — constant within each VIO corner group
+    dynamic_spec_min: dict = {}
+    if measurement_suffix == "VOH":
+        for vio, vcor, ds in x_triples:
+            try:
+                dynamic_spec_min[(vio, vcor, ds)] = 0.75 * float(vio)
+            except (ValueError, TypeError):
+                pass
+
+    all_vals = [v for pts in series.values() for v in pts if v is not None]
+    if not all_vals:
+        return None
+
+    W, H = _CHART_W, _CHART_H
+    ml, mr, mt, mb = _CHART_ML, _CHART_LEG, _CHART_MT, _CHART_MB
+    pl, pr, pt_y, pb = ml, W - mr, mt, H - mb
+    pw = pr - pl
+
+    y_min, y_max = _pct_range(all_vals)
+    if dynamic_spec_min:
+        dyn_vals = list(dynamic_spec_min.values())
+        y_min = min(y_min, min(dyn_vals))
+        y_max = max(y_max, max(dyn_vals))
+    elif spec_min is not None and spec_min == spec_min:
+        y_min = min(y_min, spec_min)
+        y_max = max(y_max, spec_min)
+    if spec_max is not None and spec_max == spec_max:
+        y_max = max(y_max, spec_max)
+        y_min = min(y_min, spec_max)
+    span = y_max - y_min
+    y_min -= (span * 0.25 or 0.05)
+    y_max += (span * 0.25 or 0.05)
+
+    unit_str = f" ({unit})" if unit else ""
+    io_type_str = f"  [{io_type_label}]" if io_type_label else ""
+    svg = SVG(W, H)
+    svg.title(f"{io_name}{io_type_str} \u2014 {measurement_suffix}{unit_str}  [{test_name}]")
+    svg.line(pl, pb, pr, pb)
+    svg.line(pl, pt_y, pl, pb)
+    _y_axis(svg, y_min, y_max, pl, pr, pt_y, pb)
+    svg.text(14, (pt_y + pb) / 2, f"{measurement_suffix}{unit_str}",
+             fs=10, fill=C_GRAY,
+             transform=f"rotate(-90,14,{(pt_y + pb) / 2:.1f})", anchor="middle")
+
+    x_step = pw / n if n > 0 else pw
+
+    # X-axis: DS angled sub-tick labels + VIO/VCORE group separators + corner headers
+    prev_corner = None
+    for i, (vio, vcor, ds) in enumerate(x_triples):
+        x = pl + (i + 0.5) * x_step
+        svg.text(x, pb + 14, ds, fs=8, anchor="end",
+                 transform=f"rotate(-45,{x:.1f},{pb + 14})")
+        corner = (vio, vcor)
+        if corner != prev_corner:
+            if i > 0:
+                svg.line(pl + i * x_step, pt_y, pl + i * x_step, pb,
+                         stroke="#aaaaaa", sw=1.5, dash="4,3")
+            prev_corner = corner
+
+    for i, (vio, vcor, _ds) in enumerate(x_triples):
+        if i == 0 or (x_triples[i - 1][0], x_triples[i - 1][1]) != (vio, vcor):
+            end = next((j for j in range(i, n)
+                        if x_triples[j][0] != vio or x_triples[j][1] != vcor), n) - 1
+            xc = pl + (i + end + 1) / 2 * x_step
+            svg.text(xc, pt_y - 10, f"VIO={vio} / VC={vcor}", fs=10, fw="bold",
+                     anchor="middle", fill=C_DARK)
+
+    svg.text(pl + pw / 2, pb + 60, "VIO & VCORE Corner  /  Drive Strength (DS)",
+             fs=11, anchor="middle", fill=C_DARK)
+
+    # Lines — one per (skew, chip)
+    for si, (skew, chip) in enumerate(all_series):
+        color     = _PALETTE[si % len(_PALETTE)]
+        dash      = _DASHES[si % len(_DASHES)]
+        s_safe    = str(skew).replace('"', '')
+        chip_safe = str(chip).replace('"', '')
+        svg.parts.append(
+            f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
+        )
+        pts_xy = [
+            (pl + (i + 0.5) * x_step, _ys(v, y_min, y_max, pt_y, pb))
+            for i, v in enumerate(series[(skew, chip)])
+            if v is not None
+        ]
+        if len(pts_xy) >= 2:
+            d_path = " ".join(
+                f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                for j, (x, y) in enumerate(pts_xy)
+            )
+            dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+            svg.parts.append(
+                f'<path d="{d_path}" fill="none" stroke="{color}" '
+                f'stroke-width="2.0" stroke-linejoin="round" '
+                f'{dash_attr}opacity="0.85"/>'
+            )
+        for x, y in pts_xy:
+            tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
+            svg.parts.append(
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" '
+                f'fill="{color}" opacity="0.9">'
+                f'<title>{tip}</title></circle>'
+            )
+        svg.parts.append('</g>')
+
+    # Spec lines: dynamic stepped for VOH, fixed for VOL
+    svg.parts.append('<g class="spec-el">')
+    if _SHOW_SPEC_LINES and dynamic_spec_min:
+        valid_pts = [
+            (pl + (i + 0.5) * x_step, dynamic_spec_min[triple])
+            for i, triple in enumerate(x_triples)
+            if triple in dynamic_spec_min
+        ]
+        if len(valid_pts) >= 2:
+            d_path = " ".join(
+                f"{'M' if j == 0 else 'L'}{x:.1f},{_ys(v, y_min, y_max, pt_y, pb):.1f}"
+                for j, (x, v) in enumerate(valid_pts)
+            )
+            svg.parts.append(
+                f'<path d="{d_path}" fill="none" stroke="{C_SPEC}" '
+                f'stroke-width="4" opacity="1.0"/>'
+            )
+            last_x, last_v = valid_pts[-1]
+            svg.text(pr + 5, _ys(last_v, y_min, y_max, pt_y, pb) + 4,
+                     "VOH Min (0.75\u00d7VIO)", fs=9, fill=C_SPEC)
+        if spec_max is not None and spec_max == spec_max and y_min <= spec_max <= y_max:
+            ys = _ys(spec_max, y_min, y_max, pt_y, pb)
+            svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+            svg.text(pr + 5, ys + 4, f"Max spec: {spec_max:.3g}", fs=9, fill=C_SPEC)
+    else:
+        if _SHOW_SPEC_LINES:
+            for spec_val, lbl, _sdash in [(spec_min, "Min spec", "8,4"),
+                                          (spec_max, "Max spec", "4,4")]:
+                if spec_val is not None and spec_val == spec_val and y_min <= spec_val <= y_max:
+                    ys = _ys(spec_val, y_min, y_max, pt_y, pb)
+                    svg.line(pl, ys, pr, ys, stroke=C_SPEC, sw=4)
+                    svg.text(pr + 5, ys + 4, f"{lbl}: {spec_val:.3g}", fs=9, fill=C_SPEC)
+    svg.parts.append('</g>')  # close spec-el
+
+    # Legend
+    for si, (skew, chip) in enumerate(all_series):
+        ly        = mt + si * 22
+        color     = _PALETTE[si % len(_PALETTE)]
+        dash      = _DASHES[si % len(_DASHES)]
+        lx        = W - mr + 8
+        s_safe    = str(skew).replace('"', '')
+        chip_safe = str(chip).replace('"', '')
+        dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+        lbl_text  = f"{chip} | {skew}"
+        svg.parts.append(
+            f'<g class="legend-item" data-skew="{s_safe}" data-chip="{chip_safe}">'
+        )
+        svg.parts.append(
+            f'<line x1="{lx}" y1="{ly+5}" x2="{lx+28}" y2="{ly+5}" '
+            f'stroke="{color}" stroke-width="2.0" {dash_attr}/>'
+        )
+        svg.parts.append(f'<circle cx="{lx+14}" cy="{ly+5}" r="4" fill="{color}"/>')
+        svg.parts.append(
+            f'<text x="{lx+32}" y="{ly+9}" font-size="10" '
+            f'font-family="Arial,sans-serif" fill="{C_DARK}">{_esc(lbl_text)}</text>'
+        )
+        svg.parts.append('</g>')
 
     return _save(svg, output_path)
 
@@ -1360,6 +1852,35 @@ def generate_section_plots(result, config, plots_dir, selected_tests=None):
             section_plots[test_name] = {}
             continue
         section_plots[test_name] = {}
+
+        # ── VOH/VOL: combined chart, X-axis = DS × VIO/VCORE, dynamic VOH spec ──
+        if test_name == "VOH/VOL":
+            for meas in SECTION_MEASUREMENTS.get(test_name, []):
+                for io in REPORT_IOS:
+                    spec_min, spec_max, unit = spec_map.get(
+                        (io, meas),
+                        spec_map.get(("GPIO_0", meas), (None, None, ""))
+                    )
+                    worst_agg = MEAS_WORST_AGG.get(meas, "max")
+                    fname = f"sec_voh_vol_{io.lower()}_{meas.lower()}.svg"
+                    path = plot_voh_vol_chart(
+                        all_rows=all_rows,
+                        measurement_suffix=meas,
+                        test_name=test_name,
+                        io_name=io,
+                        spec_min=spec_min,
+                        spec_max=spec_max,
+                        unit=unit,
+                        worst_agg=worst_agg,
+                        output_path=plots_dir / fname,
+                        io_type_label=IO_TYPE_LABEL.get(io, ""),
+                    )
+                    chart_key = f"{io}_{meas}"
+                    section_plots[test_name][chart_key] = path
+                    if path:
+                        logger.info(f"Saved section chart: {path.name}")
+            continue
+
         for meas in SECTION_MEASUREMENTS.get(test_name, []):
             for io in REPORT_IOS:
                 spec_min, spec_max, unit = spec_map.get(
@@ -1381,6 +1902,8 @@ def generate_section_plots(result, config, plots_dir, selected_tests=None):
                     unit=unit,
                     worst_agg=worst_agg,
                     output_path=plots_dir / fname,
+                    io_type_label=IO_TYPE_LABEL.get(io, ""),
+                    chart_type="column" if test_name == "Rise/Fall Time" else "line",
                 )
                 chart_key = f"{io}_{meas}"
                 section_plots[test_name][chart_key] = path
@@ -1395,6 +1918,10 @@ def generate_all_plots(result: AnalysisResult, config: Config,
     """Generate all SVG plots and return paths organised by category.
     selected_tests: set of test section names to include, or None for all.
     """
+    # Apply configurable spec-line colour and visibility
+    global C_SPEC, _SHOW_SPEC_LINES
+    C_SPEC = config.plot.spec_line_color
+    _SHOW_SPEC_LINES = config.plot.show_spec_lines
     plots_dir = config.output_path / "plots"
     plots_dir.mkdir(parents=True, exist_ok=True)
     all_plots: dict = {}
