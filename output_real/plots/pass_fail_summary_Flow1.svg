@@ -33,10 +33,10 @@
 <rect x="164.7" y="55.0" width="24.0" height="275.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="176.7" y="196.5" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">100%</text>
 <text x="176.7" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,176.7,340.0)">GPIO_0_IO_State</text>
-<rect x="198.0" y="297.1" width="24.0" height="32.9" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="198.0" y="55.0" width="24.0" height="242.1" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<text x="210.0" y="317.6" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">12%</text>
-<text x="210.0" y="180.1" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">88%</text>
+<rect x="198.0" y="310.9" width="24.0" height="19.1" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="198.0" y="55.0" width="24.0" height="255.9" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<text x="210.0" y="324.4" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">7%</text>
+<text x="210.0" y="186.9" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">93%</text>
 <text x="210.0" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,210.0,340.0)">GPIO_0_R_High</text>
 <rect x="231.3" y="57.8" width="24.0" height="272.2" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <rect x="231.3" y="55.0" width="24.0" height="2.8" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
@@ -56,12 +56,12 @@
 <rect x="364.7" y="55.0" width="24.0" height="275.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="376.7" y="196.5" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">100%</text>
 <text x="376.7" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,376.7,340.0)">GPIO_0_VIL_Max</text>
-<rect x="398.0" y="63.2" width="24.0" height="266.8" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="398.0" y="55.0" width="24.0" height="8.2" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<text x="410.0" y="200.6" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">97%</text>
+<rect x="398.0" y="59.0" width="24.0" height="271.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="398.0" y="55.0" width="24.0" height="4.0" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<text x="410.0" y="198.5" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">99%</text>
 <text x="410.0" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,410.0,340.0)">GPIO_0_VOH</text>
-<rect x="431.3" y="83.3" width="24.0" height="246.7" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="431.3" y="55.0" width="24.0" height="28.3" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="431.3" y="83.2" width="24.0" height="246.8" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="431.3" y="55.0" width="24.0" height="28.2" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="443.3" y="210.6" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">90%</text>
 <text x="443.3" y="73.1" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">10%</text>
 <text x="443.3" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,443.3,340.0)">GPIO_0_VOL</text>
@@ -77,9 +77,9 @@
 <rect x="564.7" y="55.0" width="24.0" height="275.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="576.7" y="196.5" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">100%</text>
 <text x="576.7" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,576.7,340.0)">RF_KILLN_IO_State</text>
-<rect x="598.0" y="317.7" width="24.0" height="12.3" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="598.0" y="55.0" width="24.0" height="262.7" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<text x="610.0" y="190.3" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">96%</text>
+<rect x="598.0" y="327.5" width="24.0" height="2.5" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="598.0" y="55.0" width="24.0" height="272.5" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<text x="610.0" y="195.2" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">99%</text>
 <text x="610.0" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,610.0,340.0)">RF_KILLN_R_High</text>
 <rect x="631.3" y="329.1" width="24.0" height="0.9" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <rect x="631.3" y="55.0" width="24.0" height="274.1" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
@@ -97,13 +97,13 @@
 <rect x="764.7" y="55.0" width="24.0" height="275.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="776.7" y="196.5" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">100%</text>
 <text x="776.7" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,776.7,340.0)">RF_KILLN_VIL_Max</text>
-<rect x="798.0" y="60.1" width="24.0" height="269.9" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="798.0" y="55.0" width="24.0" height="5.1" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<text x="810.0" y="199.1" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">98%</text>
+<rect x="798.0" y="57.6" width="24.0" height="272.4" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="798.0" y="55.0" width="24.0" height="2.6" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<text x="810.0" y="197.8" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">99%</text>
 <text x="810.0" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,810.0,340.0)">RF_KILLN_VOH</text>
-<rect x="831.3" y="72.3" width="24.0" height="257.7" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<rect x="831.3" y="55.0" width="24.0" height="17.3" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
-<text x="843.3" y="205.2" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">94%</text>
+<rect x="831.3" y="72.1" width="24.0" height="257.9" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<rect x="831.3" y="55.0" width="24.0" height="17.1" fill="#e74c3c" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
+<text x="843.3" y="205.1" font-size="9" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial,sans-serif">94%</text>
 <text x="843.3" y="340.0" font-size="10" font-weight="normal" text-anchor="end" fill="#333" font-family="Arial,sans-serif" transform="rotate(-40,843.3,340.0)">RF_KILLN_VOL</text>
 <rect x="750.0" y="55.0" width="12.0" height="12.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="0.88" rx="2"/>
 <text x="766.0" y="65.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Pass</text>

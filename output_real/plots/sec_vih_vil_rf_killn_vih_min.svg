@@ -47,359 +47,515 @@ VC=0.96</text>
 <text x="611.0" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=20°C</text>
 <text x="963.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=80°C</text>
 <g class="series" data-skew="ffss" data-chip="25679">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,364.5 L493.4,376.9 L846.1,370.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="364.5" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="296.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="222.9" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="376.9" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="303.0" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="216.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="370.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,296.8 L611.0,303.0 L963.7,296.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="258.3" cy="296.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
-<circle cx="611.0" cy="303.0" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="296.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,222.9 L728.6,216.7 L1081.2,216.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="375.9" cy="222.9" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
-<circle cx="728.6" cy="216.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="216.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 25679</title></circle>
 </g>
 </g>
 <g class="series" data-skew="ffss" data-chip="43407">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,389.2 L493.4,383.0 L846.1,383.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="389.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="315.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="235.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="383.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="315.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="235.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="383.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,315.3 L611.0,315.3 L963.7,309.1" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="258.3" cy="315.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
-<circle cx="611.0" cy="315.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="309.1" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,235.2 L728.6,235.2 L1081.2,235.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="375.9" cy="235.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
-<circle cx="728.6" cy="235.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="235.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 43407</title></circle>
 </g>
 </g>
 <g class="series" data-skew="ffss" data-chip="79093">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,370.7 L493.4,364.5 L846.1,358.4" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="370.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="296.8" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="216.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="364.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="290.6" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="222.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="358.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,296.8 L611.0,290.6 L963.7,290.6" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="258.3" cy="296.8" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
-<circle cx="611.0" cy="290.6" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="290.6" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,216.7 L728.6,222.9 L1081.2,216.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="375.9" cy="216.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
-<circle cx="728.6" cy="222.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="216.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ffss | Chip: 79093</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fftt" data-chip="13967">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,358.4 L493.4,358.4 L846.1,376.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="358.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
-<circle cx="493.4" cy="358.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
-<circle cx="846.1" cy="376.9" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,284.5 L611.0,284.5 L963.7,296.8" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.8/1.8">
 <circle cx="258.3" cy="284.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
-<circle cx="611.0" cy="284.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
-<circle cx="963.7" cy="296.8" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,210.6 L728.6,210.6 L1081.2,235.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.96/1.98">
 <circle cx="375.9" cy="210.6" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
+<circle cx="493.4" cy="358.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="284.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
 <circle cx="728.6" cy="210.6" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
-<circle cx="1081.2" cy="235.2" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
+<circle cx="846.1" cy="358.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.8/1.8">
+<circle cx="963.7" cy="284.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.96/1.98">
+<circle cx="1081.2" cy="210.6" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 13967</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fftt" data-chip="15382">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,376.9 L493.4,376.9 L846.1,370.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="376.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="303.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="222.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="376.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="296.8" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="222.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="370.7" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,309.1 L611.0,303.0 L963.7,303.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="258.3" cy="309.1" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
-<circle cx="611.0" cy="303.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
-<circle cx="963.7" cy="303.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
+<circle cx="963.7" cy="296.8" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,235.2 L728.6,229.0 L1081.2,229.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="375.9" cy="235.2" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
-<circle cx="728.6" cy="229.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="229.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 15382</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fftt" data-chip="78814">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,370.7 L493.4,346.1 L846.1,352.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="370.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="272.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="198.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="346.1" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="296.8" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="198.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="352.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,272.2 L611.0,296.8 L963.7,284.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="258.3" cy="272.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
-<circle cx="611.0" cy="296.8" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="284.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,198.3 L728.6,198.3 L1081.2,198.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="375.9" cy="198.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
-<circle cx="728.6" cy="198.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="198.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | fftt | Chip: 78814</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fstt" data-chip="12566">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,395.3 L493.4,395.3 L846.1,389.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="395.3" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="321.4" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="259.8" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="395.3" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="327.6" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="247.5" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="389.2" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,321.4 L611.0,327.6 L963.7,321.4" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="258.3" cy="321.4" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
-<circle cx="611.0" cy="327.6" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="321.4" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,259.8 L728.6,247.5 L1081.2,253.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="375.9" cy="259.8" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
-<circle cx="728.6" cy="247.5" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="253.7" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 12566</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fstt" data-chip="13316">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,383.0 L493.4,389.2 L846.1,376.9" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="383.0" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="321.4" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="241.4" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="389.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="309.1" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="235.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="376.9" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,321.4 L611.0,309.1 L963.7,303.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="258.3" cy="321.4" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
-<circle cx="611.0" cy="309.1" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="303.0" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,241.4 L728.6,235.2 L1081.2,241.4" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="375.9" cy="241.4" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
-<circle cx="728.6" cy="235.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="241.4" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 13316</title></circle>
 </g>
 </g>
 <g class="series" data-skew="fstt" data-chip="62919">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,438.4 L493.4,407.7 L846.1,401.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="438.4" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="339.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="266.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="407.7" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="339.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="266.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="401.5" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,339.9 L611.0,339.9 L963.7,333.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="258.3" cy="339.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
-<circle cx="611.0" cy="339.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="333.7" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,266.0 L728.6,266.0 L1081.2,266.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="375.9" cy="266.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
-<circle cx="728.6" cy="266.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="266.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN VIH_Min | fstt | Chip: 62919</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sftt" data-chip="44565">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,352.2 L493.4,352.2 L846.1,352.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="352.2" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="290.6" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="222.9" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="352.2" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="284.5" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="222.9" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="352.2" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,290.6 L611.0,284.5 L963.7,278.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="258.3" cy="290.6" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
-<circle cx="611.0" cy="284.5" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="278.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,222.9 L728.6,222.9 L1081.2,210.6" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="375.9" cy="222.9" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
-<circle cx="728.6" cy="222.9" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="210.6" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 44565</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sftt" data-chip="69627">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,364.5 L493.4,364.5 L846.1,352.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="364.5" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="290.6" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="222.9" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="364.5" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="290.6" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="216.7" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="352.2" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,290.6 L611.0,290.6 L963.7,290.6" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="258.3" cy="290.6" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
-<circle cx="611.0" cy="290.6" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="290.6" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,222.9 L728.6,216.7 L1081.2,222.9" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="375.9" cy="222.9" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
-<circle cx="728.6" cy="216.7" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="222.9" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 69627</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sftt" data-chip="76687">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,339.9 L493.4,339.9" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="339.9" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="284.5" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="198.3" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="339.9" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,284.5 L611.0,272.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="258.3" cy="284.5" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
+<g data-temp="20" data-viocore="0.8/1.8">
 <circle cx="611.0" cy="272.2" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,198.3 L728.6,204.4" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="375.9" cy="198.3" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
+<g data-temp="20" data-viocore="0.96/1.98">
 <circle cx="728.6" cy="204.4" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN VIH_Min | sftt | Chip: 76687</title></circle>
 </g>
 </g>
 <g class="series" data-skew="ssff" data-chip="56508">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,383.0 L493.4,376.9 L846.1,383.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="383.0" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="309.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="241.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="376.9" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="309.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="241.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="383.0" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,309.1 L611.0,309.1 L963.7,309.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="258.3" cy="309.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
-<circle cx="611.0" cy="309.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="309.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,241.4 L728.6,241.4 L1081.2,241.4" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="375.9" cy="241.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
-<circle cx="728.6" cy="241.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="241.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 56508</title></circle>
 </g>
 </g>
 <g class="series" data-skew="ssff" data-chip="57571">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,389.2 L493.4,395.3 L846.1,383.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="389.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="321.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="253.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="395.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="321.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="259.8" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="383.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,321.4 L611.0,321.4 L963.7,321.4" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="258.3" cy="321.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
-<circle cx="611.0" cy="321.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="321.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,253.7 L728.6,259.8 L1081.2,241.4" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="375.9" cy="253.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
-<circle cx="728.6" cy="259.8" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="241.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 57571</title></circle>
 </g>
 </g>
 <g class="series" data-skew="ssff" data-chip="96040">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,383.0 L493.4,383.0 L846.1,376.9" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="383.0" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="321.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="241.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="383.0" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="309.1" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="241.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="376.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,321.4 L611.0,309.1 L963.7,309.1" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="258.3" cy="321.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
-<circle cx="611.0" cy="309.1" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="309.1" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,241.4 L728.6,241.4 L1081.2,235.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
-<circle cx="375.9" cy="241.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
-<circle cx="728.6" cy="241.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="235.2" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN VIH_Min | ssff | Chip: 96040</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sstt" data-chip="29674">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,370.7 L493.4,370.7 L846.1,364.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="370.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="296.8" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="235.2" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="370.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="303.0" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="241.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="364.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,296.8 L611.0,303.0 L963.7,296.8" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="258.3" cy="296.8" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
-<circle cx="611.0" cy="303.0" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="296.8" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,235.2 L728.6,241.4 L1081.2,229.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
-<circle cx="375.9" cy="235.2" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
-<circle cx="728.6" cy="241.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="229.0" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 29674</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sstt" data-chip="58046">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,383.0 L493.4,383.0 L846.1,376.9" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="383.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="315.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="278.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="383.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="321.4" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="235.2" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="376.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,315.3 L611.0,321.4 L963.7,309.1" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="258.3" cy="315.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
-<circle cx="611.0" cy="321.4" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="309.1" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,278.3 L728.6,235.2 L1081.2,241.4" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
-<circle cx="375.9" cy="278.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
-<circle cx="728.6" cy="235.2" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="241.4" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 58046</title></circle>
 </g>
 </g>
 <g class="series" data-skew="sstt" data-chip="9808">
-<g data-viocore="0.64/1.62">
-<path d="M140.8,389.2 L493.4,395.3 L846.1,389.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0" data-viocore="0.64/1.62">
 <circle cx="140.8" cy="389.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.8/1.8">
+<circle cx="258.3" cy="321.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="0" data-viocore="0.96/1.98">
+<circle cx="375.9" cy="253.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.64/1.62">
 <circle cx="493.4" cy="395.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.8/1.8">
+<circle cx="611.0" cy="321.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20" data-viocore="0.96/1.98">
+<circle cx="728.6" cy="247.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80" data-viocore="0.64/1.62">
 <circle cx="846.1" cy="389.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
 </g>
-<g data-viocore="0.8/1.8">
-<path d="M258.3,321.4 L611.0,321.4 L963.7,315.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="258.3" cy="321.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
-<circle cx="611.0" cy="321.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+<g data-temp="80" data-viocore="0.8/1.8">
 <circle cx="963.7" cy="315.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
 </g>
-<g data-viocore="0.96/1.98">
-<path d="M375.9,253.7 L728.6,247.5 L1081.2,253.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
-<circle cx="375.9" cy="253.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
-<circle cx="728.6" cy="247.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
+<g data-temp="80" data-viocore="0.96/1.98">
 <circle cx="1081.2" cy="253.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN VIH_Min | sstt | Chip: 9808</title></circle>
 </g>
 </g>

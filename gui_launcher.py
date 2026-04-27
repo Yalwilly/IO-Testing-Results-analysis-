@@ -541,10 +541,27 @@ class App(tk.Tk):
         self._set_status("Running analysis…", CLR_WARN)
         self._clear_log()
 
+        subtitle_str   = self._var_subtitle.get().strip()
+        author_str     = self._var_author.get().strip()
+        exclude_raw    = self._var_exclude.get().strip()
+        exclude_ios    = [x.strip() for x in exclude_raw.split(",") if x.strip()] if exclude_raw else []
+        try:
+            cpk_threshold = float(self._var_cpk.get())
+        except ValueError:
+            cpk_threshold = 1.33
+
         threading.Thread(
             target=self._run_pipeline,
             args=(data_path_str, output_str, title_str, selected,
                   self._var_pptx.get()),
+            kwargs=dict(
+                subtitle_str=subtitle_str,
+                author_str=author_str,
+                exclude_ios=exclude_ios,
+                cpk_threshold=cpk_threshold,
+                show_spec_lines=self._var_show_spec.get(),
+                spec_color=self._var_spec_color.get(),
+            ),
             daemon=True,
         ).start()
 

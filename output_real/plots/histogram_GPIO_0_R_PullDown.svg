@@ -39,8 +39,8 @@
 <text x="870.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">76</text>
 <text x="450.0" y="445.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">Value (kOhm)</text>
 <text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Count</text>
-<rect x="161.6" y="357.4" width="27.4" height="17.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="193.8" y="303.0" width="27.4" height="72.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="161.6" y="354.4" width="27.4" height="20.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="193.8" y="306.0" width="27.4" height="69.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="226.0" y="279.5" width="27.4" height="95.5" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="258.2" y="55.0" width="27.4" height="320.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="290.4" y="352.8" width="27.4" height="22.2" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>

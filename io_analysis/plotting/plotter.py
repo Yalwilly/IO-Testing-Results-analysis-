@@ -894,29 +894,37 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
                 f'<g class="series" data-viocore="{vc_safe}" '
                 f'data-skew="{s_safe}" data-chip="{chip_safe}">'
             )
-            pts_xy = [
-                (pl + (i + 0.5) * x_step, _ys(v, y_min, y_max, pt_y, pb))
-                for i, v in enumerate(series[(vc, skew, chip)])
-                if v is not None
-            ]
-            if len(pts_xy) >= 2:
-                d_path = " ".join(
-                    f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                    for j, (x, y) in enumerate(pts_xy)
-                )
-                dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-                svg.parts.append(
-                    f'<path d="{d_path}" fill="none" stroke="{color}" '
-                    f'stroke-width="2.0" stroke-linejoin="round" '
-                    f'{dash_attr}opacity="0.85"/>'
-                )
-            for x, y in pts_xy:
-                tip = f"{io_name} {measurement_suffix} | {vc} | {skew} | Chip: {chip}"
-                svg.parts.append(
-                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" '
-                    f'fill="{color}" opacity="0.9">'
-                    f'<title>{tip}</title></circle>'
-                )
+            # Group by temperature for per-temp sub-group filtering
+            temp_pts: dict = {}
+            for i, (t, _d) in enumerate(x_pairs):
+                v = series[(vc, skew, chip)][i]
+                if v is None:
+                    continue
+                xp = pl + (i + 0.5) * x_step
+                yp = _ys(v, y_min, y_max, pt_y, pb)
+                temp_pts.setdefault(t, []).append((xp, yp, v))
+            for t, pts in sorted(temp_pts.items(), key=lambda kv: _try_float_val(kv[0])):
+                t_safe = str(t).replace('"', '')
+                svg.parts.append(f'<g data-temp="{t_safe}">')
+                if len(pts) >= 2:
+                    d_path = " ".join(
+                        f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                        for j, (x, y, _) in enumerate(pts)
+                    )
+                    dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+                    svg.parts.append(
+                        f'<path d="{d_path}" fill="none" stroke="{color}" '
+                        f'stroke-width="2.0" stroke-linejoin="round" '
+                        f'{dash_attr}opacity="0.85"/>'
+                    )
+                for xp, yp, val in pts:
+                    tip = f"{io_name} {measurement_suffix} | {vc} | {skew} | Chip: {chip}"
+                    svg.parts.append(
+                        f'<circle cx="{xp:.1f}" cy="{yp:.1f}" r="4" '
+                        f'fill="{color}" opacity="0.9">'
+                        f'<title>{tip}</title></circle>'
+                    )
+                svg.parts.append('</g>')
             svg.parts.append('</g>')
 
         # Spec lines: per-DS variable (e.g. resistance) — always drawn if available
@@ -1159,20 +1167,20 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
         svg.parts.append(
             f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
         )
-        # Group points by viocore for per-viocore sub-group filtering
-        vc_pts: dict = {}
+        # Group points by (temp, vc_key) for per-temp and per-viocore filtering
+        tc_pts: dict = {}
         for i, (t, v, vc) in enumerate(all_conds):
             val = _pick_c(corner_grp.get((t, v, vc, skew, chip), []))
             if val is None:
                 continue
             xp = pl + (i + 0.5) * x_step
             yp = _ys(val, y_min, y_max, pt_y, pb)
+            t_key = str(t).replace('"', '')
             vc_key = f"{vc}/{v}"  # VCORE/VIO to match filter buttons
-            vc_pts.setdefault(vc_key, []).append((i, xp, yp, val))
-        # Draw one filterable inner g per viocore (path + circles all hide together)
-        for vc_key, pts in vc_pts.items():
+            tc_pts.setdefault((t_key, vc_key), []).append((i, xp, yp, val))
+        for (t_safe, vc_key), pts in tc_pts.items():
             vc_safe = vc_key.replace('"', '')
-            svg.parts.append(f'<g data-viocore="{vc_safe}">')
+            svg.parts.append(f'<g data-temp="{t_safe}" data-viocore="{vc_safe}">')
             if chart_type == "column":
                 for i, xp, yp, val in pts:
                     bx = pl + i * x_step + (x_step - _bar_group_w) / 2 + si * _bar_w
@@ -1513,18 +1521,19 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             dash  = _DASHES[si % len(_DASHES)]
             s_safe = str(skew).replace('"', '')
             svg.parts.append(f'<g class="series" data-skew="{s_safe}">')
-            vc_pts: dict = {}
+            tc_pts: dict = {}
             for i, cond_key in enumerate(all_conds):
                 v = wcase(corner_skew[cond_key].get(skew, []))
                 if v is None:
                     continue
                 xp = pl + (i + 0.5) * x_step
                 yp = _ys(v, y_min, y_max, pt_y, pb)
+                t_key = str(cond_key[0]).replace('"', '')
                 vc_key = f"{cond_key[2]}/{cond_key[1]}"  # VCORE/VIO
-                vc_pts.setdefault(vc_key, []).append((xp, yp))
-            for vc_key, pts in vc_pts.items():
+                tc_pts.setdefault((t_key, vc_key), []).append((xp, yp))
+            for (t_safe, vc_key), pts in tc_pts.items():
                 vc_safe = vc_key.replace('"', '')
-                svg.parts.append(f'<g data-viocore="{vc_safe}">')
+                svg.parts.append(f'<g data-temp="{t_safe}" data-viocore="{vc_safe}">')
                 if len(pts) >= 2:
                     d = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
                                  for j, (x, y) in enumerate(pts))
@@ -1625,7 +1634,7 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
 
     parse = _parse_condition
 
-    # Group: {(ds, vio, vcor, skew, chip): [values]} — aggregates across temperatures
+    # Group: {(temp, ds, vio, vcor, skew, chip): [values]} — series per temperature
     grp: dict = {}
     for r in relevant:
         fv = safe_float(r.get("Value"))
@@ -1635,23 +1644,24 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
         if not ds:
             continue
         c = parse(r.get("Test_Condition", ""))
+        temp = c.get("T", r.get("Temperature", "?"))
         vio  = c.get("VIO", "?")
         vcor = c.get("VCORE", "?")
         skew = r.get("Skew", "") or c.get("SKW", "?")
         chip = str(r.get("DUT_ID", "?"))
-        grp.setdefault((ds, vio, vcor, skew, chip), []).append(fv)
+        grp.setdefault((temp, ds, vio, vcor, skew, chip), []).append(fv)
 
     if not grp:
         return None
 
-    all_ds = sorted({ds for ds, *_ in grp}, key=ds_sort_key)
+    all_ds = sorted({ds for _t, ds, *_ in grp}, key=ds_sort_key)
     all_vio_vcor = sorted(
-        {(vio, vcor) for _d, vio, vcor, _s, _c in grp},
+        {(vio, vcor) for _t, _d, vio, vcor, _s, _c in grp},
         key=lambda x: (_try_float_val(x[0]), _try_float_val(x[1]))
     )
     all_series = sorted(
-        {(sk, ch) for _d, _v, _vc, sk, ch in grp},
-        key=lambda x: (x[0], x[1])
+        {(temp, sk, ch) for temp, _d, _v, _vc, sk, ch in grp},
+        key=lambda x: (_try_float_val(x[0]), x[1], x[2])
     )
     if not all_ds or not all_vio_vcor or not all_series:
         return None
@@ -1667,8 +1677,8 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
         return sum(vals) / len(vals)
 
     series = {
-        (sk, ch): [_pick(grp.get((ds, vio, vcor, sk, ch), [])) for vio, vcor, ds in x_triples]
-        for sk, ch in all_series
+        (temp, sk, ch): [_pick(grp.get((temp, ds, vio, vcor, sk, ch), [])) for vio, vcor, ds in x_triples]
+        for temp, sk, ch in all_series
     }
 
     # Dynamic spec for VOH: spec_min = 0.75 × VIO — constant within each VIO corner group
@@ -1741,18 +1751,19 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
     svg.text(pl + pw / 2, pb + 60, "VIO & VCORE Corner  /  Drive Strength (DS)",
              fs=11, anchor="middle", fill=C_DARK)
 
-    # Lines — one per (skew, chip)
-    for si, (skew, chip) in enumerate(all_series):
+    # Lines — one per (temp, skew, chip)
+    for si, (temp, skew, chip) in enumerate(all_series):
         color     = _PALETTE[si % len(_PALETTE)]
         dash      = _DASHES[si % len(_DASHES)]
+        t_safe    = str(temp).replace('"', '')
         s_safe    = str(skew).replace('"', '')
         chip_safe = str(chip).replace('"', '')
         svg.parts.append(
-            f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
+            f'<g class="series" data-temp="{t_safe}" data-skew="{s_safe}" data-chip="{chip_safe}">'
         )
         # Group points by viocore for per-viocore sub-group filtering
         vc_pts: dict = {}
-        for i, v in enumerate(series[(skew, chip)]):
+        for i, v in enumerate(series[(temp, skew, chip)]):
             if v is None:
                 continue
             xp = pl + (i + 0.5) * x_step
@@ -1818,17 +1829,18 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
     svg.parts.append('</g>')  # close spec-el
 
     # Legend
-    for si, (skew, chip) in enumerate(all_series):
+    for si, (temp, skew, chip) in enumerate(all_series):
         ly        = mt + si * 22
         color     = _PALETTE[si % len(_PALETTE)]
         dash      = _DASHES[si % len(_DASHES)]
         lx        = W - mr + 8
+        t_safe    = str(temp).replace('"', '')
         s_safe    = str(skew).replace('"', '')
         chip_safe = str(chip).replace('"', '')
         dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-        lbl_text  = f"{chip} | {skew}"
+        lbl_text  = f"T={temp}\u00b0C | {chip} | {skew}"
         svg.parts.append(
-            f'<g class="legend-item" data-skew="{s_safe}" data-chip="{chip_safe}">'
+            f'<g class="legend-item" data-temp="{t_safe}" data-skew="{s_safe}" data-chip="{chip_safe}">'
         )
         svg.parts.append(
             f'<line x1="{lx}" y1="{ly+5}" x2="{lx+28}" y2="{ly+5}" '

@@ -130,6 +130,12 @@ def generate_html_report(result: AnalysisResult, plot_paths: dict,
         key=lambda s: float(s.split("/")[0]) if s.split("/")[0].replace(".","").isdigit() else 0
     )
     _skews = sorted({str(r.get("Skew", "")) for r in all_rows_flat if r.get("Skew", "")})
+    _temps = sorted(
+        {c.get("T", "") for r in all_rows_flat
+         for c in [_parse_cond(r.get("Test_Condition", ""))]
+         if c.get("T")},
+        key=lambda s: float(s) if s.replace(".", "").lstrip("-").isdigit() else 0
+    )
     _ios   = list(REPORT_IOS)
 
     # group parameters (filtered to REPORT_IOS) per test section
@@ -237,16 +243,17 @@ function showSec(secId,btn){{
 }}
 
 // ---- Filter logic ----
-const _active = {{viocore:new Set(), skews:new Set()}};
+const _active = {{viocore:new Set(), skews:new Set(), temps:new Set()}};
 
 function _initSets(){{
   document.querySelectorAll('.ftog[data-viocore]').forEach(b=>_active.viocore.add(b.dataset.viocore));
   document.querySelectorAll('.ftog[data-skew]').forEach(b=>_active.skews.add(b.dataset.skew));
+  document.querySelectorAll('.ftog[data-temp]').forEach(b=>_active.temps.add(b.dataset.temp));
 }}
 
 function toggleFilter(btn, kind){{
   const val = btn.dataset[kind];
-  const set = kind==='viocore' ? _active.viocore : _active.skews;
+  const set = kind==='viocore' ? _active.viocore : kind==='temp' ? _active.temps : _active.skews;
   if(set.has(val)){{ set.delete(val); btn.classList.remove('active'); }}
   else{{ set.add(val); btn.classList.add('active'); }}
   applyFilters();
@@ -262,14 +269,19 @@ function applyFilters(){{
   document.querySelectorAll('g.series, g.legend-item').forEach(g=>{{
     const vcAttr = g.dataset.viocore;
     const s = g.dataset.skew;
+    const t = g.dataset.temp;
     const vcOk = !vcAttr || _active.viocore.has(vcAttr);
     const sOk = !s || _active.skews.has(s);
-    g.style.display = (vcOk && sOk) ? '' : 'none';
+    const tOk = !t || _active.temps.has(t);
+    g.style.display = (vcOk && sOk && tOk) ? '' : 'none';
   }});
-  // Per-viocore sub-group filtering (corner/rise-fall charts: hides path+circles together)
-  document.querySelectorAll('g[data-viocore]:not(.series):not(.legend-item)').forEach(g=>{{
+  // Sub-group filtering (data-temp and/or data-viocore; hides path+circles together)
+  document.querySelectorAll('g[data-temp]:not(.series):not(.legend-item), g[data-viocore]:not(.series):not(.legend-item)').forEach(g=>{{
+    const t = g.dataset.temp;
     const vc = g.dataset.viocore;
-    g.style.display = (!vc || _active.viocore.has(vc)) ? '' : 'none';
+    const tOk = !t || _active.temps.has(t);
+    const vcOk = !vc || _active.viocore.has(vc);
+    g.style.display = (tOk && vcOk) ? '' : 'none';
   }});
   // Stats table rows
   document.querySelectorAll('.stats-row').forEach(r=>{{
@@ -394,8 +406,15 @@ document.addEventListener('DOMContentLoaded', ()=>{{ _initSets(); restorePlotPre
         f'onclick="toggleFilter(this,\'skew\')">{_h(s)}</span>'
         for s in _skews
     )
+    temp_btns = " ".join(
+        f'<span class="ftog active" data-temp="{_h(t)}" '
+        f'onclick="toggleFilter(this,\'temp\')">{_h(t)}\u00b0C</span>'
+        for t in _temps
+    )
     html.append(f'''<div class="filter-bar">
   <div class="fg"><label>Vin Core / GPIO (VCORE/VIO)</label>{viocore_btns}</div>
+  <div class="filter-divider"></div>
+  <div class="fg"><label>Temperature</label>{temp_btns}</div>
   <div class="filter-divider"></div>
   <div class="fg"><label>Skew</label>{skew_btns}</div>
   <div class="filter-divider"></div>

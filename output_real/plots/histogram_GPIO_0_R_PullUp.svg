@@ -8,19 +8,19 @@
 <text x="57.0" y="379.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">0</text>
 <line x1="60.0" y1="311.0" x2="65.0" y2="311.0" stroke="#999" stroke-width="1"/>
 <line x1="65.0" y1="311.0" x2="870.0" y2="311.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="315.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">7052</text>
+<text x="57.0" y="315.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">7335</text>
 <line x1="60.0" y1="247.0" x2="65.0" y2="247.0" stroke="#999" stroke-width="1"/>
 <line x1="65.0" y1="247.0" x2="870.0" y2="247.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="251.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">14105</text>
+<text x="57.0" y="251.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">14670</text>
 <line x1="60.0" y1="183.0" x2="65.0" y2="183.0" stroke="#999" stroke-width="1"/>
 <line x1="65.0" y1="183.0" x2="870.0" y2="183.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="187.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">21158</text>
+<text x="57.0" y="187.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">22005</text>
 <line x1="60.0" y1="119.0" x2="65.0" y2="119.0" stroke="#999" stroke-width="1"/>
 <line x1="65.0" y1="119.0" x2="870.0" y2="119.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="123.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">28211</text>
+<text x="57.0" y="123.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">29340</text>
 <line x1="60.0" y1="55.0" x2="65.0" y2="55.0" stroke="#999" stroke-width="1"/>
 <line x1="65.0" y1="55.0" x2="870.0" y2="55.0" stroke="#e0e0e0" stroke-width="0.7" stroke-dasharray="3,3"/>
-<text x="57.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">35264</text>
+<text x="57.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">36676</text>
 <line x1="65.0" y1="375.0" x2="65.0" y2="380.0" stroke="#999" stroke-width="1"/>
 <text x="65.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">15.2</text>
 <line x1="180.0" y1="375.0" x2="180.0" y2="380.0" stroke="#999" stroke-width="1"/>
@@ -39,11 +39,11 @@
 <text x="870.0" y="392.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">77.1</text>
 <text x="450.0" y="445.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif">Value (kOhm)</text>
 <text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Count</text>
-<rect x="129.4" y="356.9" width="27.4" height="18.1" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="161.6" y="331.7" width="27.4" height="43.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="290.4" y="259.4" width="27.4" height="115.6" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="129.4" y="357.6" width="27.4" height="17.4" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="161.6" y="333.3" width="27.4" height="41.7" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="290.4" y="276.2" width="27.4" height="98.8" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="322.6" y="55.0" width="27.4" height="320.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
-<rect x="354.8" y="349.7" width="27.4" height="25.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
+<rect x="354.8" y="350.7" width="27.4" height="24.3" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <rect x="65.0" y="27.0" width="12.0" height="12.0" fill="#3498db" stroke="none" stroke-width="1" opacity="0.72" rx="2"/>
 <text x="80.0" y="36.0" font-size="10" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Flow1</text>
 <g class="spec-el">

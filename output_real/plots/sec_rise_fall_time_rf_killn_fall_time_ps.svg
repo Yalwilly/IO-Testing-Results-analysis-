@@ -45,976 +45,1408 @@
 <text x="963.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=80°C</text>
 <text x="611.0" y="494.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Temperature  /  Drive Strength (DS)</text>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="25679">
-<path d="M117.3,187.5 L187.8,306.9 L258.3,360.0 L328.9,357.7 L399.4,357.7 L469.9,172.0 L540.5,302.5 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,136.7 L893.1,273.7 L963.7,353.3 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,187.5 L187.8,306.9 L258.3,360.0 L328.9,357.7 L399.4,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="187.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="306.9" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,172.0 L540.5,302.5 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="172.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="302.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,136.7 L893.1,273.7 L963.7,353.3 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="136.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="25679">
-<path d="M117.3,185.3 L187.8,309.1 L258.3,357.7 L328.9,395.3 L399.4,357.7 L469.9,178.7 L540.5,306.9 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,138.9 L893.1,278.2 L963.7,355.5 L1034.2,357.7 L1104.7,353.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,185.3 L187.8,309.1 L258.3,357.7 L328.9,395.3 L399.4,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="185.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,178.7 L540.5,306.9 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="178.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.9 L893.1,278.2 L963.7,355.5 L1034.2,357.7 L1104.7,353.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="138.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="278.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="25679">
-<path d="M117.3,189.7 L187.8,311.3 L258.3,357.7 L328.9,357.7 L399.4,357.7 L469.9,180.9 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,154.4 L893.1,287.0 L963.7,355.5 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,311.3 L258.3,357.7 L328.9,357.7 L399.4,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,180.9 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="180.9" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,154.4 L893.1,287.0 L963.7,355.5 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="154.4" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="287.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="43407">
-<path d="M117.3,395.3 L187.8,304.7 L258.3,395.3 L328.9,357.7 L399.4,395.3 L469.9,149.9 L540.5,295.8 L611.0,355.5 L681.5,355.5 L752.1,355.5 L822.6,136.7 L893.1,264.9 L963.7,346.7 L1034.2,348.9 L1104.7,348.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,304.7 L258.3,395.3 L328.9,357.7 L399.4,395.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="304.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,149.9 L540.5,295.8 L611.0,355.5 L681.5,355.5 L752.1,355.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="149.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="295.8" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,136.7 L893.1,264.9 L963.7,346.7 L1034.2,348.9 L1104.7,348.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="136.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="264.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="346.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="43407">
-<path d="M117.3,165.4 L187.8,304.7 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,156.6 L540.5,300.3 L611.0,355.5 L681.5,360.0 L752.1,357.7 L822.6,145.5 L893.1,289.2 L963.7,353.3 L1034.2,357.7 L1104.7,348.9" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.4 L187.8,304.7 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="165.4" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="304.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,156.6 L540.5,300.3 L611.0,355.5 L681.5,360.0 L752.1,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="156.6" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="300.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="355.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,289.2 L963.7,353.3 L1034.2,357.7 L1104.7,348.9" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="289.2" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="348.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="43407">
-<path d="M117.3,185.3 L187.8,306.9 L258.3,357.7 L328.9,357.7 L399.4,357.7 L469.9,163.2 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,134.5 L893.1,273.7 L963.7,353.3 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,185.3 L187.8,306.9 L258.3,357.7 L328.9,357.7 L399.4,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="185.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="306.9" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,163.2 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="163.2" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,273.7 L963.7,353.3 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="79093">
-<path d="M117.3,174.3 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,390.9 L469.9,163.2 L540.5,293.6 L611.0,360.0 L681.5,357.7 L752.1,360.0 L822.6,116.8 L893.1,275.9 L963.7,355.5 L1034.2,346.7 L1104.7,344.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,174.3 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,390.9" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="174.3" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="390.9" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,163.2 L540.5,293.6 L611.0,360.0 L681.5,357.7 L752.1,360.0" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="163.2" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="293.6" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,116.8 L893.1,275.9 L963.7,355.5 L1034.2,346.7 L1104.7,344.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="116.8" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="346.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="344.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="79093">
-<path d="M117.3,185.3 L187.8,315.7 L258.3,357.7 L328.9,362.2 L399.4,360.0 L469.9,169.8 L540.5,300.3 L611.0,357.7 L681.5,362.2 L752.1,357.7 L822.6,130.0 L893.1,282.6 L963.7,353.3 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,185.3 L187.8,315.7 L258.3,357.7 L328.9,362.2 L399.4,360.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="185.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,169.8 L540.5,300.3 L611.0,357.7 L681.5,362.2 L752.1,357.7" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="169.8" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="300.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,130.0 L893.1,282.6 L963.7,353.3 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="130.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="282.6" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="79093">
-<path d="M117.3,180.9 L187.8,315.7 L258.3,360.0 L328.9,384.3 L399.4,360.0 L469.9,167.6 L540.5,311.3 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,143.3 L893.1,273.7 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.9 L187.8,315.7 L258.3,360.0 L328.9,384.3 L399.4,360.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="180.9" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="384.3" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,167.6 L540.5,311.3 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="167.6" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,273.7 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="13967">
-<path d="M117.3,180.9 L187.8,393.1 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,172.0 L540.5,304.7 L611.0,357.7 L681.5,395.3 L752.1,357.7 L822.6,134.5 L893.1,295.8 L963.7,353.3 L1034.2,353.3 L1104.7,355.5" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.9 L187.8,393.1 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="180.9" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="393.1" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,172.0 L540.5,304.7 L611.0,357.7 L681.5,395.3 L752.1,357.7" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="172.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,295.8 L963.7,353.3 L1034.2,353.3 L1104.7,355.5" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="295.8" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="13967">
-<path d="M117.3,185.3 L187.8,309.1 L258.3,360.0 L328.9,362.2 L399.4,360.0 L469.9,395.3 L540.5,306.9 L611.0,360.0 L681.5,360.0 L752.1,395.3 L822.6,136.7 L893.1,291.4 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,185.3 L187.8,309.1 L258.3,360.0 L328.9,362.2 L399.4,360.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="185.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,306.9 L611.0,360.0 L681.5,360.0 L752.1,395.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,136.7 L893.1,291.4 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="136.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="291.4" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="13967">
-<path d="M117.3,187.5 L187.8,311.3 L258.3,357.7 L328.9,360.0 L399.4,360.0 L469.9,183.1 L540.5,306.9 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,161.0 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,187.5 L187.8,311.3 L258.3,357.7 L328.9,360.0 L399.4,360.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="187.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,306.9 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,161.0 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="161.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="15382">
-<path d="M117.3,178.7 L187.8,309.1 L258.3,360.0 L328.9,357.7 L399.4,357.7 L469.9,393.1 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,134.5 L893.1,271.5 L963.7,351.1 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,178.7 L187.8,309.1 L258.3,360.0 L328.9,357.7 L399.4,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="178.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,393.1 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="393.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,271.5 L963.7,351.1 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="271.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="15382">
-<path d="M117.3,180.9 L187.8,315.7 L258.3,357.7 L328.9,362.2 L399.4,360.0 L469.9,174.3 L540.5,304.7 L611.0,395.3 L681.5,360.0 L752.1,395.3 L822.6,143.3 L893.1,275.9 L963.7,353.3 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.9 L187.8,315.7 L258.3,357.7 L328.9,362.2 L399.4,360.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="180.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,174.3 L540.5,304.7 L611.0,395.3 L681.5,360.0 L752.1,395.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="174.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,275.9 L963.7,353.3 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="15382">
-<path d="M117.3,180.9 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,180.9 L540.5,309.1 L611.0,360.0 L681.5,357.7 L752.1,357.7 L822.6,134.5 L893.1,300.3 L963.7,355.5 L1034.2,353.3 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.9 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="180.9" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,180.9 L540.5,309.1 L611.0,360.0 L681.5,357.7 L752.1,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="180.9" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,300.3 L963.7,355.5 L1034.2,353.3 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="300.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="78814">
-<path d="M117.3,355.5 L187.8,304.7 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,165.4 L540.5,300.3 L611.0,357.7 L681.5,357.7 L752.1,377.6 L822.6,141.1 L893.1,280.4 L963.7,348.9 L1034.2,348.9 L1104.7,351.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,355.5 L187.8,304.7 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="304.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.4 L540.5,300.3 L611.0,357.7 L681.5,357.7 L752.1,377.6" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="165.4" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="300.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="377.6" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,141.1 L893.1,280.4 L963.7,348.9 L1034.2,348.9 L1104.7,351.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="141.1" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="280.4" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="78814">
-<path d="M117.3,183.1 L187.8,313.5 L258.3,357.7 L328.9,362.2 L399.4,360.0 L469.9,167.6 L540.5,304.7 L611.0,357.7 L681.5,362.2 L752.1,357.7 L822.6,143.3 L893.1,271.5 L963.7,353.3 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,313.5 L258.3,357.7 L328.9,362.2 L399.4,360.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,167.6 L540.5,304.7 L611.0,357.7 L681.5,362.2 L752.1,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="167.6" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,271.5 L963.7,353.3 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="271.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="78814">
-<path d="M117.3,183.1 L187.8,313.5 L258.3,357.7 L328.9,357.7 L399.4,360.0 L469.9,169.8 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,143.3 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,313.5 L258.3,357.7 L328.9,357.7 L399.4,360.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,169.8 L540.5,306.9 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="169.8" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="12566">
-<path d="M117.3,185.3 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,357.7 L469.9,169.8 L540.5,298.1 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,132.2 L893.1,273.7 L963.7,348.9 L1034.2,344.5 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,185.3 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,357.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="185.3" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,169.8 L540.5,298.1 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="169.8" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="298.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,132.2 L893.1,273.7 L963.7,348.9 L1034.2,344.5 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="132.2" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="348.9" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="344.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="12566">
-<path d="M117.3,302.5 L187.8,315.7 L258.3,357.7 L328.9,300.3 L399.4,357.7 L469.9,340.1 L540.5,238.4 L611.0,357.7 L681.5,362.2 L752.1,360.0 L822.6,145.5 L893.1,300.3 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,302.5 L187.8,315.7 L258.3,357.7 L328.9,300.3 L399.4,357.7" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="302.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="300.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,340.1 L540.5,238.4 L611.0,357.7 L681.5,362.2 L752.1,360.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="340.1" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="238.4" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,300.3 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="300.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="12566">
-<path d="M117.3,183.1 L187.8,315.7 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,180.9 L540.5,313.5 L611.0,360.0 L681.5,360.0 L752.1,360.0 L822.6,158.8 L893.1,271.5 L963.7,357.7 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,315.7 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,180.9 L540.5,313.5 L611.0,360.0 L681.5,360.0 L752.1,360.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="180.9" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,158.8 L893.1,271.5 L963.7,357.7 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="158.8" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="271.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="13316">
-<path d="M117.3,395.3 L187.8,384.3 L258.3,384.3 L328.9,360.0 L399.4,360.0 L469.9,183.1 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,143.3 L893.1,278.2 L963.7,353.3 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,384.3 L258.3,384.3 L328.9,360.0 L399.4,360.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="384.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="384.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,278.2 L963.7,353.3 L1034.2,353.3 L1104.7,353.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="278.2" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="13316">
-<path d="M117.3,187.5 L187.8,313.5 L258.3,360.0 L328.9,362.2 L399.4,357.7 L469.9,183.1 L540.5,306.9 L611.0,360.0 L681.5,362.2 L752.1,357.7 L822.6,149.9 L893.1,289.2 L963.7,355.5 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,187.5 L187.8,313.5 L258.3,360.0 L328.9,362.2 L399.4,357.7" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="187.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,306.9 L611.0,360.0 L681.5,362.2 L752.1,357.7" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.9 L893.1,289.2 L963.7,355.5 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="149.9" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="289.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="13316">
-<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,360.0 L469.9,185.3 L540.5,311.3 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,145.5 L893.1,280.4 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,360.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="191.9" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,185.3 L540.5,311.3 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="185.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,280.4 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="280.4" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="62919">
-<path d="M117.3,178.7 L187.8,309.1 L258.3,395.3 L328.9,357.7 L399.4,357.7 L469.9,174.3 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,143.3 L893.1,271.5 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,178.7 L187.8,309.1 L258.3,395.3 L328.9,357.7 L399.4,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="178.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,174.3 L540.5,304.7 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="174.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,271.5 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="271.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="62919">
-<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,362.2 L399.4,357.7 L469.9,395.3 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,357.7 L822.6,145.5 L893.1,284.8 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,362.2 L399.4,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="191.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,284.8 L963.7,355.5 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="284.8" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="62919">
-<path d="M117.3,187.5 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,176.5 L540.5,311.3 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,145.5 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,187.5 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="187.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,176.5 L540.5,311.3 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="176.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="44565">
-<path d="M117.3,183.1 L187.8,302.5 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,158.8 L540.5,298.1 L611.0,355.5 L681.5,355.5 L752.1,355.5 L822.6,136.7 L893.1,273.7 L963.7,348.9 L1034.2,346.7 L1104.7,348.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,302.5 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="302.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,158.8 L540.5,298.1 L611.0,355.5 L681.5,355.5 L752.1,355.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="158.8" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="298.1" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,136.7 L893.1,273.7 L963.7,348.9 L1034.2,346.7 L1104.7,348.9" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="136.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="346.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="348.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="44565">
-<path d="M117.3,395.3 L187.8,309.1 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,169.8 L540.5,298.1 L611.0,357.7 L681.5,360.0 L752.1,395.3 L822.6,149.9 L893.1,275.9 L963.7,351.1 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,309.1 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,169.8 L540.5,298.1 L611.0,357.7 L681.5,360.0 L752.1,395.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="169.8" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="298.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.9 L893.1,275.9 L963.7,351.1 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="149.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="351.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="44565">
-<path d="M117.3,183.1 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,167.6 L540.5,309.1 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,149.9 L893.1,278.2 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,167.6 L540.5,309.1 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="167.6" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.9 L893.1,278.2 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="149.9" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="278.2" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="69627">
-<path d="M117.3,169.8 L187.8,313.5 L258.3,357.7 L328.9,357.7 L399.4,357.7 L469.9,167.6 L540.5,395.3 L611.0,357.7 L681.5,355.5 L752.1,355.5 L822.6,127.8 L893.1,275.9 L963.7,351.1 L1034.2,351.1 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,169.8 L187.8,313.5 L258.3,357.7 L328.9,357.7 L399.4,357.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="169.8" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,167.6 L540.5,395.3 L611.0,357.7 L681.5,355.5 L752.1,355.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="167.6" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="355.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="355.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,127.8 L893.1,275.9 L963.7,351.1 L1034.2,351.1 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="127.8" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="69627">
-<path d="M117.3,189.7 L187.8,313.5 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,183.1 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,357.7 L822.6,143.3 L893.1,275.9 L963.7,355.5 L1034.2,357.7 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,313.5 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,357.7" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,275.9 L963.7,355.5 L1034.2,357.7 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="69627">
-<path d="M117.3,194.1 L187.8,315.7 L258.3,357.7 L328.9,357.7 L399.4,357.7 L469.9,187.5 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,138.9 L893.1,278.2 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,194.1 L187.8,315.7 L258.3,357.7 L328.9,357.7 L399.4,357.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="194.1" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,187.5 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="187.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.9 L893.1,278.2 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="138.9" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="278.2" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="76687">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,360.0 L328.9,395.3 L399.4,360.0 L469.9,395.3 L540.5,306.9 L611.0,360.0 L681.5,357.7 L752.1,360.0 L822.6,143.3 L893.1,273.7 L963.7,355.5 L1034.2,355.5 L1104.7,353.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,360.0 L328.9,395.3 L399.4,360.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,306.9 L611.0,360.0 L681.5,357.7 L752.1,360.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="306.9" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,273.7 L963.7,355.5 L1034.2,355.5 L1104.7,353.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="76687">
-<path d="M117.3,189.7 L187.8,311.3 L258.3,360.0 L328.9,362.2 L399.4,360.0 L469.9,185.3 L540.5,309.1 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,149.9 L893.1,275.9 L963.7,355.5 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,311.3 L258.3,360.0 L328.9,362.2 L399.4,360.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,185.3 L540.5,309.1 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="185.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.9 L893.1,275.9 L963.7,355.5 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="149.9" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="76687">
-<path d="M117.3,191.9 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,178.7 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,143.3 L893.1,291.4 L963.7,357.7 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,191.9 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="191.9" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,178.7 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="178.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,291.4 L963.7,357.7 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="291.4" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="56508">
-<path d="M117.3,189.7 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,178.7 L540.5,309.1 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,147.7 L893.1,275.9 L963.7,351.1 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,178.7 L540.5,309.1 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="178.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,147.7 L893.1,275.9 L963.7,351.1 L1034.2,353.3 L1104.7,351.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="147.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="353.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="56508">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,362.2 L399.4,357.7 L469.9,183.1 L540.5,304.7 L611.0,375.4 L681.5,360.0 L752.1,357.7 L822.6,132.2 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,362.2 L399.4,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,304.7 L611.0,375.4 L681.5,360.0 L752.1,357.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="304.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="375.4" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,132.2 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,355.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="132.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="56508">
-<path d="M117.3,194.1 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,176.5 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,360.0 L822.6,134.5 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,194.1 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="194.1" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,176.5 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="176.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,298.1 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="57571">
-<path d="M117.3,189.7 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,174.3 L540.5,311.3 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,132.2 L893.1,275.9 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,174.3 L540.5,311.3 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="174.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,132.2 L893.1,275.9 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="132.2" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="57571">
-<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,395.3 L399.4,360.0 L469.9,185.3 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,156.6 L893.1,302.5 L963.7,353.3 L1034.2,360.0 L1104.7,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,191.9 L187.8,313.5 L258.3,357.7 L328.9,395.3 L399.4,360.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="191.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,185.3 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="185.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,156.6 L893.1,302.5 L963.7,353.3 L1034.2,360.0 L1104.7,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="156.6" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="302.5" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="57571">
-<path d="M117.3,395.3 L187.8,315.7 L258.3,395.3 L328.9,360.0 L399.4,362.2 L469.9,183.1 L540.5,311.3 L611.0,360.0 L681.5,357.7 L752.1,360.0 L822.6,147.7 L893.1,302.5 L963.7,355.5 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,315.7 L258.3,395.3 L328.9,360.0 L399.4,362.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="362.2" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,311.3 L611.0,360.0 L681.5,357.7 L752.1,360.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,147.7 L893.1,302.5 L963.7,355.5 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="147.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="302.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="96040">
-<path d="M117.3,189.7 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,357.7 L469.9,161.0 L540.5,309.1 L611.0,357.7 L681.5,357.7 L752.1,357.7 L822.6,145.5 L893.1,275.9 L963.7,353.3 L1034.2,351.1 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,313.5 L258.3,357.7 L328.9,360.0 L399.4,357.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.0 L540.5,309.1 L611.0,357.7 L681.5,357.7 L752.1,357.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="161.0" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,275.9 L963.7,353.3 L1034.2,351.1 L1104.7,351.1" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="275.9" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#c0392b" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="96040">
-<path d="M117.3,196.4 L187.8,315.7 L258.3,360.0 L328.9,362.2 L399.4,360.0 L469.9,130.0 L540.5,313.5 L611.0,395.3 L681.5,362.2 L752.1,357.7 L822.6,145.5 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,196.4 L187.8,315.7 L258.3,360.0 L328.9,362.2 L399.4,360.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="196.4" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,130.0 L540.5,313.5 L611.0,395.3 L681.5,362.2 L752.1,357.7" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="130.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#2980b9" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="96040">
-<path d="M117.3,196.4 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,183.1 L540.5,315.7 L611.0,360.0 L681.5,360.0 L752.1,134.5 L822.6,143.3 L893.1,302.5 L963.7,357.7 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,196.4 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="196.4" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,183.1 L540.5,315.7 L611.0,360.0 L681.5,360.0 L752.1,134.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="183.1" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="315.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="134.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.3 L893.1,302.5 L963.7,357.7 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="143.3" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="302.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="357.7" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#27ae60" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="29674">
-<path d="M117.3,183.1 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,357.7 L469.9,158.8 L540.5,395.3 L611.0,375.4 L681.5,357.7 L752.1,355.5 L822.6,134.5 L893.1,273.7 L963.7,348.9 L1034.2,351.1 L1104.7,348.9" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,313.5 L258.3,360.0 L328.9,360.0 L399.4,357.7" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,158.8 L540.5,395.3 L611.0,375.4 L681.5,357.7 L752.1,355.5" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="158.8" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="375.4" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="355.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,273.7 L963.7,348.9 L1034.2,351.1 L1104.7,348.9" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="348.9" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="348.9" r="4" fill="#8e44ad" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="29674">
-<path d="M117.3,395.3 L187.8,313.5 L258.3,360.0 L328.9,393.1 L399.4,360.0 L469.9,172.0 L540.5,311.3 L611.0,360.0 L681.5,362.2 L752.1,357.7 L822.6,134.5 L893.1,295.8 L963.7,346.7 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,313.5 L258.3,360.0 L328.9,393.1 L399.4,360.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="313.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="393.1" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,172.0 L540.5,311.3 L611.0,360.0 L681.5,362.2 L752.1,357.7" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="172.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.5 L893.1,295.8 L963.7,346.7 L1034.2,360.0 L1104.7,353.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="134.5" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="295.8" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="346.7" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#d35400" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="29674">
-<path d="M117.3,189.7 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,169.8 L540.5,311.3 L611.0,357.7 L681.5,357.7 L752.1,360.0 L822.6,141.1 L893.1,293.6 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,189.7 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="189.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,169.8 L540.5,311.3 L611.0,357.7 L681.5,357.7 L752.1,360.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="169.8" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="357.7" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,141.1 L893.1,293.6 L963.7,353.3 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="141.1" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="293.6" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#16a085" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="58046">
-<path d="M117.3,395.3 L187.8,393.1 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,178.7 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7 L822.6,138.9 L893.1,284.8 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,393.1 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="393.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,178.7 L540.5,309.1 L611.0,360.0 L681.5,360.0 L752.1,357.7" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="178.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="309.1" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.9 L893.1,284.8 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="138.9" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="284.8" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#3498db" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="58046">
-<path d="M117.3,194.1 L187.8,315.7 L258.3,360.0 L328.9,362.2 L399.4,360.0 L469.9,357.7 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,360.0 L822.6,149.9 L893.1,295.8 L963.7,355.5 L1034.2,362.2 L1104.7,355.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,194.1 L187.8,315.7 L258.3,360.0 L328.9,362.2 L399.4,360.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="194.1" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,357.7 L540.5,313.5 L611.0,357.7 L681.5,362.2 L752.1,360.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.9 L893.1,295.8 L963.7,355.5 L1034.2,362.2 L1104.7,355.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="149.9" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="295.8" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="362.2" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#e74c3c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="58046">
-<path d="M117.3,187.5 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,185.3 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,360.0 L822.6,156.6 L893.1,289.2 L963.7,357.7 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,187.5 L187.8,315.7 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="187.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,185.3 L540.5,313.5 L611.0,357.7 L681.5,360.0 L752.1,360.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="185.3" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="313.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="360.0" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,156.6 L893.1,289.2 L963.7,357.7 L1034.2,355.5 L1104.7,357.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="156.6" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="289.2" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="357.7" r="4" fill="#2ecc71" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="9808">
-<path d="M117.3,178.7 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,360.0 L469.9,161.0 L540.5,302.5 L611.0,357.7 L681.5,355.5 L752.1,357.7 L822.6,145.5 L893.1,273.7 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,178.7 L187.8,311.3 L258.3,360.0 L328.9,360.0 L399.4,360.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="178.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="311.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.0 L540.5,302.5 L611.0,357.7 L681.5,355.5 L752.1,357.7" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="161.0" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="302.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="355.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.5 L893.1,273.7 L963.7,353.3 L1034.2,351.1 L1104.7,353.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.5" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="273.7" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="351.1" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="353.3" r="4" fill="#9b59b6" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="9808">
-<path d="M117.3,180.9 L187.8,309.1 L258.3,360.0 L328.9,362.2 L399.4,360.0 L469.9,165.4 L540.5,311.3 L611.0,357.7 L681.5,362.2 L752.1,357.7 L822.6,138.9 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.9 L187.8,309.1 L258.3,360.0 L328.9,362.2 L399.4,360.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="180.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="309.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="362.2" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.4 L540.5,311.3 L611.0,357.7 L681.5,362.2 L752.1,357.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="165.4" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="311.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="362.2" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.9 L893.1,298.1 L963.7,353.3 L1034.2,360.0 L1104.7,351.1" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="138.9" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="298.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="353.3" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="360.0" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="351.1" r="4" fill="#e67e22" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="9808">
-<path d="M117.3,183.1 L187.8,315.7 L258.3,360.0 L328.9,357.7 L399.4,360.0 L469.9,174.3 L540.5,395.3 L611.0,357.7 L681.5,360.0 L752.1,357.7 L822.6,141.1 L893.1,295.8 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,183.1 L187.8,315.7 L258.3,360.0 L328.9,357.7 L399.4,360.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="183.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="315.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,174.3 L540.5,395.3 L611.0,357.7 L681.5,360.0 L752.1,357.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="174.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="360.0" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="357.7" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,141.1 L893.1,295.8 L963.7,355.5 L1034.2,355.5 L1104.7,355.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="141.1" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="295.8" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="355.5" r="4" fill="#1abc9c" opacity="0.9"><title>RF_KILLN Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
 </g>
 <g class="spec-el">
 </g>

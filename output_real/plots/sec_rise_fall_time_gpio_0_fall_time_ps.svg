@@ -45,976 +45,1408 @@
 <text x="963.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=80°C</text>
 <text x="611.0" y="494.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Temperature  /  Drive Strength (DS)</text>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="25679">
-<path d="M117.3,156.3 L187.8,395.3 L258.3,395.3 L328.9,363.9 L399.4,395.3 L469.9,150.0 L540.5,395.3 L611.0,299.4 L681.5,395.3 L752.1,382.0 L822.6,135.1 L893.1,245.2 L963.7,293.1 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,156.3 L187.8,395.3 L258.3,395.3 L328.9,363.9 L399.4,395.3" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="156.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="363.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,150.0 L540.5,395.3 L611.0,299.4 L681.5,395.3 L752.1,382.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="150.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="299.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.1 L893.1,245.2 L963.7,293.1 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="135.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="245.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="293.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="360.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="25679">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,382.0 L469.9,395.3 L540.5,395.3 L611.0,395.3 L681.5,363.1 L752.1,382.0 L822.6,136.7 L893.1,247.5 L963.7,295.5 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,395.3 L611.0,395.3 L681.5,363.1 L752.1,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,136.7 L893.1,247.5 L963.7,295.5 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="136.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="295.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="25679">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3 L469.9,395.3 L540.5,263.2 L611.0,304.9 L681.5,363.1 L752.1,382.0 L822.6,142.2 L893.1,255.4 L963.7,295.5 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,263.2 L611.0,304.9 L681.5,363.1 L752.1,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="540.5" cy="263.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="611.0" cy="304.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,142.2 L893.1,255.4 L963.7,295.5 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="142.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="893.1" cy="255.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="295.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="43407">
-<path d="M117.3,155.5 L187.8,257.7 L258.3,311.2 L328.9,374.1 L399.4,382.0 L469.9,150.8 L540.5,259.3 L611.0,298.6 L681.5,363.1 L752.1,382.0 L822.6,128.8 L893.1,244.4 L963.7,287.6 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,155.5 L187.8,257.7 L258.3,311.2 L328.9,374.1 L399.4,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="155.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="257.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="311.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="374.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,150.8 L540.5,259.3 L611.0,298.6 L681.5,363.1 L752.1,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="150.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="259.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="298.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,128.8 L893.1,244.4 L963.7,287.6 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="128.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="244.4" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="287.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="360.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="43407">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,308.1 L328.9,395.3 L399.4,382.0 L469.9,157.1 L540.5,259.3 L611.0,308.8 L681.5,373.3 L752.1,382.0 L822.6,131.2 L893.1,245.2 L963.7,294.7 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,308.1 L328.9,395.3 L399.4,382.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="308.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,157.1 L540.5,259.3 L611.0,308.8 L681.5,373.3 L752.1,382.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="157.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="259.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="308.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="373.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,131.2 L893.1,245.2 L963.7,294.7 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="131.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="245.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="294.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="43407">
-<path d="M117.3,153.2 L187.8,270.3 L258.3,310.4 L328.9,374.9 L399.4,382.0 L469.9,165.8 L540.5,264.8 L611.0,306.5 L681.5,374.1 L752.1,382.0 L822.6,146.9 L893.1,249.9 L963.7,293.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,153.2 L187.8,270.3 L258.3,310.4 L328.9,374.9 L399.4,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="153.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="187.8" cy="270.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="258.3" cy="310.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.8 L540.5,264.8 L611.0,306.5 L681.5,374.1 L752.1,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="165.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="540.5" cy="264.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="611.0" cy="306.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,146.9 L893.1,249.9 L963.7,293.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="146.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="893.1" cy="249.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="293.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ffss" data-chip="79093">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,145.3 L540.5,395.3 L611.0,304.9 L681.5,395.3 L752.1,382.0 L822.6,140.6 L893.1,244.4 L963.7,290.8 L1034.2,360.7 L1104.7,380.4" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,145.3 L540.5,395.3 L611.0,304.9 L681.5,395.3 L752.1,382.0" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="145.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="304.9" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,140.6 L893.1,244.4 L963.7,290.8 L1034.2,360.7 L1104.7,380.4" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="140.6" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="244.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="290.8" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="360.7" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="380.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ffss" data-chip="79093">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3 L469.9,157.1 L540.5,262.5 L611.0,304.1 L681.5,395.3 L752.1,382.0 L822.6,144.5 L893.1,250.7 L963.7,293.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,157.1 L540.5,262.5 L611.0,304.1 L681.5,395.3 L752.1,382.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="157.1" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="262.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="304.1" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,144.5 L893.1,250.7 L963.7,293.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="144.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="250.7" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="293.9" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ffss" data-chip="79093">
-<path d="M117.3,165.0 L187.8,268.0 L258.3,395.3 L328.9,374.9 L399.4,382.0 L469.9,165.8 L540.5,395.3 L611.0,395.3 L681.5,363.9 L752.1,382.8 L822.6,134.3 L893.1,243.6 L963.7,297.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.0 L187.8,268.0 L258.3,395.3 L328.9,374.9 L399.4,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="165.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="187.8" cy="268.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.8 L540.5,395.3 L611.0,395.3 L681.5,363.9 L752.1,382.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="165.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="681.5" cy="363.9" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,134.3 L893.1,243.6 L963.7,297.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="134.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="893.1" cy="243.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="297.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="13967">
-<path d="M117.3,149.2 L187.8,394.5 L258.3,395.3 L328.9,374.9 L399.4,395.3 L469.9,157.1 L540.5,261.7 L611.0,302.6 L681.5,363.1 L752.1,382.0 L822.6,131.2 L893.1,250.7 L963.7,294.7 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,149.2 L187.8,394.5 L258.3,395.3 L328.9,374.9 L399.4,395.3" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="149.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="394.5" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,157.1 L540.5,261.7 L611.0,302.6 L681.5,363.1 L752.1,382.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="157.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="261.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="302.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,131.2 L893.1,250.7 L963.7,294.7 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="131.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="250.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="294.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="13967">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,312.0 L328.9,375.7 L399.4,382.0 L469.9,163.4 L540.5,258.5 L611.0,308.1 L681.5,374.1 L752.1,382.8 L822.6,139.0 L893.1,247.5 L963.7,297.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,312.0 L328.9,375.7 L399.4,382.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="312.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,163.4 L540.5,258.5 L611.0,308.1 L681.5,374.1 L752.1,382.8" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="163.4" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="258.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="308.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,139.0 L893.1,247.5 L963.7,297.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="139.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="297.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="13967">
-<path d="M117.3,395.3 L187.8,270.3 L258.3,315.1 L328.9,375.7 L399.4,382.8 L469.9,160.3 L540.5,268.0 L611.0,310.4 L681.5,374.9 L752.1,382.8 L822.6,140.6 L893.1,254.6 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,270.3 L258.3,315.1 L328.9,375.7 L399.4,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="187.8" cy="270.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="258.3" cy="315.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,160.3 L540.5,268.0 L611.0,310.4 L681.5,374.9 L752.1,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="160.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="611.0" cy="310.4" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,140.6 L893.1,254.6 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="140.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="893.1" cy="254.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="15382">
-<path d="M117.3,156.3 L187.8,273.5 L258.3,395.3 L328.9,374.9 L399.4,382.8 L469.9,146.9 L540.5,264.8 L611.0,301.0 L681.5,373.3 L752.1,382.0 L822.6,138.2 L893.1,257.7 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,156.3 L187.8,273.5 L258.3,395.3 L328.9,374.9 L399.4,382.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="156.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="273.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,146.9 L540.5,264.8 L611.0,301.0 L681.5,373.3 L752.1,382.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="146.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="264.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="301.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="373.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.2 L893.1,257.7 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="138.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="257.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="15382">
-<path d="M117.3,170.5 L187.8,275.0 L258.3,395.3 L328.9,375.7 L399.4,383.5 L469.9,155.5 L540.5,395.3 L611.0,395.3 L681.5,374.9 L752.1,382.0 L822.6,143.0 L893.1,253.8 L963.7,298.6 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,170.5 L187.8,275.0 L258.3,395.3 L328.9,375.7 L399.4,383.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="170.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="275.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="383.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,155.5 L540.5,395.3 L611.0,395.3 L681.5,374.9 L752.1,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="155.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.0 L893.1,253.8 L963.7,298.6 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="15382">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,316.7 L328.9,375.7 L399.4,382.8 L469.9,158.7 L540.5,260.9 L611.0,308.1 L681.5,374.9 L752.1,382.8 L822.6,146.9 L893.1,249.1 L963.7,302.6 L1034.2,363.1 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,316.7 L328.9,375.7 L399.4,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="258.3" cy="316.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,158.7 L540.5,260.9 L611.0,308.1 L681.5,374.9 L752.1,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="158.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="540.5" cy="260.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="611.0" cy="308.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,146.9 L893.1,249.1 L963.7,302.6 L1034.2,363.1 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="146.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="893.1" cy="249.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="302.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="1034.2" cy="363.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fftt" data-chip="78814">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,312.8 L328.9,395.3 L399.4,395.3 L469.9,154.0 L540.5,265.6 L611.0,304.9 L681.5,374.1 L752.1,381.2 L822.6,131.9 L893.1,247.5 L963.7,296.3 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,312.8 L328.9,395.3 L399.4,395.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="312.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,154.0 L540.5,265.6 L611.0,304.9 L681.5,374.1 L752.1,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="154.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="265.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="304.9" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="381.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,131.9 L893.1,247.5 L963.7,296.3 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="131.9" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="360.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fftt" data-chip="78814">
-<path d="M117.3,173.6 L187.8,395.3 L258.3,314.4 L328.9,374.9 L399.4,395.3 L469.9,395.3 L540.5,268.0 L611.0,310.4 L681.5,395.3 L752.1,382.8 L822.6,142.2 L893.1,250.7 L963.7,297.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,173.6 L187.8,395.3 L258.3,314.4 L328.9,374.9 L399.4,395.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="173.6" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,268.0 L611.0,310.4 L681.5,395.3 L752.1,382.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="310.4" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,142.2 L893.1,250.7 L963.7,297.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="142.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="250.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="297.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fftt" data-chip="78814">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,313.6 L328.9,395.3 L399.4,382.8 L469.9,145.3 L540.5,266.4 L611.0,312.8 L681.5,374.9 L752.1,382.0 L822.6,150.0 L893.1,252.2 L963.7,300.2 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,313.6 L328.9,395.3 L399.4,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="258.3" cy="313.6" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,145.3 L540.5,266.4 L611.0,312.8 L681.5,374.9 L752.1,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="145.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="540.5" cy="266.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="611.0" cy="312.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,150.0 L893.1,252.2 L963.7,300.2 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="150.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="893.1" cy="252.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="300.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="12566">
-<path d="M117.3,395.3 L187.8,268.0 L258.3,312.0 L328.9,395.3 L399.4,395.3 L469.9,155.5 L540.5,265.6 L611.0,310.4 L681.5,363.1 L752.1,382.0 L822.6,140.6 L893.1,247.5 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,268.0 L258.3,312.0 L328.9,395.3 L399.4,395.3" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="268.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="312.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,155.5 L540.5,265.6 L611.0,310.4 L681.5,363.1 L752.1,382.0" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="155.5" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="265.6" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="310.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,140.6 L893.1,247.5 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="140.6" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="12566">
-<path d="M117.3,156.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,156.3 L540.5,260.9 L611.0,307.3 L681.5,374.1 L752.1,382.8 L822.6,139.0 L893.1,246.7 L963.7,304.9 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,156.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="156.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,156.3 L540.5,260.9 L611.0,307.3 L681.5,374.1 L752.1,382.8" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="156.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="260.9" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="307.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,139.0 L893.1,246.7 L963.7,304.9 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="139.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="246.7" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="304.9" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="12566">
-<path d="M117.3,165.0 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,159.5 L540.5,268.0 L611.0,307.3 L681.5,374.1 L752.1,382.8 L822.6,151.6 L893.1,253.8 L963.7,297.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.0 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="165.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,159.5 L540.5,268.0 L611.0,307.3 L681.5,374.1 L752.1,382.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="159.5" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="611.0" cy="307.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,151.6 L893.1,253.8 L963.7,297.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="151.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="297.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="13316">
-<path d="M117.3,165.8 L187.8,276.6 L258.3,309.6 L328.9,375.7 L399.4,382.8 L469.9,155.5 L540.5,263.2 L611.0,307.3 L681.5,374.1 L752.1,381.2 L822.6,139.0 L893.1,243.6 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.8 L187.8,276.6 L258.3,309.6 L328.9,375.7 L399.4,382.8" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="165.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="276.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="309.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,155.5 L540.5,263.2 L611.0,307.3 L681.5,374.1 L752.1,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="155.5" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="263.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="307.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,139.0 L893.1,243.6 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="139.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="243.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="13316">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,375.7 L399.4,395.3 L469.9,159.5 L540.5,265.6 L611.0,312.8 L681.5,374.9 L752.1,382.0 L822.6,147.7 L893.1,257.0 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,375.7 L399.4,395.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,159.5 L540.5,265.6 L611.0,312.8 L681.5,374.9 L752.1,382.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="159.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="265.6" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="312.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,147.7 L893.1,257.0 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="147.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="257.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="13316">
-<path d="M117.3,170.5 L187.8,274.3 L258.3,315.1 L328.9,375.7 L399.4,382.8 L469.9,159.5 L540.5,266.4 L611.0,309.6 L681.5,374.9 L752.1,382.8 L822.6,147.7 L893.1,252.2 L963.7,294.7 L1034.2,363.1 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,170.5 L187.8,274.3 L258.3,315.1 L328.9,375.7 L399.4,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="170.5" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="187.8" cy="274.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="258.3" cy="315.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,159.5 L540.5,266.4 L611.0,309.6 L681.5,374.9 L752.1,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="159.5" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="540.5" cy="266.4" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="611.0" cy="309.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,147.7 L893.1,252.2 L963.7,294.7 L1034.2,363.1 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="147.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="893.1" cy="252.2" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="294.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="1034.2" cy="363.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="fstt" data-chip="62919">
-<path d="M117.3,173.6 L187.8,271.9 L258.3,314.4 L328.9,374.9 L399.4,382.8 L469.9,154.7 L540.5,262.5 L611.0,308.1 L681.5,363.1 L752.1,382.8 L822.6,131.2 L893.1,252.2 L963.7,298.6 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,173.6 L187.8,271.9 L258.3,314.4 L328.9,374.9 L399.4,382.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="173.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="271.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,154.7 L540.5,262.5 L611.0,308.1 L681.5,363.1 L752.1,382.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="154.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="262.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="308.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,131.2 L893.1,252.2 L963.7,298.6 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="131.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="252.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="fstt" data-chip="62919">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,165.0 L540.5,268.0 L611.0,307.3 L681.5,373.3 L752.1,382.8 L822.6,135.1 L893.1,253.8 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.0 L540.5,268.0 L611.0,307.3 L681.5,373.3 L752.1,382.8" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="165.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="307.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="373.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.1 L893.1,253.8 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="135.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="301.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="fstt" data-chip="62919">
-<path d="M117.3,181.5 L187.8,273.5 L258.3,313.6 L328.9,375.7 L399.4,383.5 L469.9,164.2 L540.5,268.8 L611.0,312.8 L681.5,374.9 L752.1,382.8 L822.6,147.7 L893.1,248.3 L963.7,301.0 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,181.5 L187.8,273.5 L258.3,313.6 L328.9,375.7 L399.4,383.5" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="181.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="187.8" cy="273.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="258.3" cy="313.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="399.4" cy="383.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,164.2 L540.5,268.8 L611.0,312.8 L681.5,374.9 L752.1,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="164.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="540.5" cy="268.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="611.0" cy="312.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,147.7 L893.1,248.3 L963.7,301.0 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="147.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="893.1" cy="248.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="301.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="44565">
-<path d="M117.3,165.0 L187.8,267.2 L258.3,312.8 L328.9,374.9 L399.4,382.0 L469.9,395.3 L540.5,264.8 L611.0,312.0 L681.5,363.1 L752.1,382.0 L822.6,132.7 L893.1,242.0 L963.7,297.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.0 L187.8,267.2 L258.3,312.8 L328.9,374.9 L399.4,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="165.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="267.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="312.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,264.8 L611.0,312.0 L681.5,363.1 L752.1,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="264.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="312.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,132.7 L893.1,242.0 L963.7,297.1 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="132.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="242.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="297.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="44565">
-<path d="M117.3,169.7 L187.8,269.5 L258.3,315.9 L328.9,395.3 L399.4,382.8 L469.9,395.3 L540.5,395.3 L611.0,395.3 L681.5,374.1 L752.1,395.3 L822.6,135.9 L893.1,246.0 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,169.7 L187.8,269.5 L258.3,315.9 L328.9,395.3 L399.4,382.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="169.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="269.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="315.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,395.3 L611.0,395.3 L681.5,374.1 L752.1,395.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.9 L893.1,246.0 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="135.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="246.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="301.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="44565">
-<path d="M117.3,171.3 L187.8,271.9 L258.3,314.4 L328.9,374.9 L399.4,382.8 L469.9,168.9 L540.5,395.3 L611.0,395.3 L681.5,374.1 L752.1,382.8 L822.6,143.0 L893.1,248.3 L963.7,301.0 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,171.3 L187.8,271.9 L258.3,314.4 L328.9,374.9 L399.4,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="171.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="187.8" cy="271.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,168.9 L540.5,395.3 L611.0,395.3 L681.5,374.1 L752.1,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="168.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.0 L893.1,248.3 L963.7,301.0 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="893.1" cy="248.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="301.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="69627">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,382.0 L469.9,150.0 L540.5,260.9 L611.0,312.0 L681.5,363.1 L752.1,381.2 L822.6,141.4 L893.1,249.1 L963.7,297.1 L1034.2,361.5 L1104.7,380.4" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,382.0" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,150.0 L540.5,260.9 L611.0,312.0 L681.5,363.1 L752.1,381.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="150.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="260.9" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="312.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="381.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,141.4 L893.1,249.1 L963.7,297.1 L1034.2,361.5 L1104.7,380.4" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="141.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="249.1" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="297.1" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="380.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="69627">
-<path d="M117.3,161.0 L187.8,268.0 L258.3,395.3 L328.9,374.9 L399.4,395.3 L469.9,151.6 L540.5,268.0 L611.0,308.8 L681.5,373.3 L752.1,382.0 L822.6,129.6 L893.1,246.7 L963.7,297.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,161.0 L187.8,268.0 L258.3,395.3 L328.9,374.9 L399.4,395.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="161.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="268.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,151.6 L540.5,268.0 L611.0,308.8 L681.5,373.3 L752.1,382.0" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="151.6" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="308.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="373.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,129.6 L893.1,246.7 L963.7,297.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="129.6" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="246.7" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="297.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="69627">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,382.8 L469.9,165.8 L540.5,262.5 L611.0,311.2 L681.5,374.1 L752.1,382.8 L822.6,135.1 L893.1,251.5 L963.7,296.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,382.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,165.8 L540.5,262.5 L611.0,311.2 L681.5,374.1 L752.1,382.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="165.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="540.5" cy="262.5" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="611.0" cy="311.2" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.1 L893.1,251.5 L963.7,296.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="135.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="893.1" cy="251.5" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sftt" data-chip="76687">
-<path d="M117.3,169.7 L187.8,268.8 L258.3,314.4 L328.9,374.9 L399.4,382.8 L469.9,153.2 L540.5,270.3 L611.0,302.6 L681.5,363.9 L752.1,381.2 L822.6,135.1 L893.1,249.1 L963.7,293.1 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,169.7 L187.8,268.8 L258.3,314.4 L328.9,374.9 L399.4,382.8" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="169.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="268.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,153.2 L540.5,270.3 L611.0,302.6 L681.5,363.9 L752.1,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="153.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="270.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="302.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="363.9" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.1 L893.1,249.1 L963.7,293.1 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="135.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="249.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="293.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sftt" data-chip="76687">
-<path d="M117.3,168.9 L187.8,268.0 L258.3,315.1 L328.9,375.7 L399.4,382.0 L469.9,172.8 L540.5,268.8 L611.0,308.8 L681.5,374.1 L752.1,382.0 L822.6,135.9 L893.1,246.7 L963.7,304.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,168.9 L187.8,268.0 L258.3,315.1 L328.9,375.7 L399.4,382.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="168.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="268.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="315.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,172.8 L540.5,268.8 L611.0,308.8 L681.5,374.1 L752.1,382.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="172.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="268.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="308.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,135.9 L893.1,246.7 L963.7,304.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="135.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="246.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="304.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sftt" data-chip="76687">
-<path d="M117.3,167.3 L187.8,271.9 L258.3,315.9 L328.9,374.9 L399.4,382.8 L469.9,161.8 L540.5,261.7 L611.0,312.8 L681.5,375.7 L752.1,382.8 L822.6,150.0 L893.1,247.5 L963.7,301.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,167.3 L187.8,271.9 L258.3,315.9 L328.9,374.9 L399.4,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="167.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="187.8" cy="271.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="258.3" cy="315.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.8 L540.5,261.7 L611.0,312.8 L681.5,375.7 L752.1,382.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="161.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="540.5" cy="261.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="312.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="681.5" cy="375.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,150.0 L893.1,247.5 L963.7,301.8 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="150.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="963.7" cy="301.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="56508">
-<path d="M117.3,173.6 L187.8,271.1 L258.3,312.0 L328.9,375.7 L399.4,382.8 L469.9,170.5 L540.5,262.5 L611.0,310.4 L681.5,374.1 L752.1,382.0 L822.6,132.7 L893.1,252.2 L963.7,299.4 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,173.6 L187.8,271.1 L258.3,312.0 L328.9,375.7 L399.4,382.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="173.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="271.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="312.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,170.5 L540.5,262.5 L611.0,310.4 L681.5,374.1 L752.1,382.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="170.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="262.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="310.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,132.7 L893.1,252.2 L963.7,299.4 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="132.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="252.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="299.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="56508">
-<path d="M117.3,169.7 L187.8,273.5 L258.3,316.7 L328.9,375.7 L399.4,382.8 L469.9,168.1 L540.5,271.1 L611.0,311.2 L681.5,395.3 L752.1,382.0 L822.6,149.2 L893.1,258.5 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,169.7 L187.8,273.5 L258.3,316.7 L328.9,375.7 L399.4,382.8" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="169.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="273.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="316.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,168.1 L540.5,271.1 L611.0,311.2 L681.5,395.3 L752.1,382.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="168.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="271.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="311.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,149.2 L893.1,258.5 L963.7,298.6 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="149.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="258.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="56508">
-<path d="M117.3,180.7 L187.8,282.1 L258.3,316.7 L328.9,376.5 L399.4,382.8 L469.9,171.3 L540.5,275.0 L611.0,313.6 L681.5,374.9 L752.1,382.8 L822.6,157.9 L893.1,253.8 L963.7,299.4 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,180.7 L187.8,282.1 L258.3,316.7 L328.9,376.5 L399.4,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="180.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="187.8" cy="282.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="258.3" cy="316.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="328.9" cy="376.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,171.3 L540.5,275.0 L611.0,313.6 L681.5,374.9 L752.1,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="171.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="540.5" cy="275.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="611.0" cy="313.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,157.9 L893.1,253.8 L963.7,299.4 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="157.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="299.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="57571">
-<path d="M117.3,395.3 L187.8,271.1 L258.3,395.3 L328.9,375.7 L399.4,395.3 L469.9,161.0 L540.5,267.2 L611.0,305.7 L681.5,374.9 L752.1,382.0 L822.6,139.0 L893.1,246.7 L963.7,296.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,271.1 L258.3,395.3 L328.9,375.7 L399.4,395.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="271.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.0 L540.5,267.2 L611.0,305.7 L681.5,374.9 L752.1,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="161.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="267.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="305.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,139.0 L893.1,246.7 L963.7,296.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="139.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="246.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="57571">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,394.5 L328.9,375.7 L399.4,382.8 L469.9,171.3 L540.5,266.4 L611.0,312.8 L681.5,374.9 L752.1,382.8 L822.6,142.2 L893.1,258.5 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,394.5 L328.9,375.7 L399.4,382.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="394.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,171.3 L540.5,266.4 L611.0,312.8 L681.5,374.9 L752.1,382.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="171.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="266.4" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="312.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,142.2 L893.1,258.5 L963.7,301.0 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="142.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="258.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="301.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="57571">
-<path d="M117.3,170.5 L187.8,271.1 L258.3,315.9 L328.9,376.5 L399.4,395.3 L469.9,166.5 L540.5,268.8 L611.0,311.2 L681.5,375.7 L752.1,382.8 L822.6,148.5 L893.1,253.8 L963.7,299.4 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,170.5 L187.8,271.1 L258.3,315.9 L328.9,376.5 L399.4,395.3" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="170.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="187.8" cy="271.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="258.3" cy="315.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="328.9" cy="376.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,166.5 L540.5,268.8 L611.0,311.2 L681.5,375.7 L752.1,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="166.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="540.5" cy="268.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="611.0" cy="311.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="681.5" cy="375.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,148.5 L893.1,253.8 L963.7,299.4 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="148.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="299.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="ssff" data-chip="96040">
-<path d="M117.3,173.6 L187.8,395.3 L258.3,314.4 L328.9,395.3 L399.4,395.3 L469.9,395.3 L540.5,264.8 L611.0,310.4 L681.5,395.3 L752.1,382.8 L822.6,145.3 L893.1,253.8 L963.7,298.6 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,173.6 L187.8,395.3 L258.3,314.4 L328.9,395.3 L399.4,395.3" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="173.6" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,264.8 L611.0,310.4 L681.5,395.3 L752.1,382.8" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="264.8" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="310.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,145.3 L893.1,253.8 L963.7,298.6 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="145.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="298.6" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="ssff" data-chip="96040">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,376.5 L399.4,382.8 L469.9,395.3 L540.5,268.0 L611.0,395.3 L681.5,395.3 L752.1,395.3 L822.6,165.8 L893.1,259.3 L963.7,299.4 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,376.5 L399.4,382.8" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="376.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,268.0 L611.0,395.3 L681.5,395.3 L752.1,395.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,165.8 L893.1,259.3 L963.7,299.4 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="165.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="259.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="299.4" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="ssff" data-chip="96040">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,395.3 L540.5,274.3 L611.0,315.1 L681.5,395.3 L752.1,395.3 L822.6,143.0 L893.1,257.0 L963.7,303.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,274.3 L611.0,315.1 L681.5,395.3 L752.1,395.3" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="540.5" cy="274.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="611.0" cy="315.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.0 L893.1,257.0 L963.7,303.3 L1034.2,362.3 L1104.7,382.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="143.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="893.1" cy="257.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="303.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="29674">
-<path d="M117.3,164.2 L187.8,395.3 L258.3,395.3 L328.9,374.1 L399.4,382.0 L469.9,161.8 L540.5,261.7 L611.0,311.2 L681.5,363.1 L752.1,382.0 L822.6,146.9 L893.1,251.5 L963.7,293.9 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,164.2 L187.8,395.3 L258.3,395.3 L328.9,374.1 L399.4,382.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="164.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="374.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="382.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.8 L540.5,261.7 L611.0,311.2 L681.5,363.1 L752.1,382.0" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="161.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="261.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="311.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="363.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,146.9 L893.1,251.5 L963.7,293.9 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="146.9" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="251.5" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="293.9" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="29674">
-<path d="M117.3,163.4 L187.8,271.1 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,155.5 L540.5,268.0 L611.0,304.9 L681.5,374.1 L752.1,382.8 L822.6,138.2 L893.1,247.5 L963.7,297.1 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,163.4 L187.8,271.1 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="163.4" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="271.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,155.5 L540.5,268.0 L611.0,304.9 L681.5,374.1 L752.1,382.8" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="155.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="304.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,138.2 L893.1,247.5 L963.7,297.1 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="138.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="247.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="297.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="29674">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,313.6 L328.9,374.9 L399.4,395.3 L469.9,167.3 L540.5,268.0 L611.0,313.6 L681.5,374.1 L752.1,382.0 L822.6,143.0 L893.1,253.0 L963.7,297.8 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,313.6 L328.9,374.9 L399.4,395.3" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="258.3" cy="313.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,167.3 L540.5,268.0 L611.0,313.6 L681.5,374.1 L752.1,382.0" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="167.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="611.0" cy="313.6" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="681.5" cy="374.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,143.0 L893.1,253.0 L963.7,297.8 L1034.2,360.7 L1104.7,381.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="143.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="893.1" cy="253.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="297.8" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="1034.2" cy="360.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="58046">
-<path d="M117.3,175.2 L187.8,265.6 L258.3,312.0 L328.9,395.3 L399.4,382.8 L469.9,161.0 L540.5,268.0 L611.0,304.9 L681.5,362.3 L752.1,382.0 L822.6,124.9 L893.1,249.1 L963.7,296.3 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,175.2 L187.8,265.6 L258.3,312.0 L328.9,395.3 L399.4,382.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="175.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="265.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="312.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,161.0 L540.5,268.0 L611.0,304.9 L681.5,362.3 L752.1,382.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="161.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="268.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="304.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="362.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,124.9 L893.1,249.1 L963.7,296.3 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="124.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="249.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="58046">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3 L469.9,157.9 L540.5,268.8 L611.0,313.6 L681.5,395.3 L752.1,395.3 L822.6,146.1 L893.1,249.1 L963.7,301.8 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,374.9 L399.4,395.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="374.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,157.9 L540.5,268.8 L611.0,313.6 L681.5,395.3 L752.1,395.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="157.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="268.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="313.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="395.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,146.1 L893.1,249.1 L963.7,301.8 L1034.2,361.5 L1104.7,381.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="146.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="249.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="301.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="58046">
-<path d="M117.3,165.0 L187.8,275.8 L258.3,314.4 L328.9,375.7 L399.4,382.8 L469.9,160.3 L540.5,268.8 L611.0,309.6 L681.5,374.9 L752.1,382.0 L822.6,159.5 L893.1,251.5 L963.7,301.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,165.0 L187.8,275.8 L258.3,314.4 L328.9,375.7 L399.4,382.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="117.3" cy="165.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="187.8" cy="275.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,160.3 L540.5,268.8 L611.0,309.6 L681.5,374.9 L752.1,382.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="469.9" cy="160.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="540.5" cy="268.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="611.0" cy="309.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="681.5" cy="374.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,159.5 L893.1,251.5 L963.7,301.8 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="822.6" cy="159.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="893.1" cy="251.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="301.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.64/1.62" data-skew="sstt" data-chip="9808">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,314.4 L328.9,395.3 L399.4,382.8 L469.9,173.6 L540.5,263.2 L611.0,311.2 L681.5,395.3 L752.1,382.0 L822.6,152.4 L893.1,246.7 L963.7,295.5 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,314.4 L328.9,395.3 L399.4,382.8" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="314.4" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,173.6 L540.5,263.2 L611.0,311.2 L681.5,395.3 L752.1,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="469.9" cy="173.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="263.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="311.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,152.4 L893.1,246.7 L963.7,295.5 L1034.2,361.5 L1104.7,382.0" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="822.6" cy="152.4" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="246.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="295.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="361.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="382.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.64/1.62 | sstt | Chip: 9808</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.8/1.8" data-skew="sstt" data-chip="9808">
-<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3 L469.9,150.8 L540.5,395.3 L611.0,315.9 L681.5,395.3 L752.1,382.8 L822.6,153.2 L893.1,253.8 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,395.3 L187.8,395.3 L258.3,395.3 L328.9,395.3 L399.4,395.3" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="117.3" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,150.8 L540.5,395.3 L611.0,315.9 L681.5,395.3 L752.1,382.8" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="469.9" cy="150.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="315.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,153.2 L893.1,253.8 L963.7,296.3 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="822.6" cy="153.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="253.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="296.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.8/1.8 | sstt | Chip: 9808</title></circle>
 </g>
+</g>
 <g class="series" data-viocore="0.96/1.98" data-skew="sstt" data-chip="9808">
-<path d="M117.3,177.6 L187.8,269.5 L258.3,315.9 L328.9,375.7 L399.4,382.8 L469.9,395.3 L540.5,264.0 L611.0,312.0 L681.5,395.3 L752.1,382.8 L822.6,142.2 L893.1,257.0 L963.7,293.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-temp="0">
+<path d="M117.3,177.6 L187.8,269.5 L258.3,315.9 L328.9,375.7 L399.4,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="117.3" cy="177.6" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="187.8" cy="269.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="258.3" cy="315.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="328.9" cy="375.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="399.4" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="20">
+<path d="M469.9,395.3 L540.5,264.0 L611.0,312.0 L681.5,395.3 L752.1,382.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="469.9" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="540.5" cy="264.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="611.0" cy="312.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="681.5" cy="395.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="752.1" cy="382.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
+<g data-temp="80">
+<path d="M822.6,142.2 L893.1,257.0 L963.7,293.9 L1034.2,362.3 L1104.7,381.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="822.6" cy="142.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="893.1" cy="257.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="293.9" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="1034.2" cy="362.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
 <circle cx="1104.7" cy="381.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 Fall_Time_ps | 0.96/1.98 | sstt | Chip: 9808</title></circle>
+</g>
 </g>
 <g class="spec-el">
 </g>

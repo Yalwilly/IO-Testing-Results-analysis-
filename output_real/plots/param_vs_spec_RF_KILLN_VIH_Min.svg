@@ -23,7 +23,7 @@
 <text x="62.0" y="59.0" font-size="9" font-weight="normal" text-anchor="end" fill="#7f8c8d" font-family="Arial,sans-serif">1.36</text>
 <text x="14.0" y="225.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#7f8c8d" font-family="Arial,sans-serif" transform="rotate(-90,14,225.0)">Value (V)</text>
 <rect x="405.0" y="201.2" width="70.0" height="106.3" fill="#3498db" stroke="#3498db" stroke-width="1.5" opacity="0.25" rx="2"/>
-<line x1="405.0" y1="259.7" x2="475.0" y2="259.7" stroke="#3498db" stroke-width="2.5"/>
+<line x1="405.0" y1="254.4" x2="475.0" y2="254.4" stroke="#3498db" stroke-width="2.5"/>
 <line x1="440.0" y1="307.6" x2="440.0" y2="371.4" stroke="#3498db" stroke-width="1"/>
 <line x1="440.0" y1="201.2" x2="440.0" y2="164.0" stroke="#3498db" stroke-width="1"/>
 <line x1="422.5" y1="371.4" x2="457.5" y2="371.4" stroke="#3498db" stroke-width="1"/>
