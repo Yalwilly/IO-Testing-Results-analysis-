@@ -1159,43 +1159,49 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
         svg.parts.append(
             f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
         )
-        pts_xy = []
+        # Group points by viocore for per-viocore sub-group filtering
+        vc_pts: dict = {}
         for i, (t, v, vc) in enumerate(all_conds):
             val = _pick_c(corner_grp.get((t, v, vc, skew, chip), []))
             if val is None:
                 continue
             xp = pl + (i + 0.5) * x_step
             yp = _ys(val, y_min, y_max, pt_y, pb)
-            pts_xy.append((i, xp, yp, val))
-        if chart_type == "column":
-            for i, xp, yp, val in pts_xy:
-                bx = pl + i * x_step + (x_step - _bar_group_w) / 2 + si * _bar_w
-                bar_h = max(pb - yp, 0)
-                svg.rect(bx, yp, _bar_w - 1, bar_h, fill=color, opacity=0.82)
-                tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip} | {val:.3g}"
-                svg.parts.append(
-                    f'<rect x="{bx:.1f}" y="{yp:.1f}" width="{max(_bar_w-1,0):.1f}" '
-                    f'height="{max(bar_h,0):.1f}" fill="none" stroke="none">'
-                    f'<title>{tip}</title></rect>'
-                )
-        else:
-            line_pts = [(xp, yp) for _, xp, yp, _ in pts_xy]
-            if len(line_pts) >= 2:
-                d_path = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                                  for j, (x, y) in enumerate(line_pts))
-                dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-                svg.parts.append(
-                    f'<path d="{d_path}" fill="none" stroke="{color}" '
-                    f'stroke-width="2.0" stroke-linejoin="round" '
-                    f'{dash_attr}opacity="0.85"/>'
-                )
-            for _, xp, yp, val in pts_xy:
-                tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
-                svg.parts.append(
-                    f'<circle cx="{xp:.1f}" cy="{yp:.1f}" r="5" '
-                    f'fill="{color}" opacity="0.9">'
-                    f'<title>{tip}</title></circle>'
-                )
+            vc_key = f"{vc}/{v}"  # VCORE/VIO to match filter buttons
+            vc_pts.setdefault(vc_key, []).append((i, xp, yp, val))
+        # Draw one filterable inner g per viocore (path + circles all hide together)
+        for vc_key, pts in vc_pts.items():
+            vc_safe = vc_key.replace('"', '')
+            svg.parts.append(f'<g data-viocore="{vc_safe}">')
+            if chart_type == "column":
+                for i, xp, yp, val in pts:
+                    bx = pl + i * x_step + (x_step - _bar_group_w) / 2 + si * _bar_w
+                    bar_h = max(pb - yp, 0)
+                    tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip} | {val:.3g}"
+                    svg.parts.append(
+                        f'<rect x="{bx:.1f}" y="{yp:.1f}" width="{max(_bar_w-1,0):.1f}" '
+                        f'height="{max(bar_h,0):.1f}" fill="{color}" opacity="0.82" rx="2">'
+                        f'<title>{tip}</title></rect>'
+                    )
+            else:
+                line_xys = [(xp, yp) for _, xp, yp, _ in pts]
+                if len(line_xys) >= 2:
+                    d_path = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                                      for j, (x, y) in enumerate(line_xys))
+                    dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+                    svg.parts.append(
+                        f'<path d="{d_path}" fill="none" stroke="{color}" '
+                        f'stroke-width="2.0" stroke-linejoin="round" '
+                        f'{dash_attr}opacity="0.85"/>'
+                    )
+                for _, xp, yp, val in pts:
+                    tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
+                    svg.parts.append(
+                        f'<circle cx="{xp:.1f}" cy="{yp:.1f}" r="5" '
+                        f'fill="{color}" opacity="0.9">'
+                        f'<title>{tip}</title></circle>'
+                    )
+            svg.parts.append('</g>')
         svg.parts.append('</g>')
 
     # Spec lines: dynamic stepped for VOH, fixed horizontal otherwise
@@ -1507,28 +1513,33 @@ def plot_section_line_chart(all_rows, measurement_suffix, test_name,
             dash  = _DASHES[si % len(_DASHES)]
             s_safe = str(skew).replace('"', '')
             svg.parts.append(f'<g class="series" data-skew="{s_safe}">')
-            pts_xy = []
+            vc_pts: dict = {}
             for i, cond_key in enumerate(all_conds):
                 v = wcase(corner_skew[cond_key].get(skew, []))
                 if v is None:
                     continue
                 xp = pl + (i + 0.5) * x_step
                 yp = _ys(v, y_min, y_max, pt_y, pb)
-                pts_xy.append((xp, yp))
-            if len(pts_xy) >= 2:
-                d = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                             for j, (x, y) in enumerate(pts_xy))
-                dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-                svg.parts.append(
-                    f'<path d="{d}" fill="none" stroke="{color}" '
-                    f'stroke-width="2.5" stroke-linejoin="round" '
-                    f'{dash_attr}opacity="0.9"/>'
-                )
-            for x, y in pts_xy:
-                svg.parts.append(
-                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" '
-                    f'fill="{color}" opacity="0.95"/>'
-                )
+                vc_key = f"{cond_key[2]}/{cond_key[1]}"  # VCORE/VIO
+                vc_pts.setdefault(vc_key, []).append((xp, yp))
+            for vc_key, pts in vc_pts.items():
+                vc_safe = vc_key.replace('"', '')
+                svg.parts.append(f'<g data-viocore="{vc_safe}">')
+                if len(pts) >= 2:
+                    d = " ".join(f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                                 for j, (x, y) in enumerate(pts))
+                    dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+                    svg.parts.append(
+                        f'<path d="{d}" fill="none" stroke="{color}" '
+                        f'stroke-width="2.5" stroke-linejoin="round" '
+                        f'{dash_attr}opacity="0.9"/>'
+                    )
+                for x, y in pts:
+                    svg.parts.append(
+                        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" '
+                        f'fill="{color}" opacity="0.95"/>'
+                    )
+                svg.parts.append('</g>')
             svg.parts.append('</g>')
 
     # Spec lines
@@ -1739,29 +1750,37 @@ def plot_voh_vol_chart(all_rows, measurement_suffix, test_name, io_name,
         svg.parts.append(
             f'<g class="series" data-skew="{s_safe}" data-chip="{chip_safe}">'
         )
-        pts_xy = [
-            (pl + (i + 0.5) * x_step, _ys(v, y_min, y_max, pt_y, pb))
-            for i, v in enumerate(series[(skew, chip)])
-            if v is not None
-        ]
-        if len(pts_xy) >= 2:
-            d_path = " ".join(
-                f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
-                for j, (x, y) in enumerate(pts_xy)
-            )
-            dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
-            svg.parts.append(
-                f'<path d="{d_path}" fill="none" stroke="{color}" '
-                f'stroke-width="2.0" stroke-linejoin="round" '
-                f'{dash_attr}opacity="0.85"/>'
-            )
-        for x, y in pts_xy:
-            tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
-            svg.parts.append(
-                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" '
-                f'fill="{color}" opacity="0.9">'
-                f'<title>{tip}</title></circle>'
-            )
+        # Group points by viocore for per-viocore sub-group filtering
+        vc_pts: dict = {}
+        for i, v in enumerate(series[(skew, chip)]):
+            if v is None:
+                continue
+            xp = pl + (i + 0.5) * x_step
+            yp = _ys(v, y_min, y_max, pt_y, pb)
+            vc_key = f"{x_triples[i][1]}/{x_triples[i][0]}"  # VCORE/VIO
+            vc_pts.setdefault(vc_key, []).append((xp, yp))
+        for vc_key, pts in vc_pts.items():
+            vc_safe = vc_key.replace('"', '')
+            svg.parts.append(f'<g data-viocore="{vc_safe}">')
+            if len(pts) >= 2:
+                d_path = " ".join(
+                    f"{'M' if j == 0 else 'L'}{x:.1f},{y:.1f}"
+                    for j, (x, y) in enumerate(pts)
+                )
+                dash_attr = f'stroke-dasharray="{dash}" ' if dash else ""
+                svg.parts.append(
+                    f'<path d="{d_path}" fill="none" stroke="{color}" '
+                    f'stroke-width="2.0" stroke-linejoin="round" '
+                    f'{dash_attr}opacity="0.85"/>'
+                )
+            for xp, yp in pts:
+                tip = f"{io_name} {measurement_suffix} | {skew} | Chip: {chip}"
+                svg.parts.append(
+                    f'<circle cx="{xp:.1f}" cy="{yp:.1f}" r="4" '
+                    f'fill="{color}" opacity="0.9">'
+                    f'<title>{tip}</title></circle>'
+                )
+            svg.parts.append('</g>')
         svg.parts.append('</g>')
 
     # Spec lines: dynamic stepped for VOH, fixed for VOL

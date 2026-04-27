@@ -47,217 +47,361 @@ VC=0.96</text>
 <text x="611.0" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=20°C</text>
 <text x="963.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">T=80°C</text>
 <g class="series" data-skew="ffss" data-chip="25679">
-<path d="M140.8,253.7 L258.3,256.7 L375.9,255.2 L493.4,256.7 L611.0,259.6 L728.6,258.8 L846.1,269.5 L963.7,274.8 L1081.2,288.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,253.7 L493.4,256.7 L846.1,269.5" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="140.8" cy="253.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
-<circle cx="258.3" cy="256.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
-<circle cx="375.9" cy="255.2" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
 <circle cx="493.4" cy="256.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
-<circle cx="611.0" cy="259.6" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
-<circle cx="728.6" cy="258.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
 <circle cx="846.1" cy="269.5" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,256.7 L611.0,259.6 L963.7,274.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="258.3" cy="256.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
+<circle cx="611.0" cy="259.6" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
 <circle cx="963.7" cy="274.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,255.2 L728.6,258.8 L1081.2,288.1" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="375.9" cy="255.2" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
+<circle cx="728.6" cy="258.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
 <circle cx="1081.2" cy="288.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ffss" data-chip="43407">
-<path d="M140.8,248.5 L258.3,252.0 L375.9,250.7 L493.4,251.4 L611.0,254.1 L728.6,253.7 L846.1,264.3 L963.7,269.9 L1081.2,283.6" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,248.5 L493.4,251.4 L846.1,264.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="140.8" cy="248.5" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
-<circle cx="258.3" cy="252.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
-<circle cx="375.9" cy="250.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
 <circle cx="493.4" cy="251.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
-<circle cx="611.0" cy="254.1" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
-<circle cx="728.6" cy="253.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
 <circle cx="846.1" cy="264.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,252.0 L611.0,254.1 L963.7,269.9" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="258.3" cy="252.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
+<circle cx="611.0" cy="254.1" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
 <circle cx="963.7" cy="269.9" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,250.7 L728.6,253.7 L1081.2,283.6" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="375.9" cy="250.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
+<circle cx="728.6" cy="253.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
 <circle cx="1081.2" cy="283.6" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ffss" data-chip="79093">
-<path d="M140.8,240.5 L258.3,243.6 L375.9,243.0 L493.4,243.2 L611.0,246.1 L728.6,246.3 L846.1,259.2 L963.7,264.7 L1081.2,278.9" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,240.5 L493.4,243.2 L846.1,259.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="140.8" cy="240.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
-<circle cx="258.3" cy="243.6" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
-<circle cx="375.9" cy="243.0" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
 <circle cx="493.4" cy="243.2" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
-<circle cx="611.0" cy="246.1" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
-<circle cx="728.6" cy="246.3" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
 <circle cx="846.1" cy="259.2" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,243.6 L611.0,246.1 L963.7,264.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="258.3" cy="243.6" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
+<circle cx="611.0" cy="246.1" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
 <circle cx="963.7" cy="264.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,243.0 L728.6,246.3 L1081.2,278.9" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="375.9" cy="243.0" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
+<circle cx="728.6" cy="246.3" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
 <circle cx="1081.2" cy="278.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="13967">
-<path d="M140.8,264.1 L258.3,267.1 L375.9,265.7 L493.4,266.3 L611.0,269.3 L728.6,269.7 L846.1,305.3 L963.7,309.3 L1081.2,321.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,264.1 L493.4,266.3 L846.1,305.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="140.8" cy="264.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
-<circle cx="258.3" cy="267.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
-<circle cx="375.9" cy="265.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
 <circle cx="493.4" cy="266.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
-<circle cx="611.0" cy="269.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
-<circle cx="728.6" cy="269.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
 <circle cx="846.1" cy="305.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,267.1 L611.0,269.3 L963.7,309.3" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="258.3" cy="267.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
+<circle cx="611.0" cy="269.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
 <circle cx="963.7" cy="309.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,265.7 L728.6,269.7 L1081.2,321.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="375.9" cy="265.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
+<circle cx="728.6" cy="269.7" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
 <circle cx="1081.2" cy="321.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="15382">
-<path d="M140.8,260.2 L258.3,263.9 L375.9,261.9 L493.4,263.7 L611.0,266.9 L728.6,266.5 L846.1,287.5 L963.7,290.6 L1081.2,302.6" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,260.2 L493.4,263.7 L846.1,287.5" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="140.8" cy="260.2" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
-<circle cx="258.3" cy="263.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
-<circle cx="375.9" cy="261.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
 <circle cx="493.4" cy="263.7" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
-<circle cx="611.0" cy="266.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
-<circle cx="728.6" cy="266.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
 <circle cx="846.1" cy="287.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,263.9 L611.0,266.9 L963.7,290.6" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="258.3" cy="263.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
+<circle cx="611.0" cy="266.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
 <circle cx="963.7" cy="290.6" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,261.9 L728.6,266.5 L1081.2,302.6" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="375.9" cy="261.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
+<circle cx="728.6" cy="266.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
 <circle cx="1081.2" cy="302.6" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="78814">
-<path d="M140.8,274.4 L258.3,276.9 L375.9,275.7 L493.4,276.3 L611.0,279.3 L728.6,278.7 L846.1,290.9 L963.7,295.4 L1081.2,307.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,274.4 L493.4,276.3 L846.1,290.9" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="140.8" cy="274.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
-<circle cx="258.3" cy="276.9" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
-<circle cx="375.9" cy="275.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
 <circle cx="493.4" cy="276.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
-<circle cx="611.0" cy="279.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
-<circle cx="728.6" cy="278.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
 <circle cx="846.1" cy="290.9" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,276.9 L611.0,279.3 L963.7,295.4" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="258.3" cy="276.9" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
+<circle cx="611.0" cy="279.3" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
 <circle cx="963.7" cy="295.4" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,275.7 L728.6,278.7 L1081.2,307.2" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="375.9" cy="275.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
+<circle cx="728.6" cy="278.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
 <circle cx="1081.2" cy="307.2" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="12566">
-<path d="M140.8,270.1 L258.3,273.6 L375.9,271.9 L493.4,272.4 L611.0,275.1 L728.6,275.3 L846.1,278.7 L963.7,283.6 L1081.2,296.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,270.1 L493.4,272.4 L846.1,278.7" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="140.8" cy="270.1" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
-<circle cx="258.3" cy="273.6" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
-<circle cx="375.9" cy="271.9" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
 <circle cx="493.4" cy="272.4" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
-<circle cx="611.0" cy="275.1" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
-<circle cx="728.6" cy="275.3" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
 <circle cx="846.1" cy="278.7" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,273.6 L611.0,275.1 L963.7,283.6" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="258.3" cy="273.6" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
+<circle cx="611.0" cy="275.1" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
 <circle cx="963.7" cy="283.6" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,271.9 L728.6,275.3 L1081.2,296.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="375.9" cy="271.9" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
+<circle cx="728.6" cy="275.3" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
 <circle cx="1081.2" cy="296.5" r="5" fill="#c0392b" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="13316">
-<path d="M140.8,268.9 L258.3,271.9 L375.9,270.3 L493.4,271.3 L611.0,274.0 L728.6,273.2 L846.1,277.2 L963.7,282.3 L1081.2,294.9" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,268.9 L493.4,271.3 L846.1,277.2" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="140.8" cy="268.9" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
-<circle cx="258.3" cy="271.9" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
-<circle cx="375.9" cy="270.3" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
 <circle cx="493.4" cy="271.3" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
-<circle cx="611.0" cy="274.0" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
-<circle cx="728.6" cy="273.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
 <circle cx="846.1" cy="277.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,271.9 L611.0,274.0 L963.7,282.3" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="258.3" cy="271.9" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
+<circle cx="611.0" cy="274.0" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
 <circle cx="963.7" cy="282.3" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,270.3 L728.6,273.2 L1081.2,294.9" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="375.9" cy="270.3" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
+<circle cx="728.6" cy="273.2" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
 <circle cx="1081.2" cy="294.9" r="5" fill="#2980b9" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="62919">
-<path d="M140.8,266.5 L258.3,269.1 L375.9,267.9 L493.4,268.7 L611.0,271.3 L728.6,270.9 L846.1,275.0 L963.7,279.7 L1081.2,292.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,266.5 L493.4,268.7 L846.1,275.0" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="140.8" cy="266.5" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
-<circle cx="258.3" cy="269.1" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
-<circle cx="375.9" cy="267.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
 <circle cx="493.4" cy="268.7" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
-<circle cx="611.0" cy="271.3" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
-<circle cx="728.6" cy="270.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
 <circle cx="846.1" cy="275.0" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,269.1 L611.0,271.3 L963.7,279.7" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="258.3" cy="269.1" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
+<circle cx="611.0" cy="271.3" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
 <circle cx="963.7" cy="279.7" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,267.9 L728.6,270.9 L1081.2,292.8" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="375.9" cy="267.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
+<circle cx="728.6" cy="270.9" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
 <circle cx="1081.2" cy="292.8" r="5" fill="#27ae60" opacity="0.9"><title>RF_KILLN R_PullUp | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="44565">
-<path d="M140.8,267.3 L258.3,270.3 L375.9,269.3 L493.4,269.7 L611.0,272.8 L728.6,271.7 L846.1,280.6 L963.7,285.4 L1081.2,298.1" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,267.3 L493.4,269.7 L846.1,280.6" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="140.8" cy="267.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
-<circle cx="258.3" cy="270.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
-<circle cx="375.9" cy="269.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
 <circle cx="493.4" cy="269.7" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
-<circle cx="611.0" cy="272.8" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
-<circle cx="728.6" cy="271.7" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
 <circle cx="846.1" cy="280.6" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,270.3 L611.0,272.8 L963.7,285.4" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="258.3" cy="270.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
+<circle cx="611.0" cy="272.8" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
 <circle cx="963.7" cy="285.4" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,269.3 L728.6,271.7 L1081.2,298.1" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="375.9" cy="269.3" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
+<circle cx="728.6" cy="271.7" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
 <circle cx="1081.2" cy="298.1" r="5" fill="#8e44ad" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="69627">
-<path d="M140.8,268.1 L258.3,271.1 L375.9,269.3 L493.4,270.7 L611.0,273.4 L728.6,273.0 L846.1,281.7 L963.7,286.8 L1081.2,299.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,268.1 L493.4,270.7 L846.1,281.7" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="140.8" cy="268.1" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
-<circle cx="258.3" cy="271.1" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
-<circle cx="375.9" cy="269.3" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
 <circle cx="493.4" cy="270.7" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
-<circle cx="611.0" cy="273.4" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
-<circle cx="728.6" cy="273.0" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
 <circle cx="846.1" cy="281.7" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,271.1 L611.0,273.4 L963.7,286.8" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="258.3" cy="271.1" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
+<circle cx="611.0" cy="273.4" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
 <circle cx="963.7" cy="286.8" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,269.3 L728.6,273.0 L1081.2,299.0" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="375.9" cy="269.3" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
+<circle cx="728.6" cy="273.0" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
 <circle cx="1081.2" cy="299.0" r="5" fill="#d35400" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="76687">
-<path d="M140.8,273.4 L258.3,275.5 L375.9,274.8 L493.4,275.3 L611.0,278.2 L728.6,277.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,273.4 L493.4,275.3" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="140.8" cy="273.4" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
-<circle cx="258.3" cy="275.5" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
-<circle cx="375.9" cy="274.8" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
 <circle cx="493.4" cy="275.3" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,275.5 L611.0,278.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="258.3" cy="275.5" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
 <circle cx="611.0" cy="278.2" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,274.8 L728.6,277.8" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="375.9" cy="274.8" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
 <circle cx="728.6" cy="277.8" r="5" fill="#16a085" opacity="0.9"><title>RF_KILLN R_PullUp | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="56508">
-<path d="M140.8,282.6 L258.3,285.7 L375.9,284.1 L493.4,284.5 L611.0,287.5 L728.6,287.4 L846.1,290.4 L963.7,295.4 L1081.2,307.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,282.6 L493.4,284.5 L846.1,290.4" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="140.8" cy="282.6" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
-<circle cx="258.3" cy="285.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
-<circle cx="375.9" cy="284.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
 <circle cx="493.4" cy="284.5" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
-<circle cx="611.0" cy="287.5" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
-<circle cx="728.6" cy="287.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
 <circle cx="846.1" cy="290.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,285.7 L611.0,287.5 L963.7,295.4" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="258.3" cy="285.7" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
+<circle cx="611.0" cy="287.5" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
 <circle cx="963.7" cy="295.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,284.1 L728.6,287.4 L1081.2,307.8" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="375.9" cy="284.1" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
+<circle cx="728.6" cy="287.4" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
 <circle cx="1081.2" cy="307.8" r="5" fill="#3498db" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="57571">
-<path d="M140.8,283.0 L258.3,285.2 L375.9,284.3 L493.4,284.7 L611.0,287.9 L728.6,287.4 L846.1,290.7 L963.7,295.3 L1081.2,308.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,283.0 L493.4,284.7 L846.1,290.7" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="140.8" cy="283.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
-<circle cx="258.3" cy="285.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
-<circle cx="375.9" cy="284.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
 <circle cx="493.4" cy="284.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
-<circle cx="611.0" cy="287.9" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
-<circle cx="728.6" cy="287.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
 <circle cx="846.1" cy="290.7" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,285.2 L611.0,287.9 L963.7,295.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="258.3" cy="285.2" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
+<circle cx="611.0" cy="287.9" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
 <circle cx="963.7" cy="295.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,284.3 L728.6,287.4 L1081.2,308.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="375.9" cy="284.3" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
+<circle cx="728.6" cy="287.4" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
 <circle cx="1081.2" cy="308.0" r="5" fill="#e74c3c" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="96040">
-<path d="M140.8,282.3 L258.3,284.8 L375.9,283.9 L493.4,284.7 L611.0,287.5 L728.6,287.5 L846.1,289.9 L963.7,295.4 L1081.2,307.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,282.3 L493.4,284.7 L846.1,289.9" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="140.8" cy="282.3" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
-<circle cx="258.3" cy="284.8" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
-<circle cx="375.9" cy="283.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
 <circle cx="493.4" cy="284.7" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
-<circle cx="611.0" cy="287.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
-<circle cx="728.6" cy="287.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
 <circle cx="846.1" cy="289.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,284.8 L611.0,287.5 L963.7,295.4" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="258.3" cy="284.8" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
+<circle cx="611.0" cy="287.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
 <circle cx="963.7" cy="295.4" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,283.9 L728.6,287.5 L1081.2,307.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<circle cx="375.9" cy="283.9" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
+<circle cx="728.6" cy="287.5" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
 <circle cx="1081.2" cy="307.8" r="5" fill="#2ecc71" opacity="0.9"><title>RF_KILLN R_PullUp | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="29674">
-<path d="M140.8,266.3 L258.3,269.9 L375.9,268.5 L493.4,269.3 L611.0,272.1 L728.6,271.9 L846.1,275.5 L963.7,280.6 L1081.2,294.4" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,266.3 L493.4,269.3 L846.1,275.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="140.8" cy="266.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
-<circle cx="258.3" cy="269.9" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
-<circle cx="375.9" cy="268.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
 <circle cx="493.4" cy="269.3" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
-<circle cx="611.0" cy="272.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
-<circle cx="728.6" cy="271.9" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
 <circle cx="846.1" cy="275.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,269.9 L611.0,272.1 L963.7,280.6" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="258.3" cy="269.9" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
+<circle cx="611.0" cy="272.1" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
 <circle cx="963.7" cy="280.6" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,268.5 L728.6,271.9 L1081.2,294.4" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<circle cx="375.9" cy="268.5" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
+<circle cx="728.6" cy="271.9" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
 <circle cx="1081.2" cy="294.4" r="5" fill="#9b59b6" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="58046">
-<path d="M140.8,262.7 L258.3,265.5 L375.9,264.3 L493.4,265.3 L611.0,268.3 L728.6,267.5 L846.1,271.9 L963.7,277.2 L1081.2,290.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,262.7 L493.4,265.3 L846.1,271.9" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="140.8" cy="262.7" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
-<circle cx="258.3" cy="265.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
-<circle cx="375.9" cy="264.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
 <circle cx="493.4" cy="265.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
-<circle cx="611.0" cy="268.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
-<circle cx="728.6" cy="267.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
 <circle cx="846.1" cy="271.9" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,265.5 L611.0,268.3 L963.7,277.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="258.3" cy="265.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
+<circle cx="611.0" cy="268.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
 <circle cx="963.7" cy="277.2" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,264.3 L728.6,267.5 L1081.2,290.0" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="375.9" cy="264.3" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
+<circle cx="728.6" cy="267.5" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
 <circle cx="1081.2" cy="290.0" r="5" fill="#e67e22" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="9808">
-<path d="M140.8,266.1 L258.3,268.5 L375.9,267.5 L493.4,267.7 L611.0,271.5 L728.6,270.7 L846.1,274.0 L963.7,279.7 L1081.2,293.9" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M140.8,266.1 L493.4,267.7 L846.1,274.0" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="140.8" cy="266.1" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
-<circle cx="258.3" cy="268.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
-<circle cx="375.9" cy="267.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
 <circle cx="493.4" cy="267.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
-<circle cx="611.0" cy="271.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
-<circle cx="728.6" cy="270.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
 <circle cx="846.1" cy="274.0" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M258.3,268.5 L611.0,271.5 L963.7,279.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="258.3" cy="268.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
+<circle cx="611.0" cy="271.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
 <circle cx="963.7" cy="279.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M375.9,267.5 L728.6,270.7 L1081.2,293.9" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<circle cx="375.9" cy="267.5" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
+<circle cx="728.6" cy="270.7" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
 <circle cx="1081.2" cy="293.9" r="5" fill="#1abc9c" opacity="0.9"><title>RF_KILLN R_PullUp | sstt | Chip: 9808</title></circle>
+</g>
 </g>
 <g class="spec-el">
 <line x1="82.0" y1="395.3" x2="1140.0" y2="395.3" stroke="#ff6d00" stroke-width="4"/>

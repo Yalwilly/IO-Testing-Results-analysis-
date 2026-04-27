@@ -262,10 +262,14 @@ function applyFilters(){{
   document.querySelectorAll('g.series, g.legend-item').forEach(g=>{{
     const vcAttr = g.dataset.viocore;
     const s = g.dataset.skew;
-    // viocore: if the element has data-viocore, check it's active; otherwise pass through
     const vcOk = !vcAttr || _active.viocore.has(vcAttr);
     const sOk = !s || _active.skews.has(s);
     g.style.display = (vcOk && sOk) ? '' : 'none';
+  }});
+  // Per-viocore sub-group filtering (corner/rise-fall charts: hides path+circles together)
+  document.querySelectorAll('g[data-viocore]:not(.series):not(.legend-item)').forEach(g=>{{
+    const vc = g.dataset.viocore;
+    g.style.display = (!vc || _active.viocore.has(vc)) ? '' : 'none';
   }});
   // Stats table rows
   document.querySelectorAll('.stats-row').forEach(r=>{{

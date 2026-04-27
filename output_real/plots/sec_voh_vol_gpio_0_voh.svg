@@ -78,7 +78,8 @@
 <text x="963.7" y="62.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">VIO=1.98 / VC=0.96</text>
 <text x="611.0" y="520.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">VIO &amp; VCORE Corner  /  Drive Strength (DS)</text>
 <g class="series" data-skew="ffss" data-chip="25679">
-<path d="M93.0,304.1 L115.1,311.9 L137.1,315.7 L159.1,320.8 L181.2,332.6 L203.2,335.6 L225.3,338.1 L247.3,341.8 L269.4,340.8 L291.4,344.2 L313.4,347.7 L335.5,351.1 L357.5,358.1 L379.6,361.2 L401.6,364.7 L423.6,368.0 L445.7,217.5 L467.7,226.0 L489.8,229.9 L511.8,235.1 L533.9,246.8 L555.9,249.8 L577.9,252.4 L600.0,256.1 L622.0,255.1 L644.1,258.6 L666.1,262.1 L688.1,265.5 L710.2,272.4 L732.2,275.5 L754.3,279.0 L776.3,282.3 L798.4,135.3 L820.4,142.8 L842.4,146.4 L864.5,151.4 L886.5,162.8 L908.6,165.8 L930.6,168.4 L952.6,171.9 L974.7,170.9 L996.7,174.5 L1018.8,178.0 L1040.8,181.4 L1062.9,188.2 L1084.9,191.4 L1106.9,194.9 L1129.0,198.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,304.1 L115.1,311.9 L137.1,315.7 L159.1,320.8 L181.2,332.6 L203.2,335.6 L225.3,338.1 L247.3,341.8 L269.4,340.8 L291.4,344.2 L313.4,347.7 L335.5,351.1 L357.5,358.1 L379.6,361.2 L401.6,364.7 L423.6,368.0" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="93.0" cy="304.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="115.1" cy="311.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="137.1" cy="315.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
@@ -95,6 +96,9 @@
 <circle cx="379.6" cy="361.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="401.6" cy="364.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="423.6" cy="368.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,217.5 L467.7,226.0 L489.8,229.9 L511.8,235.1 L533.9,246.8 L555.9,249.8 L577.9,252.4 L600.0,256.1 L622.0,255.1 L644.1,258.6 L666.1,262.1 L688.1,265.5 L710.2,272.4 L732.2,275.5 L754.3,279.0 L776.3,282.3" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="445.7" cy="217.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="467.7" cy="226.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="489.8" cy="229.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
@@ -111,6 +115,9 @@
 <circle cx="732.2" cy="275.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="754.3" cy="279.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="776.3" cy="282.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,135.3 L820.4,142.8 L842.4,146.4 L864.5,151.4 L886.5,162.8 L908.6,165.8 L930.6,168.4 L952.6,171.9 L974.7,170.9 L996.7,174.5 L1018.8,178.0 L1040.8,181.4 L1062.9,188.2 L1084.9,191.4 L1106.9,194.9 L1129.0,198.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="798.4" cy="135.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="820.4" cy="142.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="842.4" cy="146.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
@@ -128,8 +135,10 @@
 <circle cx="1106.9" cy="194.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 <circle cx="1129.0" cy="198.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 25679</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ffss" data-chip="43407">
-<path d="M93.0,306.5 L115.1,316.0 L137.1,320.4 L159.1,326.2 L181.2,338.7 L203.2,342.2 L225.3,345.3 L247.3,349.5 L269.4,349.0 L291.4,353.1 L313.4,357.2 L335.5,361.1 L357.5,368.7 L379.6,372.4 L401.6,376.6 L423.6,380.5 L445.7,220.6 L467.7,230.2 L489.8,234.8 L511.8,240.7 L533.9,252.9 L555.9,256.5 L577.9,259.7 L600.0,263.8 L622.0,263.5 L644.1,267.6 L666.1,271.7 L688.1,275.6 L710.2,283.0 L732.2,286.7 L754.3,290.8 L776.3,294.6 L798.4,138.8 L820.4,146.7 L842.4,151.1 L864.5,156.9 L886.5,168.7 L908.6,172.2 L930.6,175.4 L952.6,179.4 L974.7,179.2 L996.7,183.2 L1018.8,187.4 L1040.8,191.2 L1062.9,198.6 L1084.9,202.3 L1106.9,206.5 L1129.0,210.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,306.5 L115.1,316.0 L137.1,320.4 L159.1,326.2 L181.2,338.7 L203.2,342.2 L225.3,345.3 L247.3,349.5 L269.4,349.0 L291.4,353.1 L313.4,357.2 L335.5,361.1 L357.5,368.7 L379.6,372.4 L401.6,376.6 L423.6,380.5" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="93.0" cy="306.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="115.1" cy="316.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="137.1" cy="320.4" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
@@ -146,6 +155,9 @@
 <circle cx="379.6" cy="372.4" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="401.6" cy="376.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="423.6" cy="380.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,220.6 L467.7,230.2 L489.8,234.8 L511.8,240.7 L533.9,252.9 L555.9,256.5 L577.9,259.7 L600.0,263.8 L622.0,263.5 L644.1,267.6 L666.1,271.7 L688.1,275.6 L710.2,283.0 L732.2,286.7 L754.3,290.8 L776.3,294.6" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="445.7" cy="220.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="467.7" cy="230.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="489.8" cy="234.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
@@ -162,6 +174,9 @@
 <circle cx="732.2" cy="286.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="754.3" cy="290.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="776.3" cy="294.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,138.8 L820.4,146.7 L842.4,151.1 L864.5,156.9 L886.5,168.7 L908.6,172.2 L930.6,175.4 L952.6,179.4 L974.7,179.2 L996.7,183.2 L1018.8,187.4 L1040.8,191.2 L1062.9,198.6 L1084.9,202.3 L1106.9,206.5 L1129.0,210.2" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="798.4" cy="138.8" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="820.4" cy="146.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="842.4" cy="151.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
@@ -179,8 +194,10 @@
 <circle cx="1106.9" cy="206.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 <circle cx="1129.0" cy="210.2" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 43407</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ffss" data-chip="79093">
-<path d="M93.0,304.0 L115.1,312.8 L137.1,317.0 L159.1,322.4 L181.2,334.2 L203.2,337.4 L225.3,340.2 L247.3,343.9 L269.4,343.1 L291.4,346.7 L313.4,350.5 L335.5,354.0 L357.5,361.1 L379.6,364.4 L401.6,368.1 L423.6,371.7 L445.7,218.4 L467.7,227.4 L489.8,231.6 L511.8,236.9 L533.9,248.5 L555.9,251.8 L577.9,254.7 L600.0,258.4 L622.0,257.7 L644.1,261.4 L666.1,265.2 L688.1,268.7 L710.2,275.7 L732.2,279.0 L754.3,282.7 L776.3,286.1 L798.4,135.9 L820.4,144.1 L842.4,148.3 L864.5,153.3 L886.5,164.7 L908.6,167.8 L930.6,170.7 L952.6,174.3 L974.7,173.6 L996.7,177.3 L1018.8,181.0 L1040.8,184.7 L1062.9,191.5 L1084.9,194.9 L1106.9,198.5 L1129.0,202.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,304.0 L115.1,312.8 L137.1,317.0 L159.1,322.4 L181.2,334.2 L203.2,337.4 L225.3,340.2 L247.3,343.9 L269.4,343.1 L291.4,346.7 L313.4,350.5 L335.5,354.0 L357.5,361.1 L379.6,364.4 L401.6,368.1 L423.6,371.7" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="93.0" cy="304.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="115.1" cy="312.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="137.1" cy="317.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
@@ -197,6 +214,9 @@
 <circle cx="379.6" cy="364.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="401.6" cy="368.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="423.6" cy="371.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,218.4 L467.7,227.4 L489.8,231.6 L511.8,236.9 L533.9,248.5 L555.9,251.8 L577.9,254.7 L600.0,258.4 L622.0,257.7 L644.1,261.4 L666.1,265.2 L688.1,268.7 L710.2,275.7 L732.2,279.0 L754.3,282.7 L776.3,286.1" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="445.7" cy="218.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="467.7" cy="227.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="489.8" cy="231.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
@@ -213,6 +233,9 @@
 <circle cx="732.2" cy="279.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="754.3" cy="282.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="776.3" cy="286.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,135.9 L820.4,144.1 L842.4,148.3 L864.5,153.3 L886.5,164.7 L908.6,167.8 L930.6,170.7 L952.6,174.3 L974.7,173.6 L996.7,177.3 L1018.8,181.0 L1040.8,184.7 L1062.9,191.5 L1084.9,194.9 L1106.9,198.5 L1129.0,202.0" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="798.4" cy="135.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="820.4" cy="144.1" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="842.4" cy="148.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
@@ -230,8 +253,10 @@
 <circle cx="1106.9" cy="198.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 <circle cx="1129.0" cy="202.0" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ffss | Chip: 79093</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="13967">
-<path d="M93.0,322.3 L115.1,336.7 L137.1,346.4 L159.1,357.4 L181.2,375.2 L203.2,384.5 L225.3,393.3 L247.3,403.6 L269.4,409.0 L291.4,419.6 L313.4,430.6 L335.5,441.6 L357.5,456.9 L379.6,468.6 L401.6,481.7 L423.6,494.1 L445.7,242.9 L467.7,258.4 L489.8,269.6 L511.8,281.9 L533.9,300.8 L555.9,311.7 L577.9,322.5 L600.0,334.6 L622.0,342.2 L644.1,355.0 L666.1,368.5 L688.1,382.3 L710.2,398.5 L732.2,404.5 L754.3,405.6 L776.3,409.2 L798.4,156.3 L820.4,169.7 L842.4,179.2 L864.5,190.2 L886.5,207.1 L908.6,216.3 L930.6,225.2 L952.6,235.5 L974.7,241.1 L996.7,252.0 L1018.8,263.1 L1040.8,274.3 L1062.9,289.5 L1084.9,302.0 L1106.9,315.8 L1129.0,325.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,322.3 L115.1,336.7 L137.1,346.4 L159.1,357.4 L181.2,375.2 L203.2,384.5 L225.3,393.3 L247.3,403.6 L269.4,409.0 L291.4,419.6 L313.4,430.6 L335.5,441.6 L357.5,456.9 L379.6,468.6 L401.6,481.7 L423.6,494.1" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="93.0" cy="322.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="115.1" cy="336.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="137.1" cy="346.4" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
@@ -248,6 +273,9 @@
 <circle cx="379.6" cy="468.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="401.6" cy="481.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="423.6" cy="494.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,242.9 L467.7,258.4 L489.8,269.6 L511.8,281.9 L533.9,300.8 L555.9,311.7 L577.9,322.5 L600.0,334.6 L622.0,342.2 L644.1,355.0 L666.1,368.5 L688.1,382.3 L710.2,398.5 L732.2,404.5 L754.3,405.6 L776.3,409.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="445.7" cy="242.9" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="467.7" cy="258.4" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="489.8" cy="269.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
@@ -264,6 +292,9 @@
 <circle cx="732.2" cy="404.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="754.3" cy="405.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="776.3" cy="409.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,156.3 L820.4,169.7 L842.4,179.2 L864.5,190.2 L886.5,207.1 L908.6,216.3 L930.6,225.2 L952.6,235.5 L974.7,241.1 L996.7,252.0 L1018.8,263.1 L1040.8,274.3 L1062.9,289.5 L1084.9,302.0 L1106.9,315.8 L1129.0,325.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="798.4" cy="156.3" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="820.4" cy="169.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="842.4" cy="179.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
@@ -281,8 +312,10 @@
 <circle cx="1106.9" cy="315.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 <circle cx="1129.0" cy="325.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 13967</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="15382">
-<path d="M93.0,309.6 L115.1,321.1 L137.1,327.7 L159.1,335.8 L181.2,349.9 L203.2,355.7 L225.3,361.4 L247.3,368.8 L269.4,372.5 L291.4,380.1 L313.4,387.8 L335.5,395.3 L357.5,406.5 L379.6,414.1 L401.6,422.3 L423.6,430.2 L445.7,225.3 L467.7,236.3 L489.8,243.1 L511.8,251.0 L533.9,264.8 L555.9,271.2 L577.9,277.8 L600.0,285.3 L622.0,288.9 L644.1,296.5 L666.1,304.3 L688.1,312.0 L710.2,323.0 L732.2,330.7 L754.3,338.9 L776.3,346.7 L798.4,142.8 L820.4,153.2 L842.4,159.6 L864.5,167.3 L886.5,181.5 L908.6,188.4 L930.6,194.9 L952.6,202.3 L974.7,206.0 L996.7,213.6 L1018.8,221.3 L1040.8,228.9 L1062.9,239.9 L1084.9,247.7 L1106.9,255.4 L1129.0,267.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,309.6 L115.1,321.1 L137.1,327.7 L159.1,335.8 L181.2,349.9 L203.2,355.7 L225.3,361.4 L247.3,368.8 L269.4,372.5 L291.4,380.1 L313.4,387.8 L335.5,395.3 L357.5,406.5 L379.6,414.1 L401.6,422.3 L423.6,430.2" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="93.0" cy="309.6" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="115.1" cy="321.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="137.1" cy="327.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
@@ -299,6 +332,9 @@
 <circle cx="379.6" cy="414.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="401.6" cy="422.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="423.6" cy="430.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,225.3 L467.7,236.3 L489.8,243.1 L511.8,251.0 L533.9,264.8 L555.9,271.2 L577.9,277.8 L600.0,285.3 L622.0,288.9 L644.1,296.5 L666.1,304.3 L688.1,312.0 L710.2,323.0 L732.2,330.7 L754.3,338.9 L776.3,346.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="445.7" cy="225.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="467.7" cy="236.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="489.8" cy="243.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
@@ -315,6 +351,9 @@
 <circle cx="732.2" cy="330.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="754.3" cy="338.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="776.3" cy="346.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,142.8 L820.4,153.2 L842.4,159.6 L864.5,167.3 L886.5,181.5 L908.6,188.4 L930.6,194.9 L952.6,202.3 L974.7,206.0 L996.7,213.6 L1018.8,221.3 L1040.8,228.9 L1062.9,239.9 L1084.9,247.7 L1106.9,255.4 L1129.0,267.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="798.4" cy="142.8" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="820.4" cy="153.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="842.4" cy="159.6" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
@@ -332,8 +371,10 @@
 <circle cx="1106.9" cy="255.4" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 <circle cx="1129.0" cy="267.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 15382</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fftt" data-chip="78814">
-<path d="M93.0,300.5 L115.1,310.0 L137.1,315.1 L159.1,320.9 L181.2,333.4 L203.2,337.1 L225.3,340.4 L247.3,344.6 L269.4,344.4 L291.4,348.6 L313.4,352.7 L335.5,356.8 L357.5,364.4 L379.6,368.2 L401.6,372.5 L423.6,376.5 L445.7,215.3 L467.7,224.7 L489.8,229.6 L511.8,235.5 L533.9,247.8 L555.9,251.4 L577.9,254.8 L600.0,259.0 L622.0,258.9 L644.1,262.9 L666.1,267.3 L688.1,271.2 L710.2,278.7 L732.2,282.6 L754.3,286.8 L776.3,290.8 L798.4,132.8 L820.4,141.4 L842.4,146.1 L864.5,151.8 L886.5,163.7 L908.6,167.4 L930.6,170.8 L952.6,175.0 L974.7,174.8 L996.7,179.0 L1018.8,183.2 L1040.8,187.2 L1062.9,194.6 L1084.9,198.4 L1106.9,202.7 L1129.0,206.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,300.5 L115.1,310.0 L137.1,315.1 L159.1,320.9 L181.2,333.4 L203.2,337.1 L225.3,340.4 L247.3,344.6 L269.4,344.4 L291.4,348.6 L313.4,352.7 L335.5,356.8 L357.5,364.4 L379.6,368.2 L401.6,372.5 L423.6,376.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="93.0" cy="300.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="115.1" cy="310.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="137.1" cy="315.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
@@ -350,6 +391,9 @@
 <circle cx="379.6" cy="368.2" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="401.6" cy="372.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="423.6" cy="376.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,215.3 L467.7,224.7 L489.8,229.6 L511.8,235.5 L533.9,247.8 L555.9,251.4 L577.9,254.8 L600.0,259.0 L622.0,258.9 L644.1,262.9 L666.1,267.3 L688.1,271.2 L710.2,278.7 L732.2,282.6 L754.3,286.8 L776.3,290.8" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="445.7" cy="215.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="467.7" cy="224.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="489.8" cy="229.6" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
@@ -366,6 +410,9 @@
 <circle cx="732.2" cy="282.6" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="754.3" cy="286.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="776.3" cy="290.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,132.8 L820.4,141.4 L842.4,146.1 L864.5,151.8 L886.5,163.7 L908.6,167.4 L930.6,170.8 L952.6,175.0 L974.7,174.8 L996.7,179.0 L1018.8,183.2 L1040.8,187.2 L1062.9,194.6 L1084.9,198.4 L1106.9,202.7 L1129.0,206.7" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="798.4" cy="132.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="820.4" cy="141.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="842.4" cy="146.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
@@ -383,8 +430,10 @@
 <circle cx="1106.9" cy="202.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 <circle cx="1129.0" cy="206.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | fftt | Chip: 78814</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="12566">
-<path d="M93.0,302.3 L115.1,311.0 L137.1,315.2 L159.1,320.6 L181.2,332.3 L203.2,335.4 L225.3,338.1 L247.3,341.7 L269.4,340.6 L291.4,344.1 L313.4,347.8 L335.5,351.2 L357.5,358.3 L379.6,361.4 L401.6,365.1 L423.6,368.5 L445.7,216.4 L467.7,224.7 L489.8,228.9 L511.8,234.1 L533.9,245.8 L555.9,248.9 L577.9,251.8 L600.0,255.5 L622.0,254.3 L644.1,257.9 L666.1,261.6 L688.1,265.0 L710.2,272.0 L732.2,275.2 L754.3,278.8 L776.3,282.2 L798.4,132.7 L820.4,140.7 L842.4,144.7 L864.5,149.9 L886.5,161.1 L908.6,164.1 L930.6,166.9 L952.6,170.6 L974.7,169.5 L996.7,173.0 L1018.8,176.7 L1040.8,180.2 L1062.9,187.0 L1084.9,190.3 L1106.9,193.9 L1129.0,197.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,302.3 L115.1,311.0 L137.1,315.2 L159.1,320.6 L181.2,332.3 L203.2,335.4 L225.3,338.1 L247.3,341.7 L269.4,340.6 L291.4,344.1 L313.4,347.8 L335.5,351.2 L357.5,358.3 L379.6,361.4 L401.6,365.1 L423.6,368.5" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="93.0" cy="302.3" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="115.1" cy="311.0" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="137.1" cy="315.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
@@ -401,6 +450,9 @@
 <circle cx="379.6" cy="361.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="401.6" cy="365.1" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="423.6" cy="368.5" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,216.4 L467.7,224.7 L489.8,228.9 L511.8,234.1 L533.9,245.8 L555.9,248.9 L577.9,251.8 L600.0,255.5 L622.0,254.3 L644.1,257.9 L666.1,261.6 L688.1,265.0 L710.2,272.0 L732.2,275.2 L754.3,278.8 L776.3,282.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="445.7" cy="216.4" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="467.7" cy="224.7" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="489.8" cy="228.9" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
@@ -417,6 +469,9 @@
 <circle cx="732.2" cy="275.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="754.3" cy="278.8" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="776.3" cy="282.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,132.7 L820.4,140.7 L842.4,144.7 L864.5,149.9 L886.5,161.1 L908.6,164.1 L930.6,166.9 L952.6,170.6 L974.7,169.5 L996.7,173.0 L1018.8,176.7 L1040.8,180.2 L1062.9,187.0 L1084.9,190.3 L1106.9,193.9 L1129.0,197.2" fill="none" stroke="#c0392b" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="798.4" cy="132.7" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="820.4" cy="140.7" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="842.4" cy="144.7" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
@@ -434,8 +489,10 @@
 <circle cx="1106.9" cy="193.9" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 <circle cx="1129.0" cy="197.2" r="4" fill="#c0392b" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 12566</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="13316">
-<path d="M93.0,301.8 L115.1,310.3 L137.1,314.5 L159.1,319.7 L181.2,331.7 L203.2,334.9 L225.3,337.6 L247.3,341.2 L269.4,340.0 L291.4,343.5 L313.4,347.1 L335.5,350.6 L357.5,357.7 L379.6,360.8 L401.6,364.4 L423.6,367.8 L445.7,215.4 L467.7,224.2 L489.8,228.6 L511.8,233.6 L533.9,245.4 L555.9,248.6 L577.9,251.2 L600.0,254.8 L622.0,253.8 L644.1,257.3 L666.1,261.0 L688.1,264.4 L710.2,271.3 L732.2,274.5 L754.3,278.2 L776.3,281.5 L798.4,132.1 L820.4,140.0 L842.4,144.1 L864.5,149.2 L886.5,160.6 L908.6,163.6 L930.6,166.3 L952.6,170.0 L974.7,168.9 L996.7,172.4 L1018.8,176.0 L1040.8,179.5 L1062.9,186.4 L1084.9,189.6 L1106.9,193.2 L1129.0,196.6" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,301.8 L115.1,310.3 L137.1,314.5 L159.1,319.7 L181.2,331.7 L203.2,334.9 L225.3,337.6 L247.3,341.2 L269.4,340.0 L291.4,343.5 L313.4,347.1 L335.5,350.6 L357.5,357.7 L379.6,360.8 L401.6,364.4 L423.6,367.8" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="93.0" cy="301.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="115.1" cy="310.3" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="137.1" cy="314.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
@@ -452,6 +509,9 @@
 <circle cx="379.6" cy="360.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="401.6" cy="364.4" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="423.6" cy="367.8" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,215.4 L467.7,224.2 L489.8,228.6 L511.8,233.6 L533.9,245.4 L555.9,248.6 L577.9,251.2 L600.0,254.8 L622.0,253.8 L644.1,257.3 L666.1,261.0 L688.1,264.4 L710.2,271.3 L732.2,274.5 L754.3,278.2 L776.3,281.5" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="445.7" cy="215.4" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="467.7" cy="224.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="489.8" cy="228.6" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
@@ -468,6 +528,9 @@
 <circle cx="732.2" cy="274.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="754.3" cy="278.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="776.3" cy="281.5" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,132.1 L820.4,140.0 L842.4,144.1 L864.5,149.2 L886.5,160.6 L908.6,163.6 L930.6,166.3 L952.6,170.0 L974.7,168.9 L996.7,172.4 L1018.8,176.0 L1040.8,179.5 L1062.9,186.4 L1084.9,189.6 L1106.9,193.2 L1129.0,196.6" fill="none" stroke="#2980b9" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="798.4" cy="132.1" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="820.4" cy="140.0" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="842.4" cy="144.1" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
@@ -485,8 +548,10 @@
 <circle cx="1106.9" cy="193.2" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 <circle cx="1129.0" cy="196.6" r="4" fill="#2980b9" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 13316</title></circle>
 </g>
+</g>
 <g class="series" data-skew="fstt" data-chip="62919">
-<path d="M93.0,304.9 L115.1,314.1 L137.1,318.9 L159.1,324.6 L181.2,337.2 L203.2,340.8 L225.3,344.1 L247.3,348.2 L269.4,347.3 L291.4,351.4 L313.4,355.6 L335.5,359.6 L357.5,367.2 L379.6,371.0 L401.6,375.2 L423.6,379.1 L445.7,218.4 L467.7,227.6 L489.8,232.6 L511.8,238.2 L533.9,250.6 L555.9,254.3 L577.9,257.6 L600.0,261.7 L622.0,260.9 L644.1,265.0 L666.1,269.2 L688.1,273.2 L710.2,280.7 L732.2,284.4 L754.3,288.6 L776.3,292.5 L798.4,135.2 L820.4,143.5 L842.4,148.1 L864.5,153.7 L886.5,165.6 L908.6,169.3 L930.6,172.4 L952.6,176.7 L974.7,176.0 L996.7,180.1 L1018.8,184.3 L1040.8,188.3 L1062.9,195.7 L1084.9,199.4 L1106.9,203.6 L1129.0,207.4" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,304.9 L115.1,314.1 L137.1,318.9 L159.1,324.6 L181.2,337.2 L203.2,340.8 L225.3,344.1 L247.3,348.2 L269.4,347.3 L291.4,351.4 L313.4,355.6 L335.5,359.6 L357.5,367.2 L379.6,371.0 L401.6,375.2 L423.6,379.1" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="93.0" cy="304.9" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="115.1" cy="314.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="137.1" cy="318.9" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
@@ -503,6 +568,9 @@
 <circle cx="379.6" cy="371.0" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="401.6" cy="375.2" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="423.6" cy="379.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,218.4 L467.7,227.6 L489.8,232.6 L511.8,238.2 L533.9,250.6 L555.9,254.3 L577.9,257.6 L600.0,261.7 L622.0,260.9 L644.1,265.0 L666.1,269.2 L688.1,273.2 L710.2,280.7 L732.2,284.4 L754.3,288.6 L776.3,292.5" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="445.7" cy="218.4" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="467.7" cy="227.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="489.8" cy="232.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
@@ -519,6 +587,9 @@
 <circle cx="732.2" cy="284.4" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="754.3" cy="288.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="776.3" cy="292.5" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,135.2 L820.4,143.5 L842.4,148.1 L864.5,153.7 L886.5,165.6 L908.6,169.3 L930.6,172.4 L952.6,176.7 L974.7,176.0 L996.7,180.1 L1018.8,184.3 L1040.8,188.3 L1062.9,195.7 L1084.9,199.4 L1106.9,203.6 L1129.0,207.4" fill="none" stroke="#27ae60" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="798.4" cy="135.2" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="820.4" cy="143.5" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="842.4" cy="148.1" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
@@ -536,8 +607,10 @@
 <circle cx="1106.9" cy="203.6" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 <circle cx="1129.0" cy="207.4" r="4" fill="#27ae60" opacity="0.9"><title>GPIO_0 VOH | fstt | Chip: 62919</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="44565">
-<path d="M93.0,297.6 L115.1,306.3 L137.1,311.1 L159.1,316.3 L181.2,327.8 L203.2,330.9 L225.3,333.7 L247.3,337.3 L269.4,336.3 L291.4,339.9 L313.4,343.6 L335.5,347.0 L357.5,353.9 L379.6,357.1 L401.6,360.8 L423.6,364.2 L445.7,212.1 L467.7,221.0 L489.8,225.4 L511.8,230.7 L533.9,242.1 L555.9,245.3 L577.9,248.2 L600.0,251.8 L622.0,250.9 L644.1,254.4 L666.1,258.1 L688.1,261.5 L710.2,268.4 L732.2,271.6 L754.3,275.3 L776.3,278.6 L798.4,129.8 L820.4,137.8 L842.4,142.0 L864.5,147.1 L886.5,158.2 L908.6,161.4 L930.6,164.2 L952.6,167.8 L974.7,166.9 L996.7,170.4 L1018.8,174.1 L1040.8,177.6 L1062.9,184.3 L1084.9,187.6 L1106.9,191.2 L1129.0,194.7" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,297.6 L115.1,306.3 L137.1,311.1 L159.1,316.3 L181.2,327.8 L203.2,330.9 L225.3,333.7 L247.3,337.3 L269.4,336.3 L291.4,339.9 L313.4,343.6 L335.5,347.0 L357.5,353.9 L379.6,357.1 L401.6,360.8 L423.6,364.2" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="93.0" cy="297.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="115.1" cy="306.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="137.1" cy="311.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
@@ -554,6 +627,9 @@
 <circle cx="379.6" cy="357.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="401.6" cy="360.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="423.6" cy="364.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,212.1 L467.7,221.0 L489.8,225.4 L511.8,230.7 L533.9,242.1 L555.9,245.3 L577.9,248.2 L600.0,251.8 L622.0,250.9 L644.1,254.4 L666.1,258.1 L688.1,261.5 L710.2,268.4 L732.2,271.6 L754.3,275.3 L776.3,278.6" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="445.7" cy="212.1" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="467.7" cy="221.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="489.8" cy="225.4" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
@@ -570,6 +646,9 @@
 <circle cx="732.2" cy="271.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="754.3" cy="275.3" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="776.3" cy="278.6" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,129.8 L820.4,137.8 L842.4,142.0 L864.5,147.1 L886.5,158.2 L908.6,161.4 L930.6,164.2 L952.6,167.8 L974.7,166.9 L996.7,170.4 L1018.8,174.1 L1040.8,177.6 L1062.9,184.3 L1084.9,187.6 L1106.9,191.2 L1129.0,194.7" fill="none" stroke="#8e44ad" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="798.4" cy="129.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="820.4" cy="137.8" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="842.4" cy="142.0" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
@@ -587,8 +666,10 @@
 <circle cx="1106.9" cy="191.2" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 <circle cx="1129.0" cy="194.7" r="4" fill="#8e44ad" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 44565</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="69627">
-<path d="M93.0,300.0 L115.1,308.3 L137.1,312.3 L159.1,317.7 L181.2,329.5 L203.2,332.6 L225.3,335.4 L247.3,339.0 L269.4,337.9 L291.4,341.6 L313.4,345.2 L335.5,348.6 L357.5,355.6 L379.6,358.9 L401.6,362.5 L423.6,365.9 L445.7,214.2 L467.7,222.9 L489.8,227.1 L511.8,232.5 L533.9,243.9 L555.9,247.2 L577.9,250.0 L600.0,253.5 L622.0,252.6 L644.1,256.2 L666.1,259.8 L688.1,263.3 L710.2,270.1 L732.2,273.5 L754.3,277.1 L776.3,280.5 L798.4,131.4 L820.4,139.3 L842.4,143.4 L864.5,148.4 L886.5,159.6 L908.6,162.8 L930.6,165.6 L952.6,169.3 L974.7,168.3 L996.7,171.8 L1018.8,175.5 L1040.8,179.0 L1062.9,185.8 L1084.9,189.1 L1106.9,192.7 L1129.0,196.1" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,300.0 L115.1,308.3 L137.1,312.3 L159.1,317.7 L181.2,329.5 L203.2,332.6 L225.3,335.4 L247.3,339.0 L269.4,337.9 L291.4,341.6 L313.4,345.2 L335.5,348.6 L357.5,355.6 L379.6,358.9 L401.6,362.5 L423.6,365.9" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="93.0" cy="300.0" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="115.1" cy="308.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="137.1" cy="312.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
@@ -605,6 +686,9 @@
 <circle cx="379.6" cy="358.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="401.6" cy="362.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="423.6" cy="365.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,214.2 L467.7,222.9 L489.8,227.1 L511.8,232.5 L533.9,243.9 L555.9,247.2 L577.9,250.0 L600.0,253.5 L622.0,252.6 L644.1,256.2 L666.1,259.8 L688.1,263.3 L710.2,270.1 L732.2,273.5 L754.3,277.1 L776.3,280.5" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="445.7" cy="214.2" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="467.7" cy="222.9" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="489.8" cy="227.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
@@ -621,6 +705,9 @@
 <circle cx="732.2" cy="273.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="754.3" cy="277.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="776.3" cy="280.5" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,131.4 L820.4,139.3 L842.4,143.4 L864.5,148.4 L886.5,159.6 L908.6,162.8 L930.6,165.6 L952.6,169.3 L974.7,168.3 L996.7,171.8 L1018.8,175.5 L1040.8,179.0 L1062.9,185.8 L1084.9,189.1 L1106.9,192.7 L1129.0,196.1" fill="none" stroke="#d35400" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="798.4" cy="131.4" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="820.4" cy="139.3" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="842.4" cy="143.4" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
@@ -638,8 +725,10 @@
 <circle cx="1106.9" cy="192.7" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 <circle cx="1129.0" cy="196.1" r="4" fill="#d35400" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 69627</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sftt" data-chip="76687">
-<path d="M93.0,293.5 L115.1,300.7 L137.1,304.0 L159.1,308.7 L181.2,319.7 L203.2,322.3 L225.3,324.7 L247.3,327.8 L269.4,327.1 L291.4,330.2 L313.4,333.5 L335.5,336.5 L357.5,342.9 L379.6,345.7 L401.6,348.9 L423.6,351.9 L445.7,208.5 L467.7,215.7 L489.8,219.4 L511.8,224.0 L533.9,234.7 L555.9,237.4 L577.9,239.8 L600.0,243.0 L622.0,242.3 L644.1,245.5 L666.1,248.8 L688.1,251.8 L710.2,258.1 L732.2,260.9 L754.3,264.1 L776.3,267.2 L798.4,125.7 L820.4,132.1 L842.4,135.3 L864.5,139.7 L886.5,149.9 L908.6,152.4 L930.6,154.6 L952.6,157.6 L974.7,156.7 L996.7,159.7 L1018.8,162.8 L1040.8,165.6 L1062.9,171.6 L1084.9,174.3 L1106.9,177.3 L1129.0,180.1" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,293.5 L115.1,300.7 L137.1,304.0 L159.1,308.7 L181.2,319.7 L203.2,322.3 L225.3,324.7 L247.3,327.8 L269.4,327.1 L291.4,330.2 L313.4,333.5 L335.5,336.5 L357.5,342.9 L379.6,345.7 L401.6,348.9 L423.6,351.9" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="93.0" cy="293.5" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="115.1" cy="300.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="137.1" cy="304.0" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
@@ -656,6 +745,9 @@
 <circle cx="379.6" cy="345.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="401.6" cy="348.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="423.6" cy="351.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,208.5 L467.7,215.7 L489.8,219.4 L511.8,224.0 L533.9,234.7 L555.9,237.4 L577.9,239.8 L600.0,243.0 L622.0,242.3 L644.1,245.5 L666.1,248.8 L688.1,251.8 L710.2,258.1 L732.2,260.9 L754.3,264.1 L776.3,267.2" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="445.7" cy="208.5" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="467.7" cy="215.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="489.8" cy="219.4" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
@@ -672,6 +764,9 @@
 <circle cx="732.2" cy="260.9" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="754.3" cy="264.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="776.3" cy="267.2" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,125.7 L820.4,132.1 L842.4,135.3 L864.5,139.7 L886.5,149.9 L908.6,152.4 L930.6,154.6 L952.6,157.6 L974.7,156.7 L996.7,159.7 L1018.8,162.8 L1040.8,165.6 L1062.9,171.6 L1084.9,174.3 L1106.9,177.3 L1129.0,180.1" fill="none" stroke="#16a085" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="798.4" cy="125.7" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="820.4" cy="132.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="842.4" cy="135.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
@@ -689,8 +784,10 @@
 <circle cx="1106.9" cy="177.3" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 <circle cx="1129.0" cy="180.1" r="4" fill="#16a085" opacity="0.9"><title>GPIO_0 VOH | sftt | Chip: 76687</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="56508">
-<path d="M93.0,298.6 L115.1,306.8 L137.1,310.9 L159.1,316.2 L181.2,327.9 L203.2,331.0 L225.3,333.9 L247.3,337.6 L269.4,336.2 L291.4,339.8 L313.4,343.5 L335.5,347.0 L357.5,354.0 L379.6,357.3 L401.6,361.0 L423.6,364.3 L445.7,212.2 L467.7,220.5 L489.8,224.8 L511.8,230.2 L533.9,241.5 L555.9,244.7 L577.9,247.6 L600.0,251.4 L622.0,250.1 L644.1,253.7 L666.1,257.5 L688.1,261.0 L710.2,267.8 L732.2,271.1 L754.3,274.7 L776.3,278.2 L798.4,129.2 L820.4,136.8 L842.4,140.6 L864.5,145.9 L886.5,156.8 L908.6,160.0 L930.6,162.9 L952.6,166.6 L974.7,165.4 L996.7,169.0 L1018.8,172.7 L1040.8,176.2 L1062.9,182.9 L1084.9,186.3 L1106.9,190.0 L1129.0,193.4" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,298.6 L115.1,306.8 L137.1,310.9 L159.1,316.2 L181.2,327.9 L203.2,331.0 L225.3,333.9 L247.3,337.6 L269.4,336.2 L291.4,339.8 L313.4,343.5 L335.5,347.0 L357.5,354.0 L379.6,357.3 L401.6,361.0 L423.6,364.3" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="93.0" cy="298.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="115.1" cy="306.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="137.1" cy="310.9" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
@@ -707,6 +804,9 @@
 <circle cx="379.6" cy="357.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="401.6" cy="361.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="423.6" cy="364.3" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,212.2 L467.7,220.5 L489.8,224.8 L511.8,230.2 L533.9,241.5 L555.9,244.7 L577.9,247.6 L600.0,251.4 L622.0,250.1 L644.1,253.7 L666.1,257.5 L688.1,261.0 L710.2,267.8 L732.2,271.1 L754.3,274.7 L776.3,278.2" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="445.7" cy="212.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="467.7" cy="220.5" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="489.8" cy="224.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
@@ -723,6 +823,9 @@
 <circle cx="732.2" cy="271.1" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="754.3" cy="274.7" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="776.3" cy="278.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,129.2 L820.4,136.8 L842.4,140.6 L864.5,145.9 L886.5,156.8 L908.6,160.0 L930.6,162.9 L952.6,166.6 L974.7,165.4 L996.7,169.0 L1018.8,172.7 L1040.8,176.2 L1062.9,182.9 L1084.9,186.3 L1106.9,190.0 L1129.0,193.4" fill="none" stroke="#3498db" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="798.4" cy="129.2" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="820.4" cy="136.8" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="842.4" cy="140.6" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
@@ -740,8 +843,10 @@
 <circle cx="1106.9" cy="190.0" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 <circle cx="1129.0" cy="193.4" r="4" fill="#3498db" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 56508</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="57571">
-<path d="M93.0,298.4 L115.1,306.9 L137.1,311.1 L159.1,316.3 L181.2,327.8 L203.2,330.9 L225.3,333.7 L247.3,337.5 L269.4,336.3 L291.4,339.7 L313.4,343.5 L335.5,346.9 L357.5,353.9 L379.6,357.1 L401.6,360.7 L423.6,364.1 L445.7,212.1 L467.7,220.6 L489.8,224.9 L511.8,230.3 L533.9,241.4 L555.9,244.5 L577.9,247.7 L600.0,251.3 L622.0,250.2 L644.1,253.8 L666.1,257.5 L688.1,260.9 L710.2,267.7 L732.2,270.9 L754.3,274.5 L776.3,278.0 L798.4,128.9 L820.4,136.7 L842.4,140.7 L864.5,145.9 L886.5,156.7 L908.6,159.9 L930.6,162.8 L952.6,166.5 L974.7,165.4 L996.7,168.9 L1018.8,172.6 L1040.8,176.0 L1062.9,182.6 L1084.9,186.1 L1106.9,189.7 L1129.0,193.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,298.4 L115.1,306.9 L137.1,311.1 L159.1,316.3 L181.2,327.8 L203.2,330.9 L225.3,333.7 L247.3,337.5 L269.4,336.3 L291.4,339.7 L313.4,343.5 L335.5,346.9 L357.5,353.9 L379.6,357.1 L401.6,360.7 L423.6,364.1" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="93.0" cy="298.4" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="115.1" cy="306.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="137.1" cy="311.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
@@ -758,6 +863,9 @@
 <circle cx="379.6" cy="357.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="401.6" cy="360.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="423.6" cy="364.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,212.1 L467.7,220.6 L489.8,224.9 L511.8,230.3 L533.9,241.4 L555.9,244.5 L577.9,247.7 L600.0,251.3 L622.0,250.2 L644.1,253.8 L666.1,257.5 L688.1,260.9 L710.2,267.7 L732.2,270.9 L754.3,274.5 L776.3,278.0" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="445.7" cy="212.1" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="467.7" cy="220.6" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="489.8" cy="224.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
@@ -774,6 +882,9 @@
 <circle cx="732.2" cy="270.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="754.3" cy="274.5" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="776.3" cy="278.0" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,128.9 L820.4,136.7 L842.4,140.7 L864.5,145.9 L886.5,156.7 L908.6,159.9 L930.6,162.8 L952.6,166.5 L974.7,165.4 L996.7,168.9 L1018.8,172.6 L1040.8,176.0 L1062.9,182.6 L1084.9,186.1 L1106.9,189.7 L1129.0,193.3" fill="none" stroke="#e74c3c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="798.4" cy="128.9" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="820.4" cy="136.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="842.4" cy="140.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
@@ -791,8 +902,10 @@
 <circle cx="1106.9" cy="189.7" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 <circle cx="1129.0" cy="193.3" r="4" fill="#e74c3c" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 57571</title></circle>
 </g>
+</g>
 <g class="series" data-skew="ssff" data-chip="96040">
-<path d="M93.0,298.9 L115.1,307.3 L137.1,311.8 L159.1,317.2 L181.2,329.0 L203.2,332.3 L225.3,335.3 L247.3,339.2 L269.4,338.0 L291.4,341.8 L313.4,345.6 L335.5,349.2 L357.5,356.3 L379.6,359.8 L401.6,363.6 L423.6,367.2 L445.7,212.9 L467.7,221.2 L489.8,225.8 L511.8,231.2 L533.9,242.5 L555.9,246.0 L577.9,249.0 L600.0,252.9 L622.0,251.8 L644.1,255.6 L666.1,259.4 L688.1,263.0 L710.2,269.9 L732.2,273.5 L754.3,277.3 L776.3,280.8 L798.4,129.5 L820.4,137.4 L842.4,141.7 L864.5,147.1 L886.5,157.9 L908.6,161.2 L930.6,164.4 L952.6,168.2 L974.7,167.2 L996.7,171.0 L1018.8,174.7 L1040.8,178.4 L1062.9,185.3 L1084.9,188.7 L1106.9,192.5 L1129.0,196.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,298.9 L115.1,307.3 L137.1,311.8 L159.1,317.2 L181.2,329.0 L203.2,332.3 L225.3,335.3 L247.3,339.2 L269.4,338.0 L291.4,341.8 L313.4,345.6 L335.5,349.2 L357.5,356.3 L379.6,359.8 L401.6,363.6 L423.6,367.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="93.0" cy="298.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="115.1" cy="307.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="137.1" cy="311.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
@@ -809,6 +922,9 @@
 <circle cx="379.6" cy="359.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="401.6" cy="363.6" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="423.6" cy="367.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,212.9 L467.7,221.2 L489.8,225.8 L511.8,231.2 L533.9,242.5 L555.9,246.0 L577.9,249.0 L600.0,252.9 L622.0,251.8 L644.1,255.6 L666.1,259.4 L688.1,263.0 L710.2,269.9 L732.2,273.5 L754.3,277.3 L776.3,280.8" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="445.7" cy="212.9" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="467.7" cy="221.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="489.8" cy="225.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
@@ -825,6 +941,9 @@
 <circle cx="732.2" cy="273.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="754.3" cy="277.3" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="776.3" cy="280.8" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,129.5 L820.4,137.4 L842.4,141.7 L864.5,147.1 L886.5,157.9 L908.6,161.2 L930.6,164.4 L952.6,168.2 L974.7,167.2 L996.7,171.0 L1018.8,174.7 L1040.8,178.4 L1062.9,185.3 L1084.9,188.7 L1106.9,192.5 L1129.0,196.2" fill="none" stroke="#2ecc71" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="4,3" opacity="0.85"/>
 <circle cx="798.4" cy="129.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="820.4" cy="137.4" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="842.4" cy="141.7" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
@@ -842,8 +961,10 @@
 <circle cx="1106.9" cy="192.5" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 <circle cx="1129.0" cy="196.2" r="4" fill="#2ecc71" opacity="0.9"><title>GPIO_0 VOH | ssff | Chip: 96040</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="29674">
-<path d="M93.0,301.2 L115.1,309.8 L137.1,314.1 L159.1,319.4 L181.2,331.1 L203.2,334.2 L225.3,337.1 L247.3,340.8 L269.4,339.5 L291.4,343.2 L313.4,346.8 L335.5,350.2 L357.5,357.3 L379.6,360.5 L401.6,364.2 L423.6,367.6 L445.7,215.0 L467.7,223.8 L489.8,228.0 L511.8,233.2 L533.9,244.7 L555.9,247.8 L577.9,250.7 L600.0,254.4 L622.0,253.3 L644.1,256.9 L666.1,260.6 L688.1,263.9 L710.2,270.8 L732.2,274.1 L754.3,277.8 L776.3,281.2 L798.4,131.8 L820.4,139.7 L842.4,143.8 L864.5,149.1 L886.5,160.0 L908.6,163.2 L930.6,166.1 L952.6,169.8 L974.7,168.7 L996.7,172.2 L1018.8,175.9 L1040.8,179.4 L1062.9,186.3 L1084.9,189.5 L1106.9,193.1 L1129.0,196.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,301.2 L115.1,309.8 L137.1,314.1 L159.1,319.4 L181.2,331.1 L203.2,334.2 L225.3,337.1 L247.3,340.8 L269.4,339.5 L291.4,343.2 L313.4,346.8 L335.5,350.2 L357.5,357.3 L379.6,360.5 L401.6,364.2 L423.6,367.6" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="93.0" cy="301.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="115.1" cy="309.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="137.1" cy="314.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
@@ -860,6 +981,9 @@
 <circle cx="379.6" cy="360.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="401.6" cy="364.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="423.6" cy="367.6" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,215.0 L467.7,223.8 L489.8,228.0 L511.8,233.2 L533.9,244.7 L555.9,247.8 L577.9,250.7 L600.0,254.4 L622.0,253.3 L644.1,256.9 L666.1,260.6 L688.1,263.9 L710.2,270.8 L732.2,274.1 L754.3,277.8 L776.3,281.2" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="445.7" cy="215.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="467.7" cy="223.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="489.8" cy="228.0" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
@@ -876,6 +1000,9 @@
 <circle cx="732.2" cy="274.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="754.3" cy="277.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="776.3" cy="281.2" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,131.8 L820.4,139.7 L842.4,143.8 L864.5,149.1 L886.5,160.0 L908.6,163.2 L930.6,166.1 L952.6,169.8 L974.7,168.7 L996.7,172.2 L1018.8,175.9 L1040.8,179.4 L1062.9,186.3 L1084.9,189.5 L1106.9,193.1 L1129.0,196.5" fill="none" stroke="#9b59b6" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="10,3,3,3" opacity="0.85"/>
 <circle cx="798.4" cy="131.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="820.4" cy="139.7" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="842.4" cy="143.8" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
@@ -893,8 +1020,10 @@
 <circle cx="1106.9" cy="193.1" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 <circle cx="1129.0" cy="196.5" r="4" fill="#9b59b6" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 29674</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="58046">
-<path d="M93.0,301.3 L115.1,310.0 L137.1,314.4 L159.1,319.7 L181.2,331.7 L203.2,334.6 L225.3,337.4 L247.3,341.1 L269.4,339.9 L291.4,343.4 L313.4,347.0 L335.5,350.5 L357.5,357.6 L379.6,360.7 L401.6,364.3 L423.6,367.7 L445.7,215.1 L467.7,223.9 L489.8,228.3 L511.8,233.5 L533.9,245.2 L555.9,248.4 L577.9,251.2 L600.0,254.8 L622.0,253.7 L644.1,257.3 L666.1,260.9 L688.1,264.4 L710.2,271.3 L732.2,274.5 L754.3,278.2 L776.3,281.5 L798.4,131.6 L820.4,139.9 L842.4,143.9 L864.5,149.0 L886.5,160.3 L908.6,163.4 L930.6,166.2 L952.6,169.8 L974.7,168.8 L996.7,172.3 L1018.8,176.0 L1040.8,179.4 L1062.9,186.3 L1084.9,189.6 L1106.9,193.2 L1129.0,196.5" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,301.3 L115.1,310.0 L137.1,314.4 L159.1,319.7 L181.2,331.7 L203.2,334.6 L225.3,337.4 L247.3,341.1 L269.4,339.9 L291.4,343.4 L313.4,347.0 L335.5,350.5 L357.5,357.6 L379.6,360.7 L401.6,364.3 L423.6,367.7" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="93.0" cy="301.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="115.1" cy="310.0" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="137.1" cy="314.4" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
@@ -911,6 +1040,9 @@
 <circle cx="379.6" cy="360.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="401.6" cy="364.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="423.6" cy="367.7" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,215.1 L467.7,223.9 L489.8,228.3 L511.8,233.5 L533.9,245.2 L555.9,248.4 L577.9,251.2 L600.0,254.8 L622.0,253.7 L644.1,257.3 L666.1,260.9 L688.1,264.4 L710.2,271.3 L732.2,274.5 L754.3,278.2 L776.3,281.5" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="445.7" cy="215.1" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="467.7" cy="223.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="489.8" cy="228.3" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
@@ -927,6 +1059,9 @@
 <circle cx="732.2" cy="274.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="754.3" cy="278.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="776.3" cy="281.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,131.6 L820.4,139.9 L842.4,143.9 L864.5,149.0 L886.5,160.3 L908.6,163.4 L930.6,166.2 L952.6,169.8 L974.7,168.8 L996.7,172.3 L1018.8,176.0 L1040.8,179.4 L1062.9,186.3 L1084.9,189.6 L1106.9,193.2 L1129.0,196.5" fill="none" stroke="#e67e22" stroke-width="2.0" stroke-linejoin="round" opacity="0.85"/>
 <circle cx="798.4" cy="131.6" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="820.4" cy="139.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="842.4" cy="143.9" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
@@ -944,8 +1079,10 @@
 <circle cx="1106.9" cy="193.2" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 <circle cx="1129.0" cy="196.5" r="4" fill="#e67e22" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 58046</title></circle>
 </g>
+</g>
 <g class="series" data-skew="sstt" data-chip="9808">
-<path d="M93.0,302.0 L115.1,311.0 L137.1,315.4 L159.1,321.2 L181.2,333.3 L203.2,336.7 L225.3,339.9 L247.3,344.0 L269.4,343.1 L291.4,347.0 L313.4,350.9 L335.5,354.8 L357.5,362.2 L379.6,365.7 L401.6,369.7 L423.6,373.4 L445.7,215.6 L467.7,224.8 L489.8,229.4 L511.8,235.1 L533.9,246.9 L555.9,250.5 L577.9,253.6 L600.0,257.6 L622.0,256.9 L644.1,260.8 L666.1,264.8 L688.1,268.6 L710.2,275.8 L732.2,279.4 L754.3,283.3 L776.3,287.1 L798.4,133.1 L820.4,141.4 L842.4,145.8 L864.5,151.1 L886.5,162.7 L908.6,166.0 L930.6,169.2 L952.6,173.1 L974.7,172.4 L996.7,176.3 L1018.8,180.3 L1040.8,184.1 L1062.9,191.2 L1084.9,194.8 L1106.9,198.8 L1129.0,202.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
+<g data-viocore="0.64/1.62">
+<path d="M93.0,302.0 L115.1,311.0 L137.1,315.4 L159.1,321.2 L181.2,333.3 L203.2,336.7 L225.3,339.9 L247.3,344.0 L269.4,343.1 L291.4,347.0 L313.4,350.9 L335.5,354.8 L357.5,362.2 L379.6,365.7 L401.6,369.7 L423.6,373.4" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="93.0" cy="302.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="115.1" cy="311.0" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="137.1" cy="315.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
@@ -962,6 +1099,9 @@
 <circle cx="379.6" cy="365.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="401.6" cy="369.7" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="423.6" cy="373.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
+</g>
+<g data-viocore="0.8/1.8">
+<path d="M445.7,215.6 L467.7,224.8 L489.8,229.4 L511.8,235.1 L533.9,246.9 L555.9,250.5 L577.9,253.6 L600.0,257.6 L622.0,256.9 L644.1,260.8 L666.1,264.8 L688.1,268.6 L710.2,275.8 L732.2,279.4 L754.3,283.3 L776.3,287.1" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="445.7" cy="215.6" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="467.7" cy="224.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="489.8" cy="229.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
@@ -978,6 +1118,9 @@
 <circle cx="732.2" cy="279.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="754.3" cy="283.3" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="776.3" cy="287.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
+</g>
+<g data-viocore="0.96/1.98">
+<path d="M798.4,133.1 L820.4,141.4 L842.4,145.8 L864.5,151.1 L886.5,162.7 L908.6,166.0 L930.6,169.2 L952.6,173.1 L974.7,172.4 L996.7,176.3 L1018.8,180.3 L1040.8,184.1 L1062.9,191.2 L1084.9,194.8 L1106.9,198.8 L1129.0,202.5" fill="none" stroke="#1abc9c" stroke-width="2.0" stroke-linejoin="round" stroke-dasharray="8,3" opacity="0.85"/>
 <circle cx="798.4" cy="133.1" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="820.4" cy="141.4" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="842.4" cy="145.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
@@ -994,6 +1137,7 @@
 <circle cx="1084.9" cy="194.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="1106.9" cy="198.8" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
 <circle cx="1129.0" cy="202.5" r="4" fill="#1abc9c" opacity="0.9"><title>GPIO_0 VOH | sstt | Chip: 9808</title></circle>
+</g>
 </g>
 <g class="spec-el">
 <path d="M93.0,354.3 L115.1,354.3 L137.1,354.3 L159.1,354.3 L181.2,354.3 L203.2,354.3 L225.3,354.3 L247.3,354.3 L269.4,354.3 L291.4,354.3 L313.4,354.3 L335.5,354.3 L357.5,354.3 L379.6,354.3 L401.6,354.3 L423.6,354.3 L445.7,294.1 L467.7,294.1 L489.8,294.1 L511.8,294.1 L533.9,294.1 L555.9,294.1 L577.9,294.1 L600.0,294.1 L622.0,294.1 L644.1,294.1 L666.1,294.1 L688.1,294.1 L710.2,294.1 L732.2,294.1 L754.3,294.1 L776.3,294.1 L798.4,233.9 L820.4,233.9 L842.4,233.9 L864.5,233.9 L886.5,233.9 L908.6,233.9 L930.6,233.9 L952.6,233.9 L974.7,233.9 L996.7,233.9 L1018.8,233.9 L1040.8,233.9 L1062.9,233.9 L1084.9,233.9 L1106.9,233.9 L1129.0,233.9" fill="none" stroke="#ff6d00" stroke-width="4" opacity="1.0"/>
