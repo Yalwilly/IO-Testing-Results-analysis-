@@ -49,16 +49,17 @@ class QueueHandler(logging.Handler):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("IO Testing Results Analysis")
+        self.title("IO / PMIC Validation Analysis")
         self.configure(bg=CLR_BG)
         self.resizable(True, True)
-        self.minsize(920, 780)
-        self.geometry("1200x860")
+        self.minsize(960, 800)
+        self.geometry("1240x900")
 
         self._report_path = None  # type: Optional[Path]
         self._pptx_path   = None  # type: Optional[Path]
         self._log_queue: queue.Queue = queue.Queue()
         self._running = False
+        self._report_type = tk.StringVar(value="IO")  # 'IO' or 'PMIC'
 
         self._build_ui()
         self._setup_logging()
@@ -70,12 +71,26 @@ class App(tk.Tk):
         # ── header ───────────────────────────────────────────────────────────
         hdr = tk.Frame(self, bg="#17202b", pady=14)
         hdr.pack(fill="x")
-        tk.Label(hdr, text="IO Testing Results Analysis",
+        tk.Label(hdr, text="IO / PMIC Validation Analysis",
                  font=("Arial", 18, "bold"), bg="#17202b", fg=CLR_FG
                  ).pack(side="left", padx=28)
-        tk.Label(hdr, text="Intel IO Electrical Validation",
+        tk.Label(hdr, text="Intel Electrical Validation Suite",
                  font=("Arial", 10), bg="#17202b", fg=CLR_FG2
                  ).pack(side="left", padx=4)
+
+        # Report-type radio buttons in header
+        rtype_frame = tk.Frame(hdr, bg="#17202b")
+        rtype_frame.pack(side="right", padx=28)
+        tk.Label(rtype_frame, text="Report type:", bg="#17202b", fg=CLR_FG2,
+                 font=("Arial", 9)).pack(side="left", padx=(0, 6))
+        for lbl, val in (("IO Validation", "IO"), ("PMIC DC2DC", "PMIC")):
+            tk.Radiobutton(
+                rtype_frame, text=lbl, variable=self._report_type, value=val,
+                bg="#17202b", fg=CLR_FG, selectcolor="#2c3e50",
+                activebackground="#17202b", activeforeground=CLR_FG,
+                font=("Arial", 10, "bold"), cursor="hand2",
+                command=self._on_report_type_change,
+            ).pack(side="left", padx=4)
 
         # ── main content ─────────────────────────────────────────────────────
         # Layout:
@@ -111,6 +126,7 @@ class App(tk.Tk):
         left_canvas.bind_all("<MouseWheel>", _on_mousewheel)
 
         self._build_paths(left)
+        self._build_pmic_paths(left)
         self._build_tests(left)
 
         # ── RIGHT col — Options + Run ─────────────────────────────────────────
@@ -140,8 +156,29 @@ class App(tk.Tk):
         inner.pack(fill="x")
         return inner
 
+    def _on_report_type_change(self):
+        """Show/hide IO vs PMIC path and test panels."""
+        is_pmic = self._report_type.get() == "PMIC"
+        # Toggle visibility of IO-only and PMIC-only frames
+        if hasattr(self, '_io_paths_frame'):
+            if is_pmic:
+                self._io_paths_frame.pack_forget()
+            else:
+                self._io_paths_frame.pack(fill="x", pady=(0, 10))
+        if hasattr(self, '_pmic_paths_frame'):
+            if is_pmic:
+                self._pmic_paths_frame.pack(fill="x", pady=(0, 10))
+            else:
+                self._pmic_paths_frame.pack_forget()
+        if hasattr(self, '_tests_frame'):
+            if is_pmic:
+                self._tests_frame.pack_forget()
+            else:
+                self._tests_frame.pack(fill="x", pady=(0, 10))
+
     def _build_paths(self, parent):
-        inner = self._section(parent, "Data & Output Paths")
+        inner = self._section(parent, "Data & Output Paths  [IO Validation]")
+        self._io_paths_frame = inner.master  # the card frame
 
         def path_row(lbl, var, browse_fn, row):
             tk.Label(inner, text=lbl, bg=CLR_PANEL, fg=CLR_FG2,
@@ -193,8 +230,99 @@ class App(tk.Tk):
                  relief="flat", font=("Arial", 9)
                  ).grid(row=4, column=1, columnspan=2, sticky="ew", padx=(6, 0), pady=4)
 
+    def _build_pmic_paths(self, parent):
+        inner = self._section(parent, "Data & Output Paths  [PMIC DC2DC]")
+        self._pmic_paths_frame = inner.master
+
+        def path_row(lbl, var, browse_fn, row):
+            tk.Label(inner, text=lbl, bg=CLR_PANEL, fg=CLR_FG2,
+                     font=("Arial", 9), anchor="w", width=14
+                     ).grid(row=row, column=0, sticky="w", pady=4)
+            ent = tk.Entry(inner, textvariable=var, bg=CLR_INPUT, fg=CLR_FG,
+                           insertbackground=CLR_FG, relief="flat",
+                           font=("Arial", 9), width=44)
+            ent.grid(row=row, column=1, sticky="ew", padx=(6, 6))
+            btn = tk.Button(inner, text="Browse…", command=browse_fn,
+                            bg=CLR_BTN, fg=CLR_FG, relief="flat",
+                            font=("Arial", 9), padx=6,
+                            activebackground=CLR_BTN_HOV, activeforeground=CLR_FG,
+                            cursor="hand2")
+            btn.grid(row=row, column=2, pady=4)
+
+        inner.columnconfigure(1, weight=1)
+
+        self._var_pmic_data   = tk.StringVar(value="")
+        self._var_pmic_output = tk.StringVar(value="output_pmic")
+        self._var_pmic_title  = tk.StringVar(value="PMIC DC2DC Validation Results")
+        self._var_pmic_subtitle = tk.StringVar(value="Analog & Digital Converter Characterisation")
+        self._var_pmic_author   = tk.StringVar(value="Power Validation Team")
+
+        path_row("Data path:",   self._var_pmic_data,   self._browse_pmic_data,   0)
+        path_row("Output path:", self._var_pmic_output, self._browse_pmic_output, 1)
+
+        for row_idx, (lbl, var) in enumerate([
+            ("Title:",    self._var_pmic_title),
+            ("Subtitle:", self._var_pmic_subtitle),
+            ("Author:",   self._var_pmic_author),
+        ], start=2):
+            tk.Label(inner, text=lbl, bg=CLR_PANEL, fg=CLR_FG2,
+                     font=("Arial", 9), anchor="w", width=14
+                     ).grid(row=row_idx, column=0, sticky="w", pady=4)
+            tk.Entry(inner, textvariable=var, bg=CLR_INPUT, fg=CLR_FG,
+                     insertbackground=CLR_FG, relief="flat", font=("Arial", 9)
+                     ).grid(row=row_idx, column=1, columnspan=2,
+                            sticky="ew", padx=(6, 0), pady=4)
+
+        # ── Compare with reference ─────────────────────────────────────────
+        sep = tk.Frame(inner, bg=CLR_BORDER, height=1)
+        sep.grid(row=5, column=0, columnspan=3, sticky="ew", pady=(10, 6))
+
+        self._var_compare = tk.BooleanVar(value=False)
+        cmp_cb_frame = tk.Frame(inner, bg=CLR_PANEL)
+        cmp_cb_frame.grid(row=6, column=0, columnspan=3, sticky="w")
+        tk.Checkbutton(
+            cmp_cb_frame, text="Compare with Reference Data",
+            variable=self._var_compare,
+            bg=CLR_PANEL, fg=CLR_FG, selectcolor=CLR_ACCENT,
+            activebackground=CLR_PANEL, activeforeground=CLR_FG,
+            font=("Arial", 9, "bold"), cursor="hand2",
+            command=self._on_compare_toggle,
+        ).pack(side="left")
+
+        self._cmp_ref_row = tk.Frame(inner, bg=CLR_PANEL)
+        self._cmp_ref_row.grid(row=7, column=0, columnspan=3, sticky="ew")
+        self._cmp_ref_row.grid_remove()   # hidden until checkbox ticked
+
+        tk.Label(self._cmp_ref_row, text="Ref. data:",
+                 bg=CLR_PANEL, fg=CLR_FG2, font=("Arial", 9),
+                 anchor="w", width=14
+                 ).pack(side="left")
+        self._var_compare_path = tk.StringVar(value="")
+        tk.Entry(self._cmp_ref_row, textvariable=self._var_compare_path,
+                 bg=CLR_INPUT, fg=CLR_FG, insertbackground=CLR_FG,
+                 relief="flat", font=("Arial", 9), width=38
+                 ).pack(side="left", padx=(6, 6))
+        tk.Button(self._cmp_ref_row, text="Browse…",
+                  command=self._browse_compare_data,
+                  bg=CLR_BTN, fg=CLR_FG, relief="flat",
+                  font=("Arial", 9), padx=6,
+                  activebackground=CLR_BTN_HOV, activeforeground=CLR_FG,
+                  cursor="hand2").pack(side="left", padx=(0, 8))
+        tk.Label(self._cmp_ref_row, text="Label:",
+                 bg=CLR_PANEL, fg=CLR_FG2, font=("Arial", 9)
+                 ).pack(side="left")
+        self._var_compare_label = tk.StringVar(value="REF")
+        tk.Entry(self._cmp_ref_row, textvariable=self._var_compare_label,
+                 bg=CLR_INPUT, fg=CLR_FG, insertbackground=CLR_FG,
+                 relief="flat", font=("Arial", 9), width=8
+                 ).pack(side="left", padx=(4, 0))
+
+        # Initially hidden — shown only when PMIC type is selected
+        self._pmic_paths_frame.pack_forget()
+
     def _build_tests(self, parent):
-        inner = self._section(parent, "Tests to Include")
+        inner = self._section(parent, "Tests to Include  [IO Validation]")
+        self._tests_frame = inner.master
 
         self._test_vars: dict[str, tk.BooleanVar] = {}
         cols = 2
@@ -404,9 +532,32 @@ class App(tk.Tk):
     # ── helpers ───────────────────────────────────────────────────────────────
 
     def _browse_data(self):
-        d = filedialog.askdirectory(title="Select Data Root Directory")
+        d = filedialog.askdirectory(title="Select IO Data Root Directory")
         if d:
             self._var_data.set(d)
+
+    def _on_compare_toggle(self):
+        if self._var_compare.get():
+            self._cmp_ref_row.grid()
+        else:
+            self._cmp_ref_row.grid_remove()
+
+    def _browse_compare_data(self):
+        d = filedialog.askdirectory(
+            title="Select Reference Data Path (same format as main data path)"
+        )
+        if d:
+            self._var_compare_path.set(d)
+
+    def _browse_pmic_data(self):
+        d = filedialog.askdirectory(title="Select PMIC Results Directory (containing Merge/ folder)")
+        if d:
+            self._var_pmic_data.set(d)
+
+    def _browse_pmic_output(self):
+        d = filedialog.askdirectory(title="Select PMIC Output Directory")
+        if d:
+            self._var_pmic_output.set(d)
 
     def _browse_output(self):
         d = filedialog.askdirectory(title="Select Output Directory")
@@ -517,6 +668,10 @@ class App(tk.Tk):
     # ── analysis runner ───────────────────────────────────────────────────────
 
     def _start(self):
+        if self._report_type.get() == "PMIC":
+            self._start_pmic()
+            return
+
         data_path_str = self._var_data.get().strip()
         output_str    = self._var_output.get().strip() or "output"
         title_str     = self._var_title.get().strip() or "IO Electrical Validation Results"
@@ -564,6 +719,66 @@ class App(tk.Tk):
             ),
             daemon=True,
         ).start()
+
+    def _start_pmic(self):
+        data_path_str = self._var_pmic_data.get().strip()
+        output_str    = self._var_pmic_output.get().strip() or "output_pmic"
+        if not data_path_str:
+            messagebox.showerror("Missing Input",
+                                 "Please select the PMIC Data Path (Results folder).")
+            return
+
+        self._btn_start.configure(state="disabled")
+        self._btn_open.configure(state="disabled")
+        self._btn_open_pptx.configure(state="disabled")
+        self._report_path = None
+        self._running = True
+        self._progress.start(12)
+        self._set_status("Running PMIC analysis…", CLR_WARN)
+        self._clear_log()
+
+        title_str    = self._var_pmic_title.get().strip()
+        subtitle_str = self._var_pmic_subtitle.get().strip()
+        author_str   = self._var_pmic_author.get().strip()
+
+        compare_data = (
+            self._var_compare_path.get().strip()
+            if hasattr(self, "_var_compare") and self._var_compare.get()
+            else None
+        )
+        compare_label = (
+            self._var_compare_label.get().strip() or "REF"
+            if hasattr(self, "_var_compare_label")
+            else "REF"
+        )
+
+        threading.Thread(
+            target=self._run_pmic_pipeline,
+            args=(data_path_str, output_str, title_str, subtitle_str, author_str),
+            kwargs=dict(compare_data=compare_data, compare_label=compare_label),
+            daemon=True,
+        ).start()
+
+    def _run_pmic_pipeline(self, data_path_str, output_str,
+                           title_str, subtitle_str, author_str,
+                           compare_data=None, compare_label="REF"):
+        logger = logging.getLogger(__name__)
+        try:
+            from pmic_main import run_pmic_pipeline
+            report = run_pmic_pipeline(
+                data_path_str=data_path_str,
+                output_str=output_str,
+                title=title_str or "PMIC DC2DC Validation Results",
+                subtitle=subtitle_str,
+                author=author_str,
+                compare_data_str=compare_data,
+                compare_label=compare_label,
+            )
+            self._report_path = report
+            self.after(0, self._on_success, str(report))
+        except Exception as exc:
+            logger.error("PMIC analysis failed: %s", exc, exc_info=True)
+            self.after(0, self._on_error, str(exc))
 
     def _run_pipeline(self, data_path_str, output_str, title_str,
                       selected_tests, gen_pptx=True,

@@ -29,8 +29,12 @@ def main():
         shutil.rmtree(BUILD_DIR)
     BUILD_DIR.mkdir()
 
-    # Copy the package
-    shutil.copytree(ROOT / "io_analysis", BUILD_DIR / "io_analysis")
+    # Copy the packages
+    shutil.copytree(ROOT / "io_analysis",   BUILD_DIR / "io_analysis")
+    shutil.copytree(ROOT / "pmic_analysis", BUILD_DIR / "pmic_analysis")
+
+    # Copy PMIC entry point (imported by GUI at runtime)
+    shutil.copy(ROOT / "pmic_main.py", BUILD_DIR / "pmic_main.py")
 
     # Copy the GUI entry point as __main__.py
     shutil.copy(ROOT / "gui_launcher.py", BUILD_DIR / "__main__.py")
