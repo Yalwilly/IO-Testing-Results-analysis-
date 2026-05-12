@@ -154,146 +154,309 @@ def _quiescence_html(q_data: dict) -> str:
 # ── Summary tab ────────────────────────────────────────────────────────────
 
 def _summary_html(data) -> str:
-    """Build a summary tab with key statistics for each test type."""
+    """Build a detailed summary tab, separated by Vout and efficiency mode."""
     import statistics as _stats
+    import math as _math
 
     def _fv(v, decimals=3):
         if v is None: return "—"
         try:    return f"{float(v):.{decimals}f}"
         except: return str(v)
 
-    def _stat_row(label, values, unit="", decimals=3, good_hi=True):
-        """Return an HTML <tr> with min/mean/max and a coloured bar."""
+    def _flt(r, *cols):
+        for col in cols:
+            try:
+                v = float(r.get(col, "").strip())
+                if v == v: return v      # not NaN
+            except Exception:
+                pass
+        return None
+
+    def _table_hdr(extra_cols=()):
+        cols = ["Metric"] + list(extra_cols) + ["Min", "Mean", "Max", "N"]
+        ths  = "".join(f'<th style="padding:5px 8px;white-space:nowrap">{_h(c)}</th>' for c in cols)
+        return f'<tr style="background:#2c3e50;color:#fff">{ths}</tr>'
+
+    def _stat_row(label, values, unit="", decimals=3, good_hi=True, extra_cells=()):
         vals = [v for v in values if v is not None]
         if not vals:
-            return f'<tr><td>{_h(label)}</td><td colspan="4" style="color:#aaa">no data</td></tr>'
+            nc = 4 + len(extra_cells)
+            return (f'<tr><td style="padding:4px 8px">{_h(label)}</td>'
+                    + "".join(f'<td>{_h(c)}</td>' for c in extra_cells)
+                    + f'<td colspan="{nc}" style="color:#aaa;padding:4px 8px">no data</td></tr>')
         mn, mx, mu = min(vals), max(vals), _stats.mean(vals)
-        rng = mx - mn or 1
-        bar_w = int(min(100, max(2, (mx - mn) / max(abs(mu), 1e-9) * 30)))
         colour = "#2ecc71" if good_hi else "#e74c3c"
-        cell = (f'<td style="white-space:nowrap">'
-                f'<span style="display:inline-block;width:{bar_w}px;height:8px;'
-                f'background:{colour};border-radius:3px;margin-right:6px;vertical-align:middle"></span>'
-                f'{_fv(mu, decimals)} {_h(unit)}</td>')
-        return (f'<tr><td style="padding-right:12px">{_h(label)}</td>'
-                f'<td style="color:#3498db">{_fv(mn, decimals)} {_h(unit)}</td>'
-                f'{cell}'
-                f'<td style="color:#e74c3c">{_fv(mx, decimals)} {_h(unit)}</td>'
-                f'<td style="color:#7f8c8d;font-size:10px">n={len(vals)}</td></tr>')
+        bar_w  = max(2, min(60, int(abs(mx - mn) / max(abs(mu), 1e-9) * 25)))
+        mean_cell = (f'<td style="white-space:nowrap;padding:4px 8px">'
+                     f'<span style="display:inline-block;width:{bar_w}px;height:7px;'
+                     f'background:{colour};border-radius:3px;margin-right:5px;'
+                     f'vertical-align:middle"></span>'
+                     f'{_fv(mu, decimals)}{_h(" " + unit) if unit else ""}</td>')
+        extra = "".join(f'<td style="padding:4px 8px">{_h(c)}</td>' for c in extra_cells)
+        return (f'<tr>'
+                f'<td style="padding:4px 8px;white-space:nowrap">{_h(label)}</td>'
+                f'{extra}'
+                f'<td style="color:#3498db;padding:4px 8px">{_fv(mn, decimals)}{_h(" " + unit) if unit else ""}</td>'
+                f'{mean_cell}'
+                f'<td style="color:#e74c3c;padding:4px 8px">{_fv(mx, decimals)}{_h(" " + unit) if unit else ""}</td>'
+                f'<td style="color:#7f8c8d;font-size:10px;padding:4px 8px">n={len(vals)}</td></tr>')
 
-    def _table(rows_html):
-        hdr = ('<tr style="background:#2c3e50;color:#fff">'
-               '<th style="text-align:left;padding:5px 10px">Metric</th>'
-               '<th style="padding:5px 10px">Min</th>'
-               '<th style="padding:5px 10px">Mean</th>'
-               '<th style="padding:5px 10px">Max</th>'
-               '<th style="padding:5px 10px">N</th></tr>')
+    def _table(rows_html, extra_cols=()):
         return (f'<div style="overflow-x:auto"><table style="border-collapse:collapse;'
-                f'width:100%;margin-bottom:18px;font-size:12px">'
-                f'{hdr}{"".join(rows_html)}</table></div>')
+                f'width:100%;margin-bottom:4px;font-size:12px">'
+                f'{_table_hdr(extra_cols)}{"".join(rows_html)}</table></div>')
 
-    def _section(title, rows_html):
-        if not rows_html:
-            return ""
-        return (f'<div style="margin-bottom:24px">'
-                f'<h3 style="margin:0 0 8px;font-size:14px;color:#2c3e50">{_h(title)}</h3>'
-                f'{_table(rows_html)}</div>')
+    def _section(title, body_html, colour="#2c3e50"):
+        return (f'<div style="margin-bottom:20px;border-left:3px solid {colour};padding-left:10px">'
+                f'<h3 style="margin:0 0 6px;font-size:13px;color:{colour}">{_h(title)}</h3>'
+                f'{body_html}</div>')
 
-    def _flt(r, col):
-        try:    return float(r.get(col, "").strip())
-        except: return None
+    def _group(rows, *keys):
+        """Group rows into dict keyed by tuple of values."""
+        g = {}
+        for r in rows:
+            k = tuple(r.get(k2, "").strip() for k2 in keys)
+            g.setdefault(k, []).append(r)
+        return g
 
     html_parts = []
 
-    # ── Static Load ──────────────────────────────────────────────────────
+    # ════════════════════════════════════════════════════════════════════
+    # 1. Static Load Regulation
+    # ════════════════════════════════════════════════════════════════════
     load_rows = data.get_rows("Static_Load")
     if load_rows:
-        for reg in sorted({r.get("Regulator Name","") for r in load_rows}):
-            rr = [r for r in load_rows if r.get("Regulator Name","") == reg]
-            eff_vals  = [_flt(r,"Efficiency [Pout/Pin %]") for r in rr]
-            vout_vals = [_flt(r,"Vout [V]") for r in rr]
-            iout_vals = [_flt(r,"Iout [A]") for r in rr]
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Static Load Regulation</h2>')
+        grp = _group(load_rows, "Regulator Name", "Vout", "DCDC Efficiency Mode")
+        for (reg, vout, mode) in sorted(grp.keys()):
+            rr = grp[(reg, vout, mode)]
             reg_lbl = REG_LABELS.get(reg, reg)
-            rows = [
-                _stat_row("Efficiency",          eff_vals,  "%",  1, good_hi=True),
-                _stat_row("Measured Vout",        vout_vals, "V",  4, good_hi=True),
-                _stat_row("Measured Iout",        iout_vals, "A",  3, good_hi=True),
-            ]
-            html_parts.append(_section(f"Static Load — {reg_lbl}", rows))
 
-    # ── Static Line ──────────────────────────────────────────────────────
+            # ── Efficiency binned by load range ────────────────────────
+            # Collect (iout, eff) pairs
+            iout_eff = []
+            for r in rr:
+                iout = _flt(r, "Iout [A]", "IoutSMU")
+                eff  = _flt(r, "Efficiency [Pout/Pin %]")
+                if iout is not None and eff is not None:
+                    iout_eff.append((iout, eff))
+
+            bin_rows = []
+            if iout_eff:
+                mn_i = min(x[0] for x in iout_eff)
+                mx_i = max(x[0] for x in iout_eff)
+                # Create ~5 equal-width load bins
+                n_bins = 5
+                step = (mx_i - mn_i) / n_bins if mx_i > mn_i else 1
+                bins  = [(mn_i + i * step, mn_i + (i + 1) * step)
+                         for i in range(n_bins)]
+                for lo, hi in bins:
+                    effs = [eff for iout, eff in iout_eff if lo <= iout <= hi]
+                    if not effs: continue
+                    bin_lbl = f"{lo:.3f}–{hi:.3f} A"
+                    mu  = _stats.mean(effs)
+                    bin_rows.append(
+                        _stat_row(f"Eff @ {bin_lbl}", effs, "%", 1, good_hi=True))
+
+            # ── Vout load regulation (ΔVout over full Iout range) ──────
+            vout_vals = [_flt(r, "Vout [V]") for r in rr]
+            vout_clean = [v for v in vout_vals if v is not None]
+            dvout_row = []
+            if len(vout_clean) >= 2:
+                dvout = max(vout_clean) - min(vout_clean)
+                dvout_row = [f'<tr><td style="padding:4px 8px">ΔVout (load reg.)</td>'
+                              f'<td colspan="4" style="padding:4px 8px;color:#8e44ad;font-weight:bold">'
+                              f'{dvout*1000:.2f} mV  '
+                              f'({dvout/float(vout) * 100:.3f}% of {vout}V)</td></tr>'
+                             if vout else
+                             f'<tr><td style="padding:4px 8px">ΔVout (load reg.)</td>'
+                             f'<td colspan="4" style="padding:4px 8px">{dvout*1000:.2f} mV</td></tr>']
+
+            all_rows = bin_rows + dvout_row
+            if all_rows:
+                body = _table(all_rows)
+                html_parts.append(_section(f"{reg_lbl}  Vout={vout}V  [{mode}]", body, "#8e44ad"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 2. Static Line Regulation
+    # ════════════════════════════════════════════════════════════════════
     line_rows = data.get_rows("Static_Line")
     if line_rows:
-        for reg in sorted({r.get("Regulator Name","") for r in line_rows}):
-            rr = [r for r in line_rows if r.get("Regulator Name","") == reg]
-            vout_vals = [_flt(r,"Vout [V]") for r in rr]
-            eff_vals  = [_flt(r,"Efficiency [Pout/Pin %]") for r in rr]
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Static Line Regulation</h2>')
+        grp = _group(line_rows, "Regulator Name", "Vout", "DCDC Efficiency Mode")
+        for (reg, vout, mode) in sorted(grp.keys()):
+            rr = grp[(reg, vout, mode)]
             reg_lbl = REG_LABELS.get(reg, reg)
-            rows = [
-                _stat_row("Measured Vout",  vout_vals, "V", 4, good_hi=True),
-                _stat_row("Line Efficiency",eff_vals,  "%", 1, good_hi=True),
-            ]
-            html_parts.append(_section(f"Static Line — {reg_lbl}", rows))
 
-    # ── Quiescence ───────────────────────────────────────────────────────
+            # Collect (vin, vout_meas) pairs
+            vin_vout = []
+            for r in rr:
+                vin   = _flt(r, "Vin")
+                vmeas = _flt(r, "Vout [V]")
+                if vin is not None and vmeas is not None:
+                    vin_vout.append((vin, vmeas))
+
+            bin_rows = []
+            if vin_vout:
+                mn_v = min(x[0] for x in vin_vout)
+                mx_v = max(x[0] for x in vin_vout)
+                n_bins = min(5, max(1, len({x[0] for x in vin_vout})))
+                step = (mx_v - mn_v) / n_bins if mx_v > mn_v else 1
+                bins = [(mn_v + i * step, mn_v + (i + 1) * step)
+                        for i in range(n_bins)]
+                for lo, hi in bins:
+                    vmeas_list = [vm for vin, vm in vin_vout if lo <= vin <= hi]
+                    if not vmeas_list: continue
+                    bin_rows.append(
+                        _stat_row(f"Vout @ Vin {lo:.2f}–{hi:.2f}V",
+                                  vmeas_list, "V", 4, good_hi=True))
+
+            # ΔVout across full Vin range
+            all_v = [v for _, v in vin_vout]
+            dvout_row = []
+            if len(all_v) >= 2:
+                dvout = max(all_v) - min(all_v)
+                dvout_row = [f'<tr><td style="padding:4px 8px">ΔVout (line reg.)</td>'
+                              f'<td colspan="4" style="padding:4px 8px;color:#8e44ad;font-weight:bold">'
+                              f'{dvout*1000:.2f} mV</td></tr>']
+
+            all_rows = bin_rows + dvout_row
+            if all_rows:
+                html_parts.append(_section(f"{reg_lbl}  Vout={vout}V  [{mode}]",
+                                           _table(all_rows), "#2980b9"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 3. Quiescence
+    # ════════════════════════════════════════════════════════════════════
     q_rows = data.get_rows("Quiescence", ok_only=False)
     if q_rows:
-        dis_vals   = [_flt(r,"IinDisable [A]") for r in q_rows]
-        en_vals    = [_flt(r,"IinEnable [A]")  for r in q_rows]
-        delta_vals = [_flt(r,"Delta [A]")       for r in q_rows]
-        rows = [
-            _stat_row("Iin Disable", dis_vals,   "A", 6, good_hi=False),
-            _stat_row("Iin Enable",  en_vals,     "A", 6, good_hi=False),
-            _stat_row("Delta",       delta_vals,  "A", 6, good_hi=False),
-        ]
-        html_parts.append(_section("Quiescence & Shutdown", rows))
-
-    # ── Power On ─────────────────────────────────────────────────────────
-    pon_rows = data.get_rows("PowerOn")
-    if pon_rows:
-        rise_vals     = [_flt(r,"RiseTime [uS]") for r in pon_rows]
-        overshoot_v   = [_flt(r,"Overshoot [V]") for r in pon_rows]
-        rows = [
-            _stat_row("Rise Time",   rise_vals,   "µs", 2, good_hi=False),
-            _stat_row("Overshoot",   overshoot_v, "V",  4, good_hi=False),
-        ]
-        html_parts.append(_section("Power On", rows))
-
-    # ── Transient ────────────────────────────────────────────────────────
-    tr_rows = data.get_rows("Transient")
-    if tr_rows:
-        for reg in sorted({r.get("Regulator Name","") for r in tr_rows}):
-            for mode in sorted({r.get("DCDC Efficiency Mode","") for r in tr_rows
-                                if r.get("Regulator Name","") == reg}):
-                rr = [r for r in tr_rows
-                      if r.get("Regulator Name","") == reg
-                      and r.get("DCDC Efficiency Mode","") == mode]
-                def _mv(r, col, sign):
-                    vn = _flt(r,"Vout"); m = _flt(r,col)
-                    if vn is None or m is None: return None
-                    v = sign*(m-vn)*1000; return max(v,0)
-                over_mv  = [_mv(r,"Vout Max",+1) for r in rr]
-                under_mv = [_mv(r,"Vout Min",-1) for r in rr]
-                reg_lbl  = REG_LABELS.get(reg, reg)
-                rows = [
-                    _stat_row("Overshoot",  over_mv,  "mV", 1, good_hi=False),
-                    _stat_row("Undershoot", under_mv, "mV", 1, good_hi=False),
-                ]
-                html_parts.append(_section(f"Transient — {reg_lbl} [{mode}]", rows))
-
-    # ── AutoMode ─────────────────────────────────────────────────────────
-    am_rows = data.get_rows("AutoMode")
-    if am_rows:
-        for reg in sorted({r.get("Regulator Name","") for r in am_rows}):
-            rr = [r for r in am_rows if r.get("Regulator Name","") == reg]
-            eff_vals  = [_flt(r,"Efficiency [Pout/Pin %]") for r in rr]
-            vmin_vals = [_flt(r,"Vout Min ") for r in rr]
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Quiescence & Shutdown</h2>')
+        grp = _group(q_rows, "Regulator Name", "Vout")
+        for (reg, vout) in sorted(grp.keys()):
+            rr = grp[(reg, vout)]
             reg_lbl = REG_LABELS.get(reg, reg)
             rows = [
-                _stat_row("Efficiency",  eff_vals,  "%", 1, good_hi=True),
-                _stat_row("Vout Min",    vmin_vals, "V", 4, good_hi=True),
+                _stat_row("Iin Disable", [_flt(r, "IinDisable [A]") for r in rr], "µA", 3, good_hi=False),
+                _stat_row("Iin Enable",  [_flt(r, "IinEnable [A]")  for r in rr], "µA", 3, good_hi=False),
+                _stat_row("Delta",       [_flt(r, "Delta [A]")       for r in rr], "µA", 3, good_hi=False),
             ]
-            html_parts.append(_section(f"Auto Mode — {reg_lbl}", rows))
+            html_parts.append(_section(f"{reg_lbl}  Vout={vout}V", _table(rows), "#16a085"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 4. Power On
+    # ════════════════════════════════════════════════════════════════════
+    pon_rows = data.get_rows("PowerOn")
+    if pon_rows:
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Power On</h2>')
+        grp = _group(pon_rows, "Regulator Name", "Vout", "DCDC Efficiency Mode")
+        for (reg, vout, mode) in sorted(grp.keys()):
+            rr = grp[(reg, vout, mode)]
+            reg_lbl = REG_LABELS.get(reg, reg)
+            rows = [
+                _stat_row("Rise Time",  [_flt(r, "RiseTime [uS]", "Rise Time [uS]") for r in rr],
+                          "µs", 2, good_hi=False),
+                _stat_row("Overshoot",  [_flt(r, "Overshoot [V]") for r in rr],
+                          "V",  4, good_hi=False),
+            ]
+            html_parts.append(_section(f"{reg_lbl}  Vout={vout}V  [{mode}]", _table(rows), "#e67e22"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 5. Transient Response
+    # ════════════════════════════════════════════════════════════════════
+    tr_rows = data.get_rows("Transient")
+    if tr_rows:
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Transient Response</h2>')
+        grp = _group(tr_rows, "Regulator Name", "Vout", "DCDC Efficiency Mode")
+        for (reg, vout, mode) in sorted(grp.keys()):
+            rr = grp[(reg, vout, mode)]
+            reg_lbl = REG_LABELS.get(reg, reg)
+            vmax_vals = [_flt(r, "Vout Max") for r in rr]
+            vmin_vals = [_flt(r, "Vout Min") for r in rr]
+            rows = [
+                _stat_row("Vout Max (step↓)", vmax_vals, "V", 4, good_hi=True),
+                _stat_row("Vout Min (step↑)", vmin_vals, "V", 4, good_hi=True),
+            ]
+            html_parts.append(_section(f"{reg_lbl}  Vout={vout}V  [{mode}]", _table(rows), "#c0392b"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 6. Voltage Transitions
+    # ════════════════════════════════════════════════════════════════════
+    vt_rows = data.get_rows("VoltageTransitions")
+    if vt_rows:
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Voltage Transitions</h2>')
+        grp = _group(vt_rows, "Regulator Name", "Vout", "DCDC Efficiency Mode")
+        for (reg, vout, mode) in sorted(grp.keys()):
+            rr = grp[(reg, vout, mode)]
+            reg_lbl = REG_LABELS.get(reg, reg)
+            def _col_ci(row, *cands):
+                rl = {k.lower().strip(): row[k] for k in row}
+                for c in cands:
+                    v = rl.get(c.lower().strip())
+                    try:
+                        fv = float(v)
+                        if fv == fv: return fv
+                    except Exception:
+                        pass
+                return None
+            rows = [
+                _stat_row("Vout Max", [_flt(r, "Vout Max ", "Vout Max") for r in rr], "V", 4),
+                _stat_row("Vout Min", [_flt(r, "Vout Min ", "Vout Min") for r in rr], "V", 4),
+                _stat_row("Rise Time",
+                          [_col_ci(r, "RiseTime [uS]", "Rise Time [uS]",
+                                   "RiseTime [us]", "Rise Time [us]")
+                           for r in rr if r.get("Slope","").strip().upper()=="P"],
+                          "µs", 2, good_hi=False),
+                _stat_row("Fall Time",
+                          [_col_ci(r, "Measured Fall Time [uS]", "Measured Fall Time [us]",
+                                   "Fall Time [uS]", "Fall Time [us]",
+                                   "Measured Fall Time [pSec]", "Fall Time [pSec]")
+                           for r in rr if r.get("Slope","").strip().upper()=="N"],
+                          "µs", 2, good_hi=False),
+            ]
+            html_parts.append(_section(f"{reg_lbl}  Vout={vout}V  [{mode}]", _table(rows), "#27ae60"))
+
+    # ════════════════════════════════════════════════════════════════════
+    # 7. Auto Mode Transitions
+    # ════════════════════════════════════════════════════════════════════
+    am_rows = data.get_rows("AutoMode")
+    if am_rows:
+        html_parts.append('<h2 style="font-size:15px;color:#2c3e50;margin:16px 0 6px;'
+                          'border-bottom:2px solid #ecf0f1;padding-bottom:4px">Auto Mode Transitions</h2>')
+        grp = _group(am_rows, "Regulator Name", "Vout")
+        for (reg, vout) in sorted(grp.keys()):
+            rr    = grp[(reg, vout)]
+            reg_lbl = REG_LABELS.get(reg, reg)
+
+            # Efficiency binned by Iout
+            iout_eff = [(i, e)
+                        for r in rr
+                        for i in [_flt(r, "Iout [A]", "IoutSMU")]
+                        for e in [_flt(r, "Efficiency [Pout/Pin %]")]
+                        if i is not None and e is not None]
+            bin_rows = []
+            if iout_eff:
+                mn_i = min(x[0] for x in iout_eff)
+                mx_i = max(x[0] for x in iout_eff)
+                n_bins = 5
+                step = (mx_i - mn_i) / n_bins if mx_i > mn_i else 1
+                for i in range(n_bins):
+                    lo, hi = mn_i + i * step, mn_i + (i + 1) * step
+                    effs = [e for ii, e in iout_eff if lo <= ii <= hi]
+                    if effs:
+                        bin_rows.append(_stat_row(f"Eff @ {lo:.3f}–{hi:.3f}A",
+                                                  effs, "%", 1, good_hi=True))
+
+            rows = bin_rows + [
+                _stat_row("Vout Min", [_flt(r, "Vout Min ", "Vout Min") for r in rr], "V", 4),
+                _stat_row("Vout Max", [_flt(r, "Vout Max ", "Vout Max") for r in rr], "V", 4),
+            ]
+            html_parts.append(_section(f"{reg_lbl}  Vout={vout}V", _table(rows), "#d35400"))
 
     if not html_parts:
         return "<p>No data available for summary.</p>"
@@ -357,7 +520,7 @@ tr:nth-child(even) td{background:#f8f9fa}
 .pass{background:#d5f5e3!important;color:#1a7a3d;font-weight:bold}
 .fail{background:#fadbd8!important;color:#a93226;font-weight:bold}
 .plots-row{display:grid;
-           grid-template-columns:repeat(var(--plot-cols,2),1fr);
+           grid-template-columns:repeat(var(--plot-cols,1),1fr);
            gap:16px;margin-top:12px}
 .plot-box{border:1px solid #ecf0f1;border-radius:6px;overflow-x:auto;background:#fff}
 .plot-box h4{margin:0;padding:6px 10px;font-size:11px;background:#f8f9fa;
@@ -478,7 +641,296 @@ function setCols(n,btn){{
   btn.classList.add('active');
 }}
 
-document.addEventListener('DOMContentLoaded',()=>{{ _initSets(); }});
+document.addEventListener('DOMContentLoaded',()=>{{ _initSets(); document.documentElement.style.setProperty('--plot-cols',1); }});
+
+// ── Drag-to-Zoom (viewBox-based, with undo stack) ─────────────────────────
+var _zoomEnabled = false;
+var _panEnabled  = false;
+
+(function(){{
+  // Per-SVG undo history: WeakMap<SVGElement, Array<string>>
+  var _history = new WeakMap();   // stack of previous viewBox strings
+  var _original = new WeakMap();  // original viewBox string
+
+  // Drag state
+  var _dragging = false;
+  var _dragSvg  = null;
+  var _dragRect = null;   // SVG <rect> rubber-band element
+  var _x0 = 0, _y0 = 0;  // start in SVG coords
+
+  // Pan state
+  var _panSvg = null, _panStartX = 0, _panStartY = 0;
+  var _panStartVB = null, _panStartVBStr = '', _panScaleX = 1, _panScaleY = 1;
+
+  // ── helpers ──────────────────────────────────────────────────────────
+  function _svgCoords(svg, e){{
+    var pt = svg.createSVGPoint();
+    pt.x = e.clientX; pt.y = e.clientY;
+    return pt.matrixTransform(svg.getScreenCTM().inverse());
+  }}
+
+  function _getVB(svg){{
+    var vb = svg.getAttribute('viewBox');
+    if(vb) return vb.trim().split(/[\s,]+/).map(Number);
+    var w = +svg.getAttribute('width') || svg.getBoundingClientRect().width;
+    var h = +svg.getAttribute('height') || svg.getBoundingClientRect().height;
+    return [0, 0, w, h];
+  }}
+
+  function _setVB(svg, x, y, w, h){{
+    svg.setAttribute('viewBox', x + ' ' + y + ' ' + w + ' ' + h);
+  }}
+
+  function _pushHistory(svg){{
+    var cur = svg.getAttribute('viewBox');
+    var stack = _history.get(svg) || [];
+    stack.push(cur);
+    _history.set(svg, stack);
+  }}
+
+  function _initSvg(svg){{
+    if(!_original.has(svg))
+      _original.set(svg, _getVB(svg).join(' '));
+  }}
+
+  // ── rubber-band rect in SVG overlay ──────────────────────────────────
+  function _startRect(svg){{
+    if(_dragRect && _dragRect.parentNode) _dragRect.parentNode.removeChild(_dragRect);
+    _dragRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    _dragRect.setAttribute('fill',           'rgba(41,128,185,0.15)');
+    _dragRect.setAttribute('stroke',         '#2980b9');
+    _dragRect.setAttribute('stroke-width',   '1.5');
+    _dragRect.setAttribute('stroke-dasharray','5,3');
+    _dragRect.setAttribute('pointer-events', 'none');
+    svg.appendChild(_dragRect);
+  }}
+
+  function _updateRect(x0, y0, x1, y1){{
+    if(!_dragRect) return;
+    var rx = Math.min(x0,x1), ry = Math.min(y0,y1);
+    var rw = Math.abs(x1-x0),  rh = Math.abs(y1-y0);
+    _dragRect.setAttribute('x', rx); _dragRect.setAttribute('y', ry);
+    _dragRect.setAttribute('width', rw); _dragRect.setAttribute('height', rh);
+  }}
+
+  function _removeRect(){{
+    if(_dragRect && _dragRect.parentNode)
+      _dragRect.parentNode.removeChild(_dragRect);
+    _dragRect = null;
+  }}
+
+  // ── apply zoom from rubber-band selection ────────────────────────────
+  function _applyZoom(svg, x0, y0, x1, y1){{
+    var rx = Math.min(x0,x1), ry = Math.min(y0,y1);
+    var rw = Math.abs(x1-x0),   rh = Math.abs(y1-y0);
+    if(rw < 2 || rh < 2) return;   // too small — ignore
+    _pushHistory(svg);
+    _setVB(svg, rx, ry, rw, rh);
+    _refreshUndoBtn();
+  }}
+
+  // ── undo one zoom step ────────────────────────────────────────────────
+  function zoomUndo(){{
+    // Operate on the most recently zoomed SVG if focus not known
+    var svgs = document.querySelectorAll('.plot-box svg');
+    for(var i = 0; i < svgs.length; i++){{
+      var stack = _history.get(svgs[i]);
+      if(stack && stack.length){{
+        svg.setAttribute('viewBox', stack.pop());
+        _history.set(svgs[i], stack);
+        _refreshUndoBtn();
+        return;
+      }}
+    }}
+  }}
+
+  // ── exposed globals ───────────────────────────────────────────────────
+  window._zoomUndo = function(){{
+    // Find the last SVG that has history
+    var svgs = Array.from(document.querySelectorAll('.plot-box svg')).reverse();
+    for(var i = 0; i < svgs.length; i++){{
+      var stack = _history.get(svgs[i]);
+      if(stack && stack.length){{
+        svgs[i].setAttribute('viewBox', stack.pop());
+        _history.set(svgs[i], stack);
+        _refreshUndoBtn();
+        return;
+      }}
+    }}
+  }};
+
+  window._zoomReset = function(){{
+    document.querySelectorAll('.plot-box svg').forEach(function(svg){{
+      var orig = _original.get(svg);
+      if(orig) svg.setAttribute('viewBox', orig);
+      _history.set(svg, []);
+    }});
+    _refreshUndoBtn();
+  }};
+
+  function _refreshUndoBtn(){{
+    var btn = document.getElementById('_zoom_undo_btn');
+    if(!btn) return;
+    var hasHistory = Array.from(document.querySelectorAll('.plot-box svg'))
+      .some(function(s){{ var st = _history.get(s); return st && st.length > 0; }});
+    btn.disabled = !hasHistory;
+    btn.style.opacity = hasHistory ? '1' : '0.4';
+  }}
+
+  // ── mouse events ──────────────────────────────────────────────────────
+  document.addEventListener('mousedown', function(e){{
+    if(!_zoomEnabled && !_panEnabled) return;
+    var el = e.target;
+    var svg = el && el.ownerSVGElement ? el.ownerSVGElement
+            : (el && el.tagName && el.tagName.toLowerCase()==='svg' ? el : null);
+    if(!svg && el){{
+      var pb = el.closest ? el.closest('.plot-box') : null;
+      if(pb) svg = pb.querySelector('svg');
+    }}
+    if(!svg) return;
+    e.preventDefault();
+    _initSvg(svg);
+    _dragging = true;
+    _dragSvg  = svg;
+    if(_panEnabled){{
+      _panSvg        = svg;
+      _panStartX     = e.clientX;
+      _panStartY     = e.clientY;
+      _panStartVB    = _getVB(svg);
+      _panStartVBStr = svg.getAttribute('viewBox') || _panStartVB.join(' ');
+      var bRect      = svg.getBoundingClientRect();
+      _panScaleX     = _panStartVB[2] / (bRect.width  || 1);
+      _panScaleY     = _panStartVB[3] / (bRect.height || 1);
+      svg.style.cursor = 'grabbing';
+      var _co = svg.querySelector('.cursor-overlay');
+      if(_co) _co.style.cursor = 'grabbing';
+    }} else {{
+      var pt = _svgCoords(svg, e);
+      _x0 = pt.x; _y0 = pt.y;
+      _startRect(svg);
+      _updateRect(_x0, _y0, _x0, _y0);
+    }}
+  }}, true);
+
+  document.addEventListener('mousemove', function(e){{
+    if(!_dragging || !_dragSvg) return;
+    e.preventDefault();
+    if(_panEnabled && _panSvg){{
+      var dx = (e.clientX - _panStartX) * _panScaleX;
+      var dy = (e.clientY - _panStartY) * _panScaleY;
+      _setVB(_panSvg, _panStartVB[0]-dx, _panStartVB[1]-dy, _panStartVB[2], _panStartVB[3]);
+    }} else if(_zoomEnabled){{
+      var pt2 = _svgCoords(_dragSvg, e);
+      _updateRect(_x0, _y0, pt2.x, pt2.y);
+    }}
+  }}, true);
+
+  document.addEventListener('mouseup', function(e){{
+    if(!_dragging || !_dragSvg) return;
+    e.preventDefault();
+    if(_panEnabled && _panSvg){{
+      var finalVB = _panSvg.getAttribute('viewBox');
+      if(finalVB && finalVB !== _panStartVBStr){{
+        var stk = _history.get(_panSvg) || [];
+        stk.push(_panStartVBStr);
+        _history.set(_panSvg, stk);
+        _refreshUndoBtn();
+      }}
+      _panSvg.style.cursor = 'grab';
+      var _coUp = _panSvg.querySelector('.cursor-overlay');
+      if(_coUp) _coUp.style.cursor = 'grab';
+      _panSvg = null;
+    }} else if(_zoomEnabled){{
+      var pt3 = _svgCoords(_dragSvg, e);
+      _removeRect();
+      _applyZoom(_dragSvg, _x0, _y0, pt3.x, pt3.y);
+    }}
+    _dragging = false;
+    _dragSvg  = null;
+  }}, true);
+
+  // Double-click resets that specific SVG
+  document.addEventListener('dblclick', function(e){{
+    if(!_zoomEnabled) return;
+    var el = e.target;
+    var svg = el && el.ownerSVGElement ? el.ownerSVGElement
+            : (el && el.tagName && el.tagName.toLowerCase()==='svg' ? el : null);
+    if(!svg) return;
+    var orig = _original.get(svg);
+    if(orig){{ svg.setAttribute('viewBox', orig); _history.set(svg, []); }}
+    _refreshUndoBtn();
+  }});
+
+  // ── Right-click = undo one zoom step on that SVG ─────────────────────
+  document.addEventListener('contextmenu', function(e){{
+    if(!_zoomEnabled) return;
+    var el = e.target;
+    var svg = el && el.ownerSVGElement ? el.ownerSVGElement
+            : (el && el.tagName && el.tagName.toLowerCase()==='svg' ? el : null);
+    if(!svg && el){{
+      var pb2 = el.closest ? el.closest('.plot-box') : null;
+      if(pb2) svg = pb2.querySelector('svg');
+    }}
+    if(!svg) return;
+    e.preventDefault();
+    var stack = _history.get(svg);
+    if(stack && stack.length){{
+      svg.setAttribute('viewBox', stack.pop());
+      _history.set(svg, stack);
+    }} else {{
+      // already at top level — restore original
+      var orig2 = _original.get(svg);
+      if(orig2) svg.setAttribute('viewBox', orig2);
+    }}
+    _refreshUndoBtn();
+  }});
+
+}})();
+
+function toggleZoom(btn){{
+  _zoomEnabled = !_zoomEnabled;
+  btn.classList.toggle('active', _zoomEnabled);
+  btn.textContent = _zoomEnabled ? '\u26f6 Zoom: ON' : '\u26f6 Zoom: OFF';
+  if(_zoomEnabled && _panEnabled){{
+    _panEnabled = false;
+    var pbtn = document.getElementById('_pan_btn');
+    if(pbtn){{ pbtn.classList.remove('active'); pbtn.textContent = '\u270b Pan: OFF'; }}
+  }}
+  var svgCur = _zoomEnabled ? 'zoom-in' : 'default';
+  document.querySelectorAll('.plot-box svg').forEach(function(svg){{
+    svg.style.cursor = svgCur;
+  }});
+  document.querySelectorAll('.cursor-overlay').forEach(function(ov){{
+    ov.style.cursor = _zoomEnabled ? 'zoom-in' : (_cursorEnabled ? 'crosshair' : 'default');
+  }});
+  if(!_zoomEnabled){{
+    document.querySelectorAll('.plot-box svg').forEach(function(svg){{
+      if(!window._zoomOriginals) window._zoomOriginals = new WeakMap();
+    }});
+  }}
+  var undoBar = document.getElementById('_zoom_undo_bar');
+  if(undoBar) undoBar.style.display = (_zoomEnabled || _panEnabled) ? 'flex' : 'none';
+}}
+
+function togglePan(btn){{
+  _panEnabled = !_panEnabled;
+  btn.classList.toggle('active', _panEnabled);
+  btn.textContent = _panEnabled ? '\u270b Pan: ON' : '\u270b Pan: OFF';
+  if(_panEnabled && _zoomEnabled){{
+    _zoomEnabled = false;
+    var zbtn = document.getElementById('_zoom_btn');
+    if(zbtn){{ zbtn.classList.remove('active'); zbtn.textContent = '\u26f6 Zoom: OFF'; }}
+  }}
+  var svgCur = _panEnabled ? 'grab' : 'default';
+  document.querySelectorAll('.plot-box svg').forEach(function(svg){{
+    svg.style.cursor = svgCur;
+  }});
+  document.querySelectorAll('.cursor-overlay').forEach(function(ov){{
+    ov.style.cursor = _panEnabled ? 'grab' : (_cursorEnabled ? 'crosshair' : 'default');
+  }});
+  var undoBar = document.getElementById('_zoom_undo_bar');
+  if(undoBar) undoBar.style.display = (_panEnabled || _zoomEnabled) ? 'flex' : 'none';
+}}
 
 // ── Real-time cursor ────────────────────────────────────────────────────
 var _cursorEnabled = false;
@@ -559,24 +1011,65 @@ function toggleCursor(btn){{
     cl.querySelector('.cur-v').setAttribute('x2', mx);
     cl.querySelector('.cur-h').setAttribute('y1', my);
     cl.querySelector('.cur-h').setAttribute('y2', my);
+    // stroke colors updated AFTER series detection below
 
-    var tipW = 150, tipH = 46;
-    var tx = mx + 14, ty = my - tipH - 10;
-    var svgW = +svg.getAttribute('width') || 1400;
-    if(tx + tipW > svgW - 5) tx = mx - tipW - 14;
-    if(ty < ptt + 2) ty = my + 10;
+    var tipW = 170, tipH = 48;
+    var tx = mx + 12, ty = my - tipH - 8;
+    // Use current viewBox bounds so tooltip stays in view when zoomed
+    var _vbStr = svg.getAttribute('viewBox');
+    var _vb = _vbStr ? _vbStr.trim().split(/[\s,]+/).map(Number)
+                     : [0, 0, +svg.getAttribute('width')||1400, +svg.getAttribute('height')||520];
+    var vbRight  = _vb[0] + _vb[2];
+    var vbBottom = _vb[1] + _vb[3];
+    if(tx + tipW > vbRight  - 5)  tx = mx - tipW - 14;
+    if(tx < _vb[0] + 2)           tx = _vb[0] + 2;
+    if(ty < ptt + 2)               ty = my + 10;
+    if(ty + tipH > vbBottom - 2)   ty = my - tipH - 10;
+
+    // ── Find nearest visible series ────────────────────────────────────────────
+    var bestDist = Infinity, bestLabel = '', bestColor = null;
+    svg.querySelectorAll('g.pmic-series').forEach(function(g){{
+      if(g.style.display === 'none') return;
+      var serColor = g.dataset.color || null;
+      var serLabel = g.dataset.label || '';
+      g.querySelectorAll('circle').forEach(function(c){{
+        var cx2 = +c.getAttribute('cx'), cy2 = +c.getAttribute('cy');
+        var dist = Math.hypot(cx2 - mx, cy2 - my);
+        if(dist < bestDist){{ bestDist = dist; bestColor = serColor; bestLabel = serLabel; }}
+      }});
+    }});
+    var SNAP = 40;  // SVG units — within this distance we highlight the series
+    var lineColor  = (bestColor && bestDist < SNAP) ? bestColor : '#e74c3c';
+    var activeColor = lineColor;
+
+    cl.querySelector('.cur-v').setAttribute('stroke', activeColor);
+    cl.querySelector('.cur-h').setAttribute('stroke', activeColor);
 
     var bg = cl.querySelector('.cur-tip-bg');
     bg.setAttribute('x', tx); bg.setAttribute('y', ty);
     bg.setAttribute('width', tipW); bg.setAttribute('height', tipH);
+    bg.setAttribute('fill', (bestColor && bestDist < SNAP) ? bestColor : '#1a252f');
+    bg.setAttribute('stroke', (bestColor && bestDist < SNAP) ? '#fff' : '#34495e');
+
+    var ts = cl.querySelector('.cur-tip-s');
+    ts.setAttribute('x', tx + 6); ts.setAttribute('y', ty + 11);
+    if(bestColor && bestDist < SNAP){{
+      var shortLbl = bestLabel.length > 34 ? bestLabel.slice(0,32)+'\u2026' : bestLabel;
+      ts.textContent = shortLbl;
+      ts.setAttribute('fill', '#fff');
+    }} else {{
+      ts.textContent = '';
+    }}
 
     var tx1 = cl.querySelector('.cur-tip-x');
-    tx1.setAttribute('x', tx + 8); tx1.setAttribute('y', ty + 17);
+    tx1.setAttribute('x', tx + 6); tx1.setAttribute('y', ty + 26);
     tx1.textContent = 'X: ' + _fmtVal(dx);
+    tx1.setAttribute('fill', '#ecf0f1');
 
     var ty1 = cl.querySelector('.cur-tip-y');
-    ty1.setAttribute('x', tx + 8); ty1.setAttribute('y', ty + 35);
+    ty1.setAttribute('x', tx + 6); ty1.setAttribute('y', ty + 40);
     ty1.textContent = 'Y: ' + _fmtVal(dy);
+    ty1.setAttribute('fill', '#2ecc71');
   }}, false);
 
   document.addEventListener('mouseleave', _hideCursor, true);
@@ -690,6 +1183,16 @@ def generate_pmic_report(data, plot_paths: dict,
   <div class="fg"><label>Vin</label>{vin_btns}</div>
   <div class="filter-divider"></div>
   <div class="fg">
+    <span class="ftog" id="_zoom_btn" style="background:#27ae60;color:#fff;border-color:#1e8449"
+          onclick="toggleZoom(this)">&#9974; Zoom: OFF</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg">
+    <span class="ftog" id="_pan_btn" style="background:#8e44ad;color:#fff;border-color:#7d3c98"
+          onclick="togglePan(this)">&#x270B; Pan: OFF</span>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="fg">
     <span class="ftog" style="background:#2980b9;color:#fff;border-color:#2471a3"
           onclick="toggleCursor(this)">&#10012; Cursor: OFF</span>
   </div>
@@ -701,11 +1204,26 @@ def generate_pmic_report(data, plot_paths: dict,
   <div class="filter-divider"></div>
   <div class="fg">
     <label>Columns</label>
-    <span class="size-btn active" data-cols="2" onclick="setCols(2,this)">2</span>
-    <span class="size-btn" data-cols="1" onclick="setCols(1,this)">1</span>
-    <span class="size-btn" data-cols="3" onclick="setCols(3,this)">3</span>
+    <span class="size-btn active" data-cols="1" onclick="setCols(1,this)">1</span>
+    <span class="size-btn" data-cols="2" onclick="setCols(2,this)">2</span>
   </div>
   {ref_divider_html}
+</div>
+<div id="_zoom_undo_bar" style="display:none;align-items:center;gap:8px;
+     padding:6px 18px;background:#eaf4fb;border:1px solid #aed6f1;
+     border-radius:6px;margin:4px 0;font-size:12px;color:#2c3e50">
+  <strong>&#9974; Zoom mode</strong>
+  <span style="color:#7f8c8d">— drag to select area &nbsp;·&nbsp; double-click to reset one plot</span>
+  <button id="_zoom_undo_btn" onclick="_zoomUndo()" disabled
+    style="margin-left:12px;padding:3px 12px;border:1.5px solid #2980b9;border-radius:5px;
+           background:#2980b9;color:#fff;cursor:pointer;font-size:11px;opacity:0.4">
+    ↩ Undo Zoom
+  </button>
+  <button onclick="_zoomReset()"
+    style="padding:3px 12px;border:1.5px solid #e74c3c;border-radius:5px;
+           background:#e74c3c;color:#fff;cursor:pointer;font-size:11px">
+    ↺ Reset All
+  </button>
 </div>"""
 
     # ── tabs and tab contents ───────────────────────────────────────────────

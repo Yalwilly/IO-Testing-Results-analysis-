@@ -1,0 +1,532 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="941" viewBox="0 0 1400 941">
+<rect width="1400" height="941" fill="#ffffff"/>
+<text x="700.0" y="28.0" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50" font-family="Arial,sans-serif">Voltage Transitions — Analog DC2DC  Vout=1.2V  — Rising Edge Time</text>
+<line x1="78.0" y1="68.0" x2="78.0" y2="861.0" stroke="#999" stroke-width="1"/>
+<line x1="73.0" y1="861.0" x2="78.0" y2="861.0" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="861.0" x2="1100.0" y2="861.0" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="865.0" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">1.47</text>
+<line x1="73.0" y1="702.4" x2="78.0" y2="702.4" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="702.4" x2="1100.0" y2="702.4" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="706.4" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">4</text>
+<line x1="73.0" y1="543.8" x2="78.0" y2="543.8" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="543.8" x2="1100.0" y2="543.8" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="547.8" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">6.52</text>
+<line x1="73.0" y1="385.2" x2="78.0" y2="385.2" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="385.2" x2="1100.0" y2="385.2" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="389.2" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">9.05</text>
+<line x1="73.0" y1="226.6" x2="78.0" y2="226.6" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="226.6" x2="1100.0" y2="226.6" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="230.6" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">11.6</text>
+<line x1="73.0" y1="68.0" x2="78.0" y2="68.0" stroke="#999" stroke-width="1"/>
+<line x1="78.0" y1="68.0" x2="1100.0" y2="68.0" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="70.0" y="72.0" font-size="9" font-weight="normal" text-anchor="end" fill="#888" font-family="Arial,sans-serif">14.1</text>
+<line x1="78.0" y1="861.0" x2="1100.0" y2="861.0" stroke="#999" stroke-width="1"/>
+<line x1="333.5" y1="861.0" x2="333.5" y2="866.0" stroke="#999" stroke-width="1"/>
+<line x1="333.5" y1="68.0" x2="333.5" y2="861.0" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="333.5" y="877.0" font-size="10" font-weight="normal" text-anchor="middle" fill="#888" font-family="Arial,sans-serif">Vin=3.135V</text>
+<line x1="589.0" y1="861.0" x2="589.0" y2="866.0" stroke="#999" stroke-width="1"/>
+<line x1="589.0" y1="68.0" x2="589.0" y2="861.0" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="589.0" y="877.0" font-size="10" font-weight="normal" text-anchor="middle" fill="#888" font-family="Arial,sans-serif">Vin=3.3V</text>
+<line x1="844.5" y1="861.0" x2="844.5" y2="866.0" stroke="#999" stroke-width="1"/>
+<line x1="844.5" y1="68.0" x2="844.5" y2="861.0" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="4,3"/>
+<text x="844.5" y="877.0" font-size="10" font-weight="normal" text-anchor="middle" fill="#888" font-family="Arial,sans-serif">Vin=3.465V</text>
+<text x="16.0" y="464.5" font-size="11" font-weight="normal" text-anchor="middle" fill="#555" font-family="Arial,sans-serif" transform="rotate(-90,16,464.5)">Rise Time [µs]</text>
+<text x="589.0" y="931.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555" font-family="Arial,sans-serif">Vin Setpoint [V]</text>
+<g class="series pmic-series" data-chip="21988" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 223.5,502.6 L 479.0,448.6 L 734.5,152.1" fill="none" stroke="#3498db" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="223.5" cy="502.6" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+<circle cx="479.0" cy="448.6" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+<circle cx="734.5" cy="152.1" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 228.5,717.4 L 484.0,713.0 L 739.5,717.0" fill="none" stroke="#e67e22" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="228.5" cy="717.4" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+<circle cx="484.0" cy="713.0" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+<circle cx="739.5" cy="717.0" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 233.5,660.7 L 489.0,663.0 L 744.5,674.7" fill="none" stroke="#2ecc71" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="233.5" cy="660.7" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+<circle cx="489.0" cy="663.0" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+<circle cx="744.5" cy="674.7" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 238.5,134.1 L 494.0,145.4 L 749.5,527.9" fill="none" stroke="#9b59b6" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="238.5" cy="134.1" r="6" fill="#9b59b6" stroke="white" opacity="1.0"/>
+<circle cx="494.0" cy="145.4" r="6" fill="#9b59b6" stroke="white" opacity="1.0"/>
+<circle cx="749.5" cy="527.9" r="6" fill="#9b59b6" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 243.5,713.7 L 499.0,712.6 L 754.5,717.2" fill="none" stroke="#1abc9c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="243.5" cy="713.7" r="6" fill="#1abc9c" stroke="white" opacity="1.0"/>
+<circle cx="499.0" cy="712.6" r="6" fill="#1abc9c" stroke="white" opacity="1.0"/>
+<circle cx="754.5" cy="717.2" r="6" fill="#1abc9c" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 248.5,672.0 L 504.0,660.7 L 759.5,667.4" fill="none" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="248.5" cy="672.0" r="6" fill="#e74c3c" stroke="white" opacity="1.0"/>
+<circle cx="504.0" cy="660.7" r="6" fill="#e74c3c" stroke="white" opacity="1.0"/>
+<circle cx="759.5" cy="667.4" r="6" fill="#e74c3c" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 253.5,560.8 L 509.0,422.8 L 764.5,588.9" fill="none" stroke="#f39c12" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="253.5" cy="560.8" r="6" fill="#f39c12" stroke="white" opacity="1.0"/>
+<circle cx="509.0" cy="422.8" r="6" fill="#f39c12" stroke="white" opacity="1.0"/>
+<circle cx="764.5" cy="588.9" r="6" fill="#f39c12" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 258.5,718.3 L 514.0,709.1 L 769.5,715.3" fill="none" stroke="#2980b9" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="258.5" cy="718.3" r="6" fill="#2980b9" stroke="white" opacity="1.0"/>
+<circle cx="514.0" cy="709.1" r="6" fill="#2980b9" stroke="white" opacity="1.0"/>
+<circle cx="769.5" cy="715.3" r="6" fill="#2980b9" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="21988" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 263.5,668.0 L 519.0,670.5 L 774.5,676.8" fill="none" stroke="#16a085" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="263.5" cy="668.0" r="6" fill="#16a085" stroke="white" opacity="1.0"/>
+<circle cx="519.0" cy="670.5" r="6" fill="#16a085" stroke="white" opacity="1.0"/>
+<circle cx="774.5" cy="676.8" r="6" fill="#16a085" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 268.5,551.8 L 524.0,676.4 L 779.5,593.5" fill="none" stroke="#8e44ad" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="268.5" cy="551.8" r="6" fill="#8e44ad" stroke="white" opacity="1.0"/>
+<circle cx="524.0" cy="676.4" r="6" fill="#8e44ad" stroke="white" opacity="1.0"/>
+<circle cx="779.5" cy="593.5" r="6" fill="#8e44ad" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 273.5,717.9 L 529.0,714.9 L 784.5,715.3" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="273.5" cy="717.9" r="6" fill="#c0392b" stroke="white" opacity="1.0"/>
+<circle cx="529.0" cy="714.9" r="6" fill="#c0392b" stroke="white" opacity="1.0"/>
+<circle cx="784.5" cy="715.3" r="6" fill="#c0392b" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 278.5,637.9 L 534.0,672.8 L 789.5,673.3" fill="none" stroke="#27ae60" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="278.5" cy="637.9" r="6" fill="#27ae60" stroke="white" opacity="1.0"/>
+<circle cx="534.0" cy="672.8" r="6" fill="#27ae60" stroke="white" opacity="1.0"/>
+<circle cx="789.5" cy="673.3" r="6" fill="#27ae60" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 283.5,603.3 L 539.0,752.0 L 794.5,686.9" fill="none" stroke="#d35400" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="283.5" cy="603.3" r="6" fill="#d35400" stroke="white" opacity="1.0"/>
+<circle cx="539.0" cy="752.0" r="6" fill="#d35400" stroke="white" opacity="1.0"/>
+<circle cx="794.5" cy="686.9" r="6" fill="#d35400" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 288.5,716.4 L 544.0,715.1 L 799.5,720.8" fill="none" stroke="#7f8c8d" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="288.5" cy="716.4" r="6" fill="#7f8c8d" stroke="white" opacity="1.0"/>
+<circle cx="544.0" cy="715.1" r="6" fill="#7f8c8d" stroke="white" opacity="1.0"/>
+<circle cx="799.5" cy="720.8" r="6" fill="#7f8c8d" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 293.5,674.5 L 549.0,683.5 L 804.5,689.0" fill="none" stroke="#2c3e50" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="293.5" cy="674.5" r="6" fill="#2c3e50" stroke="white" opacity="1.0"/>
+<circle cx="549.0" cy="683.5" r="6" fill="#2c3e50" stroke="white" opacity="1.0"/>
+<circle cx="804.5" cy="689.0" r="6" fill="#2c3e50" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 298.5,773.3 L 554.0,747.0 L 809.5,588.0" fill="none" stroke="#3498db" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="298.5" cy="773.3" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+<circle cx="554.0" cy="747.0" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+<circle cx="809.5" cy="588.0" r="6" fill="#3498db" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 303.5,713.3 L 559.0,712.8 L 814.5,715.6" fill="none" stroke="#e67e22" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="303.5" cy="713.3" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+<circle cx="559.0" cy="712.8" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+<circle cx="814.5" cy="715.6" r="6" fill="#e67e22" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series" data-chip="31927" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 308.5,645.0 L 564.0,685.8 L 819.5,671.2" fill="none" stroke="#2ecc71" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="308.5" cy="645.0" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+<circle cx="564.0" cy="685.8" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+<circle cx="819.5" cy="671.2" r="6" fill="#2ecc71" stroke="white" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 313.5,536.7 L 569.0,402.3 L 824.5,359.6" fill="none" stroke="#9b59b6" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="313.5" cy="536.7" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<circle cx="569.0" cy="402.3" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<circle cx="824.5" cy="359.6" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 318.5,704.7 L 574.0,710.1 L 829.5,706.1" fill="none" stroke="#1abc9c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="318.5" cy="704.7" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<circle cx="574.0" cy="710.1" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<circle cx="829.5" cy="706.1" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 323.5,666.8 L 579.0,674.9 L 834.5,677.7" fill="none" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="323.5" cy="666.8" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<circle cx="579.0" cy="674.9" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<circle cx="834.5" cy="677.7" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 328.5,527.7 L 584.0,323.0 L 839.5,487.3" fill="none" stroke="#f39c12" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="328.5" cy="527.7" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+<circle cx="584.0" cy="323.0" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+<circle cx="839.5" cy="487.3" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 333.5,702.6 L 589.0,714.7 L 844.5,706.8" fill="none" stroke="#2980b9" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="333.5" cy="702.6" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+<circle cx="589.0" cy="714.7" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+<circle cx="844.5" cy="706.8" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 338.5,683.7 L 594.0,680.4 L 849.5,664.0" fill="none" stroke="#16a085" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="338.5" cy="683.7" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+<circle cx="594.0" cy="680.4" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+<circle cx="849.5" cy="664.0" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 343.5,600.2 L 599.0,512.5 L 854.5,567.3" fill="none" stroke="#8e44ad" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="343.5" cy="600.2" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<circle cx="599.0" cy="512.5" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<circle cx="854.5" cy="567.3" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 348.5,712.6 L 604.0,790.8 L 859.5,703.0" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="348.5" cy="712.6" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+<circle cx="604.0" cy="790.8" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+<circle cx="859.5" cy="703.0" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="21988" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 353.5,680.4 L 609.0,674.7 L 864.5,666.6" fill="none" stroke="#27ae60" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="353.5" cy="680.4" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+<circle cx="609.0" cy="674.7" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+<circle cx="864.5" cy="666.6" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 358.5,722.5 L 614.0,721.0 L 869.5,783.8" fill="none" stroke="#d35400" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="358.5" cy="722.5" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+<circle cx="614.0" cy="721.0" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+<circle cx="869.5" cy="783.8" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 363.5,716.2 L 619.0,715.1 L 874.5,716.4" fill="none" stroke="#7f8c8d" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="363.5" cy="716.2" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<circle cx="619.0" cy="715.1" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<circle cx="874.5" cy="716.4" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 368.5,651.3 L 624.0,691.9 L 879.5,685.8" fill="none" stroke="#2c3e50" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="368.5" cy="651.3" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<circle cx="624.0" cy="691.9" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<circle cx="879.5" cy="685.8" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 373.5,562.3 L 629.0,700.3 L 884.5,703.2" fill="none" stroke="#3498db" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="373.5" cy="562.3" r="7.5" fill="none" stroke="#3498db" opacity="1.0"/>
+<circle cx="629.0" cy="700.3" r="7.5" fill="none" stroke="#3498db" opacity="1.0"/>
+<circle cx="884.5" cy="703.2" r="7.5" fill="none" stroke="#3498db" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 378.5,717.0 L 634.0,719.7 L 889.5,715.3" fill="none" stroke="#e67e22" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="378.5" cy="717.0" r="7.5" fill="none" stroke="#e67e22" opacity="1.0"/>
+<circle cx="634.0" cy="719.7" r="7.5" fill="none" stroke="#e67e22" opacity="1.0"/>
+<circle cx="889.5" cy="715.3" r="7.5" fill="none" stroke="#e67e22" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 383.5,633.1 L 639.0,661.3 L 894.5,700.3" fill="none" stroke="#2ecc71" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="383.5" cy="633.1" r="7.5" fill="none" stroke="#2ecc71" opacity="1.0"/>
+<circle cx="639.0" cy="661.3" r="7.5" fill="none" stroke="#2ecc71" opacity="1.0"/>
+<circle cx="894.5" cy="700.3" r="7.5" fill="none" stroke="#2ecc71" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 388.5,649.6 L 644.0,649.8 L 899.5,656.9" fill="none" stroke="#9b59b6" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="388.5" cy="649.6" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<circle cx="644.0" cy="649.8" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<circle cx="899.5" cy="656.9" r="7.5" fill="none" stroke="#9b59b6" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 393.5,712.2 L 649.0,712.0 L 904.5,715.1" fill="none" stroke="#1abc9c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="393.5" cy="712.2" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<circle cx="649.0" cy="712.0" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<circle cx="904.5" cy="715.1" r="7.5" fill="none" stroke="#1abc9c" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="31927" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 398.5,660.9 L 654.0,686.7 L 909.5,686.9" fill="none" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="398.5" cy="660.9" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<circle cx="654.0" cy="686.7" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<circle cx="909.5" cy="686.9" r="7.5" fill="none" stroke="#e74c3c" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 403.5,794.9 L 659.0,714.9 L 914.5,775.4" fill="none" stroke="#f39c12" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="403.5" cy="794.9" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+<circle cx="659.0" cy="714.9" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+<circle cx="914.5" cy="775.4" r="7.5" fill="none" stroke="#f39c12" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 408.5,717.9 L 664.0,718.9 L 919.5,721.8" fill="none" stroke="#2980b9" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="408.5" cy="717.9" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+<circle cx="664.0" cy="718.9" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+<circle cx="919.5" cy="721.8" r="7.5" fill="none" stroke="#2980b9" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 413.5,643.1 L 669.0,687.5 L 924.5,689.0" fill="none" stroke="#16a085" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="413.5" cy="643.1" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+<circle cx="669.0" cy="687.5" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+<circle cx="924.5" cy="689.0" r="7.5" fill="none" stroke="#16a085" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 418.5,708.2 L 674.0,785.1 L 929.5,718.9" fill="none" stroke="#8e44ad" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="418.5" cy="708.2" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<circle cx="674.0" cy="785.1" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<circle cx="929.5" cy="718.9" r="7.5" fill="none" stroke="#8e44ad" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 423.5,719.1 L 679.0,721.8 L 934.5,723.7" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="423.5" cy="719.1" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+<circle cx="679.0" cy="721.8" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+<circle cx="934.5" cy="723.7" r="7.5" fill="none" stroke="#c0392b" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 428.5,678.9 L 684.0,650.6 L 939.5,687.3" fill="none" stroke="#27ae60" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="428.5" cy="678.9" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+<circle cx="684.0" cy="650.6" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+<circle cx="939.5" cy="687.3" r="7.5" fill="none" stroke="#27ae60" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<path d="M 433.5,726.7 L 689.0,745.3 L 944.5,658.2" fill="none" stroke="#d35400" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="433.5" cy="726.7" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+<circle cx="689.0" cy="745.3" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+<circle cx="944.5" cy="658.2" r="7.5" fill="none" stroke="#d35400" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<path d="M 438.5,720.0 L 694.0,719.7 L 949.5,718.7" fill="none" stroke="#7f8c8d" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="438.5" cy="720.0" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<circle cx="694.0" cy="719.7" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<circle cx="949.5" cy="718.7" r="7.5" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+</g>
+<g class="series pmic-series ref-overlay" data-chip="80233" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<path d="M 443.5,656.5 L 699.0,689.0 L 954.5,682.5" fill="none" stroke="#2c3e50" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.6"/>
+<circle cx="443.5" cy="656.5" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<circle cx="699.0" cy="689.0" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<circle cx="954.5" cy="682.5" r="7.5" fill="none" stroke="#2c3e50" opacity="1.0"/>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="69.0" width="18.0" height="4.0" fill="#3498db" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="71.0" r="5" fill="#3498db" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="76.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=0°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="86.0" width="18.0" height="4.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="88.0" r="5" fill="#e67e22" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="93.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=0°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="103.0" width="18.0" height="4.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="105.0" r="5" fill="#2ecc71" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="110.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=0°C | PWM_L</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="120.0" width="18.0" height="4.0" fill="#9b59b6" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="122.0" r="5" fill="#9b59b6" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="127.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=25°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="137.0" width="18.0" height="4.0" fill="#1abc9c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="139.0" r="5" fill="#1abc9c" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="144.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=25°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="154.0" width="18.0" height="4.0" fill="#e74c3c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="156.0" r="5" fill="#e74c3c" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="161.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=25°C | PWM_L</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="171.0" width="18.0" height="4.0" fill="#f39c12" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="173.0" r="5" fill="#f39c12" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="178.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=80°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="188.0" width="18.0" height="4.0" fill="#2980b9" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="190.0" r="5" fill="#2980b9" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="195.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=80°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="21988" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="205.0" width="18.0" height="4.0" fill="#16a085" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="207.0" r="5" fill="#16a085" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="212.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch21988 | T=80°C | PWM_L</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="222.0" width="18.0" height="4.0" fill="#8e44ad" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="224.0" r="5" fill="#8e44ad" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="229.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=0°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="239.0" width="18.0" height="4.0" fill="#c0392b" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="241.0" r="5" fill="#c0392b" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="246.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=0°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="256.0" width="18.0" height="4.0" fill="#27ae60" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="258.0" r="5" fill="#27ae60" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="263.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=0°C | PWM_L</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="273.0" width="18.0" height="4.0" fill="#d35400" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="275.0" r="5" fill="#d35400" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="280.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=25°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="290.0" width="18.0" height="4.0" fill="#7f8c8d" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="292.0" r="5" fill="#7f8c8d" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="297.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=25°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="307.0" width="18.0" height="4.0" fill="#2c3e50" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="309.0" r="5" fill="#2c3e50" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="314.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=25°C | PWM_L</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="324.0" width="18.0" height="4.0" fill="#3498db" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="326.0" r="5" fill="#3498db" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="331.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=80°C | AUTO_PFM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="341.0" width="18.0" height="4.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="343.0" r="5" fill="#e67e22" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="348.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=80°C | PWM</text>
+</g>
+<g class="legend-item" data-chip="31927" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="358.0" width="18.0" height="4.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="360.0" r="5" fill="#2ecc71" stroke="none" opacity="1.0"/>
+<text x="1140.0" y="365.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Ch31927 | T=80°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="375.0" width="18.0" height="4.0" fill="#9b59b6" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="377.0" r="6" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<text x="1140.0" y="382.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=0°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="392.0" width="18.0" height="4.0" fill="#1abc9c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="394.0" r="6" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<text x="1140.0" y="399.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=0°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="409.0" width="18.0" height="4.0" fill="#e74c3c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="411.0" r="6" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<text x="1140.0" y="416.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=0°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="426.0" width="18.0" height="4.0" fill="#f39c12" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="428.0" r="6" fill="none" stroke="#f39c12" opacity="1.0"/>
+<text x="1140.0" y="433.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=25°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="443.0" width="18.0" height="4.0" fill="#2980b9" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="445.0" r="6" fill="none" stroke="#2980b9" opacity="1.0"/>
+<text x="1140.0" y="450.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=25°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="460.0" width="18.0" height="4.0" fill="#16a085" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="462.0" r="6" fill="none" stroke="#16a085" opacity="1.0"/>
+<text x="1140.0" y="467.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=25°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="477.0" width="18.0" height="4.0" fill="#8e44ad" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="479.0" r="6" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<text x="1140.0" y="484.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=80°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="494.0" width="18.0" height="4.0" fill="#c0392b" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="496.0" r="6" fill="none" stroke="#c0392b" opacity="1.0"/>
+<text x="1140.0" y="501.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=80°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="21988" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="511.0" width="18.0" height="4.0" fill="#27ae60" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="513.0" r="6" fill="none" stroke="#27ae60" opacity="1.0"/>
+<text x="1140.0" y="518.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch21988 | T=80°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="528.0" width="18.0" height="4.0" fill="#d35400" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="530.0" r="6" fill="none" stroke="#d35400" opacity="1.0"/>
+<text x="1140.0" y="535.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=0°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="545.0" width="18.0" height="4.0" fill="#7f8c8d" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="547.0" r="6" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<text x="1140.0" y="552.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=0°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="562.0" width="18.0" height="4.0" fill="#2c3e50" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="564.0" r="6" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<text x="1140.0" y="569.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=0°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="579.0" width="18.0" height="4.0" fill="#3498db" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="581.0" r="6" fill="none" stroke="#3498db" opacity="1.0"/>
+<text x="1140.0" y="586.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=25°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="596.0" width="18.0" height="4.0" fill="#e67e22" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="598.0" r="6" fill="none" stroke="#e67e22" opacity="1.0"/>
+<text x="1140.0" y="603.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=25°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="613.0" width="18.0" height="4.0" fill="#2ecc71" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="615.0" r="6" fill="none" stroke="#2ecc71" opacity="1.0"/>
+<text x="1140.0" y="620.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=25°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="630.0" width="18.0" height="4.0" fill="#9b59b6" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="632.0" r="6" fill="none" stroke="#9b59b6" opacity="1.0"/>
+<text x="1140.0" y="637.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=80°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="647.0" width="18.0" height="4.0" fill="#1abc9c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="649.0" r="6" fill="none" stroke="#1abc9c" opacity="1.0"/>
+<text x="1140.0" y="654.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=80°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="31927" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="664.0" width="18.0" height="4.0" fill="#e74c3c" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="666.0" r="6" fill="none" stroke="#e74c3c" opacity="1.0"/>
+<text x="1140.0" y="671.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch31927 | T=80°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="0" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="681.0" width="18.0" height="4.0" fill="#f39c12" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="683.0" r="6" fill="none" stroke="#f39c12" opacity="1.0"/>
+<text x="1140.0" y="688.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=0°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="0" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="698.0" width="18.0" height="4.0" fill="#2980b9" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="700.0" r="6" fill="none" stroke="#2980b9" opacity="1.0"/>
+<text x="1140.0" y="705.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=0°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="0" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="715.0" width="18.0" height="4.0" fill="#16a085" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="717.0" r="6" fill="none" stroke="#16a085" opacity="1.0"/>
+<text x="1140.0" y="722.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=0°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="25" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="732.0" width="18.0" height="4.0" fill="#8e44ad" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="734.0" r="6" fill="none" stroke="#8e44ad" opacity="1.0"/>
+<text x="1140.0" y="739.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=25°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="25" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="749.0" width="18.0" height="4.0" fill="#c0392b" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="751.0" r="6" fill="none" stroke="#c0392b" opacity="1.0"/>
+<text x="1140.0" y="756.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=25°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="25" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="766.0" width="18.0" height="4.0" fill="#27ae60" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="768.0" r="6" fill="none" stroke="#27ae60" opacity="1.0"/>
+<text x="1140.0" y="773.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=25°C | PWM_L</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="80" data-mode="AUTO_PFM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="783.0" width="18.0" height="4.0" fill="#d35400" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="785.0" r="6" fill="none" stroke="#d35400" opacity="1.0"/>
+<text x="1140.0" y="790.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=80°C | AUTO_PFM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="80" data-mode="PWM" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="800.0" width="18.0" height="4.0" fill="#7f8c8d" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="802.0" r="6" fill="none" stroke="#7f8c8d" opacity="1.0"/>
+<text x="1140.0" y="807.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=80°C | PWM</text>
+</g>
+<g class="legend-item ref-overlay" data-chip="80233" data-temp="80" data-mode="PWM_L" data-reg="DC2DC_ANA">
+<rect x="1116.0" y="817.0" width="18.0" height="4.0" fill="#2c3e50" stroke="none" stroke-width="1" opacity="1.0" rx="2"/>
+<circle cx="1125.0" cy="819.0" r="6" fill="none" stroke="#2c3e50" opacity="1.0"/>
+<text x="1140.0" y="824.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">[REF] Ch80233 | T=80°C | PWM_L</text>
+</g>
+<rect class="cursor-overlay" x="78.0" y="68.0" width="1022.0" height="793.0" fill="transparent" style="cursor:default" data-xmin="78" data-xmax="1100" data-ymin="1.4713333" data-ymax="14.095333" data-pl="78.0" data-pr="1100.0" data-pt="68.0" data-pb="861.0"/>
+<g class="cursor-layer" style="pointer-events:none;display:none"><line class="cur-v" x1="0" y1="68.0" x2="0" y2="861.0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><line class="cur-h" x1="78.0" y1="0" x2="1100.0" y2="0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><rect class="cur-tip-bg" x="0" y="0" width="170" height="48" rx="4" fill="#1a252f" stroke="#34495e" stroke-width="1" opacity="0.92"/><text class="cur-tip-s" x="0" y="0" font-size="8" font-family="Arial,sans-serif" fill="#f1c40f"/><text class="cur-tip-x" x="0" y="0" font-size="9" font-family="Arial,sans-serif" fill="#ecf0f1"/><text class="cur-tip-y" x="0" y="0" font-size="9" font-family="Arial,sans-serif" fill="#2ecc71"/></g>
+</svg>

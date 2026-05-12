@@ -49,7 +49,7 @@ class QueueHandler(logging.Handler):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("IO / PMIC Validation Analysis")
+        self.title("PMIC IO Report Gen")
         self.configure(bg=CLR_BG)
         self.resizable(True, True)
         self.minsize(960, 800)
@@ -591,27 +591,35 @@ class App(tk.Tk):
             os.startfile(str(self._pptx_path))
 
     def _browse_open_html(self):
+        is_pmic = self._report_type.get() == "PMIC"
+        init_dir = (self._var_pmic_output.get() if is_pmic
+                    else self._var_output.get()) or "."
         p = filedialog.askopenfilename(
             title="Open HTML Report",
             filetypes=[("HTML files", "*.html"), ("All files", "*.*")],
-            initialdir=self._var_output.get() or ".",
+            initialdir=init_dir,
         )
         if p:
             webbrowser.open(Path(p).as_uri())
 
     def _browse_open_pptx(self):
         import os
+        is_pmic = self._report_type.get() == "PMIC"
+        init_dir = (self._var_pmic_output.get() if is_pmic
+                    else self._var_output.get()) or "."
         p = filedialog.askopenfilename(
             title="Open PPTX Report",
             filetypes=[("PowerPoint files", "*.pptx"), ("All files", "*.*")],
-            initialdir=self._var_output.get() or ".",
+            initialdir=init_dir,
         )
         if p:
             os.startfile(str(p))
 
     def _open_output_folder(self):
         import os
-        folder = self._var_output.get().strip() or "."
+        is_pmic = self._report_type.get() == "PMIC"
+        folder = (self._var_pmic_output.get() if is_pmic
+                  else self._var_output.get()).strip() or "."
         p = Path(folder)
         if p.exists():
             os.startfile(str(p))
@@ -764,6 +772,15 @@ class App(tk.Tk):
                            compare_data=None, compare_label="REF"):
         logger = logging.getLogger(__name__)
         try:
+            import importlib
+            # ── Force-reload PMIC modules so any code edits take effect
+            # without needing to restart the GUI
+            for _mod in ['pmic_analysis.plotter',
+                         'pmic_analysis.report_generator',
+                         'pmic_analysis.loader',
+                         'pmic_main']:
+                if _mod in sys.modules:
+                    importlib.reload(sys.modules[_mod])
             from pmic_main import run_pmic_pipeline
             report = run_pmic_pipeline(
                 data_path_str=data_path_str,

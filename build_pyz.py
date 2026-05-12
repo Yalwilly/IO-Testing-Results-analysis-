@@ -17,12 +17,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.resolve()
 BUILD_DIR = ROOT / "_pyz_build"
-OUT_PYZ = ROOT / "IO_Analysis.pyz"
-OUT_BAT = ROOT / "IO_Analysis.bat"
+OUT_PYZ = ROOT / "PMIC_IO_Report_Gen.pyz"
+OUT_BAT = ROOT / "PMIC_IO_Report_Gen.bat"
 
 
 def main():
-    print("Building portable IO_Analysis.pyz ...")
+    print("Building portable PMIC_IO_Report_Gen.pyz ...")
 
     # Clean and recreate staging directory
     if BUILD_DIR.exists():
@@ -56,7 +56,7 @@ def main():
     OUT_BAT.write_text(
         f'@echo off\n'
         f'cd /d "%~dp0"\n'
-        f'python IO_Analysis.pyz %*\n'
+        f'python PMIC_IO_Report_Gen.pyz %*\n'
         f'if errorlevel 1 pause\n',
         encoding="utf-8",
     )

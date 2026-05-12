@@ -153,11 +153,13 @@ def _add_cursor_layer(svg, x_min, x_max, y_min, y_max, pl, pr, pt, pb):
         f' stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/>'
         f'<line class="cur-h" x1="{pl:.1f}" y1="0" x2="{pr:.1f}" y2="0"'
         f' stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/>'
-        f'<rect class="cur-tip-bg" x="0" y="0" width="148" height="44"'
-        f' rx="5" fill="#1a252f" stroke="#34495e" stroke-width="1" opacity="0.92"/>'
-        f'<text class="cur-tip-x" x="0" y="0" font-size="11"'
+        f'<rect class="cur-tip-bg" x="0" y="0" width="170" height="48"'
+        f' rx="4" fill="#1a252f" stroke="#34495e" stroke-width="1" opacity="0.92"/>'
+        f'<text class="cur-tip-s" x="0" y="0" font-size="8"'
+        f' font-family="Arial,sans-serif" fill="#f1c40f"/>'
+        f'<text class="cur-tip-x" x="0" y="0" font-size="9"'
         f' font-family="Arial,sans-serif" fill="#ecf0f1"/>'
-        f'<text class="cur-tip-y" x="0" y="0" font-size="11"'
+        f'<text class="cur-tip-y" x="0" y="0" font-size="9"'
         f' font-family="Arial,sans-serif" fill="#2ecc71"/>'
         f'</g>'
     )
@@ -215,7 +217,8 @@ def _multi_line_chart(title, x_lbl, y_lbl, series_list,
         da = s.get("data_attrs", {})
         da_str = " ".join(f'data-{k}="{_esc(str(v))}"' for k, v in da.items())
         g_class = 'series pmic-series ref-overlay' if is_ref else 'series pmic-series'
-        svg.parts.append(f'<g class="{g_class}" {da_str}>')
+        lbl_esc = _esc(str(s.get("label", "")))
+        svg.parts.append(f'<g class="{g_class}" data-label="{lbl_esc}" data-color="{_esc(color)}" {da_str}>')
         if len(pts) > 1:
             d = ("M " + " L ".join(
                 f"{_xs(px, x_min, x_max, pl, pr):.1f},{_ys(py, y_min, y_max, pt, pb):.1f}"
@@ -294,7 +297,8 @@ def _scatter_chart(title, x_lbl, y_lbl, series_list, out_path,
         da = s.get("data_attrs", {})
         da_str = " ".join(f'data-{k}="{_esc(str(v))}"' for k, v in da.items())
         g_class = 'series pmic-series ref-overlay' if is_ref else 'series pmic-series'
-        svg.parts.append(f'<g class="{g_class}" {da_str}>')
+        lbl_esc = _esc(str(s.get("label", "")))
+        svg.parts.append(f'<g class="{g_class}" data-label="{lbl_esc}" data-color="{_esc(color)}" {da_str}>')
         for px, py in pts:
             cx = _xs(px, x_min, x_max, pl, pr)
             cy = _ys(py, y_min, y_max, pt, pb)
@@ -991,99 +995,215 @@ def plot_transient(data, output_dir: Path, ref_data=None, ref_label='REF') -> di
 
 def plot_voltage_transitions(data, output_dir: Path, ref_data=None, ref_label='REF') -> dict:
     """
-    Categorical x: (mode, vin_setpoint)
-    Two series per (chip, temp) group: Vout Max and Vout Min
+    Per (regulator, vout_target) generates:
+      Plot A: Vout Max & Vout Min vs (Vin, Iload) categories — series = (chip, temp, mode)
+      Plot B: Rise Time [µs]   — Slope=P rows
+      Plot C: Fall Time [µs]   — Slope=N rows
+    X-axis categories: "Vin=xV / I=yA"
+    Legend includes Power Mode.
     """
+
+    # ── Case-insensitive column lookup helper ──────────────────────────────
+    def _col_val(row, *candidates):
+        rl = {k.lower().strip(): v for k, v in row.items()}
+        for c in candidates:
+            v = rl.get(c.lower().strip())
+            if v is not None:
+                return _f(v)
+        return None
+
+    def _iload(row):
+        """Get load current from row, trying common column names."""
+        return (_col_val(row, "Iout [A]") or
+                _col_val(row, "IoutSMU") or
+                _col_val(row, "Iout[A]") or
+                _col_val(row, "Load current [A]"))
+
+    def _cat_label(vin, iload):
+        if iload is not None:
+            return f"Vin={vin}V / I={_fmt_current(str(iload))}"
+        return f"Vin={vin}V"
+
     plots: dict = {}
     rows_all = data.get_rows("VoltageTransitions")
     if not rows_all:
         return plots
 
-    reg_groups = _group_rows(rows_all, ["Regulator Name", "Vout"])
-    for (reg, vout), reg_rows in sorted(reg_groups.items()):
-        # Build category labels = unique (mode, vin_setpoint)
+    def _build_plots(reg_rows, reg, vout, ref_rows_for_reg, reg_label):
+        """Build all plots for one (reg, vout) group."""
+        local_plots = []
+
+        # ── Collect all category labels (Vin + Iload) ─────────────────────
         cats_set: set = set()
         for r in reg_rows:
-            mode = r.get("DCDC Efficiency Mode", "").strip()
-            vin  = r.get("Vin", "").strip()
-            cats_set.add(f"{mode}/{vin}V")
+            vin   = r.get("Vin", "").strip()
+            iload = _iload(r)
+            cats_set.add(_cat_label(vin, iload))
         categories = sorted(cats_set)
 
+        # ═══ Plot A: Vout Max + Vout Min ══════════════════════════════════
         series_list = []
         idx = 0
-        inner = _group_rows(reg_rows, ["_chip_id", "Temperature"])
-        for (chip, temp), s_rows in sorted(inner.items()):
+        inner = _group_rows(reg_rows, ["_chip_id", "Temperature", "DCDC Efficiency Mode"])
+        for (chip, temp, mode), s_rows in sorted(inner.items()):
             for metric, col in [("Max V", "Vout Max "), ("Min V", "Vout Min ")]:
                 vals_dict: dict = {}
                 for r in s_rows:
-                    mode = r.get("DCDC Efficiency Mode", "").strip()
-                    vin  = r.get("Vin", "").strip()
-                    cat  = f"{mode}/{vin}V"
-                    v = _f(r.get(col))
+                    vin   = r.get("Vin", "").strip()
+                    iload = _iload(r)
+                    cat   = _cat_label(vin, iload)
+                    v = _f(r.get(col)) if col in r else _f(r.get(col.strip()))
                     if v is None:
-                        # try without trailing space
-                        v = _f(r.get(col.strip()))
+                        v = _col_val(r, col, col.strip())
                     if v is not None and abs(v) < 1e10:
-                        # store worst-case: max for Vout Max, min for Vout Min
                         if metric == "Max V":
                             vals_dict[cat] = max(vals_dict.get(cat, -1e9), v)
                         else:
                             vals_dict[cat] = min(vals_dict.get(cat, 1e9), v)
                 if not vals_dict:
                     continue
-                lbl = f"{metric} | Ch{chip} | T={temp}°C"
                 series_list.append({
-                    "label": lbl,
+                    "label": f"{metric} | Ch{chip} | T={temp}°C | {mode}",
                     "values": vals_dict,
                     "color": _color(idx),
-                    "data_attrs": {"chip": chip, "temp": temp,
+                    "data_attrs": {"chip": chip, "temp": temp, "mode": mode,
                                    "reg": _safe_attr(reg)},
                 })
                 idx += 1
 
-        # ── Reference series ───────────────────────────────────────────────
-        if ref_data is not None:
-            ref_vt = ref_data.get_rows("VoltageTransitions") or []
-            if ref_vt:
-                ref_vt_grp = _group_rows(ref_vt, ["Regulator Name", "Vout"])
-                ref_vt_rows = ref_vt_grp.get((reg, vout), [])
-                if ref_vt_rows:
-                    ref_inner_vt = _group_rows(ref_vt_rows, ["_chip_id", "Temperature"])
-                    for (chip_r, temp_r), rr in sorted(ref_inner_vt.items()):
-                        for metric_r, col_r in [("Max V", "Vout Max "), ("Min V", "Vout Min ")]:
-                            vd = {}
-                            for r in rr:
-                                mode_r = r.get("DCDC Efficiency Mode", "").strip()
-                                vin_r  = r.get("Vin", "").strip()
-                                cat_r  = f"{mode_r}/{vin_r}V"
-                                vr = _f(r.get(col_r)) or _f(r.get(col_r.strip()))
-                                if vr is not None and abs(vr) < 1e10:
-                                    if metric_r == "Max V":
-                                        vd[cat_r] = max(vd.get(cat_r, -1e9), vr)
-                                    else:
-                                        vd[cat_r] = min(vd.get(cat_r, 1e9), vr)
-                            if vd:
-                                series_list.append({
-                                    "label":  f"[{ref_label}] {metric_r} | Ch{chip_r} | T={temp_r}°C",
-                                    "values": vd,
-                                    "color":  _color(idx),
-                                    "ref":    True,
-                                    "data_attrs": {"chip": chip_r, "temp": temp_r,
-                                                   "reg": _safe_attr(reg)},
-                                })
-                                idx += 1
+        # ref for Plot A
+        if ref_rows_for_reg:
+            ref_inner = _group_rows(ref_rows_for_reg,
+                                    ["_chip_id", "Temperature", "DCDC Efficiency Mode"])
+            for (chip_r, temp_r, mode_r), rr in sorted(ref_inner.items()):
+                for metric_r, col_r in [("Max V", "Vout Max "), ("Min V", "Vout Min ")]:
+                    vd = {}
+                    for r in rr:
+                        vin_r   = r.get("Vin", "").strip()
+                        iload_r = _iload(r)
+                        cat_r   = _cat_label(vin_r, iload_r)
+                        vr = _col_val(r, col_r, col_r.strip())
+                        if vr is not None and abs(vr) < 1e10:
+                            if metric_r == "Max V":
+                                vd[cat_r] = max(vd.get(cat_r, -1e9), vr)
+                            else:
+                                vd[cat_r] = min(vd.get(cat_r, 1e9), vr)
+                    if vd:
+                        series_list.append({
+                            "label":  f"[{ref_label}] {metric_r} | Ch{chip_r} | T={temp_r}°C | {mode_r}",
+                            "values": vd,
+                            "color":  _color(idx),
+                            "ref":    True,
+                            "data_attrs": {"chip": chip_r, "temp": temp_r, "mode": mode_r,
+                                           "reg": _safe_attr(reg)},
+                        })
+                        idx += 1
 
-        if not series_list:
-            continue
+        if series_list:
+            fname = f"pmic_vtrans_{_safe_attr(reg)}_vout{_safe_attr(vout)}.svg"
+            p = _cat_dot_chart(
+                f"Voltage Transitions — {reg_label}  Vout={vout}V",
+                categories, "Voltage [V]",
+                series_list, output_dir / fname)
+            if p:
+                local_plots.append(p)
+
+        # ═══ Plots B & C: Rise / Fall Time ════════════════════════════════
+        for time_tag, slope_filter, time_lbl, col_candidates in [
+            ("risetime", "P",
+             "Rise Time [µs]",
+             ["RiseTime [uS]", "Rise Time [uS]", "RiseTime [us]",
+              "Rise Time [us]", "Rise Time[uS]"]),
+            ("falltime", "N",
+             "Fall Time [µs]",
+             ["Measured Fall Time [uS]", "Measured Fall Time [us]",
+              "Fall Time [uS]", "Fall Time [us]",
+              "Measured Fall Time [pSec]", "Fall Time [pSec]"]),
+        ]:
+            t_series: list = []
+            tidx = 0
+            inner2 = _group_rows(reg_rows, ["_chip_id", "Temperature", "DCDC Efficiency Mode"])
+            for (chip, temp, mode), s_rows in sorted(inner2.items()):
+                acc: dict = {}
+                for r in s_rows:
+                    if r.get("Slope", "").strip().upper() != slope_filter:
+                        continue
+                    vin   = r.get("Vin", "").strip()
+                    iload = _iload(r)
+                    cat   = _cat_label(vin, iload)
+                    v = _col_val(r, *col_candidates)
+                    if v is not None and abs(v) < 1e15:
+                        acc.setdefault(cat, []).append(v)
+                vals_avg = {cat: sum(vs) / len(vs) for cat, vs in acc.items()}
+                if not vals_avg:
+                    continue
+                t_series.append({
+                    "label": f"Ch{chip} | T={temp}°C | {mode}",
+                    "values": vals_avg,
+                    "color": _color(tidx),
+                    "data_attrs": {"chip": chip, "temp": temp, "mode": mode,
+                                   "reg": _safe_attr(reg)},
+                })
+                tidx += 1
+
+            # ref for rise/fall
+            if ref_rows_for_reg:
+                ref_inner2 = _group_rows(ref_rows_for_reg,
+                                         ["_chip_id", "Temperature", "DCDC Efficiency Mode"])
+                for (chip_r, temp_r, mode_r), rr in sorted(ref_inner2.items()):
+                    acc2: dict = {}
+                    for r in rr:
+                        if r.get("Slope", "").strip().upper() != slope_filter:
+                            continue
+                        vin_r   = r.get("Vin", "").strip()
+                        iload_r = _iload(r)
+                        cat_r   = _cat_label(vin_r, iload_r)
+                        v = _col_val(r, *col_candidates)
+                        if v is not None and abs(v) < 1e15:
+                            acc2.setdefault(cat_r, []).append(v)
+                    vd2_avg = {cat: sum(vs) / len(vs) for cat, vs in acc2.items()}
+                    if vd2_avg:
+                        t_series.append({
+                            "label":  f"[{ref_label}] Ch{chip_r} | T={temp_r}°C | {mode_r}",
+                            "values": vd2_avg,
+                            "color":  _color(tidx),
+                            "ref":    True,
+                            "data_attrs": {"chip": chip_r, "temp": temp_r, "mode": mode_r,
+                                           "reg": _safe_attr(reg)},
+                        })
+                        tidx += 1
+
+            if not t_series:
+                continue
+            edge_title = "Rising Edge" if slope_filter == "P" else "Falling Edge"
+            t_fname = (f"pmic_vtrans_{time_tag}_{_safe_attr(reg)}"
+                       f"_vout{_safe_attr(vout)}.svg")
+            sp = _cat_dot_chart(
+                f"Voltage Transitions — {reg_label}  Vout={vout}V  — {edge_title} Time",
+                categories, time_lbl,
+                t_series, output_dir / t_fname)
+            if sp:
+                local_plots.append(sp)
+
+        return local_plots
+
+    # ── Top-level: group and dispatch ──────────────────────────────────────
+    reg_groups = _group_rows(rows_all, ["Regulator Name", "Vout"])
+
+    # Pre-load ref rows if available
+    ref_by_reg: dict = {}
+    if ref_data is not None:
+        ref_vt = ref_data.get_rows("VoltageTransitions") or []
+        if ref_vt:
+            ref_grp = _group_rows(ref_vt, ["Regulator Name", "Vout"])
+            ref_by_reg = ref_grp
+
+    for (reg, vout), reg_rows in sorted(reg_groups.items()):
         reg_label = REG_LABELS.get(reg, reg)
-        fname = f"pmic_vtrans_{_safe_attr(reg)}_vout{_safe_attr(vout)}.svg"
-        p = _cat_dot_chart(
-            f"Voltage Transitions — {reg_label}  Vout={vout}V",
-            categories,
-            "Voltage [V]",
-            series_list, output_dir / fname)
-        if p:
+        ref_rows_for_reg = ref_by_reg.get((reg, vout), [])
+        for p in _build_plots(reg_rows, reg, vout, ref_rows_for_reg, reg_label):
             plots.setdefault(reg, []).append(p)
+            logger.info("Saved: %s", p.name)
 
     return plots
 
@@ -1110,6 +1230,7 @@ def plot_automode(data, output_dir: Path, ref_data=None, ref_label='REF') -> dic
         for plot_tag, y_col, y_lbl in [
             ("eff",  "Efficiency [Pout/Pin %]", "Efficiency [%]"),
             ("vmin", "Vout Min ",               "Vout Minimum [V]"),
+            ("vmax", "Vout Max ",               "Vout Maximum [V]"),
         ]:
             series_list = []
             idx = 0
@@ -1160,7 +1281,9 @@ def plot_automode(data, output_dir: Path, ref_data=None, ref_label='REF') -> dic
                 continue
             x_lbl = "Output Current  Iout [A]"
             title  = (f"Auto Mode — {reg_label}  Vout={vout}V  — "
-                      + ("Efficiency" if plot_tag == "eff" else "Min Output Voltage"))
+                      + ("Efficiency" if plot_tag == "eff"
+                         else "Min Output Voltage" if plot_tag == "vmin"
+                         else "Max Output Voltage"))
             fname  = f"pmic_automode_{plot_tag}_{_safe_attr(reg)}_vout{_safe_attr(vout)}.svg"
             extra = {"y_tick_step": 5, "y_range": (0, 100)} if plot_tag == "eff" else {}
             p = _multi_line_chart(title, x_lbl, y_lbl,

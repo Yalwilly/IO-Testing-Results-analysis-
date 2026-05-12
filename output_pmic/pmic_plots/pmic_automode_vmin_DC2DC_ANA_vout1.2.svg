@@ -47,7 +47,7 @@
 <text x="1100.0" y="456.0" font-size="9" font-weight="normal" text-anchor="middle" fill="#888" font-family="Arial,sans-serif">0.514</text>
 <text x="16.0" y="254.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555" font-family="Arial,sans-serif" transform="rotate(-90,16,254.0)">Vout Minimum [V]</text>
 <text x="589.0" y="510.0" font-size="11" font-weight="normal" text-anchor="middle" fill="#555" font-family="Arial,sans-serif">Output Current  Iout [A]</text>
-<g class="series pmic-series" data-chip="21988" data-temp="0" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 21988 | T=0°C" data-color="#3498db" data-chip="21988" data-temp="0" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,138.0 L 134.0,138.2 L 153.4,138.9 L 172.5,139.9 L 191.3,140.1 L 210.6,140.3 L 230.0,140.8 L 249.1,139.2 L 267.9,138.9 L 287.3,144.8 L 306.6,142.7 L 325.7,142.7 L 344.5,144.9 L 363.9,145.5 L 383.2,147.9 L 402.4,146.3 L 421.3,151.0 L 440.5,152.5 L 459.8,156.2 L 479.2,157.6 L 497.9,161.2 L 517.1,161.5 L 536.4,162.6 L 555.8,161.7 L 574.5,161.2 L 593.7,162.2 L 613.0,160.5 L 632.4,161.7 L 651.2,160.8 L 670.3,158.2 L 689.6,138.2 L 708.6,139.1 L 727.8,137.3 L 746.9,137.5 L 766.3,139.1 L 785.0,138.4 L 804.4,138.6 L 823.7,139.9 L 842.9,140.1 L 861.6,141.1 L 881.0,139.8 L 900.3,138.9 L 919.5,138.4 L 938.2,138.4 L 957.6,138.0 L 976.9,139.8 L 996.1,138.6 L 1014.9,139.4 L 1034.2,140.1 L 1053.5,139.8 L 1053.5,139.8" fill="none" stroke="#3498db" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="138.0" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="138.2" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
@@ -101,7 +101,7 @@
 <circle cx="1053.5" cy="139.8" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="139.8" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="25" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 21988 | T=25°C" data-color="#e67e22" data-chip="21988" data-temp="25" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,108.7 L 134.0,110.4 L 153.4,110.9 L 172.5,111.1 L 191.3,112.0 L 210.6,110.8 L 230.0,112.7 L 249.1,112.3 L 267.9,112.0 L 287.3,115.6 L 306.6,113.9 L 325.7,114.9 L 344.5,114.0 L 363.9,117.7 L 383.2,122.7 L 402.4,123.7 L 421.3,127.5 L 440.5,131.0 L 459.8,132.2 L 479.2,134.8 L 497.9,136.5 L 517.1,136.5 L 536.4,137.5 L 555.8,135.6 L 574.5,138.0 L 593.7,136.1 L 613.0,136.7 L 632.4,136.3 L 651.2,132.2 L 670.3,113.9 L 689.6,115.6 L 708.6,114.9 L 727.8,115.1 L 746.9,115.1 L 766.3,116.1 L 785.0,117.5 L 804.4,116.3 L 823.7,116.6 L 842.9,115.6 L 861.6,115.4 L 881.0,114.0 L 900.3,115.4 L 919.5,114.6 L 938.2,116.6 L 957.6,115.4 L 976.9,115.4 L 996.1,115.4 L 1014.9,114.2 L 1034.2,115.6 L 1053.5,115.1 L 1053.5,115.1" fill="none" stroke="#e67e22" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="108.7" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="110.4" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
@@ -155,7 +155,7 @@
 <circle cx="1053.5" cy="115.1" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="115.1" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="80" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 21988 | T=80°C" data-color="#2ecc71" data-chip="21988" data-temp="80" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,114.4 L 134.0,113.7 L 153.4,117.3 L 172.5,114.4 L 191.3,116.5 L 210.6,118.0 L 230.0,116.1 L 249.1,117.5 L 267.9,116.6 L 287.3,116.8 L 306.6,118.4 L 325.7,118.9 L 344.5,119.6 L 363.9,119.4 L 383.2,121.1 L 402.4,128.9 L 421.3,133.7 L 440.5,136.8 L 459.8,139.4 L 479.2,140.1 L 497.9,141.5 L 517.1,141.0 L 536.4,141.8 L 555.8,140.5 L 574.5,142.2 L 593.7,140.3 L 613.0,141.0 L 632.4,140.6 L 651.2,147.0 L 670.3,123.0 L 689.6,121.3 L 708.6,122.1 L 727.8,121.8 L 746.9,121.8 L 766.3,121.3 L 785.0,123.2 L 804.4,121.3 L 823.7,122.5 L 842.9,122.3 L 861.6,122.5 L 881.0,122.1 L 900.3,123.2 L 919.5,123.4 L 938.2,122.5 L 957.6,122.1 L 976.9,123.2 L 996.1,123.9 L 1014.9,122.0 L 1034.2,121.3 L 1053.5,121.6 L 1053.5,121.6" fill="none" stroke="#2ecc71" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="114.4" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="113.7" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
@@ -209,7 +209,7 @@
 <circle cx="1053.5" cy="121.6" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="121.6" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="0" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 31927 | T=0°C" data-color="#9b59b6" data-chip="31927" data-temp="0" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,94.3 L 134.0,95.6 L 153.4,94.9 L 172.5,95.0 L 191.3,94.2 L 210.6,95.4 L 230.0,94.5 L 249.1,97.8 L 267.9,98.0 L 287.3,100.2 L 306.6,100.0 L 325.7,99.9 L 344.5,103.0 L 363.9,103.3 L 383.2,104.0 L 402.4,105.2 L 421.3,110.9 L 440.5,105.6 L 459.8,109.5 L 479.2,107.8 L 497.9,107.3 L 517.1,107.5 L 536.4,107.1 L 555.8,106.4 L 574.5,106.4 L 593.7,106.4 L 613.0,105.4 L 632.4,123.7 L 651.2,121.5 L 670.3,97.8 L 689.6,98.3 L 708.6,98.1 L 727.8,98.1 L 746.9,98.0 L 766.3,98.3 L 785.0,97.8 L 804.4,100.9 L 823.7,97.3 L 842.9,98.1 L 861.6,99.4 L 881.0,99.5 L 900.3,99.0 L 919.5,97.5 L 938.2,99.5 L 957.6,100.2 L 976.9,98.1 L 996.1,98.0 L 1014.9,98.5 L 1034.2,98.1 L 1053.5,99.0 L 1053.5,99.0" fill="none" stroke="#9b59b6" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="94.3" r="4" fill="#9b59b6" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="95.6" r="4" fill="#9b59b6" stroke="white" opacity="1.0"/>
@@ -263,7 +263,7 @@
 <circle cx="1053.5" cy="99.0" r="4" fill="#9b59b6" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="99.0" r="4" fill="#9b59b6" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="25" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 31927 | T=25°C" data-color="#1abc9c" data-chip="31927" data-temp="25" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,134.4 L 134.0,134.6 L 153.4,133.7 L 172.5,132.5 L 191.3,131.1 L 210.6,132.5 L 230.0,133.5 L 249.1,133.0 L 267.9,134.1 L 287.3,136.0 L 306.6,136.0 L 325.7,136.5 L 344.5,136.8 L 363.9,138.2 L 383.2,138.0 L 402.4,146.5 L 421.3,144.1 L 440.5,145.3 L 459.8,148.7 L 479.2,146.5 L 497.9,145.8 L 517.1,146.2 L 536.4,144.3 L 555.8,146.3 L 574.5,146.0 L 593.7,143.4 L 613.0,143.2 L 651.2,158.1 L 670.3,139.4 L 689.6,141.0 L 708.6,139.6 L 727.8,138.0 L 746.9,138.7 L 766.3,139.2 L 785.0,139.2 L 804.4,139.2 L 823.7,138.4 L 842.9,139.2 L 861.6,138.4 L 881.0,140.3 L 900.3,137.9 L 919.5,139.6 L 938.2,139.4 L 957.6,139.2 L 976.9,140.1 L 996.1,139.6 L 1014.9,140.8 L 1034.2,139.8 L 1053.5,139.1 L 1053.5,139.1" fill="none" stroke="#1abc9c" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="134.4" r="4" fill="#1abc9c" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="134.6" r="4" fill="#1abc9c" stroke="white" opacity="1.0"/>
@@ -316,7 +316,7 @@
 <circle cx="1053.5" cy="139.1" r="4" fill="#1abc9c" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="139.1" r="4" fill="#1abc9c" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="80" data-vin="3.135" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.135V | Chip 31927 | T=80°C" data-color="#e74c3c" data-chip="31927" data-temp="80" data-vin="3.135" data-reg="DC2DC_ANA">
 <path d="M 124.5,409.5 L 134.0,410.0 L 153.4,409.0 L 172.5,410.9 L 191.3,409.9 L 210.6,407.8 L 230.0,410.5 L 249.1,409.3 L 267.9,408.3 L 287.3,409.5 L 306.6,409.9 L 325.7,409.2 L 344.5,408.1 L 363.9,412.1 L 383.2,409.7 L 402.4,410.7 L 421.3,411.4 L 440.5,410.2 L 459.8,409.3 L 479.2,410.0 L 497.9,411.9 L 517.1,409.5 L 536.4,410.5 L 555.8,411.2 L 574.5,410.2 L 593.7,410.2 L 613.0,410.7 L 632.4,409.7 L 651.2,410.7 L 670.3,411.2 L 689.6,410.5 L 708.6,411.1 L 727.8,410.5 L 746.9,410.0 L 766.3,411.1 L 785.0,410.9 L 804.4,410.9 L 823.7,411.1 L 842.9,410.7 L 861.6,410.4 L 881.0,410.5 L 900.3,411.1 L 919.5,411.6 L 938.2,410.7 L 957.6,410.7 L 976.9,410.5 L 996.1,413.0 L 1014.9,412.1 L 1034.2,411.8 L 1053.5,411.2 L 1053.5,411.2" fill="none" stroke="#e74c3c" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="409.5" r="4" fill="#e74c3c" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="410.0" r="4" fill="#e74c3c" stroke="white" opacity="1.0"/>
@@ -370,7 +370,7 @@
 <circle cx="1053.5" cy="411.2" r="4" fill="#e74c3c" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="411.2" r="4" fill="#e74c3c" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="0" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 21988 | T=0°C" data-color="#f39c12" data-chip="21988" data-temp="0" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,139.9 L 134.0,138.9 L 153.4,139.8 L 172.5,141.3 L 191.3,142.2 L 210.6,141.3 L 230.0,141.5 L 249.1,141.7 L 267.9,142.2 L 287.3,142.9 L 306.6,145.5 L 325.7,144.3 L 344.5,146.2 L 363.9,146.0 L 383.2,146.2 L 402.4,148.1 L 421.3,152.0 L 440.5,156.9 L 459.8,159.3 L 479.2,160.5 L 497.9,163.8 L 517.1,162.9 L 536.4,164.8 L 555.8,163.8 L 574.5,161.9 L 593.7,162.0 L 613.0,163.6 L 632.4,161.7 L 651.2,161.2 L 670.3,160.3 L 689.6,138.7 L 708.6,138.7 L 727.8,138.4 L 746.9,138.4 L 766.3,139.9 L 785.0,139.8 L 804.4,137.9 L 823.7,139.1 L 842.9,138.0 L 861.6,140.1 L 881.0,139.1 L 900.3,141.8 L 919.5,138.7 L 938.2,140.1 L 957.6,138.7 L 976.9,138.9 L 996.1,139.1 L 1015.0,138.4 L 1034.2,139.9 L 1053.5,140.3 L 1053.5,140.3" fill="none" stroke="#f39c12" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="139.9" r="4" fill="#f39c12" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="138.9" r="4" fill="#f39c12" stroke="white" opacity="1.0"/>
@@ -424,7 +424,7 @@
 <circle cx="1053.5" cy="140.3" r="4" fill="#f39c12" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="140.3" r="4" fill="#f39c12" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="25" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 21988 | T=25°C" data-color="#2980b9" data-chip="21988" data-temp="25" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,108.5 L 134.0,110.1 L 153.4,110.4 L 172.5,112.7 L 191.3,110.4 L 210.6,109.7 L 230.0,110.2 L 249.1,111.3 L 267.9,112.8 L 287.3,114.0 L 306.6,113.2 L 325.7,115.4 L 344.5,114.2 L 363.9,115.6 L 383.2,122.0 L 402.4,124.4 L 421.3,126.3 L 440.5,129.4 L 459.8,132.5 L 479.2,133.9 L 497.9,134.6 L 517.1,133.5 L 536.4,135.3 L 555.8,134.1 L 574.5,135.1 L 593.7,135.4 L 613.0,133.7 L 632.4,134.6 L 651.2,130.6 L 670.3,112.7 L 689.6,114.4 L 708.6,114.4 L 727.8,113.3 L 746.9,113.3 L 766.3,113.7 L 785.0,114.6 L 804.4,113.5 L 823.7,114.7 L 842.9,114.7 L 861.6,113.7 L 881.0,115.2 L 900.3,114.2 L 919.5,113.7 L 938.2,113.9 L 957.6,114.9 L 976.9,113.9 L 996.1,113.2 L 1014.9,114.7 L 1034.2,113.5 L 1053.5,113.7 L 1053.5,113.7" fill="none" stroke="#2980b9" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="108.5" r="4" fill="#2980b9" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="110.1" r="4" fill="#2980b9" stroke="white" opacity="1.0"/>
@@ -478,7 +478,7 @@
 <circle cx="1053.5" cy="113.7" r="4" fill="#2980b9" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="113.7" r="4" fill="#2980b9" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="80" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 21988 | T=80°C" data-color="#16a085" data-chip="21988" data-temp="80" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,114.2 L 134.0,113.9 L 153.4,115.2 L 172.5,113.9 L 191.3,114.9 L 210.6,115.8 L 230.0,114.4 L 249.1,115.8 L 267.9,117.5 L 287.3,117.5 L 306.6,119.2 L 325.7,119.2 L 344.5,118.4 L 363.9,119.9 L 383.2,119.9 L 402.4,129.2 L 421.3,131.8 L 440.5,134.6 L 459.8,137.0 L 479.2,144.1 L 497.9,141.7 L 517.1,142.4 L 536.4,142.2 L 555.8,141.3 L 574.5,142.0 L 593.7,141.3 L 613.0,140.3 L 632.4,140.5 L 651.2,146.5 L 670.3,123.9 L 689.6,121.8 L 708.6,121.8 L 727.8,123.2 L 746.9,121.3 L 766.3,122.7 L 785.0,123.4 L 804.4,122.1 L 823.7,121.8 L 842.9,121.3 L 861.6,121.5 L 881.0,121.8 L 900.3,122.8 L 919.5,120.8 L 938.2,121.3 L 957.6,122.3 L 976.9,120.8 L 996.1,123.0 L 1014.9,123.0 L 1034.2,122.7 L 1053.5,123.5 L 1053.5,123.5" fill="none" stroke="#16a085" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="114.2" r="4" fill="#16a085" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="113.9" r="4" fill="#16a085" stroke="white" opacity="1.0"/>
@@ -532,7 +532,7 @@
 <circle cx="1053.5" cy="123.5" r="4" fill="#16a085" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="123.5" r="4" fill="#16a085" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="0" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 31927 | T=0°C" data-color="#8e44ad" data-chip="31927" data-temp="0" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,95.9 L 134.0,94.2 L 153.4,94.7 L 172.5,93.7 L 191.3,94.0 L 210.6,94.3 L 230.0,95.7 L 249.1,95.7 L 267.9,96.8 L 287.3,98.3 L 306.6,99.7 L 325.7,99.0 L 344.5,101.8 L 363.9,102.1 L 383.2,103.0 L 402.4,104.2 L 421.3,110.9 L 440.5,107.0 L 459.8,109.4 L 479.2,109.7 L 497.9,109.4 L 517.1,106.3 L 536.4,107.3 L 555.8,106.4 L 574.5,104.4 L 593.7,104.7 L 613.0,103.5 L 632.4,100.2 L 651.2,118.5 L 670.3,97.3 L 689.6,99.9 L 708.6,95.9 L 727.8,98.3 L 746.9,96.2 L 766.3,97.6 L 785.0,97.1 L 804.4,96.6 L 823.7,99.9 L 842.9,97.6 L 861.6,96.6 L 881.0,97.1 L 900.3,97.5 L 919.5,97.1 L 938.2,97.5 L 957.6,96.8 L 976.9,98.0 L 996.1,97.3 L 1015.0,98.5 L 1034.2,99.2 L 1053.5,96.9 L 1053.5,96.9" fill="none" stroke="#8e44ad" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="95.9" r="4" fill="#8e44ad" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="94.2" r="4" fill="#8e44ad" stroke="white" opacity="1.0"/>
@@ -586,7 +586,7 @@
 <circle cx="1053.5" cy="96.9" r="4" fill="#8e44ad" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="96.9" r="4" fill="#8e44ad" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="25" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 31927 | T=25°C" data-color="#c0392b" data-chip="31927" data-temp="25" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,133.9 L 134.0,132.2 L 153.4,133.9 L 172.5,133.5 L 191.3,134.1 L 210.6,134.4 L 230.0,134.1 L 249.1,135.3 L 267.9,136.8 L 287.3,134.8 L 306.6,136.1 L 325.7,136.5 L 344.5,137.3 L 363.9,138.9 L 383.2,143.4 L 402.4,146.3 L 421.3,143.6 L 440.5,146.3 L 459.8,146.8 L 479.2,147.7 L 497.9,144.4 L 517.1,145.6 L 536.4,143.4 L 555.8,142.4 L 574.5,143.4 L 593.7,142.5 L 613.0,142.9 L 651.2,138.7 L 670.3,138.0 L 689.6,137.7 L 708.6,139.2 L 727.8,136.7 L 746.9,137.2 L 766.3,138.0 L 785.0,137.2 L 804.4,137.3 L 823.7,137.2 L 842.9,138.2 L 861.6,138.4 L 881.0,138.2 L 900.3,138.9 L 919.5,139.9 L 938.2,136.0 L 957.6,136.7 L 976.9,139.1 L 996.1,138.9 L 1014.9,139.1 L 1034.2,139.2 L 1053.5,139.6 L 1053.5,139.6" fill="none" stroke="#c0392b" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="133.9" r="4" fill="#c0392b" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="132.2" r="4" fill="#c0392b" stroke="white" opacity="1.0"/>
@@ -639,7 +639,7 @@
 <circle cx="1053.5" cy="139.6" r="4" fill="#c0392b" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="139.6" r="4" fill="#c0392b" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="80" data-vin="3.3" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.3V | Chip 31927 | T=80°C" data-color="#27ae60" data-chip="31927" data-temp="80" data-vin="3.3" data-reg="DC2DC_ANA">
 <path d="M 124.5,409.2 L 134.0,408.5 L 153.4,408.8 L 172.5,408.0 L 191.3,408.0 L 210.6,408.1 L 230.0,409.7 L 249.1,408.6 L 267.9,409.2 L 287.3,409.5 L 306.6,409.5 L 325.7,408.1 L 344.5,410.4 L 363.9,409.7 L 383.2,409.5 L 402.4,409.3 L 421.3,410.4 L 440.5,410.0 L 459.8,410.0 L 479.2,408.8 L 497.9,409.7 L 517.1,408.8 L 536.4,410.4 L 555.8,409.9 L 574.5,410.5 L 593.7,412.6 L 613.0,410.7 L 632.4,411.9 L 651.2,412.1 L 670.3,410.5 L 689.6,410.5 L 708.6,410.9 L 727.8,410.7 L 746.9,410.5 L 766.3,411.9 L 785.0,410.0 L 804.4,412.6 L 823.7,411.1 L 842.9,410.7 L 861.6,412.3 L 881.0,409.7 L 900.3,412.3 L 919.5,410.7 L 938.2,411.2 L 957.6,413.1 L 976.9,413.0 L 996.1,411.8 L 1014.9,410.2 L 1034.2,412.1 L 1053.5,412.1 L 1053.5,412.1" fill="none" stroke="#27ae60" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="409.2" r="4" fill="#27ae60" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="408.5" r="4" fill="#27ae60" stroke="white" opacity="1.0"/>
@@ -693,7 +693,7 @@
 <circle cx="1053.5" cy="412.1" r="4" fill="#27ae60" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="412.1" r="4" fill="#27ae60" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="0" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 21988 | T=0°C" data-color="#d35400" data-chip="21988" data-temp="0" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,138.2 L 134.0,136.8 L 153.4,138.4 L 172.5,139.6 L 191.3,139.8 L 210.6,139.1 L 230.0,140.6 L 249.1,140.1 L 267.9,142.4 L 287.3,141.0 L 306.6,143.6 L 325.7,142.9 L 344.5,144.1 L 363.9,144.4 L 383.2,144.8 L 402.4,145.8 L 421.3,152.7 L 440.5,156.0 L 459.8,156.5 L 479.2,159.6 L 497.9,161.9 L 517.1,162.9 L 536.4,160.5 L 555.8,161.9 L 574.5,162.9 L 593.7,162.0 L 613.0,161.4 L 632.4,162.0 L 651.2,161.5 L 670.3,159.6 L 689.6,139.4 L 708.6,139.6 L 727.8,139.2 L 746.9,139.4 L 766.3,137.7 L 785.2,139.4 L 804.4,139.6 L 823.7,140.8 L 842.9,138.7 L 861.6,138.4 L 881.0,139.1 L 900.3,139.8 L 919.5,140.6 L 938.2,138.9 L 957.6,141.0 L 976.9,140.3 L 996.1,140.8 L 1014.9,140.5 L 1034.2,139.4 L 1053.5,138.9 L 1053.5,138.9" fill="none" stroke="#d35400" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="138.2" r="4" fill="#d35400" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="136.8" r="4" fill="#d35400" stroke="white" opacity="1.0"/>
@@ -747,7 +747,7 @@
 <circle cx="1053.5" cy="138.9" r="4" fill="#d35400" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="138.9" r="4" fill="#d35400" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="25" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 21988 | T=25°C" data-color="#7f8c8d" data-chip="21988" data-temp="25" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,109.0 L 134.0,111.1 L 153.4,112.0 L 172.5,111.8 L 191.3,110.8 L 210.6,110.9 L 230.0,109.5 L 249.1,110.4 L 267.9,110.9 L 287.3,112.0 L 306.6,113.9 L 325.7,114.6 L 344.5,115.8 L 363.9,115.6 L 383.2,121.6 L 402.4,126.6 L 421.3,126.8 L 440.5,129.2 L 459.8,133.2 L 479.2,135.3 L 497.9,135.4 L 517.1,135.3 L 536.4,135.4 L 555.8,135.8 L 574.5,137.3 L 593.7,135.1 L 613.0,134.4 L 632.4,134.1 L 651.2,131.3 L 670.3,113.3 L 689.6,114.4 L 708.6,114.0 L 727.8,115.2 L 746.9,114.7 L 766.3,114.9 L 785.0,114.7 L 804.4,115.9 L 823.7,115.4 L 842.9,115.9 L 861.6,115.1 L 881.0,114.0 L 900.3,114.2 L 919.5,115.8 L 938.2,114.4 L 957.6,114.0 L 976.9,115.8 L 996.1,113.9 L 1014.9,115.1 L 1034.2,113.9 L 1053.5,115.4 L 1053.5,115.4" fill="none" stroke="#7f8c8d" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="109.0" r="4" fill="#7f8c8d" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="111.1" r="4" fill="#7f8c8d" stroke="white" opacity="1.0"/>
@@ -801,7 +801,7 @@
 <circle cx="1053.5" cy="115.4" r="4" fill="#7f8c8d" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="115.4" r="4" fill="#7f8c8d" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="21988" data-temp="80" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 21988 | T=80°C" data-color="#2c3e50" data-chip="21988" data-temp="80" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,115.8 L 134.0,116.3 L 153.4,115.4 L 172.5,114.7 L 191.3,116.5 L 210.6,117.1 L 230.0,115.8 L 249.1,115.2 L 267.9,116.6 L 287.3,118.5 L 306.6,118.2 L 325.7,117.5 L 344.5,118.5 L 363.9,120.4 L 383.2,126.5 L 402.4,129.1 L 421.3,133.5 L 440.5,136.0 L 459.8,138.7 L 479.2,140.5 L 497.9,141.3 L 517.1,142.0 L 536.4,140.3 L 555.8,140.3 L 574.5,141.1 L 593.7,144.8 L 613.0,140.1 L 632.4,139.1 L 651.2,130.3 L 670.3,120.9 L 689.6,122.3 L 708.6,122.0 L 727.8,122.1 L 746.9,122.1 L 766.3,122.7 L 785.0,121.3 L 804.4,123.4 L 823.7,122.5 L 842.9,125.6 L 861.6,121.8 L 881.0,121.3 L 900.3,122.0 L 919.5,121.3 L 938.2,124.0 L 957.6,121.5 L 976.9,121.6 L 996.1,122.0 L 1014.9,123.2 L 1034.2,122.3 L 1053.5,124.7 L 1053.5,124.7" fill="none" stroke="#2c3e50" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="115.8" r="4" fill="#2c3e50" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="116.3" r="4" fill="#2c3e50" stroke="white" opacity="1.0"/>
@@ -855,7 +855,7 @@
 <circle cx="1053.5" cy="124.7" r="4" fill="#2c3e50" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="124.7" r="4" fill="#2c3e50" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="0" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 31927 | T=0°C" data-color="#3498db" data-chip="31927" data-temp="0" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,95.2 L 134.0,94.3 L 153.4,94.7 L 172.5,94.9 L 191.3,93.7 L 210.6,95.2 L 230.0,93.7 L 249.1,95.2 L 267.9,97.1 L 287.3,98.0 L 306.6,98.7 L 325.7,98.8 L 344.5,101.3 L 363.9,101.9 L 383.2,102.6 L 402.4,101.4 L 421.3,108.0 L 440.5,105.6 L 459.8,107.5 L 479.2,109.7 L 497.9,107.6 L 517.1,106.3 L 536.4,106.8 L 555.8,106.1 L 574.5,105.7 L 593.7,104.9 L 613.0,103.2 L 632.4,99.2 L 689.6,98.8 L 708.6,97.1 L 727.8,96.2 L 746.9,98.0 L 766.3,99.2 L 785.2,96.4 L 804.4,97.3 L 823.7,98.5 L 842.9,98.7 L 861.6,98.1 L 881.0,99.0 L 900.3,100.9 L 919.5,98.8 L 938.2,99.5 L 957.6,97.6 L 976.9,98.8 L 996.1,97.8 L 1015.0,99.2 L 1034.2,98.5 L 1053.5,99.5 L 1053.5,99.5" fill="none" stroke="#3498db" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="95.2" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="94.3" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
@@ -907,7 +907,7 @@
 <circle cx="1053.5" cy="99.5" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="99.5" r="4" fill="#3498db" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="25" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 31927 | T=25°C" data-color="#e67e22" data-chip="31927" data-temp="25" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,134.1 L 134.0,133.9 L 153.4,134.4 L 172.5,135.6 L 191.3,132.3 L 210.6,133.0 L 230.0,133.7 L 249.1,134.6 L 267.9,135.1 L 287.3,138.2 L 306.6,137.3 L 325.7,139.1 L 344.5,138.9 L 363.9,141.0 L 383.2,148.4 L 402.4,148.1 L 421.3,145.6 L 440.5,145.8 L 459.8,147.4 L 479.2,146.5 L 497.9,146.5 L 517.1,147.0 L 536.4,144.1 L 555.8,143.7 L 574.5,144.8 L 593.7,143.7 L 613.0,143.6 L 670.3,139.2 L 689.6,139.6 L 708.6,139.4 L 727.8,138.9 L 746.9,137.7 L 766.3,138.6 L 785.0,140.1 L 804.4,137.2 L 823.7,137.3 L 842.9,136.8 L 861.6,138.2 L 881.0,139.1 L 900.3,139.2 L 919.5,139.6 L 938.2,138.9 L 957.6,138.6 L 976.9,138.7 L 996.1,136.8 L 1014.9,139.2 L 1034.2,139.1 L 1053.5,139.1 L 1053.5,139.1" fill="none" stroke="#e67e22" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="134.1" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="133.9" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
@@ -959,7 +959,7 @@
 <circle cx="1053.5" cy="139.1" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 <circle cx="1053.5" cy="139.1" r="4" fill="#e67e22" stroke="white" opacity="1.0"/>
 </g>
-<g class="series pmic-series" data-chip="31927" data-temp="80" data-vin="3.465" data-reg="DC2DC_ANA">
+<g class="series pmic-series" data-label="Vin=3.465V | Chip 31927 | T=80°C" data-color="#2ecc71" data-chip="31927" data-temp="80" data-vin="3.465" data-reg="DC2DC_ANA">
 <path d="M 124.5,408.8 L 134.0,408.0 L 153.4,408.6 L 172.5,408.8 L 191.3,411.4 L 210.6,410.0 L 230.0,411.1 L 249.1,410.7 L 267.9,409.3 L 287.3,408.5 L 306.6,408.0 L 325.7,409.9 L 344.5,409.2 L 363.9,410.9 L 383.2,409.3 L 402.4,411.4 L 421.3,408.3 L 440.5,410.0 L 459.8,410.2 L 479.2,409.5 L 497.9,410.7 L 517.1,409.9 L 536.4,409.7 L 555.8,410.2 L 574.5,410.9 L 593.7,408.8 L 613.0,410.2 L 632.4,409.5 L 651.2,411.9 L 670.3,410.7 L 689.6,411.4 L 708.6,412.3 L 727.8,410.9 L 746.9,409.7 L 766.3,410.2 L 785.0,412.3 L 804.4,412.3 L 823.7,411.8 L 842.9,413.0 L 861.6,413.0 L 881.0,414.2 L 900.3,413.1 L 919.5,413.3 L 938.2,412.4 L 957.6,412.4 L 976.9,412.3 L 996.1,411.8 L 1014.9,414.3 L 1034.2,413.0 L 1053.5,411.8 L 1053.5,411.8" fill="none" stroke="#2ecc71" stroke-width="2.2" stroke-linejoin="round" opacity="0.9"/>
 <circle cx="124.5" cy="408.8" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
 <circle cx="134.0" cy="408.0" r="4" fill="#2ecc71" stroke="white" opacity="1.0"/>
@@ -1104,5 +1104,5 @@
 <text x="1144.0" y="365.0" font-size="9" font-weight="normal" text-anchor="start" fill="#333" font-family="Arial,sans-serif">Vin=3.465V | Chip 31927 | T=80°C</text>
 </g>
 <rect class="cursor-overlay" x="78.0" y="68.0" width="1022.0" height="372.0" fill="transparent" style="cursor:default" data-xmin="-0.019355" data-xmax="0.514255" data-ymin="0.999744" data-ymax="1.215156" data-pl="78.0" data-pr="1100.0" data-pt="68.0" data-pb="440.0"/>
-<g class="cursor-layer" style="pointer-events:none;display:none"><line class="cur-v" x1="0" y1="68.0" x2="0" y2="440.0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><line class="cur-h" x1="78.0" y1="0" x2="1100.0" y2="0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><rect class="cur-tip-bg" x="0" y="0" width="148" height="44" rx="5" fill="#1a252f" stroke="#34495e" stroke-width="1" opacity="0.92"/><text class="cur-tip-x" x="0" y="0" font-size="11" font-family="Arial,sans-serif" fill="#ecf0f1"/><text class="cur-tip-y" x="0" y="0" font-size="11" font-family="Arial,sans-serif" fill="#2ecc71"/></g>
+<g class="cursor-layer" style="pointer-events:none;display:none"><line class="cur-v" x1="0" y1="68.0" x2="0" y2="440.0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><line class="cur-h" x1="78.0" y1="0" x2="1100.0" y2="0" stroke="#e74c3c" stroke-width="1.2" stroke-dasharray="5,3"/><rect class="cur-tip-bg" x="0" y="0" width="170" height="48" rx="4" fill="#1a252f" stroke="#34495e" stroke-width="1" opacity="0.92"/><text class="cur-tip-s" x="0" y="0" font-size="8" font-family="Arial,sans-serif" fill="#f1c40f"/><text class="cur-tip-x" x="0" y="0" font-size="9" font-family="Arial,sans-serif" fill="#ecf0f1"/><text class="cur-tip-y" x="0" y="0" font-size="9" font-family="Arial,sans-serif" fill="#2ecc71"/></g>
 </svg>
